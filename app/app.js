@@ -63,7 +63,8 @@ function data(iso) {
 }
 
 function kafel(napis, kolor) {
-  return `<span class="row-icon" style="background-color:${kolor}">${esc(napis)}</span>`;
+  const emotka = /\p{Extended_Pictographic}/u.test(napis) ? " big" : "";
+  return `<span class="row-icon${emotka}" style="background-color:${kolor}">${esc(napis)}</span>`;
 }
 
 function linkISAP(url, etykieta = "Oryginał w ISAP") {

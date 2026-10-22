@@ -1,4 +1,6 @@
-# BHP PPOŻ - stan projektu (22.10.2026)
+# PPOŻ BHP - stan projektu (22.10.2026)
+
+**NA ŻYWO: https://tomasz66.github.io/ppoz-bhp/** - repo `tomasz66/ppoz-bhp` (publiczne, GitHub Pages przez Actions). Wiadomości odświeżają się same codziennie o 6:00 (cron w `.github/workflows/pages.yml`) i przy każdym wysłaniu zmian. Push tylko na prośbę Tomka.
 
 Aplikacja Tomka: kompendium przepisów BHP i ppoż + nauka do egzaminu inspektora ochrony przeciwpożarowej. Styl jak Pomocnik Strażaka (jasny, karty z kolorowymi kafelkami, ciemny motyw ☾).
 
@@ -16,6 +18,7 @@ Zasada nadrzędna: **każdy przepis, ściąga i pytanie ma klikalne źródło** 
 - **Nauka** - 50 pytań (własne, z treści przepisów, nie oficjalna pula), lekcja 10 pytań z powtórkami 1/2/4/7/14/30/60/120 dni, egzamin próbny (do 60 pytań, próg 70%). Postęp w localStorage telefonu.
 - **Nowości** (22.10 wieczór, zamiast "Zmiany"): filtr Wszystko/BHP/PPOŻ; 8 najważniejszych zmian po ludzku z odliczaniem terminów i "Szansa dla Ciebie" (`data/nowosci.json` - pisane ręcznie z przeczytanych aktów: mobbing 5.11.2026, upały 11.01.2027, PIP decyzje, e-potwierdzenia szkoleń, czujki, punkty schronienia, WT, ołów); aktualności z branży (`data/aktualnosci.json`, skrypt `skrypty/zbuduj_aktualnosci.py`: strazacki.pl, ppoz.pl, Google News - przeglądarka nie może czytać RSS sama, CORS; po wystawieniu odświeżać automatycznie GitHub Actions raz dziennie).
 - **Czytnik wiadomości** (`#/czytnik`, z Start "Więcej wiadomości" i z Nowości): ~250 artykułów z 14 dni, grupy Dziś/Wczoraj/Przedwczoraj/Wcześniej w tym tygodniu/Starsze, "⭐ Najważniejsze z tygodnia" (punkty z tematów i źródła), "Moje tematy" (filtr zapamiętany w telefonie), kropka = nowe od ostatniej wizyty, zajawka rozwijana dotknięciem, "Pokaż więcej" po 15. Skrypt rozkodowuje linki Google News do adresu wydawcy i pobiera og:description (pamięć w `zrodla/pamiec_aktualnosci.json`).
+- **Luz** (6. zakładka): mem dnia + losowanie, 12 autorskich memów (formaty klasyk / drake / "nikt:"), nietypowe interwencje strażaków z 30 dni (kanał "luz" w skrypcie, filtr SMUTNE - bez tragedii), żarty, ciekawostki.
 - **Ciekawostki i żarty** (`data/ciekawostki.json`): 20 ciekawostek z linkiem do przepisu + 15 własnych żartów; ciekawostka dnia na Start, w lekcji co 3. dobrą odpowiedź na zmianę fakt/żart. Start ma też "Najbliższe terminy" i 3 wiadomości z branży.
 - Wykrywanie nowych zmian - aplikacja sama pyta API Sejmu o 13 aktów (ppoż + BHP) i pokazuje nowe akty zmieniające (alert na Start + cyfra na zakładce). Lista bazowa z 22.10.2026. Karta o WT 2002 (uchylone, okres przejściowy art. 102a-102c Prawa budowlanego, Dz.U. 2026 poz. 1161).
 
@@ -36,8 +39,8 @@ Po nowej zmianie w prawie: pobrać akt zmieniający, dopisać w `zbuduj_dane.py`
 
 ## Do zrobienia / decyzje Tomka
 
-- [ ] Nazwa: zaproponowana "Czujka" - czeka na decyzję Tomka
-- [ ] Gdzie wystawić, żeby działało na telefonie (propozycja: GitHub Pages jak Pomocnik) - czeka na zgodę Tomka
+- [x] Nazwa: "PPOŻ BHP" (Tomek 22.10.2026)
+- [x] Wystawione na GitHub Pages 22.10.2026
 - [ ] Etap 2: pełny tekst aktów BHP (KP dział X, ogólne przepisy BHP, szkolenia, wypadki, służba BHP...)
 - [ ] WT - dział VI (bezpieczeństwo pożarowe) gdy wyjaśni się sytuacja z nowymi WT
 - [ ] Więcej pytań (cel: 150+), m.in. z WT i ustawy (art. 5, 6, 7)
