@@ -179,6 +179,7 @@ function widokStart() {
       <div class="section-sub">${tekst("Przepisy, ściągi i nauka do egzaminu inspektora ochrony przeciwpożarowej. Każdy przepis z linkiem do oryginału.")}</div>
     </div>
     ${poleSzukania("")}
+    ${kartaAktualnosci()}
     ${nowe.length ? `<div class="section-label">Uwaga</div><a class="card alert" style="display:block" href="#/nowosci"><h3>${nowe.length} ${nowe.length === 1 ? "nowa zmiana" : "nowe zmiany"} w prawie</h3><p>${tekst("Sejm opublikował zmianę w akcie, który obserwujesz. Dotknij, żeby zobaczyć.")}</p></a>` : ""}
     <div class="section-label">Nauka</div>
     <div class="tiles">
@@ -272,7 +273,7 @@ function najblizszeTerminy() {
 function poleSzukania(wartosc) {
   return `<div class="search-wrap"><label class="search-box big">
     <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-    <input class="search-input" id="szukaj" type="search" placeholder="Szukaj wszędzie: smoła, gałęzie, gaśnica…" value="${esc(wartosc)}" autocomplete="off" enterkeyhint="search">
+    <input class="search-input" id="szukaj" type="search" placeholder="Szukaj: smoła, gałęzie, gaśnica…" value="${esc(wartosc)}" autocomplete="off" enterkeyhint="search">
   </label></div>`;
 }
 
@@ -1264,19 +1265,8 @@ async function init() {
   };
   document.querySelectorAll(".tab-item").forEach((t) => (t.onclick = () => (location.hash = "#/" + t.dataset.tab)));
 
-  const [akty, sciagi, pytania, obserwowane, nowosci, aktualnosci, ciekawostki, spis] = await Promise.all(
-    ["akty", "sciagi", "pytania", "obserwowane", "nowosci", "aktualnosci", "ciekawostki", "dok/spis"].map((n) => fetch(`data/${n}.json`).then((r) => r.json()))
-  );
-  stan.nowosci = nowosci;
-  stan.spis = spis;
-  stan.aktualnosci = aktualnosci;
-  stan.ciekawostki = ciekawostki;
-  stan.akty = akty.akty;
-  stan.stanNa = akty.stanNa;
-  stan.akty.forEach((a) => (stan.aktyMapa[a.id] = a));
-  stan.sciagi = sciagi;
-  stan.pytania = pytania;
-  stan.obserwowane = obserwowane;
+  document.getElementById("btn-refresh").onclick = odswiezWszystko;
+  await wczytajDane(false);
 
   window.addEventListener("hashchange", trasa);
   trasa();
@@ -1290,6 +1280,82 @@ async function init() {
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("sw.js").catch(() => {});
   }
+}
+
+// Wczytuje dane aplikacji; "swieze" omija pamięć telefonu i pobiera najnowszą wersję z serwera.
+async function wczytajDane(swieze) {
+  const dopisek = swieze ? `?t=${Date.now()}` : "";
+  const opcje = swieze ? { cache: "no-store" } : {};
+  const [akty, sciagi, pytania, obserwowane, nowosci, aktualnosci, ciekawostki, spis] = await Promise.all(
+    ["akty", "sciagi", "pytania", "obserwowane", "nowosci", "aktualnosci", "ciekawostki", "dok/spis"].map((n) => fetch(`data/${n}.json${dopisek}`, opcje).then((r) => r.json()))
+  );
+  stan.nowosci = nowosci;
+  stan.spis = spis;
+  stan.aktualnosci = aktualnosci;
+  stan.ciekawostki = ciekawostki;
+  stan.akty = akty.akty;
+  stan.stanNa = akty.stanNa;
+  stan.sciagi = sciagi;
+  stan.pytania = pytania;
+  stan.obserwowane = obserwowane;
+  stan.aktyMapa = {};
+  stan.akty.forEach((a) => (stan.aktyMapa[a.id] = a));
+}
+
+// Przycisk ↻: sprawdza bazę Sejmu (nowe przepisy), pobiera najnowsze dane i wiadomości, odświeża ekran.
+async function odswiezWszystko() {
+  const b = document.getElementById("btn-refresh");
+  if (b.classList.contains("spin")) {
+    return;
+  }
+  b.classList.add("spin");
+  pokazKomunikat("Sprawdzam nowe przepisy w bazie Sejmu…");
+  try {
+    await wczytajDane(true);
+    stan.artykuly = null;
+    stan.dok = {};
+    stan.indeks = null;
+    stan.dokZaladowane = null;
+    stan.wszystkieDok = null;
+    const wynik = await sprawdzZmiany(true);
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.getRegistration().then((r) => r && r.update()).catch(() => {});
+    }
+    trasa();
+    const godz = new Date(wynik.kiedy).toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" });
+    if (wynik.bledy >= stan.obserwowane.akty.length) {
+      pokazKomunikat("Brak połączenia z bazą Sejmu. Spróbuj za chwilę.");
+    } else if (wynik.nowe.length) {
+      pokazKomunikat(`Uwaga: ${wynik.nowe.length} ${wynik.nowe.length === 1 ? "nowa zmiana" : "nowe zmiany"} w przepisach - zobacz Nowości.`);
+    } else {
+      pokazKomunikat(`✓ Przepisy aktualne. Sprawdzono ${godz}, wiadomości z ${stan.aktualnosci.pobrano.slice(11)}.`);
+    }
+  } catch (e) {
+    pokazKomunikat("Nie udało się odświeżyć - sprawdź internet.");
+  } finally {
+    b.classList.remove("spin");
+  }
+}
+
+function pokazKomunikat(t) {
+  let el = document.getElementById("komunikat");
+  if (!el) {
+    el = document.createElement("div");
+    el.id = "komunikat";
+    document.body.appendChild(el);
+  }
+  el.textContent = t;
+  el.className = "toast on";
+  clearTimeout(stan.komunikatCzas);
+  stan.komunikatCzas = setTimeout(() => (el.className = "toast"), 4500);
+}
+
+function kartaAktualnosci() {
+  const z = czytaj(KLUCZ.zmiany, null);
+  const kiedy = z ? new Date(z.kiedy).toLocaleString("pl-PL", { day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" }) : "jeszcze nie sprawdzono";
+  const opis = z && z.nowe.length ? `${z.nowe.length} nowych zmian - zobacz Nowości` : "brak nowych zmian";
+  return `<div class="card refresh-card"><div class="refresh-row"><div><b>Aktualność przepisów</b><p>${tekst(`Sprawdzono: ${kiedy} · ${opis}`)}</p></div>
+    <button class="btn small" onclick="odswiezWszystko()">↻ Sprawdź</button></div></div>`;
 }
 
 init();
