@@ -2,6 +2,8 @@
 
 **NA ŻYWO: https://tomasz66.github.io/ppoz-bhp/** - repo `tomasz66/ppoz-bhp` (publiczne, GitHub Pages przez Actions). Wiadomości odświeżają się same codziennie o 6:00 (cron w `.github/workflows/pages.yml`) i przy każdym wysłaniu zmian. Push tylko na prośbę Tomka.
 
+**Baza wiedzy (kierunek, kurs, ceny, źródła do nauki, raporty, dziennik decyzji): `BAZA WIEDZY.md`** - tylko lokalnie, poza repo.
+
 Aplikacja Tomka: kompendium przepisów BHP i ppoż + nauka do egzaminu inspektora ochrony przeciwpożarowej. Styl jak Pomocnik Strażaka (jasny, karty z kolorowymi kafelkami, ciemny motyw ☾).
 
 Zasada nadrzędna: **każdy przepis, ściąga i pytanie ma klikalne źródło** (ISAP / API Sejmu). W tekstach przepisów tylko treść z Dz.U. - nic dopisanego od siebie.
