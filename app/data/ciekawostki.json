@@ -1,0 +1,254 @@
+{
+ "ciekawostki": [
+  {
+   "t": "Przepis o omłotach wciąż obowiązuje: miejsce omłotów musi mieć pojemnik z co najmniej 200 litrami wody - do gaszenia wiadrem.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p32",
+    "u": "ust. 5"
+   }
+  },
+  {
+   "t": "Gałęzie i chrust też są „materiałem palnym”. Nie wolno ich składować bliżej niż 4 m od granicy działki sąsiada.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p4",
+    "u": "ust. 1 pkt 6"
+   }
+  },
+  {
+   "t": "Smoły nie wolno rozgrzewać otwartym ogniem bliżej niż 5 m od budynku albo składowiska materiałów palnych.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p4",
+    "u": "ust. 1 pkt 4"
+   }
+  },
+  {
+   "t": "Auto można wstawić do pomieszczenia, które nie jest garażem, tylko z pustym bakiem i na stałe odłączonym akumulatorem.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p4",
+    "u": "ust. 1 pkt 3"
+   }
+  },
+  {
+   "t": "Grzejnik elektryczny postawiony wprost na drewnianej podłodze to wykroczenie - chyba że producent na to pozwala.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p4",
+    "u": "ust. 1 pkt 7"
+   }
+  },
+  {
+   "t": "Węże hydrantów wewnętrznych co 5 lat przechodzą próbę ciśnieniową. Sam przegląd hydrantu raz w roku nie wystarczy.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p3",
+    "u": "ust. 4"
+   }
+  },
+  {
+   "t": "W domu jednorodzinnym komin możesz wyczyścić sam - kwalifikacje kominiarskie są potrzebne w pozostałych budynkach.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p34",
+    "u": "ust. 4"
+   }
+  },
+  {
+   "t": "Restauracja musi czyścić przewody dymowe co miesiąc - 12 razy częściej niż przewody wentylacyjne.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p34",
+    "u": "ust. 1-2"
+   }
+  },
+  {
+   "t": "Ciecz palna według przepisów ppoż to ciecz o temperaturze zapłonu poniżej 55°C (328,15 K) - przepis podaje ją także w kelwinach.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p2",
+    "u": "ust. 1 pkt 1 lit. b"
+   }
+  },
+  {
+   "t": "W mieszkaniu możesz przechowywać do 5 litrów cieczy o temperaturze zapłonu poniżej 21°C (np. benzyny) i do 20 litrów cieczy o zapłonie 21-55°C.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p8",
+    "u": "ust. 1 pkt 1"
+   }
+  },
+  {
+   "t": "Pod kuchenkę gazową czujka czadu nie jest wymagana - przepis wprost ją wyłącza. Pod kominek już tak.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p28a",
+    "u": "ust. 3-4"
+   }
+  },
+  {
+   "t": "Droga pożarowa w mieście musi wytrzymać nacisk osi 100 kN - mniej więcej 10 ton na jedną oś wozu.",
+   "zr": {
+    "a": "rozp-woda-drogi",
+    "j": "p13",
+    "u": "ust. 2"
+   }
+  },
+  {
+   "t": "Wóz strażacki nie lubi ciasnych zakrętów: zewnętrzny promień łuku drogi pożarowej to co najmniej 11 m.",
+   "zr": {
+    "a": "rozp-woda-drogi",
+    "j": "p12",
+    "u": "ust. 11"
+   }
+  },
+  {
+   "t": "Między drogą pożarową a ścianą budynku nie może rosnąć drzewo wyższe niż 3 m, jeśli zasłania dostęp drabinie.",
+   "zr": {
+    "a": "rozp-woda-drogi",
+    "j": "p12",
+    "u": "ust. 2"
+   }
+  },
+  {
+   "t": "Szkolenie inspektora ppoż może kosztować najwyżej połowę przeciętnego wynagrodzenia z poprzedniego roku - limit jest w ustawie.",
+   "zr": {
+    "a": "ustawa-ppoz",
+    "j": "a4a",
+    "u": "ust. 9"
+   }
+  },
+  {
+   "t": "Gdy nie ma umowy najmu ani zarządu, za ochronę ppoż odpowiada ten, kto faktycznie włada budynkiem.",
+   "zr": {
+    "a": "ustawa-ppoz",
+    "j": "a4",
+    "u": "ust. 1a"
+   }
+  },
+  {
+   "t": "Szkoła musi zrobić próbną ewakuację co roku, najpóźniej 3 miesiące po przyjściu nowych uczniów. Biuro - co 2 lata.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p17",
+    "u": "ust. 1-2"
+   }
+  },
+  {
+   "t": "Od 11.01.2027 limit 35°C w miejscu pracy nie obejmuje funkcjonariuszy PSP - strażacy zostają przy ogniu.",
+   "zr": {
+    "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000927",
+    "opis": "§ 30a ust. 8 - Dz.U. 2026 poz. 927"
+   }
+  },
+  {
+   "t": "Od 5.11.2026 mobbingiem może być też zachowanie podwładnego wobec szefa.",
+   "zr": {
+    "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260001046",
+    "opis": "art. 94³ § 8 KP - Dz.U. 2026 poz. 1046"
+   }
+  },
+  {
+   "t": "Za mobbing przysługuje co najmniej 6-krotność płacy minimalnej, a pracodawca może potem dochodzić zwrotu od mobbera.",
+   "zr": {
+    "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260001046",
+    "opis": "art. 94³ § 11-12 KP - Dz.U. 2026 poz. 1046"
+   }
+  }
+ ],
+ "zarty": [
+  "Gaśnica schowana za szafą gasi tylko jedno - sumienie właściciela.",
+  "Drzwi przeciwpożarowe podparte gaśnicą: dwa urządzenia przeciwpożarowe, zero ochrony.",
+  "Przepis mówi: dostęp do gaśnicy co najmniej 1 m. Praktyka: 1 m palet przed gaśnicą.",
+  "Inspektor: „Kiedy był ostatni przegląd gaśnic?” Właściciel: „Jak ją kupiłem, była nowa”.",
+  "Próbna ewakuacja: 3 minuty wychodzenia i 40 minut szukania pana Zbyszka, który „tylko kończył maila”.",
+  "Czujka dymu bez baterii to najcichszy pracownik w firmie. I najmniej przydatny.",
+  "Kask na głowie waży 400 gramów. Kask w szafce waży cały protokół powypadkowy.",
+  "Hydrant wewnętrzny to nie wieszak na kurtki. Choć wygląda, jakby o to prosił.",
+  "Strefa zagrożenia wybuchem - jedyne miejsce, gdzie „zapalić się do pracy” to fatalny pomysł.",
+  "Instrukcja bezpieczeństwa pożarowego zamknięta w sejfie. Ekipa ratownicza na pewno doceni.",
+  "Najpopularniejsza droga ewakuacyjna w Polsce prowadzi przez magazyn kartonów.",
+  "Szkolenie okresowe BHP: jedyne spotkanie, na którym wszyscy znają odpowiedź „nie dotyczy”. Do pierwszego wypadku.",
+  "Upał 2027. „Szefie, 36 stopni.” - „To pracuj szybciej, zrobi się wiatr.” Od 11 stycznia ta odpowiedź łamie przepisy.",
+  "Pracodawca: „U nas nie ma mobbingu”. Od listopada 2026 lepiej mieć to w regulaminie, a nie tylko w głowie.",
+  "BHP-owiec widzi drabinę i myśli o trzech rzeczach: stabilności, kącie nachylenia i tym, kto ją trzyma. Reszta świata widzi drabinę."
+ ],
+ "memy": [
+  {
+   "typ": "klasyk",
+   "gora": "Drzwi przeciwpożarowe podparte gaśnicą",
+   "emoji": "🚪🧯",
+   "dol": "Dwa zabezpieczenia. Zero ochrony."
+  },
+  {
+   "typ": "drake",
+   "nie": "Przegląd gaśnic raz w roku",
+   "tak": "Gaśnica jako ozdoba recepcji od 2009 roku"
+  },
+  {
+   "typ": "nikt",
+   "linie": [
+    "Nikt:",
+    "Absolutnie nikt:",
+    "Pan Zbyszek podczas próbnej ewakuacji: „tylko dokończę maila”"
+   ],
+   "emoji": "💻🚶"
+  },
+  {
+   "typ": "klasyk",
+   "gora": "Ja po szkoleniu BHP",
+   "emoji": "😇 ➜ 🤸",
+   "dol": "Ja 5 minut później na drabinie"
+  },
+  {
+   "typ": "drake",
+   "nie": "Hydrant wewnętrzny do gaszenia",
+   "tak": "Hydrant wewnętrzny jako wieszak na kurtki"
+  },
+  {
+   "typ": "klasyk",
+   "gora": "Inspektor: „Poproszę instrukcję bezpieczeństwa pożarowego”",
+   "emoji": "📂🔍",
+   "dol": "Właściciel: „Gdzieś tu była… w 2014”"
+  },
+  {
+   "typ": "klasyk",
+   "gora": "Kask: na głowie",
+   "emoji": "⛑️ ➜ 🚗",
+   "dol": "Kask: w aucie. Też bezpieczny."
+  },
+  {
+   "typ": "klasyk",
+   "gora": "Czujka dymu o 3:00 w nocy",
+   "emoji": "🔋📢",
+   "dol": "PIIIP. (bateria. tylko bateria.)"
+  },
+  {
+   "typ": "drake",
+   "nie": "Droga ewakuacyjna wolna",
+   "tak": "Droga ewakuacyjna przez magazyn kartonów"
+  },
+  {
+   "typ": "klasyk",
+   "gora": "Upał 2027. 36°C. Szef: „Pracuj szybciej, zrobi się wiatr”",
+   "emoji": "🥵📜",
+   "dol": "§ 30a: no to porozmawiajmy"
+  },
+  {
+   "typ": "nikt",
+   "linie": [
+    "Kot: siedzi na drzewie 2 dni",
+    "Strażacy: przyjeżdżają z drabiną",
+    "Kot: schodzi sam, gdy wóz już stoi"
+   ],
+   "emoji": "🐈🌳🚒"
+  },
+  {
+   "typ": "drake",
+   "nie": "„U nas nie ma mobbingu”",
+   "tak": "„U nas nie ma mobbingu” - w regulaminie, z procedurą, od 5.11.2026"
+  }
+ ]
+}

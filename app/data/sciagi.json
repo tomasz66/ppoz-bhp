@@ -1,0 +1,569 @@
+[
+ {
+  "id": "gasnice",
+  "tytul": "Gaśnice - ile i gdzie",
+  "wiersze": [
+   [
+    "Ilość - strefy ZL I, ZL II, ZL III, ZL V",
+    "2 kg (lub 3 dm³) środka gaśniczego na każde 100 m²",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p32",
+     "u": "ust. 3 pkt 1"
+    }
+   ],
+   [
+    "Ilość - PM ponad 500 MJ/m² lub z pomieszczeniem zagrożonym wybuchem",
+    "2 kg (lub 3 dm³) na każde 100 m²",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p32",
+     "u": "ust. 3 pkt 1"
+    }
+   ],
+   [
+    "Ilość - pozostałe strefy (oprócz ZL IV)",
+    "2 kg (lub 3 dm³) na każde 300 m²",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p32",
+     "u": "ust. 3 pkt 2"
+    }
+   ],
+   [
+    "Nie dotyczy",
+    "stref chronionych stałym urządzeniem gaśniczym",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p32",
+     "u": "ust. 3 pkt 1"
+    }
+   ],
+   [
+    "Najdalej do gaśnicy",
+    "30 m z każdego miejsca, gdzie może przebywać człowiek",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p33",
+     "u": "ust. 2 pkt 1"
+    }
+   ],
+   [
+    "Dostęp do gaśnicy",
+    "co najmniej 1 m szerokości",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p33",
+     "u": "ust. 2 pkt 2"
+    }
+   ],
+   [
+    "Gdzie wieszać",
+    "przy wejściach, na klatkach schodowych, na korytarzach, przy wyjściach na zewnątrz; z dala od pieców i grzejników; na każdej kondygnacji w tych samych miejscach",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p33",
+     "u": "ust. 1"
+    }
+   ],
+   [
+    "Grupy pożarów",
+    "A - ciała stałe (żarzenie), B - ciecze i topiące się ciała stałe, C - gazy, D - metale, F - tłuszcze i oleje w kuchni",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p32",
+     "u": "ust. 2"
+    }
+   ]
+  ],
+  "skrot": "GAŚ",
+  "kolor": "#e0352b"
+ },
+ {
+  "id": "przeglady",
+  "tytul": "Przeglądy i konserwacja",
+  "wiersze": [
+   [
+    "Urządzenia przeciwpożarowe i gaśnice",
+    "w terminach producenta, nie rzadziej niż raz w roku",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p3",
+     "u": "ust. 3"
+    }
+   ],
+   [
+    "Według czego",
+    "Polskie Normy, dokumentacja techniczno-ruchowa, instrukcje producenta",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p3",
+     "u": "ust. 2"
+    }
+   ],
+   [
+    "Węże hydrantów wewnętrznych",
+    "próba ciśnieniowa raz na 5 lat",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p3",
+     "u": "ust. 4"
+    }
+   ],
+   [
+    "Autonomiczne czujki dymu i CO",
+    "nie stosuje się ust. 1-3 - montaż i konserwacja wg instrukcji producenta",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p3",
+     "u": "ust. 3a"
+    }
+   ],
+   [
+    "Obowiązek właściciela (ustawa)",
+    "zapewnić przeglądy techniczne, konserwacje i naprawy urządzeń przeciwpożarowych i gaśnic",
+    {
+     "a": "ustawa-ppoz",
+     "j": "a4",
+     "u": "ust. 1 pkt 3"
+    }
+   ]
+  ],
+  "skrot": "SERW",
+  "kolor": "#c26a00"
+ },
+ {
+  "id": "ibp",
+  "tytul": "Instrukcja bezpieczeństwa pożarowego",
+  "wiersze": [
+   [
+    "Kto musi mieć",
+    "obiekty użyteczności publicznej, zamieszkania zbiorowego, produkcyjne, magazynowe, inwentarskie (lub ich części - odrębne strefy pożarowe)",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p6",
+     "u": "ust. 1"
+    }
+   ],
+   [
+    "Co zawiera",
+    "9 elementów: warunki ochrony ppoż, wyposażenie i przeglądy, postępowanie na wypadek pożaru, prace niebezpieczne, ewakuacja i jej sprawdzanie, zapoznanie użytkowników, zadania stałych użytkowników, plany obiektu (lit. a-l), autor instrukcji",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p6",
+     "u": "ust. 1 pkt 1-9"
+    }
+   ],
+   [
+    "Aktualizacja",
+    "co najmniej raz na 2 lata oraz po zmianach użytkowania lub procesu wpływających na warunki ochrony ppoż",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p6",
+     "u": "ust. 7"
+    }
+   ],
+   [
+    "Nie jest wymagana, gdy brak strefy zagrożenia wybuchem i",
+    "kubatura brutto ≤ 1000 m³ (inwentarski ≤ 1500 m³), obiekt inny niż budynek ≤ 1000 m²",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p6",
+     "u": "ust. 8"
+    }
+   ],
+   [
+    "Gdzie trzymać",
+    "w miejscach dostępnych dla ekip ratowniczych",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p6",
+     "u": "ust. 9"
+    }
+   ],
+   [
+    "Obiekty z § 28 ust. 1 (SSP)",
+    "warunki ochrony ppoż i plany przekazuje się komendantowi powiatowemu PSP",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p6",
+     "u": "ust. 2"
+    }
+   ]
+  ],
+  "skrot": "IBP",
+  "kolor": "#8e2a1e"
+ },
+ {
+  "id": "ewakuacja",
+  "tytul": "Próbna ewakuacja",
+  "wiersze": [
+   [
+    "Obiekt dla ponad 50 stałych użytkowników (nie ZL IV)",
+    "co najmniej raz na 2 lata, z całego obiektu",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p17",
+     "u": "ust. 1"
+    }
+   ],
+   [
+    "Szkoły, przedszkola, internaty, akademiki (cyklicznie zmienia się ponad 50 osób)",
+    "co najmniej raz w roku, najpóźniej 3 miesiące od przyjścia nowych użytkowników",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p17",
+     "u": "ust. 2"
+    }
+   ],
+   [
+    "Strefa ZL II",
+    "zakres i obszar uzgodnić z komendantem powiatowym PSP",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p17",
+     "u": "ust. 3"
+    }
+   ],
+   [
+    "Powiadomienie komendanta PSP",
+    "nie później niż tydzień przed terminem",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p17",
+     "u": "ust. 4"
+    }
+   ]
+  ],
+  "skrot": "EWA",
+  "kolor": "#1f8a4c"
+ },
+ {
+  "id": "czujki",
+  "tytul": "Czujki dymu i tlenku węgla",
+  "wiersze": [
+   [
+    "Czujka dymu - min. 1 szt.",
+    "pokoje/jednostki z usługami hotelarskimi oraz lokale mieszkalne",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p28a",
+     "u": "ust. 1"
+    }
+   ],
+   [
+    "Zwolnienie",
+    "gdy chroni system sygnalizacji pożarowej lub stałe samoczynne urządzenie gaśnicze",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p28a",
+     "u": "ust. 2"
+    }
+   ],
+   [
+    "Czujka CO - min. 1 szt.",
+    "pomieszczenie ze spalaniem paliwa w lokalu mieszkalnym lub użytkowym na pobyt ludzi w strefie ZL",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p28a",
+     "u": "ust. 3"
+    }
+   ],
+   [
+    "Czujka CO niepotrzebna",
+    "zamknięta komora spalania albo kuchenka gazowa",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p28a",
+     "u": "ust. 4"
+    }
+   ],
+   [
+    "Terminy dla istniejących",
+    "usługi hotelarskie i lokale użytkowe - od 30.06.2026; lokale mieszkalne - od 1.01.2030",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p28a",
+     "u": "uwaga"
+    }
+   ]
+  ],
+  "skrot": "CZUJ",
+  "kolor": "#6b3fa0"
+ },
+ {
+  "id": "kominy",
+  "tytul": "Czyszczenie przewodów",
+  "wiersze": [
+   [
+    "Paleniska gastronomii i zbiorowego żywienia",
+    "co najmniej raz w miesiącu",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p34",
+     "u": "ust. 1 pkt 1"
+    }
+   ],
+   [
+    "Paliwo stałe (pozostałe)",
+    "co najmniej raz na 3 miesiące",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p34",
+     "u": "ust. 1 pkt 2"
+    }
+   ],
+   [
+    "Paliwo płynne i gazowe (pozostałe)",
+    "co najmniej raz na 6 miesięcy",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p34",
+     "u": "ust. 1 pkt 3"
+    }
+   ],
+   [
+    "Przewody wentylacyjne",
+    "co najmniej raz w roku",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p34",
+     "u": "ust. 2"
+    }
+   ],
+   [
+    "Kto czyści",
+    "osoby z kwalifikacjami kominiarskimi (nie dotyczy domów jednorodzinnych, zagrodowych, letniskowych)",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p34",
+     "u": "ust. 3-4"
+    }
+   ]
+  ],
+  "skrot": "KOM",
+  "kolor": "#5b6470"
+ },
+ {
+  "id": "drogi",
+  "tytul": "Drogi pożarowe",
+  "wiersze": [
+   [
+    "Szerokość",
+    "co najmniej 4 m przy budynku i 10 m od tych miejsc; gdzie indziej min. 3,5 m (miasto, działka PM) lub 3 m",
+    {
+     "a": "rozp-woda-drogi",
+     "j": "p13",
+     "u": "ust. 1-3"
+    }
+   ],
+   [
+    "Nachylenie podłużne",
+    "do 5%",
+    {
+     "a": "rozp-woda-drogi",
+     "j": "p13",
+     "u": "ust. 1"
+    }
+   ],
+   [
+    "Nacisk osi",
+    "100 kN (miasto, działka z PM z § 12 ust. 1 pkt 3-4), 50 kN gdzie indziej",
+    {
+     "a": "rozp-woda-drogi",
+     "j": "p13",
+     "u": "ust. 2-3"
+    }
+   ],
+   [
+    "Odległość od ściany",
+    "5-15 m (ZL), 5-25 m (pozostałe); między drogą a ścianą bez drzew i elementów wyższych niż 3 m",
+    {
+     "a": "rozp-woda-drogi",
+     "j": "p12",
+     "u": "ust. 2"
+    }
+   ],
+   [
+    "Dojście z wyjścia do drogi",
+    "min. 1,5 m szerokości, max 50 m długości",
+    {
+     "a": "rozp-woda-drogi",
+     "j": "p12",
+     "u": "ust. 4"
+    }
+   ],
+   [
+    "Zawracanie",
+    "przejazd bez cofania albo plac manewrowy 20 × 20 m; odcinek z cofaniem max 15 m",
+    {
+     "a": "rozp-woda-drogi",
+     "j": "p12",
+     "u": "ust. 9-10"
+    }
+   ],
+   [
+    "Łuk drogi",
+    "promień zewnętrzny co najmniej 11 m",
+    {
+     "a": "rozp-woda-drogi",
+     "j": "p12",
+     "u": "ust. 11"
+    }
+   ],
+   [
+    "Utrzymanie",
+    "właściciel lub zarządca terenu utrzymuje drogę pożarową w stanie przejezdnym",
+    {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p5",
+     "u": ""
+    }
+   ]
+  ],
+  "skrot": "DROGI",
+  "kolor": "#1e6fb8"
+ },
+ {
+  "id": "inspektor",
+  "tytul": "Inspektor ppoż - uprawnienia",
+  "wiersze": [
+   [
+    "Kto może wykonywać obowiązki z art. 4 ust. 1",
+    "wykształcenie co najmniej średnie + uprawnienia inspektora ppoż albo technik pożarnictwa",
+    {
+     "a": "ustawa-ppoz",
+     "j": "a4",
+     "u": "ust. 2b"
+    }
+   ],
+   [
+    "Szersze czynności (zapobieganie pożarom)",
+    "inżynier pożarnictwa lub odpowiedni dyplom SGSP/Akademii Pożarniczej",
+    {
+     "a": "ustawa-ppoz",
+     "j": "a4",
+     "u": "ust. 2a"
+    }
+   ],
+   [
+    "Ważność uprawnień",
+    "5 lat od wystawienia zaświadczenia",
+    {
+     "a": "ustawa-ppoz",
+     "j": "a4a",
+     "u": "ust. 1, 3"
+    }
+   ],
+   [
+    "Przedłużenie",
+    "szkolenie aktualizujące - trzeba ukończyć w okresie ważności uprawnień",
+    {
+     "a": "ustawa-ppoz",
+     "j": "a4a",
+     "u": "ust. 4"
+    }
+   ],
+   [
+    "Kto szkoli",
+    "szkoły PSP, ośrodki szkolenia PSP, instytuty badawcze PSP",
+    {
+     "a": "ustawa-ppoz",
+     "j": "a4a",
+     "u": "ust. 5"
+    }
+   ],
+   [
+    "Opłata",
+    "do 50% przeciętnego wynagrodzenia z poprzedniego roku",
+    {
+     "a": "ustawa-ppoz",
+     "j": "a4a",
+     "u": "ust. 9"
+    }
+   ]
+  ],
+  "skrot": "INSP",
+  "kolor": "#b8860b"
+ },
+ {
+  "id": "obowiazki",
+  "tytul": "Obowiązki właściciela obiektu",
+  "wiersze": [
+   [
+    "1",
+    "przestrzegać wymagań techniczno-budowlanych, instalacyjnych i technologicznych",
+    {
+     "a": "ustawa-ppoz",
+     "j": "a4",
+     "u": "ust. 1 pkt 1"
+    }
+   ],
+   [
+    "2",
+    "wyposażyć w wymagane urządzenia przeciwpożarowe i gaśnice",
+    {
+     "a": "ustawa-ppoz",
+     "j": "a4",
+     "u": "ust. 1 pkt 2"
+    }
+   ],
+   [
+    "3",
+    "zapewnić przeglądy, konserwacje i naprawy",
+    {
+     "a": "ustawa-ppoz",
+     "j": "a4",
+     "u": "ust. 1 pkt 3"
+    }
+   ],
+   [
+    "4",
+    "zapewnić bezpieczeństwo i możliwość ewakuacji",
+    {
+     "a": "ustawa-ppoz",
+     "j": "a4",
+     "u": "ust. 1 pkt 4"
+    }
+   ],
+   [
+    "5",
+    "przygotować obiekt do akcji ratowniczej",
+    {
+     "a": "ustawa-ppoz",
+     "j": "a4",
+     "u": "ust. 1 pkt 5"
+    }
+   ],
+   [
+    "6",
+    "zapoznać pracowników z przepisami przeciwpożarowymi",
+    {
+     "a": "ustawa-ppoz",
+     "j": "a4",
+     "u": "ust. 1 pkt 6"
+    }
+   ],
+   [
+    "7",
+    "ustalić sposoby postępowania na wypadek pożaru i innych zagrożeń",
+    {
+     "a": "ustawa-ppoz",
+     "j": "a4",
+     "u": "ust. 1 pkt 7"
+    }
+   ],
+   [
+    "Kto odpowiada",
+    "właściciel; zarządca lub użytkownik - jeśli przejął to umową; bez umowy - faktycznie władający",
+    {
+     "a": "ustawa-ppoz",
+     "j": "a4",
+     "u": "ust. 1a"
+    }
+   ]
+  ],
+  "skrot": "OBOW",
+  "kolor": "#7a2a2a"
+ }
+]

@@ -1,0 +1,787 @@
+[
+ {
+  "id": "§1",
+  "etykieta": "§ 1",
+  "rozdzial": "Rozdział 1 Przepisy ogólne",
+  "linie": [
+   {
+    "p": 2,
+    "t": "Rozporządzenie określa wymagania w zakresie:"
+   },
+   {
+    "p": 3,
+    "t": "1) przeciwpożarowego zaopatrzenia w wodę;"
+   },
+   {
+    "p": 3,
+    "t": "2) dróg pożarowych."
+   }
+  ]
+ },
+ {
+  "id": "§2",
+  "etykieta": "§ 2",
+  "rozdzial": "Rozdział 1 Przepisy ogólne",
+  "linie": [
+   {
+    "p": 2,
+    "t": "1. Ilekroć w rozporządzeniu jest mowa o:"
+   },
+   {
+    "p": 3,
+    "t": "1) budynkach – należy rozumieć przez to budynki, o których mowa w § 3 pkt 4–6,"
+   },
+   {
+    "p": 3,
+    "t": "2) kategorii zagrożenia ludzi – należy rozumieć przez to kategorie, o których mowa w § 209 ust. 2,"
+   },
+   {
+    "p": 3,
+    "t": "3) strefach pożarowych – należy rozumieć przez to określenia zawarte w § 226 ust. 1 i 2,"
+   },
+   {
+    "p": 3,
+    "t": "4) kondygnacji – należy rozumieć przez to określenia zawarte w § 3 pkt 16 i 17,"
+   },
+   {
+    "p": 3,
+    "t": "5) grupach wysokości – należy rozumieć przez to określenia zawarte w § 8"
+   },
+   {
+    "p": 5,
+    "t": "– rozporządzenia Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz. U. Nr 75, poz. 690, późn. zm.3))."
+   },
+   {
+    "p": 2,
+    "t": "2. Ilekroć w rozporządzeniu jest mowa o obiekcie budowlanym, należy rozumieć przez to obiekt budowlany, o którym mowa w art. 3 pkt 1 ustawy z dnia 7 lipca 1994 r. – Prawo budowlane (Dz. U. z 2006 r. Nr 156, poz. 1118, z późn. zm.4))."
+   },
+   {
+    "p": 2,
+    "t": "3. Ilekroć w rozporządzeniu użyte są określenia dotyczące:"
+   },
+   {
+    "p": 3,
+    "t": "1) jednostki osadniczej – należy rozumieć przez to określenie zawarte w art. 2 pkt 1,"
+   },
+   {
+    "p": 3,
+    "t": "2) zabudowy kolonijnej (kolonii) – należy rozumieć przez to określenie zawarte w art. 2 pkt 2"
+   },
+   {
+    "p": 5,
+    "t": "– ustawy z dnia 29 sierpnia 2003 r. o urzędowych nazwach miejscowości i obiektów fizjograficznych (Dz. U. Nr 166, poz. 1612 oraz z 2005 r. Nr 17, poz. 141). przeciwpożarowego zaopatrzenia w wodę do zewnętrznego gaszenia pożaru"
+   }
+  ]
+ },
+ {
+  "id": "§3",
+  "etykieta": "§ 3",
+  "rozdzial": "Rozdział 2 Rodzaje obiektów wymagających zapewnienia",
+  "linie": [
+   {
+    "p": 2,
+    "t": "1. Zapewnienie przeciwpożarowego zaopatrzenia w wodę do zewnętrznego gaszenia pożaru jest wymagane dla:"
+   },
+   {
+    "p": 3,
+    "t": "1) jednostek osadniczych o liczbie mieszkańców przekraczającej 100 osób, niestanowiących zabudowy kolonijnej, a także znajdujących się w ich granicach: budynków użyteczności publicznej i zamieszkania zbiorowego oraz obiektów budowlanych produkcyjnych i magazynowych;"
+   },
+   {
+    "p": 3,
+    "t": "2) budynków użyteczności publicznej i zamieszkania zbiorowego oraz obiektów budowlanych produkcyjnych i magazynowych, znajdujących się poza granicami jednostek osadniczych wymienionych w pkt 1, o kubaturze brutto przekraczającej 2 500 m3 lub o powierzchni przekraczającej 500 m2, z wyjątkiem stacji paliw płynnych ze zbiornikami o łącznej pojemności do 200 m3 i stacji gazu płynnego;"
+   },
+   {
+    "p": 3,
+    "t": "3) obiektów budowlanych niebędących budynkami, przeznaczonych na potrzeby użyteczności publicznej lub do zamieszkania zbiorowego, w których znajduje się strefa pożarowa o powierzchni przekraczającej 1 000 m2 lub przeznaczona do jednoczesnego przebywania ponad 50 osób;"
+   },
+   {
+    "p": 3,
+    "t": "4) obiekty budowlane gospodarki rolnej o powierzchni strefy pożarowej przekraczającej 1 000 m2."
+   },
+   {
+    "p": 2,
+    "t": "2. Dla pozostałych obiektów budowlanych woda do celów przeciwpożarowych do zewnętrznego gaszenia pożaru jest zapewniana w ramach ilości wody przewidywanych dla jednostek osadniczych, nie mniejszej jednak niż 10 dm3/s, z zastrzeżeniem ust. 3."
+   },
+   {
+    "p": 2,
+    "t": "3. W przypadku jednostki osadniczej o liczbie mieszkańców do 2 000 wymagana ilość wody do celów przeciwpożarowych do zewnętrznego gaszenia pożaru dla pozostałych obiektów budowlanych powinna wynosić co najmniej 5 dm3/s. do celów przeciwpożarowych"
+   }
+  ]
+ },
+ {
+  "id": "§4",
+  "etykieta": "§ 4",
+  "rozdzial": "Rozdział 3 Sposoby określania wymaganej ilości wody",
+  "linie": [
+   {
+    "p": 2,
+    "t": "1. Wymagana ilość wody do celów przeciwpożarowych dla jednostek osadniczych jest określona w tabeli nr 1 załącznika do rozporządzenia."
+   },
+   {
+    "p": 2,
+    "t": "2. Wymagana ilość wody do celów przeciwpożarowych może być określona odrębnie dla dzielnicy i osiedla w jednostce osadniczej, pod warunkiem oddzielenia ich od innych dzielnic i osiedli pasami niezabudowanego terenu o szerokości co najmniej 100 m, na których dopuszcza się drzewostan liściasty lub mieszany składający się co najmniej w 50 % z drzew liściastych."
+   },
+   {
+    "p": 2,
+    "t": "3. Woda do celów przeciwpożarowych dla obiektów, o których mowa w § 3, powinna być dostępna w szczególności z urządzeń zaopatrujących w wodę ludność, zgodnie z regulaminem dostarczania wody i odprowadzania ścieków, o którym mowa w art. 19 ust. 1 ustawy z dnia 7 czerwca 2001 r. o zbiorowym zaopatrzeniu w wodę i zbiorowym odprowadzaniu ścieków (Dz. U. z 2006 r. Nr 123, poz. 858, z 2007 r. Nr 147, poz. 1033 oraz z 2009 r. Nr 18, poz. 97)."
+   },
+   {
+    "p": 2,
+    "t": "4. Wodę do celów przeciwpożarowych w wymaganej ilości określonej w sposób, o którym mowa w ust. 1 i 2, powinna zapewniać sieć wodociągowa doprowadzająca wodę do jednostki osadniczej."
+   },
+   {
+    "p": 2,
+    "t": "5. W przypadku gdy w jednostce osadniczej zasoby wody przeznaczonej dla ludności dostarczanej wodociągiem nie zapewniają ilości wymaganych do celów przeciwpożarowych, wykonuje się, w odległości nie większej niż 250 m od skrajnej zabudowy jednostki osadniczej lub chronionego obiektu budowlanego, co najmniej jedno z następujących uzupełniających źródeł wody:"
+   },
+   {
+    "p": 3,
+    "t": "1) studnię o wydajności nie mniejszej niż 10 dm3/s;"
+   },
+   {
+    "p": 3,
+    "t": "2) punkt czerpania wody przy naturalnym lub sztucznym zbiorniku wodnym o pojemności zapewniającej odpowiedni zapas wody albo na cieku wodnym o stałym przepływie wody nie mniejszym niż 20 dm3/s przy najniższym stanie wód;"
+   },
+   {
+    "p": 3,
+    "t": "3) przeciwpożarowy zbiornik wodny spełniający wymagania Polskiej Normy."
+   },
+   {
+    "p": 2,
+    "t": "6. Uzupełniające źródło wody, o którym mowa w ust. 5 pkt 1 i 2, powinno umożliwiać pobieranie wody z głębokości nie większej niż 4 m, licząc między lustrem wody a poziomem stanowiska czerpania wody, i być wyposażone w:"
+   },
+   {
+    "p": 3,
+    "t": "1) studzienkę ssawną lub inne urządzenie umożliwiające pobór wody, zabezpieczone przed zamuleniem i zamarzaniem;"
+   },
+   {
+    "p": 3,
+    "t": "2) stanowisko czerpania wody wraz z dojazdem."
+   },
+   {
+    "p": 2,
+    "t": "7. Uzupełniające źródła wody, o których mowa w ust. 5, powinny być zabezpieczone przed przypadkowym wpadnięciem do nich ludzi lub zwierząt."
+   }
+  ]
+ },
+ {
+  "id": "§5",
+  "etykieta": "§ 5",
+  "rozdzial": "Rozdział 3 Sposoby określania wymaganej ilości wody",
+  "linie": [
+   {
+    "p": 2,
+    "t": "1. Wymagana ilość wody do celów przeciwpożarowych do zewnętrznego gaszenia pożaru dla budynków użyteczności publicznej i zamieszkania zbiorowego oraz innych obiektów budowlanych o takim przeznaczeniu, służąca do zewnętrznego gaszenia pożaru, wynosi:"
+   },
+   {
+    "p": 3,
+    "t": "1) dla budynku o kubaturze brutto do 5 000 m3 i o powierzchni wewnętrznej do 1 000 m2 – 10 dm3/s z co najmniej jednego hydrantu o średnicy 80 mm lub 100 m3 zapasu wody w przeciwpożarowym zbiorniku wodnym;"
+   },
+   {
+    "p": 3,
+    "t": "2) dla budynków niewymienionych w pkt 1 – 20 dm3/s łącznie z co najmniej dwóch hydrantów o średnicy 80 mm lub 200 m3 zapasu wody w przeciwpożarowym zbiorniku wodnym;"
+   },
+   {
+    "p": 3,
+    "t": "3) dla obiektów wymienionych w § 3 ust. 1 pkt 3 – 10 dm3/s z co najmniej jednego hydrantu o średnicy 80 mm lub 100 m3 zapasu wody w przeciwpożarowym zbiorniku wodnym."
+   },
+   {
+    "p": 2,
+    "t": "2. W przypadku braku wymaganej ilości wody, o której mowa w ust. 1, dopuszcza się jej uzupełnienie ze źródeł, o których mowa w § 4 ust. 5, przy czym w przypadku przeciwpożarowego zbiornika wodnego jego pojemność powinna wynosić 10 m3 zapasu wody na 1 dm3/s brakującej wydajności wodociągu, jednak nie mniej niż 50 m3."
+   },
+   {
+    "p": 2,
+    "t": "3. W przypadku gdy w budynku użyteczności publicznej lub zamieszkania zbiorowego bądź w innych obiektach budowlanych o takim przeznaczeniu w jednej strefie pożarowej znajdują się również pomieszczenia magazynowe, wymaganą ilość wody do celów przeciwpożarowych do zewnętrznego gaszenia pożaru dla takiego budynku lub obiektu budowlanego określa się zgodnie z zasadami wskazanymi w ust. 1 i 2, z uwzględnieniem wymaganej ilości wody dla pomieszczeń magazynowych ustalonej zgodnie z zasadami określonymi w § 6 ust. 3, z zastrzeżeniem, że dla tych ustaleń zamiast powierzchni strefy pożarowej przyjmuje się łączną powierzchnię pomieszczeń magazynowych, przyjmując dla całego budynku lub obiektu budowlanego wyższe z wymagań."
+   }
+  ]
+ },
+ {
+  "id": "§6",
+  "etykieta": "§ 6",
+  "rozdzial": "Rozdział 3 Sposoby określania wymaganej ilości wody",
+  "linie": [
+   {
+    "p": 2,
+    "t": "1. Wodę dla obiektów budowlanych produkcyjnych i magazynowych, w ilości wymaganej do celów przeciwpożarowych do zewnętrznego gaszenia pożaru, należy zapewnić z urządzeń dostarczających ją do celów bytowo-gospodarczych i technologicznych lub z innych zasobów wody służących do tego celu."
+   },
+   {
+    "p": 2,
+    "t": "2. W przypadku gdy w obiektach budowlanych produkcyjnych i magazynowych urządzenia i zasoby wody, o których mowa w ust. 1, nie zapewniają wymaganej ilości do celów przeciwpożarowych do zewnętrznego gaszenia pożaru, wykorzystuje się urządzenia służące do dostarczania wody do jednostek osadniczych lub uzupełniające źródła wody, o których mowa w § 4 ust. 5."
+   },
+   {
+    "p": 2,
+    "t": "3. Wymaganą ilość wody do celów przeciwpożarowych dla obiektów budowlanych produkcyjnych i magazynowych, z wyjątkiem wymienionych w ust. 4–8, służącą do zewnętrznego gaszenia pożaru, określa się, biorąc pod uwagę tę strefę pożarową, dla której jest ona największa, zgodnie z tabelą nr 2 załącznika do rozporządzenia."
+   },
+   {
+    "p": 2,
+    "t": "4. Wymagana ilość wody do celów przeciwpożarowych do zewnętrznego gaszenia pożaru dla stacji paliw i stacji gazu płynnego oraz stacji gazu ziemnego wynosi 10 dm3/s."
+   },
+   {
+    "p": 2,
+    "t": "5. Wymaganą ilość wody do celów przeciwpożarowych do zewnętrznego gaszenia pożaru dla zbiorników z gazami palnymi oraz z cieczami o temperaturze zapłonu do 373,15 K (100 °C) niebędącymi produktami naftowymi oraz dla zbiorników z produktami naftowymi o temperaturze zapłonu od 328,15 K (55 °C) do 373,15 K (100 °C), z wyjątkiem podgrzanych powyżej temperatury zapłonu, służącą do zewnętrznego gaszenia pożaru, określa tabela nr 3 załącznika do rozporządzenia."
+   },
+   {
+    "p": 2,
+    "t": "6. Wymaganą ilość wody do celów przeciwpożarowych do zewnętrznego gaszenia pożaru dla zbiorników z produktami naftowymi, z wyjątkiem występujących na stacjach paliw i stacjach gazu płynnego oraz wymienionych w ust. 5, określa się zgodnie z przepisami rozporządzenia Ministra Gospodarki z dnia 21 listopada 2005 r. w sprawie warunków technicznych, jakim powinny odpowiadać bazy i stacje paliw płynnych, rurociągi przesyłowe dalekosiężne służące do transportu ropy naftowej i produktów naftowych i ich usytuowanie (Dz. U. Nr 243, poz. 2063 oraz z 2007 r. Nr 240, poz. 1753)."
+   },
+   {
+    "p": 2,
+    "t": "7. Wymaganą ilość wody do celów przeciwpożarowych do zewnętrznego gaszenia pożaru dla urządzeń technologicznych oraz składów i magazynów z gazami palnymi i cieczami o temperaturze zapłonu do 373,15 K (100 °C), zlokalizowanych poza budynkami, określa tabela nr 4 załącznika do rozporządzenia."
+   },
+   {
+    "p": 2,
+    "t": "8. Wymagana ilość wody do celów przeciwpożarowych do zewnętrznego gaszenia pożaru dla silosów, komór i zasobników ze stałymi sypkimi materiałami palnymi oraz dla zbiorników z cieczami palnymi o temperaturze zapłonu powyżej 373,15 K (100 °C) wynosi 10 dm3/s."
+   },
+   {
+    "p": 2,
+    "t": "9. Wymaganą ilość wody do celów przeciwpożarowych do zewnętrznego gaszenia pożaru dla obiektów budowlanych gospodarki rolnej należy zapewnić w następujących ilościach:"
+   },
+   {
+    "p": 3,
+    "t": "1) dla obiektów o powierzchni strefy pożarowej do 2 000 m2 – co najmniej 10 dm3/s;"
+   },
+   {
+    "p": 3,
+    "t": "2) dla obiektów o powierzchni strefy pożarowej przekraczającej 2 000 m2 – co najmniej 15 dm3/s."
+   },
+   {
+    "p": 2,
+    "t": "10. W przypadku gdy wydajność wodociągu stanowiącego źródło wody do celów przeciwpożarowych nie zapewnia ilości określonej w ust. 3–5 i 7–9, należy zapewnić uzupełniający zapas wody w zbiornikach przeciwpożarowych, technologicznych lub naturalnych, przystosowanych do poboru wody przez pompy pożarnicze:"
+   },
+   {
+    "p": 3,
+    "t": "1) dla obiektów budowlanych produkcyjnych i magazynowych wymienionych w ust. 3, w ilości równej iloczynowi brakującej wydajności wodociągu przez czas trwania pożaru przewidziany dla rozpatrywanej strefy pożarowej, ustalony w Polskiej Normie dotyczącej obliczania gęstości obciążenia ogniowego oraz wyznaczania względnego czasu trwania pożaru, jednak nie większy niż 4 godziny;"
+   },
+   {
+    "p": 3,
+    "t": "2) dla obiektów budowlanych wymienionych w ust. 4, 5 i 7–9, w ilości odpowiadającej 10 m3 zapasu wody na 1 dm3/s brakującej wydajności wodociągu."
+   },
+   {
+    "p": 2,
+    "t": "11. W przypadku braku wymaganej ilości wody, o której mowa w ust. 3–5 i 7–9, dopuszcza się jej uzupełnienie ze studni lub z cieku wodnego, o których mowa w § 4 ust. 5 pkt 1 i 2."
+   }
+  ]
+ },
+ {
+  "id": "§7",
+  "etykieta": "§ 7",
+  "rozdzial": "Rozdział 3 Sposoby określania wymaganej ilości wody",
+  "linie": [
+   {
+    "p": 2,
+    "t": "1. Wymagana ilość wody do celów przeciwpożarowych dla stref pożarowych wyposażonych w stałe urządzenia gaśnicze i zabezpieczające zarówno przy wspólnym, jak i oddzielnym wykorzystywaniu wodociągu lub zapasu wody do zasilania tych urządzeń i zewnętrznego gaszenia pożaru, w obiektach budowlanych, o których mowa w § 5 ust. 1 i 3 oraz w § 6 ust. 3, 5 i 7, jest równa:"
+   },
+   {
+    "p": 3,
+    "t": "1) przy zastosowaniu urządzeń zraszaczowych zabezpieczających – sumie ilości wody do zasilania tych urządzeń i do zewnętrznego gaszenia pożaru;"
+   },
+   {
+    "p": 3,
+    "t": "2) przy zastosowaniu urządzeń gaśniczych tryskaczowych, zraszaczowych i mgłowych oraz sieci stałych działek gaśniczych – sumie ilości wody do zasilania tych urządzeń i zmniejszonej o 50 % ilości wody do zewnętrznego gaszenia pożaru, z tym że wymagana ilość wody powinna być nie mniejsza niż ilość wody do zewnętrznego gaszenia pożaru;"
+   },
+   {
+    "p": 3,
+    "t": "3) przy zastosowaniu urządzeń gaśniczych pianowych – sumie ilości wody do zasilania tych urządzeń i zmniejszonej o 75 % ilości wody do zewnętrznego gaszenia pożaru, z tym że wymagana ilość wody powinna być nie mniejsza niż ilość wody do zewnętrznego gaszenia pożaru."
+   },
+   {
+    "p": 2,
+    "t": "2. Wodociąg, który służy nie tylko do celów przeciwpożarowych, powinien mieć wydajność zapewniającą łącznie wymaganą ilość wody dla potrzeb:"
+   },
+   {
+    "p": 3,
+    "t": "1) przeciwpożarowych;"
+   },
+   {
+    "p": 3,
+    "t": "2) bytowo-gospodarczych, ograniczonych do 15 %;"
+   },
+   {
+    "p": 3,
+    "t": "3) przemysłowych, ograniczonych do niezbędnej obsługi urządzeń technologicznych."
+   }
+  ]
+ },
+ {
+  "id": "§8",
+  "etykieta": "§ 8",
+  "rozdzial": "Rozdział 3 Sposoby określania wymaganej ilości wody",
+  "linie": [
+   {
+    "p": 2,
+    "t": "1. W przypadku braku źródła wody zapewniającego wymaganą ilość wody do celów przeciwpożarowych, właściwy miejscowo komendant powiatowy (miejski) Państwowej Straży Pożarnej na wniosek właściciela budynku, obiektu budowlanego lub terenu, może dopuścić na czas określony zastępcze źródło wody do celów przeciwpożarowych, w szczególności naturalny lub sztuczny zbiornik wody, studnię lub ciek wodny, wyposażone w stanowisko czerpania wody wraz z dojazdem."
+   },
+   {
+    "p": 2,
+    "t": "2. Zastępcze źródło wody, o którym mowa w ust. 1, powinno zapewniać możliwość prowadzenia działań gaśniczych z użyciem sił i środków dostępnych w rejonie działania najbliższej jednostki ochrony przeciwpożarowej."
+   },
+   {
+    "p": 2,
+    "t": "3. W szczególnie uzasadnionych przypadkach, gdy spełnienie wymagań dotyczących przeciwpożarowego zaopatrzenia w wodę jest niemożliwe ze względu na lokalne uwarunkowania lub jest uzasadnione przyjęcie innych rozwiązań, na wniosek właściciela budynku, obiektu budowlanego lub terenu, dopuszcza się stosowanie rozwiązań zamiennych, które zapewniają niepogorszenie warunków ochrony przeciwpożarowej, uzgodnionych z właściwym miejscowo komendantem wojewódzkim Państwowej Straży Pożarnej."
+   },
+   {
+    "p": 2,
+    "t": "4. Wymagania dotyczące projektowania i budowy sieci wodociągowych, przeciwpożarowych zbiorników wodnych wraz ze stanowiskami czerpania wody oraz dojazdami do nich określają odpowiednie Polskie Normy. wodociągowych"
+   }
+  ]
+ },
+ {
+  "id": "§9",
+  "etykieta": "§ 9",
+  "rozdzial": "Rozdział 4 Wymagania przeciwpożarowe dla sieci",
+  "linie": [
+   {
+    "p": 2,
+    "t": "1. Sieć wodociągowa stanowiąca źródło wody do celów przeciwpożarowych, zwana dalej „siecią wodociągową przeciwpożarową”, powinna być zasilana z pompowni przeciwpożarowej, zbiornika wieżowego, studni lub innych urządzeń, zapewniających wymaganą wydajność i ciśnienie w hydrantach zewnętrznych, nawet tych niekorzystnie ulokowanych, przez co najmniej 2 godziny."
+   },
+   {
+    "p": 2,
+    "t": "2. Sieć wodociągowa przeciwpożarowa powinna zapewniać wydajność nie mniejszą niż 5 dm3/s i ciśnienie w hydrancie zewnętrznym nie mniejsze niż 0,1 MPa (megapaskala), przez co najmniej 2 godziny."
+   },
+   {
+    "p": 2,
+    "t": "3. Sieć wodociągową przeciwpożarową należy wykonywać jako sieć obwodową. Dopuszcza się budowę sieci wodociągowej przeciwpożarowej rozgałęzieniowej poza obszarami miejskimi oraz tam, gdzie łączna wymagana ilość wody nie przekracza 20 dm3/s."
+   },
+   {
+    "p": 2,
+    "t": "4. Dopuszcza się budowę odgałęzień z sieci obwodowej w celu zasilania hydrantów zewnętrznych."
+   },
+   {
+    "p": 2,
+    "t": "5. W przypadku gdy łączna wymagana ilość wody przekracza 30 dm3/s, sieć obwodową zasila się w dwóch punktach znajdujących się w możliwie największej odległości od siebie, nie mniejszej jednak niż 1/4 obwodu sieci."
+   },
+   {
+    "p": 2,
+    "t": "6. Sieć wodociągową przeciwpożarową, dla której łączna wymagana ilość wody przekracza 20 dm3/s, należy tak zaprojektować i budować, aby możliwe było jednoczesne pobieranie wody z dwóch sąsiednich hydrantów zewnętrznych."
+   },
+   {
+    "p": 2,
+    "t": "7. Wyrażone w milimetrach średnice nominalne (DN) przewodów wodociągowych wykonanych z rur stalowych, na których przewiduje się instalowanie hydrantów zewnętrznych przeciwpożarowych, powinny wynosić co najmniej:"
+   },
+   {
+    "p": 3,
+    "t": "1) DN 100 – w sieci obwodowej;"
+   },
+   {
+    "p": 3,
+    "t": "2) DN 125 – w sieci rozgałęzieniowej;"
+   },
+   {
+    "p": 3,
+    "t": "3) w odgałęzieniach sieci obwodowej – według obliczeń hydraulicznych;"
+   },
+   {
+    "p": 3,
+    "t": "4) DN 80 – przy rozbudowie lub modernizacji istniejącego wodociągu o wydajności 5 dm3/s w jednostce osadniczej o liczbie mieszkańców nieprzekraczającej 2 000."
+   },
+   {
+    "p": 2,
+    "t": "8. W przypadku wykonywania przewodów wodociągowych z materiałów innych niż stalowe powinny one posiadać średnice wewnętrzne równoważne dla odpowiednich rur stalowych."
+   }
+  ]
+ },
+ {
+  "id": "§10",
+  "etykieta": "§ 10",
+  "rozdzial": "Rozdział 4 Wymagania przeciwpożarowe dla sieci",
+  "linie": [
+   {
+    "p": 2,
+    "t": "1. Na sieci wodociągowej przeciwpożarowej stosuje się hydranty zewnętrzne nadziemne o średnicy nominalnej DN 80."
+   },
+   {
+    "p": 2,
+    "t": "2. Dopuszcza się instalowanie hydrantów podziemnych o średnicy nominalnej DN 80 w przypadkach, gdy zainstalowanie hydrantów nadziemnych jest szczególnie utrudnione lub niewskazane, na przykład ze względu na utrudnienia w ruchu."
+   },
+   {
+    "p": 2,
+    "t": "3. W obiekcie budowlanym produkcyjnym i magazynowym, w którym wymagana ilość wody do celów przeciwpożarowych do zewnętrznego gaszenia pożaru przekracza 30 dm3/s, w zakładach rafineryjnych i petrochemicznych oraz na magistralnym przewodzie wodociągowym przeciwpożarowym należy instalować hydranty nadziemne o średnicy nominalnej DN 100."
+   },
+   {
+    "p": 2,
+    "t": "4. Hydranty zewnętrzne zainstalowane na sieci wodociągowej przeciwpożarowej powinny być wyposażone w odcięcia umożliwiające odłączania ich od sieci. Odcięcia te muszą pozostawać w położeniu otwartym podczas normalnej eksploatacji sieci."
+   },
+   {
+    "p": 2,
+    "t": "5. Hydranty zewnętrzne powinny spełniać wymagania Polskich Norm dotyczących tych urządzeń, będących odpowiednikami norm europejskich (EN)."
+   },
+   {
+    "p": 2,
+    "t": "6. Hydranty zewnętrzne umieszcza się wzdłuż dróg i ulic oraz przy ich skrzyżowaniach, przy zachowaniu odległości:"
+   },
+   {
+    "p": 3,
+    "t": "1) między hydrantami – do 150 m;"
+   },
+   {
+    "p": 3,
+    "t": "2) od zewnętrznej krawędzi jezdni drogi lub ulicy – do 15 m;"
+   },
+   {
+    "p": 3,
+    "t": "3) najbliższego hydrantu od chronionego obiektu budowlanego – do 75 m;"
+   },
+   {
+    "p": 3,
+    "t": "4) innych niż wymienione w pkt 3 hydrantów wymaganych do ochrony obiektu budowlanego – do 150 m;"
+   },
+   {
+    "p": 3,
+    "t": "5) od ściany chronionego budynku – co najmniej 5 m."
+   },
+   {
+    "p": 2,
+    "t": "7. Poza obszarami miejskimi odległość między hydrantami powinna być dostosowana do gęstości istniejącej i planowanej zabudowy."
+   },
+   {
+    "p": 2,
+    "t": "8. Wydajność nominalna hydrantu zewnętrznego, przy ciśnieniu nominalnym 0,2 MPa mierzonym na zaworze hydrantowym podczas poboru wody, w zależności od jego średnicy nominalnej (DN), nie może być mniejsza niż:"
+   },
+   {
+    "p": 3,
+    "t": "1) dla hydrantu nadziemnego DN 80 – 10 dm3/s;"
+   },
+   {
+    "p": 3,
+    "t": "2) dla hydrantu nadziemnego DN 100 – 15 dm3/s;"
+   },
+   {
+    "p": 3,
+    "t": "3) dla hydrantu podziemnego DN 80 – 10 dm3/s;"
+   },
+   {
+    "p": 3,
+    "t": "4) dla hydrantu nadziemnego DN 80 na sieci, o której mowa w § 9 ust. 2 – 5 dm3/s."
+   },
+   {
+    "p": 2,
+    "t": "9. Dla zapewnienia możliwości intensywnego czerpania wody do celów przeciwpożarowych na sieciach wodociągowych o średnicy nominalnej nie mniejszej niż DN 250 powinny być instalowane hydranty nadziemne, spełniające następujące wymagania:"
+   },
+   {
+    "p": 3,
+    "t": "1) średnica nominalna hydrantu powinna wynosić DN 100 lub DN 150;"
+   },
+   {
+    "p": 3,
+    "t": "2) wydajność nominalna przy ciśnieniu nominalnym 0,2 MPa mierzonym na zaworze hydrantowym podczas poboru wody nie może być mniejsza niż 20 dm3/s;"
+   },
+   {
+    "p": 3,
+    "t": "3) hydranty powinny być usytuowane w miejscach dostępnych z głównych dróg komunikacyjnych na terenie jednostki osadniczej;"
+   },
+   {
+    "p": 3,
+    "t": "4) miejsce usytuowania hydrantu należy oznakować znakami zgodnymi z Polskimi Normami wraz z podaniem na znaku dodatkowym wielkości charakterystycznych hydrantu;"
+   },
+   {
+    "p": 3,
+    "t": "5) przy hydrancie należy przewidzieć stanowisko czerpania wody o wymiarach zapewniających swobodny dostęp do hydrantu;"
+   },
+   {
+    "p": 3,
+    "t": "6) na stanowisku czerpania wody należy umieścić zakaz parkowania."
+   },
+   {
+    "p": 2,
+    "t": "10. Określenia potrzeb w zakresie instalowania hydrantów, o których mowa w ust. 9, dokonują właściwe miejscowo organy Państwowej Straży Pożarnej w ramach opiniowania projektów studium uwarunkowań i kierunków zagospodarowania przestrzennego gminy oraz projektów miejscowych planów zagospodarowania przestrzennego, w trybie określonym w przepisach o planowaniu i zagospodarowaniu przestrzennym."
+   },
+   {
+    "p": 2,
+    "t": "11. Maksymalne ciśnienie hydrostatyczne w sieci wodociągowej przeciwpożarowej nie może przekraczać 1,6 MPa."
+   },
+   {
+    "p": 2,
+    "t": "12. Miejsce usytuowania hydrantu zewnętrznego należy oznakować znakami zgodnymi z Polskimi Normami."
+   },
+   {
+    "p": 2,
+    "t": "13. Hydranty zewnętrzne powinny być co najmniej raz w roku poddawane przeglądom i konserwacji przez właściciela sieci wodociągowej przeciwpożarowej."
+   }
+  ]
+ },
+ {
+  "id": "§11",
+  "etykieta": "§ 11",
+  "rozdzial": "Rozdział 5 Pompownie przeciwpożarowe",
+  "linie": [
+   {
+    "p": 2,
+    "t": "1. Podstawowym źródłem energii dla pomp w pompowniach przeciwpożarowych powinna być sieć elektroenergetyczna lub silnik spalinowy z zapasem paliwa wystarczającym na 4 godziny pracy przy pełnym obciążeniu."
+   },
+   {
+    "p": 2,
+    "t": "2. Przy zapotrzebowaniu na wodę do celów przeciwpożarowych przekraczającym 20 dm3/s:"
+   },
+   {
+    "p": 3,
+    "t": "1) pompy należy zasilać z dwóch odrębnych źródeł energii, podstawowego i rezerwowego, przy czym jako źródło rezerwowe dopuszcza się agregat prądotwórczy napędzany silnikiem, o którym mowa w ust. 1;"
+   },
+   {
+    "p": 3,
+    "t": "2) w przypadku pracy pomp w systemie ciągłego podawania wody, w pompowni należy zapewnić co najmniej dwie pompy, w tym jedną rezerwową o parametrach nie niższych od parametrów największej z zainstalowanych pomp."
+   },
+   {
+    "p": 2,
+    "t": "3. Pompy powinny zapewniać wymagane ciśnienie przy największym poborze wody w hydrantach położonych najwyżej lub najbardziej niekorzystnie."
+   },
+   {
+    "p": 2,
+    "t": "4. Pompy powinny być wyposażone w układ pomiarowy składający się z ciśnieniomierza, przepływomierza i zaworu regulacyjnego, pozwalający na okresową kontrolę parametrów pracy."
+   },
+   {
+    "p": 2,
+    "t": "5. Napęd pomp w pompowniach przeciwpożarowych powinien spełniać wymagania określone w Polskiej Normie dotyczącej urządzeń tryskaczowych."
+   },
+   {
+    "p": 2,
+    "t": "6. Pompy zasila się z sieci elektroenergetycznej z obwodu niezależnego od wszystkich innych obwodów w obiekcie, spełniającego wymagania dla instalacji bezpieczeństwa, określone w Polskiej Normie dotyczącej instalacji elektrycznych w obiektach budowlanych."
+   }
+  ]
+ },
+ {
+  "id": "§12",
+  "etykieta": "§ 12",
+  "rozdzial": "Rozdział 6 Drogi pożarowe",
+  "linie": [
+   {
+    "p": 2,
+    "t": "1. Drogę pożarową o utwardzonej nawierzchni, umożliwiającą dojazd pojazdów jednostek ochrony przeciwpożarowej do obiektu budowlanego o każdej porze roku, należy doprowadzić do:"
+   },
+   {
+    "p": 3,
+    "t": "1) budynku zawierającego strefę pożarową zakwalifikowaną do kategorii zagrożenia ludzi ZL I lub ZL II;"
+   },
+   {
+    "p": 3,
+    "t": "2) budynku należącego do grupy wysokości: średniowysoki, wysoki lub wysokościowy, zawierającego strefę pożarową zakwalifikowaną do kategorii zagrożenia ludzi ZL III, ZL IV lub ZL V;"
+   },
+   {
+    "p": 3,
+    "t": "3) budynku zawierającego strefę pożarową produkcyjną lub magazynową oraz do strefy pożarowej poza budynkiem, obejmującej urządzenia technologiczne, plac składowy lub wiatę, jeżeli gęstość obciążenia ogniowego wymienionych stref pożarowych przekracza 500 MJ/m2 i zachodzi co najmniej jeden z warunków:"
+   },
+   {
+    "p": 4,
+    "t": "a) powierzchnia strefy pożarowej przekracza 1 000 m2,"
+   },
+   {
+    "p": 4,
+    "t": "b) występuje pomieszczenie zagrożone wybuchem;"
+   },
+   {
+    "p": 3,
+    "t": "4) budynku zawierającego strefę pożarową produkcyjną lub magazynową o gęstości obciążenia ogniowego poniżej 500 MJ/m2 o powierzchni przekraczającej 20 000 m2;"
+   },
+   {
+    "p": 3,
+    "t": "5) budynku niskiego:"
+   },
+   {
+    "p": 4,
+    "t": "a) zawierającego strefę pożarową zakwalifikowaną do kategorii zagrożenia ludzi ZL III o powierzchni przekraczającej 1 000 m2, obejmującą kondygnację nadziemną inną niż pierwsza, lub"
+   },
+   {
+    "p": 4,
+    "t": "b) zawierającego strefę pożarową zakwalifikowaną do kategorii zagrożenia ludzi ZL V i mającego ponad 50 miejsc noclegowych;"
+   },
+   {
+    "p": 3,
+    "t": "6) obiektu budowlanego innego niż budynek, przeznaczonego do użyteczności publicznej lub zamieszkania zbiorowego, w którym przewiduje się możliwość jednoczesnego przebywania w strefie pożarowej ponad 50 osób;"
+   },
+   {
+    "p": 3,
+    "t": "7) stanowiska czerpania wody do celów przeciwpożarowych."
+   },
+   {
+    "p": 2,
+    "t": "2. Droga pożarowa powinna przebiegać wzdłuż dłuższego boku budynku, o którym mowa w ust. 1 pkt 1–4, na całej jego długości, a w przypadku gdy krótszy bok budynku ma więcej niż 60 m – z jego dwóch stron, przy czym bliższa krawędź drogi pożarowej musi być oddalona od ściany budynku o 5–15 m dla obiektów zaliczanych do kategorii zagrożenia ludzi i o 5–25 m dla pozostałych obiektów. Pomiędzy tą drogą i ścianą budynku nie mogą występować stałe elementy zagospodarowania terenu lub drzewa i krzewy o wysokości przekraczającej 3 m, uniemożliwiające dostęp do elewacji budynku za pomocą podnośników i drabin mechanicznych."
+   },
+   {
+    "p": 2,
+    "t": "3. W przypadkach uzasadnionych warunkami lokalnymi, w szczególności architektonicznymi, droga pożarowa do budynków, o których mowa w ust. 1 pkt 1–4, może być poprowadzona w taki sposób, aby był zapewniony dostęp do:"
+   },
+   {
+    "p": 3,
+    "t": "1) 30 % obwodu zewnętrznego budynku, przy jego rozpiętości (największej szerokości) do 60 m,"
+   },
+   {
+    "p": 3,
+    "t": "2) 50 % obwodu zewnętrznego budynku, przy jego rozpiętości przekraczającej 60 m,"
+   },
+   {
+    "p": 3,
+    "t": "3) 100 % długości elewacji od frontu budynku, przy zabudowie pierzejowej"
+   },
+   {
+    "p": 5,
+    "t": "– przy spełnieniu pozostałych wymagań określonych w ust. 2."
+   },
+   {
+    "p": 2,
+    "t": "4. Wyjścia z obiektów budowlanych, o których mowa w ust. 1 pkt 1–6, powinny mieć połączenie z drogą pożarową, dojściem o szerokości minimalnej 1,5 m i długości nie większej niż 50 m, w sposób zapewniający dotarcie bezpośrednio lub drogami ewakuacyjnymi do każdej strefy pożarowej w tych obiektach."
+   },
+   {
+    "p": 2,
+    "t": "5. Każdy dźwig dla ekip ratowniczych w budynku powinien mieć połączenie z drogą pożarową dojściem, o którym mowa w ust. 4, przy czym wymieniona długość dojścia powinna obejmować również drogę ewakuacyjną w budynku."
+   },
+   {
+    "p": 2,
+    "t": "6. Wymagań, o których mowa w ust. 2 i 3, nie stosuje się, gdy są spełnione łącznie następujące warunki:"
+   },
+   {
+    "p": 3,
+    "t": "1) w budynku o więcej niż 3 kondygnacjach nadziemnych, na każdej kondygnacji powyżej trzeciej nadziemnej, do wysokości 25 m, każda klatka schodowa służąca ewakuacji ma okno dla ekip ratowniczych, umożliwiające dostęp z zewnątrz przez otwór o dolnej krawędzi położonej nie wyżej niż 90 cm nad poziomem posadzki oraz o wysokości i szerokości odpowiednio co najmniej 110 cm i 60 cm, lub ma zapewnione dotarcie do takiego okna poziomą drogą ewakuacyjną o długości nieprzekraczającej 50 m;"
+   },
+   {
+    "p": 3,
+    "t": "2) droga pożarowa jest doprowadzona do budynku tak, że jej najbliższa krawędź jest oddalona o 5–10 m od rzutu pionowego na poziom terenu każdego z okien, o których mowa w pkt 1, a między tą drogą i wymienionymi oknami nie występują stałe elementy zagospodarowania terenu lub drzewa o wysokości przekraczającej 3 m, uniemożliwiające dotarcie do tych okien za pomocą podnośników i drabin mechanicznych;"
+   },
+   {
+    "p": 3,
+    "t": "3) okno, o którym mowa w pkt 1, jest oznakowane od wewnątrz znakiem bezpieczeństwa „nie zastawiać”, a z zewnątrz – znakiem bezpieczeństwa odpowiednim do sposobu, w jaki można dostać się do wnętrza budynku, zgodnie z Polską Normą dotyczącą znaków bezpieczeństwa."
+   },
+   {
+    "p": 2,
+    "t": "7. Wymagania, o których mowa w ust. 2 i 3, nie dotyczą budynku o nie więcej niż 3 kondygnacjach nadziemnych i wysokości nie większej niż 12 m, jeżeli jest zapewnione połączenie z drogą pożarową wyjść z tego budynku, utwardzonym dojściem o szerokości minimalnej 1,5 m i długości nie większej niż 30 m, w sposób zapewniający dotarcie bezpośrednio lub drogami ewakuacyjnymi do każdej strefy pożarowej."
+   },
+   {
+    "p": 2,
+    "t": "8. Dojścia do budynków, o których mowa w ust. 4 i 7, mogą być prowadzone przez budynek, o ile nie przebiegają one w obrębie strefy pożarowej, do której ma być zapewniony dostęp z drogi pożarowej."
+   },
+   {
+    "p": 2,
+    "t": "9. Droga pożarowa powinna zapewniać przejazd bez cofania lub powinna być zakończona placem manewrowym o wymiarach 20 m x 20 m, względnie można przewidzieć inne rozwiązania umożliwiające zawrócenie pojazdu, z zastrzeżeniem ust. 10."
+   },
+   {
+    "p": 2,
+    "t": "10. Dopuszcza się wykonanie odcinka drogi pożarowej o długości nie większej niż 15 m, z którego wyjazd jest możliwy jedynie przez cofanie pojazdu."
+   },
+   {
+    "p": 2,
+    "t": "11. Najmniejszy promień zewnętrznego łuku drogi pożarowej nie może wynosić mniej niż 11 m."
+   },
+   {
+    "p": 2,
+    "t": "12. Drogi pożarowe oraz place manewrowe w miejscach innych niż wymienione w ust. 2 i 3 mogą być usytuowane w odległości mniejszej niż 5 m od chronionego budynku, pod warunkiem że ściana zewnętrzna budynku na tym odcinku oraz w odległości do 5 m od niego posiada klasę odporności ogniowej wymaganą dla ściany oddzielenia pożarowego tego budynku."
+   }
+  ]
+ },
+ {
+  "id": "§13",
+  "etykieta": "§ 13",
+  "rozdzial": "Rozdział 6 Drogi pożarowe",
+  "linie": [
+   {
+    "p": 2,
+    "t": "1. Minimalna szerokość drogi pożarowej powinna wynosić co najmniej 4 m, a jej nachylenie podłużne nie może przekraczać 5 %:"
+   },
+   {
+    "p": 3,
+    "t": "1) w miejscach, o których mowa w § 12 ust. 2 i 3, oraz na odcinkach o długości 10 m od tych miejsc, zapewniających dojazd i wyjazd;"
+   },
+   {
+    "p": 3,
+    "t": "2) na odcinku o długości 15 m od miejsc doprowadzenia jej do budynku, o których mowa w § 12 ust. 6 pkt 2."
+   },
+   {
+    "p": 2,
+    "t": "2. W obrębie miasta oraz na terenie działki, na której jest usytuowany obiekt budowlany, o którym mowa w § 12 ust. 1 pkt 3 i 4, droga pożarowa powinna umożliwiać przejazd pojazdów o nacisku osi na nawierzchnię jezdni co najmniej 100 kN (kiloniutonów), a jej minimalna szerokość w miejscach innych niż wymienione w ust. 1 nie może być mniejsza niż 3,5 m. Lp. Liczba mieszkańców jednostki osadniczej Wydajność wodociągu [dm3/s] Równoważny zapas wody w zbiorniku [m3] 1 do 2 000 5 50 2 2 001 ÷ 5 000 10 100 3 5 001 ÷ 10 000 15 150 4 10 001 ÷ 25 000 20 200 5 25 001 ÷ 100 000 40 400 6 ponad 100 000 60 600"
+   },
+   {
+    "p": 2,
+    "t": "3. Na terenach innych niż wymienione w ust. 2 droga pożarowa powinna umożliwiać przejazd pojazdów o nacisku osi na nawierzchnię jezdni co najmniej 50 kN, a jej minimalna szerokość w miejscach innych niż wymienione w ust. 1 nie może być mniejsza niż 3 m."
+   },
+   {
+    "p": 2,
+    "t": "4. W szczególnie uzasadnionych przypadkach, gdy spełnienie wymagań dotyczących doprowadzenia drogi pożarowej do obiektu budowlanego jest niemożliwe ze względu na lokalne uwarunkowania lub jest uzasadnione przyjęcie innych rozwiązań, na wniosek właściciela budynku, obiektu budowlanego lub terenu, dopuszcza się stosowanie rozwiązań zamiennych zapewniających niepogorszenie warunków ochrony przeciwpożarowej obiektu, uzgodnionych z właściwym miejscowo komendantem wojewódzkim Państwowej Straży Pożarnej."
+   }
+  ]
+ },
+ {
+  "id": "§14",
+  "etykieta": "§ 14",
+  "rozdzial": "Rozdział 6 Drogi pożarowe",
+  "linie": [
+   {
+    "p": 2,
+    "t": "1. Przejazdy na dziedzińce i inne tereny obudowane powinny odpowiadać następującym warunkom:"
+   },
+   {
+    "p": 3,
+    "t": "1) wysokość przejazdu nie mniejsza niż 4,2 m, a w budownictwie jednorodzinnym – 3,2 m;"
+   },
+   {
+    "p": 3,
+    "t": "2) szerokość przejazdu nie mniejsza niż 3,6 m, w tym szerokość jezdni co najmniej 3 m;"
+   },
+   {
+    "p": 3,
+    "t": "3) odległość między przejazdami na jeden dziedziniec nie większa niż 150 m."
+   },
+   {
+    "p": 2,
+    "t": "2. W przejazdach, których jezdnie są oddzielone od chodników słupami lub ścianami, szerokość jezdni nie może być mniejsza niż 3,6 m."
+   },
+   {
+    "p": 2,
+    "t": "3. W przypadku gdy przejazd jest wykorzystywany jako stałe przejście dla pieszych, należy zapewnić dodatkowo chodnik o szerokości co najmniej 1 m. Tabela nr 1 Wymagana ilość wody do celów przeciwpożarowych dla jednostek osadniczych"
+   }
+  ]
+ },
+ {
+  "id": "§15",
+  "etykieta": "§ 15",
+  "rozdzial": "Rozdział 6 Drogi pożarowe",
+  "linie": [
+   {
+    "p": 2,
+    "t": "Wiadukty, estakady, przejścia i inne podobne urządzenia lub stałe elementy, usytuowane ponad drogami pożarowymi, powinny mieć prześwit o wysokości i szerokości nie mniejszej niż 4,5 m."
+   }
+  ]
+ },
+ {
+  "id": "§16",
+  "etykieta": "§ 16",
+  "rozdzial": "Rozdział 6 Drogi pożarowe",
+  "linie": [
+   {
+    "p": 2,
+    "t": "1. Na wydzielony teren o powierzchni przekraczającej 5 ha, na którym znajdują się obiekty wymienione w § 12 ust. 1, oraz na place targowe i wystawowe o takiej powierzchni należy zapewnić co najmniej dwa wjazdy, odległe od siebie o co najmniej 75 m."
+   },
+   {
+    "p": 2,
+    "t": "2. Bramy wjazdowe muszą spełniać warunki, o których mowa w § 14 ust. 1 pkt 2 i ust. 2."
+   }
+  ]
+ },
+ {
+  "id": "§17",
+  "etykieta": "§ 17",
+  "rozdzial": "Rozdział 7 Przepisy końcowe",
+  "linie": [
+   {
+    "p": 2,
+    "t": "Przepis § 12 ust. 2 dotyczący oddalenia bliższej krawędzi drogi pożarowej od ściany obiektów zaliczanych do kategorii zagrożenia ludzi nie ma zastosowania do dróg pożarowych istniejących w dniu wejścia w życie rozporządzenia, jeżeli zostały one wykonane zgodnie z przepisami obowiązującymi w czasie ich budowy."
+   }
+  ]
+ },
+ {
+  "id": "§18",
+  "etykieta": "§ 18",
+  "rozdzial": "Rozdział 7 Przepisy końcowe",
+  "linie": [
+   {
+    "p": 2,
+    "t": "Traci moc rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 16 czerwca 2003 r. w sprawie przeciwpożarowego zaopatrzenia w wodę oraz dróg pożarowych (Dz. U. Nr 121, poz. 1139)."
+   }
+  ]
+ },
+ {
+  "id": "§19",
+  "etykieta": "§ 19",
+  "rozdzial": "Rozdział 7 Przepisy końcowe",
+  "linie": [
+   {
+    "p": 2,
+    "t": "Rozporządzenie wchodzi w życie po upływie 14 dni od dnia ogłoszenia. Minister Spraw Wewnętrznych i Administracji: G. Schetyna Załącznik do rozporządzenia Ministra Spraw Wewnętrznych i Administracji z dnia 24 lipca 2009 r. (poz. 1030) Wymagana ilość wody do celów przeciwpożarowych dla obiektów budowlanych produkcyjnych i magazynowych, służąca do zewnętrznego gaszenia pożaru 1 200 10 10 10 10 15 15 20 2 200 500 10 10 10 20 20 30 30 3 500 1 000 10 10 20 20 30 30 40 4 1 000 2 000 10 20 20 30 30 40 40 5 2 000 4 000 20 20 30 30 40 40 50 6 4 000 20 30 30 40 40 50 60 Wymagana ilość wody do celów przeciwpożarowych dla zbiorników z gazami palnymi oraz z cieczami o temperaturze zapłonu do 373,15 K (100 °C) niebędącymi produktami naftowymi oraz dla zbiorników z produktami naftowymi o temperaturze zapłonu od 328,15 K (55 °C) do 373,15 K (100 °C), z wyjątkiem podgrzanych powyżej temperatury zapłonu, służąca do zewnętrznego gaszenia pożaru pojemność ogólna [m3] wydajność wodociągu [dm3/s] powyżej do powyżej do 1 200 1 000 10 10 000 10 2 1 000 5 000 15 10 000 100 000 15 3 5 000 30 000 20 100 000 20 Tabela nr 2 Powierzchnia strefy pożarowej [m2] Gęstość obciążenia ogniowego [MJ/m2] powyżej 500 1 000 2 000 3 000 4 000 5 000 Lp. do 500 1 000 2 000 3 000 4 000 5 000 powyżej do wydajność wodociągu [dm3/s]* * Dla garaży nie więcej niż 20 dm3/s. Tabela nr 3 Zbiorniki (z wyłączeniem podziemnych i przenośnych) z cieczami palnymi z gazami palnymi Lp. pojemność ogólna [m3] wydajność wodociągu [dm3/s] 4 30 000 100 000 25 5 100 000 200 000 30 6 200 000 40 Wymagana ilość wody do celów przeciwpożarowych dla urządzeń technologicznych oraz składów i magazynów z gazami palnymi i cieczami o temperaturze zapłonu do 373,15 K (100 °C), zlokalizowanych poza budynkami, służąca do zewnętrznego gaszenia pożaru wydajność wodociągu [dm3/s] powyżej do 1 500 10 2 500 1 000 20 3 1 000 2 000 30 4 2 000 40 Tabela nr 4 Urządzenia technologiczne oraz składy i magazyny z gazami palnymi i cieczami o temperaturze zapłonu do 373,15 K (100 °C) Lp. zajmowana powierzchnia [m2]"
+   }
+  ]
+ }
+]

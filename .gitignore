@@ -1,0 +1,3 @@
+# PDF-y Dziennika Ustaw da się pobrać ponownie z API Sejmu - nie trzymamy ich w repo.
+*.pdf
+.DS_Store

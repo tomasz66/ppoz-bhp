@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="PPOŻ BHP">
+<meta name="theme-color" content="#ffffff">
+<title>PPOŻ BHP</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="nav-header">
+    <div class="nav-header-inner">
+      <button class="nav-btn" id="btn-back" aria-label="Wstecz" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg><span>Wstecz</span>
+      </button>
+      <div class="nav-title"><div class="nav-title-text" id="nav-title">PPOŻ BHP</div></div>
+      <div class="nav-right"><button class="nav-btn" id="btn-theme" aria-label="Zmień motyw">☾</button></div>
+    </div>
+  </header>
+
+  <main id="widok" class="scroll-content"></main>
+
+  <nav class="tab-bar">
+    <button class="tab-item" data-tab="start"><span class="tab-icon">⌂</span><span class="tab-label">Start</span></button>
+    <button class="tab-item" data-tab="przepisy"><span class="tab-icon">§</span><span class="tab-label">Przepisy</span></button>
+    <button class="tab-item" data-tab="sciagi"><span class="tab-icon">☰</span><span class="tab-label">Ściągi</span></button>
+    <button class="tab-item" data-tab="nauka"><span class="tab-icon">✎</span><span class="tab-label">Nauka</span></button>
+    <button class="tab-item" data-tab="luz"><span class="tab-icon">☺</span><span class="tab-label">Luz</span></button>
+    <button class="tab-item" data-tab="nowosci"><span class="tab-icon">✦</span><span class="tab-label">Nowości</span><span class="tab-badge" id="badge-nowosci" hidden></span></button>
+  </nav>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
