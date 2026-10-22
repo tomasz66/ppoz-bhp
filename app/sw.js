@@ -1,5 +1,5 @@
 // Działanie offline: najpierw sieć (świeże dane), a bez internetu - kopia z pamięci telefonu.
-const CACHE = "ppoz-bhp-v5";
+const CACHE = "ppoz-bhp-v6";
 const PLIKI = ["./", "index.html", "style.css", "app.js", "manifest.json",
   "data/akty.json", "data/sciagi.json", "data/pytania.json", "data/obserwowane.json", "data/nowosci.json", "data/aktualnosci.json", "data/ciekawostki.json", "icons/icon-180.png"];
 

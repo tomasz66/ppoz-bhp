@@ -262,3 +262,17 @@ mark { background: var(--amber-bg); color: inherit; border-radius: 3px; padding:
 .dr-row.yes { background: var(--green-bg); border-top: 1px solid var(--border-2); }
 .dr-ico { font-size: 40px; flex-shrink: 0; }
 .tab-label { font-size: 9.5px; }
+
+/* Czytnik w aplikacji */
+.reader { padding: 18px 20px 6px; }
+.reader-title { font-size: 26px; font-weight: 800; line-height: 1.25; letter-spacing: -.3px; margin: 8px 0 10px; }
+.card.summary { border: 1px solid var(--accent); background: var(--accent-bg); }
+.card.summary ul { margin: 4px 0 0 18px; }
+.card.summary li { font-size: 16px; line-height: 1.5; color: var(--text); margin-bottom: 8px; }
+.note { font-size: 12px !important; color: var(--text-muted) !important; margin-top: 6px; }
+.reader-body { margin: 6px 20px 12px; }
+.reader-body p { font-size: 17px; line-height: 1.65; color: var(--text); margin-bottom: 14px; }
+.card.source .url { font-size: 13px; color: var(--text-muted); margin: 4px 0 12px; word-break: break-word; }
+.card.source .btn { margin-top: 4px; }
+.post-link { color: inherit; display: block; }
+.post-link:active { opacity: .6; }

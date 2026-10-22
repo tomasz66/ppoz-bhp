@@ -15,7 +15,7 @@ const CIEKAWOSTKA_CO = 3;
 const DZIEN_MS = 86400000;
 const KLUCZ = { motyw: "bhp-motyw", nauka: "bhp-nauka", zmiany: "bhp-zmiany", tematy: "bhp-tematy", wizyta: "bhp-wizyta-czytnik" };
 
-const stan = { akty: [], aktyMapa: {}, sciagi: [], pytania: [], obserwowane: null, nowosci: [], aktualnosci: { wpisy: [] }, ciekawostki: { ciekawostki: [], zarty: [] }, sesja: null };
+const stan = { spis: [], dok: {}, artykuly: null, akty: [], aktyMapa: {}, sciagi: [], pytania: [], obserwowane: null, nowosci: [], aktualnosci: { wpisy: [] }, ciekawostki: { ciekawostki: [], zarty: [] }, sesja: null };
 const widok = document.getElementById("widok");
 
 // ── Pomocnicze ──
@@ -67,8 +67,42 @@ function kafel(napis, kolor) {
   return `<span class="row-icon${emotka}" style="background-color:${kolor}">${esc(napis)}</span>`;
 }
 
+// Link do prawdziwego źródła (ISAP, PDF, strona wydawcy) - otwiera się poza aplikacją.
 function linkISAP(url, etykieta = "Oryginał w ISAP") {
   return `<a class="chip red" href="${url}" target="_blank" rel="noopener">${etykieta} ↗</a>`;
+}
+
+// Akt prawny z adresu ISAP otwieramy w czytniku aplikacji, jeśli mamy jego tekst.
+const ROK_NOWYCH_ISAP = 2012;
+const W_APLIKACJI = {
+  "DU/1991/351": "ustawa-ppoz", "DU/2025/188": "ustawa-ppoz",
+  "DU/2010/719": "rozp-ochrona-budynkow", "DU/2023/822": "rozp-ochrona-budynkow",
+  "DU/2009/1030": "rozp-woda-drogi",
+};
+
+function eliZIsap(url) {
+  const m = String(url).match(/WDU(\d{4})(\d{7})/);
+  if (!m) {
+    return null;
+  }
+  const rok = Number(m[1]);
+  return `DU/${rok}/${rok < ROK_NOWYCH_ISAP ? Number(m[2].slice(3)) : Number(m[2])}`;
+}
+
+function adresDokumentu(url) {
+  const eli = eliZIsap(url);
+  if (eli && W_APLIKACJI[eli]) {
+    return `#/akt/${W_APLIKACJI[eli]}`;
+  }
+  if (eli && stan.spis.includes(eli)) {
+    return `#/dok/${eli.replaceAll("/", "_")}`;
+  }
+  return null;
+}
+
+function linkDok(url, etykieta) {
+  const wew = adresDokumentu(url);
+  return wew ? `<a class="chip red" href="${wew}">${esc(etykieta)} ›</a>` : linkISAP(url, esc(etykieta));
 }
 
 function chipZrodla(zr) {
@@ -87,7 +121,7 @@ function ustawNaglowek(tytul, wstecz) {
   document.getElementById("nav-title").textContent = tytul;
   const b = document.getElementById("btn-back");
   b.hidden = !wstecz;
-  b.onclick = () => (location.hash = wstecz);
+  b.onclick = () => (wstecz === "back" && history.length > 1 ? history.back() : (location.hash = wstecz === "back" ? "#/start" : wstecz));
 }
 
 function ustawZakladke(nazwa) {
@@ -107,6 +141,9 @@ const TRASY = [
   [/^#\/wynik$/, () => widokWynik()],
   [/^#\/(zmiany|nowosci)$/, () => widokZmiany()],
   [/^#\/luz$/, () => widokLuz()],
+  [/^#\/news\/(\w+)$/, (m) => widokNews(m[1])],
+  [/^#\/dok\/(\w+)$/, (m) => widokDok(m[1])],
+  [/^#\/dok\/(\w+)\/(\w+)$/, (m) => widokDokJednostka(m[1], m[2])],
   [/^#\/czytnik$/, () => {
     // "Nowe" = opublikowane po poprzednim wejściu do czytnika.
     stan.poprzedniaWizyta = czytaj(KLUCZ.wizyta, 0);
@@ -303,15 +340,15 @@ function widokPrzepisy() {
     <div class="list-group">${stan.akty.filter((a) => a.dziedzina === "ppoz").map((a) => `
       <a class="row" href="#/akt/${a.id}">${kafel(a.kafel, a.kolor)}<span class="row-main">
       <span class="row-title">${esc(a.skrot)}</span><span class="row-sub">${tekst(a.nazwa)}</span></span><span class="row-chev">›</span></a>`).join("")}
-      ${wt ? `<a class="row" href="${wt.isap}" target="_blank" rel="noopener">${kafel("WT", "#b25000")}<span class="row-main">
-      <span class="row-title">Warunki techniczne (WT 2002)</span><span class="row-sub">${tekst("Uchylone od 20.09.2026, nowych nie ogłoszono. Okres przejściowy - zobacz zakładkę Nowości.")}</span></span><span class="row-chev">↗</span></a>` : ""}
+      ${wt ? `<a class="row" href="${adresDokumentu(wt.isap) || wt.isap}">${kafel("WT", "#b25000")}<span class="row-main">
+      <span class="row-title">Warunki techniczne (WT 2002)</span><span class="row-sub">${tekst("Uchylone od 20.09.2026, nowych nie ogłoszono. Okres przejściowy - zobacz zakładkę Nowości.")}</span></span><span class="row-chev">›</span></a>` : ""}
     </div>
-    <div class="section-label">BHP - tekst w aplikacji wkrótce</div>
+    <div class="section-label">Bezpieczeństwo i higiena pracy</div>
     <div class="list-group">${bhp.map((o) => `
-      <a class="row" href="${o.isap}" target="_blank" rel="noopener">${kafel("BHP", "#2f5d8a")}<span class="row-main">
-      <span class="row-title">${esc(o.nazwa)}</span><span class="row-sub">${tekst(o.tytul)}</span></span><span class="row-chev">↗</span></a>`).join("")}
+      <a class="row" href="${adresDokumentu(o.isap) || o.isap}">${kafel("BHP", "#2f5d8a")}<span class="row-main">
+      <span class="row-title">${esc(o.nazwa)}</span><span class="row-sub">${tekst(o.tytul)}</span></span><span class="row-chev">›</span></a>`).join("")}
     </div>
-    <div class="foot">${tekst("Akty BHP otwierają się na razie w ISAP. Ich zmiany już teraz śledzi zakładka Nowości.")}</div>`;
+    <div class="foot">${tekst("Akty BHP: aktualny tekst jednolity z bazy Sejmu. Zmiany ogłoszone po tekście jednolitym są wypisane na górze każdego aktu.")}</div>`;
   podepnijSzukanie();
 }
 
@@ -334,9 +371,8 @@ function widokAkt(id) {
   widok.innerHTML = `
     <div class="section-header"><div class="section-sub" style="color:var(--text)">${tekst(a.nazwa)}</div></div>
     <div class="card info">
-      <p><b>Podstawa tekstu:</b> ${tekst(a.tekst.opis)}${a.zmiany.length ? `, z naniesionymi zmianami: ${a.zmiany.map((z) => `<a href="${z.isap}" target="_blank" rel="noopener">${esc(z.opis)}</a> (od ${data(z.od)})`).join(", ")}` : ""}.</p>
+      <p><b>Podstawa tekstu:</b> ${tekst(a.tekst.opis)}${a.zmiany.length ? `, z naniesionymi zmianami: ${a.zmiany.map((z) => `<a href="${adresDokumentu(z.isap) || z.isap}">${esc(z.opis)}</a> (od ${data(z.od)})`).join(", ")}` : ""}.</p>
       ${a.pominiete ? `<p>${tekst(a.pominiete)}</p>` : ""}
-      <div class="links">${linkISAP(a.isap, "Akt w ISAP")} ${linkISAP(a.tekst.pdf, "PDF tekstu")}</div>
     </div>
     ${rozdzialy.map((r) => `
       <div class="section-label">${esc(r.nazwa || "Przepisy")}</div>
@@ -344,7 +380,8 @@ function widokAkt(id) {
         <a class="row" href="#/akt/${a.id}/${j.id}"><span class="row-main"><span class="row-title">${esc(j.etykieta)}${j.zm ? ' <span class="zm-tag">zmieniony</span>' : ""}</span>
         <span class="row-sub">${tekst(j.linie[0] ? j.linie[0].t.slice(0, 110) : "")}…</span></span><span class="row-chev">›</span></a>`).join("")}
       </div>`).join("")}
-    <div class="foot">Stan prawny na ${data(stan.stanNa)}.</div>`;
+    ${kartaZrodla("Dziennik Ustaw / ISAP", "stan prawny na " + data(stan.stanNa), `<p class="url">${tekst(a.tekst.opis)}</p>
+      <div class="links">${linkISAP(a.isap, "Akt w ISAP")} ${linkISAP(a.tekst.isap, "Tekst jednolity w ISAP")} ${linkISAP(a.tekst.pdf, "PDF")}</div>`)}`;
 }
 
 function widokJednostka(aktId, jId) {
@@ -365,12 +402,13 @@ function widokJednostka(aktId, jId) {
     <div class="unit-chapter">${esc(j.rozdzial)}</div><div class="unit-act">${tekst(a.nazwa)}</div></div>
     <div class="law">${j.linie.map((l, i) => `<p id="l${i}" class="l${l.p}${l.zm ? " zm" : ""}${String(i) === hit ? " hit" : ""}">${tekst(l.t)}${l.zm ? ` <span class="zm-tag">${esc(l.zm)}</span>` : ""}</p>`).join("")}</div>
     ${j.uwaga ? `<div class="card amber"><p>${tekst(j.uwaga)}</p></div>` : ""}
-    ${j.zm ? `<div class="card info"><p>${tekst("Ten przepis był zmieniany po ogłoszeniu tekstu jednolitego. Zmiany naniesione dosłownie z:")}</p><div class="links">${j.zm.map((z) => linkISAP(z.isap, z.opis)).join(" ")}</div></div>` : ""}
-    <div class="card"><div class="links" style="margin-top:0">${linkISAP(a.tekst.isap, "Oryginał w ISAP")} ${linkISAP(a.tekst.pdf, "PDF tekstu")}</div></div>
+    ${j.zm ? `<div class="card info"><p>${tekst("Ten przepis był zmieniany po ogłoszeniu tekstu jednolitego. Zmiany naniesione dosłownie z:")}</p><div class="links">${j.zm.map((z) => linkDok(z.isap, z.opis)).join(" ")}</div></div>` : ""}
     <div class="pager">
       ${poprz ? `<a class="btn secondary" href="#/akt/${a.id}/${poprz.id}">‹ ${esc(poprz.etykieta)}</a>` : "<span style='flex:1'></span>"}
       ${nast ? `<a class="btn secondary" href="#/akt/${a.id}/${nast.id}">${esc(nast.etykieta)} ›</a>` : "<span style='flex:1'></span>"}
-    </div>`;
+    </div>
+    ${kartaZrodla("Dziennik Ustaw / ISAP", "stan prawny na " + data(stan.stanNa), `<p class="url">${tekst(a.nazwa)}</p>
+      <div class="links">${linkISAP(a.tekst.isap, "Oryginał w ISAP")} ${linkISAP(a.tekst.pdf, "PDF")}</div>`)}`;
   if (hit) {
     const el = document.getElementById("l" + hit);
     if (el) {
@@ -680,8 +718,9 @@ function etykietaDziedziny(d) {
 }
 
 function linkZrodla(z) {
-  const zewn = !z.url.startsWith("#");
-  return `<a class="chip ${zewn ? "red" : ""}" href="${z.url}"${zewn ? ' target="_blank" rel="noopener"' : ""}>${esc(z.opis)}${zewn ? " ↗" : ""}</a>`;
+  const url = z.url.startsWith("#") ? z.url : adresDokumentu(z.url) || z.url;
+  const zewn = !url.startsWith("#");
+  return `<a class="chip ${zewn ? "" : "red"}" href="${url}"${zewn ? ' target="_blank" rel="noopener"' : ""}>${esc(z.opis)}${zewn ? " ↗" : " ›"}</a>`;
 }
 
 function kartaNowosci(n) {
@@ -696,10 +735,168 @@ function kartaNowosci(n) {
 }
 
 function wierszAktualnosci(w) {
-  return `<a class="row news-row" data-d="${w.d}" href="${esc(w.url)}" target="_blank" rel="noopener">
+  return `<a class="row news-row" data-d="${w.d}" href="#/news/${w.id}">
     <span class="row-main"><span class="row-title small">${tekst(w.t)}</span>
     ${w.lead ? `<span class="row-sub lead2">${tekst(w.lead)}</span>` : ""}
-    <span class="row-sub">${esc(w.z)} · ${kiedyWpis(w)} · ${w.d === "bhp" ? "BHP" : "PPOŻ"}</span></span><span class="row-chev">↗</span></a>`;
+    <span class="row-sub">${esc(w.z)} · ${kiedyWpis(w)} · ${w.d === "bhp" ? "BHP" : "PPOŻ"}</span></span><span class="row-chev">›</span></a>`;
+}
+
+// ── Czytnik w aplikacji: wiadomość = streszczenie, tekst, źródło na dole ──
+
+async function wczytajArtykuly() {
+  if (!stan.artykuly) {
+    stan.artykuly = await (await fetch("data/artykuly.json")).json();
+  }
+  return stan.artykuly;
+}
+
+function kartaZrodla(nazwa, kiedy, linki) {
+  return `<div class="section-label">Źródło</div>
+    <div class="card source"><p><b>${esc(nazwa)}</b>${kiedy ? " · " + esc(kiedy) : ""}</p>${linki}</div>`;
+}
+
+async function widokNews(id) {
+  const w = stan.aktualnosci.wpisy.find((x) => x.id === id);
+  ustawNaglowek(w ? w.z : "Wiadomość", "back");
+  ustawZakladke(w && w.d === "luz" ? "luz" : "nowosci");
+  if (!w) {
+    widok.innerHTML = `<div class="empty">${tekst("Tej wiadomości już nie ma w przeglądzie - przeglądamy ostatnie 2 tygodnie.")}</div>`;
+    return;
+  }
+  widok.innerHTML = `<div class="spinner">Wczytuję…</div>`;
+  const a = (await wczytajArtykuly())[id] || { skrot: [], tekst: [] };
+  const punkty = a.skrot.length ? a.skrot : w.lead ? [w.lead] : [];
+  const urzedowy = a.tekst.length > 0;
+  const domena = new URL(w.url).hostname.replace(/^www\./, "");
+  widok.innerHTML = `
+    <article class="reader">
+      <div class="post-meta">${esc(w.z)} · ${kiedyWpis(w)} ${w.d === "luz" ? "" : etykietaDziedziny(w.d)}</div>
+      <h1 class="reader-title">${tekst(w.t)}</h1>
+      <div class="post-foot" style="margin-top:0">${(w.tematy || []).map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>
+    </article>
+    ${punkty.length ? `<div class="card summary"><div class="fun-label">⚡ W skrócie</div><ul>${punkty.map((p) => `<li>${tekst(p)}</li>`).join("")}</ul>
+      <p class="note">${tekst("Najważniejsze zdania wybrane automatycznie z artykułu.")}</p></div>` : ""}
+    ${urzedowy
+      ? `<div class="reader-body">${a.tekst.map((p) => `<p>${tekst(p)}</p>`).join("")}</div>`
+      : `${w.lead && !a.skrot.length ? "" : w.lead ? `<div class="reader-body"><p>${tekst(w.lead)}</p></div>` : ""}
+         <div class="card info"><p>${tekst("Pełny tekst jest na stronie wydawcy. Artykuły z mediów chroni prawo autorskie, dlatego w aplikacji jest streszczenie, a całość otwierasz u źródła.")}</p></div>`}
+    ${kartaZrodla(w.z, w.czas ? new Date(w.czas).toLocaleDateString("pl-PL") : "", `<p class="url">${esc(domena)}</p>
+      <a class="btn" href="${esc(w.url)}" target="_blank" rel="noopener">Otwórz u źródła ↗</a>`)}`;
+}
+
+// ── Czytnik aktów prawnych: w skrócie, treść, źródło na dole ──
+
+const DUZY_AKT_JEDNOSTEK = 12;
+
+async function wczytajDok(plik) {
+  if (!stan.dok[plik]) {
+    stan.dok[plik] = await (await fetch(`data/dok/${plik}.json`)).json();
+  }
+  return stan.dok[plik];
+}
+
+function nazwaDok(d) {
+  const o = stan.obserwowane.akty.find((x) => x.eli === d.eli);
+  if (o) {
+    return o.nazwa;
+  }
+  const [, rok, poz] = d.eli.split("/");
+  return `Dz.U. ${rok} poz. ${poz}`;
+}
+
+function skrotDok(d) {
+  if (d.streszczenie.length) {
+    return d.streszczenie.map((x) => `<li>${tekst(x)}</li>`).join("");
+  }
+  const pkt = [];
+  if (d.rola === "akt") {
+    pkt.push(`Tekst: ${d.tekst.eli === d.eli ? "tekst ogłoszony" : "tekst jednolity " + d.tekst.eli.replace("DU/", "Dz.U. ").replace(/\/(\d+)$/, " poz. $1")}.`);
+    pkt.push(`${d.jednostki.length} ${d.jednostki[0] && d.jednostki[0].etykieta.startsWith("Art") ? "artykułów" : "paragrafów"} do przeczytania w aplikacji.`);
+  } else {
+    pkt.push(`Ogłoszono ${data(d.ogloszono)}, ${d.wchodzi && d.wchodzi > dzisIso() ? "wejdzie w życie" : "obowiązuje od"} ${data(d.wchodzi)}.`);
+  }
+  if (d.status) {
+    pkt.push(`Status w bazie Sejmu: ${d.status}.`);
+  }
+  return pkt.map((x) => `<li>${tekst(x)}</li>`).join("");
+}
+
+function tekstJednostki(j) {
+  return `<div class="law">${j.linie.map((l) => `<p class="l${l.p}">${tekst(l.t)}</p>`).join("")}</div>${j.uwaga ? `<div class="card amber"><p>${tekst(j.uwaga)}</p></div>` : ""}`;
+}
+
+function zrodloDok(d) {
+  return kartaZrodla("Dziennik Ustaw / ISAP", d.ogloszono ? "ogłoszono " + data(d.ogloszono) : "", `
+    <p class="url">${tekst(d.tekst.tytul)}</p>
+    <div class="links">${linkISAP(d.isap, "Akt w ISAP")} ${d.tekst.eli !== d.eli ? linkISAP(d.tekst.isap, "Tekst jednolity w ISAP") : ""} ${linkISAP(d.pdf, "PDF")}</div>`);
+}
+
+async function widokDok(plik) {
+  ustawNaglowek("Przepis", "back");
+  ustawZakladke("przepisy");
+  widok.innerHTML = `<div class="spinner">Wczytuję tekst aktu…</div>`;
+  const d = await wczytajDok(plik);
+  ustawNaglowek(nazwaDok(d), "back");
+  const maly = d.jednostki.length <= DUZY_AKT_JEDNOSTEK;
+  const zmianyPo = d.zmiany_po.length ? `<div class="card amber"><p><b>${tekst("Zmiany ogłoszone po tym tekście - jeszcze nie są w nim uwzględnione:")}</b></p>
+    <div class="links">${d.zmiany_po.map((z) => linkDok(z.isap, z.eli.replace("DU/", "Dz.U. ").replace(/\/(\d+)$/, " poz. $1") + (z.od ? " (" + data(z.od) + ")" : ""))).join(" ")}</div></div>` : "";
+  const rozdzialy = [];
+  for (const j of d.jednostki) {
+    let r = rozdzialy[rozdzialy.length - 1];
+    if (!r || r.nazwa !== j.rozdzial) {
+      r = { nazwa: j.rozdzial, jedn: [] };
+      rozdzialy.push(r);
+    }
+    r.jedn.push(j);
+  }
+  widok.innerHTML = `
+    <div class="section-header"><div class="section-title" style="font-size:22px">${esc(nazwaDok(d))}</div>
+    <div class="section-sub" style="color:var(--text)">${tekst(d.tytul)}</div></div>
+    <div class="card summary"><div class="fun-label">⚡ W skrócie</div><ul>${skrotDok(d)}</ul></div>
+    ${zmianyPo}
+    ${maly
+      ? d.jednostki.map((j) => `<div class="unit-head" style="padding-top:8px"><div class="unit-label" style="font-size:24px">${esc(j.etykieta)}</div></div>${tekstJednostki(j)}`).join("")
+      : `<div class="search-wrap"><label class="search-box"><input class="search-input" id="szukaj-dok" type="search" placeholder="Szukaj w tym akcie, np. mobbing" autocomplete="off"></label></div>
+         <div id="lista-dok">${rozdzialy.map((r) => `
+           <div class="section-label">${esc(r.nazwa || "Przepisy")}</div>
+           <div class="list-group">${r.jedn.map((j) => `
+             <a class="row" data-q="${esc(bezOgonkow(j.linie.map((l) => l.t).join(" ")))}" href="#/dok/${plik}/${j.id}"><span class="row-main"><span class="row-title small">${esc(j.etykieta)}</span>
+             <span class="row-sub">${tekst((j.linie[0] ? j.linie[0].t : "").slice(0, 120))}…</span></span><span class="row-chev">›</span></a>`).join("")}</div>`).join("")}</div>`}
+    ${zrodloDok(d)}`;
+  const pole = document.getElementById("szukaj-dok");
+  if (pole) {
+    pole.addEventListener("input", () => {
+      const q = bezOgonkow(pole.value.trim());
+      document.querySelectorAll("#lista-dok .row").forEach((r) => (r.hidden = q.length > 1 && !r.dataset.q.includes(q)));
+      document.querySelectorAll("#lista-dok .list-group").forEach((g) => {
+        const widoczne = [...g.children].some((r) => !r.hidden);
+        g.hidden = !widoczne;
+        g.previousElementSibling.hidden = !widoczne;
+      });
+    });
+  }
+}
+
+async function widokDokJednostka(plik, id) {
+  ustawZakladke("przepisy");
+  const d = await wczytajDok(plik);
+  const idx = d.jednostki.findIndex((j) => j.id === id);
+  if (idx < 0) {
+    return widokDok(plik);
+  }
+  const j = d.jednostki[idx];
+  ustawNaglowek(`${j.etykieta} · ${nazwaDok(d)}`, `#/dok/${plik}`);
+  const poprz = d.jednostki[idx - 1];
+  const nast = d.jednostki[idx + 1];
+  widok.innerHTML = `
+    <div class="unit-head"><div class="unit-label">${esc(j.etykieta)}</div>
+    <div class="unit-chapter">${esc(j.rozdzial || "")}</div><div class="unit-act">${tekst(d.tytul)}</div></div>
+    ${tekstJednostki(j)}
+    <div class="pager">
+      ${poprz ? `<a class="btn secondary" href="#/dok/${plik}/${poprz.id}">‹ ${esc(poprz.etykieta)}</a>` : "<span style='flex:1'></span>"}
+      ${nast ? `<a class="btn secondary" href="#/dok/${plik}/${nast.id}">${esc(nast.etykieta)} ›</a>` : "<span style='flex:1'></span>"}
+    </div>
+    ${zrodloDok(d)}`;
 }
 
 // ── Na luzie: memy (własne), nietypowe interwencje, żarty, ciekawostki ──
@@ -799,10 +996,10 @@ function kartaWpisu(w, ostatnia) {
   const nowy = w.czas && Date.parse(w.czas) > ostatnia;
   return `<article class="card post">
     <div class="post-meta">${nowy ? '<span class="dot"></span>' : ""}${esc(w.z)} · ${kiedyWpis(w)} ${etykietaDziedziny(w.d)}</div>
-    <h3>${tekst(w.t)}</h3>
-    ${w.lead ? `<p class="post-lead" onclick="this.classList.toggle('open')">${tekst(w.lead)}</p>` : ""}
+    <a class="post-link" href="#/news/${w.id}"><h3>${tekst(w.t)}</h3>
+    ${w.lead ? `<p class="post-lead">${tekst(w.lead)}</p>` : ""}</a>
     <div class="post-foot">${(w.tematy || []).map((t) => `<span class="tag">${esc(t)}</span>`).join("")}
-    <a class="chip red" href="${esc(w.url)}" target="_blank" rel="noopener">Czytaj artykuł ↗</a></div></article>`;
+    <a class="chip red" href="#/news/${w.id}">Czytaj ›</a></div></article>`;
 }
 
 const GRUPY = [
@@ -824,7 +1021,7 @@ function widokCzytnik() {
   const top = najwazniejsze(NAJWAZNIEJSZYCH);
   widok.innerHTML = `
     <div class="section-header"><div class="section-title">Wiadomości</div>
-    <div class="section-sub">${tekst(`Twój przegląd BHP i ppoż z ${stan.aktualnosci.wpisy.filter((w) => w.d !== "luz").length} artykułów z ostatnich 2 tygodni. Dotknij zajawki, żeby rozwinąć.`)}</div></div>
+    <div class="section-sub">${tekst(`Twój przegląd BHP i ppoż z ${stan.aktualnosci.wpisy.filter((w) => w.d !== "luz").length} artykułów z ostatnich 2 tygodni. Dotknij wiadomości, żeby przeczytać ją w aplikacji.`)}</div></div>
     <div class="seg">${[["all", "Wszystko"], ["bhp", "BHP"], ["ppoz", "PPOŻ"]].map(([k, n]) => `<button class="${(stan.filtrCzytnika || "all") === k ? "on" : ""}" onclick="stan.filtrCzytnika='${k}';widokCzytnik()">${n}</button>`).join("")}</div>
     <div class="section-label">Moje tematy ${wybrane.length ? `<button class="link-btn" onclick="zapisz(KLUCZ.tematy, []);widokCzytnik()">wyczyść</button>` : ""}</div>
     <div class="tags-pick">${wszystkieTematy.map((t) => `<button class="tag ${wybrane.includes(t) ? "on" : ""}" onclick="przelaczTemat('${esc(t)}')">${esc(t)}</button>`).join("")}</div>
@@ -873,7 +1070,7 @@ async function widokZmiany(wymus) {
     <div class="section-label">Wszystkie zmiany obserwowanych aktów</div>
     ${stan.obserwowane.akty.filter((o) => o.ostatnie.length).map((o) => `
       <div class="card" data-d="${o.dziedzina}"><h3>${esc(o.nazwa)} ${etykietaDziedziny(o.dziedzina)}</h3>
-      ${o.ostatnie.map((z) => `<p><b>${z.od && z.od > dzisIso() ? "wejdzie w życie " : "od "}${data(z.od)}</b> - <a href="${z.isap}" target="_blank" rel="noopener">${tekst(z.tytul)} ↗</a></p>`).join("")}</div>`).join("")}
+      ${o.ostatnie.map((z) => `<p><b>${z.od && z.od > dzisIso() ? "wejdzie w życie " : "od "}${data(z.od)}</b> - ${adresDokumentu(z.isap) ? `<a href="${adresDokumentu(z.isap)}">${tekst(z.tytul)} ›</a>` : `<a href="${z.isap}" target="_blank" rel="noopener">${tekst(z.tytul)} ↗</a>`}</p>`).join("")}</div>`).join("")}
     <div class="btn-row"><button class="btn secondary" onclick="widokZmiany(true)">Sprawdź bazę Sejmu teraz</button></div>
     <div class="foot">Lista bazowa aktów pobrana ${data(stan.obserwowane.pobrano)}. Źródło: api.sejm.gov.pl (ELI).</div>`;
   filtrujNowosci(stan.filtr || "all");
@@ -915,10 +1112,11 @@ async function init() {
   };
   document.querySelectorAll(".tab-item").forEach((t) => (t.onclick = () => (location.hash = "#/" + t.dataset.tab)));
 
-  const [akty, sciagi, pytania, obserwowane, nowosci, aktualnosci, ciekawostki] = await Promise.all(
-    ["akty", "sciagi", "pytania", "obserwowane", "nowosci", "aktualnosci", "ciekawostki"].map((n) => fetch(`data/${n}.json`).then((r) => r.json()))
+  const [akty, sciagi, pytania, obserwowane, nowosci, aktualnosci, ciekawostki, spis] = await Promise.all(
+    ["akty", "sciagi", "pytania", "obserwowane", "nowosci", "aktualnosci", "ciekawostki", "dok/spis"].map((n) => fetch(`data/${n}.json`).then((r) => r.json()))
   );
   stan.nowosci = nowosci;
+  stan.spis = spis;
   stan.aktualnosci = aktualnosci;
   stan.ciekawostki = ciekawostki;
   stan.akty = akty.akty;

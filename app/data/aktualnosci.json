@@ -1,5 +1,5 @@
 {
- "pobrano": "2026-10-22 16:27",
+ "pobrano": "2026-10-22 16:45",
  "wpisy": [
   {
    "d": "ppoz",
@@ -12,7 +12,8 @@
     "Przepisy",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "afbc9d4345"
   },
   {
    "d": "ppoz",
@@ -25,7 +26,8 @@
     "Ppoż w obiektach",
     "Straż"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "10765f89f3"
   },
   {
    "d": "ppoz",
@@ -37,7 +39,8 @@
    "tematy": [
     "Straż"
    ],
-   "pkt": 0
+   "pkt": 0,
+   "id": "945af49b24"
   },
   {
    "d": "ppoz",
@@ -49,7 +52,8 @@
    "tematy": [
     "Ppoż w obiektach"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "29f3bfffb7"
   },
   {
    "d": "ppoz",
@@ -61,7 +65,8 @@
    "tematy": [
     "Straż"
    ],
-   "pkt": 0
+   "pkt": 0,
+   "id": "d0b070353c"
   },
   {
    "d": "ppoz",
@@ -73,7 +78,8 @@
    "tematy": [
     "Ppoż w obiektach"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "3ee67c916c"
   },
   {
    "d": "bhp",
@@ -83,7 +89,8 @@
    "lead": "",
    "czas": "2026-10-22T11:50:00+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "5f9646dc20"
   },
   {
    "d": "bhp",
@@ -95,7 +102,8 @@
    "tematy": [
     "Przepisy"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "4e4b413b09"
   },
   {
    "d": "bhp",
@@ -107,7 +115,8 @@
    "tematy": [
     "Wypadki"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "b7a4a8f959"
   },
   {
    "d": "ppoz",
@@ -119,7 +128,8 @@
    "tematy": [
     "Ppoż w obiektach"
    ],
-   "pkt": 4
+   "pkt": 4,
+   "id": "33f2c82254"
   },
   {
    "d": "ppoz",
@@ -129,7 +139,8 @@
    "lead": "Uczniowie Publicznej Szkoły Podstawowej im. Mariana Osińskiego w Rykach zwyciężyli w rywalizacji zaproponowanej przez Centrum Kultury i Sportu20 październi",
    "czas": "2026-10-22T09:30:00+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "8603c81cd3"
   },
   {
    "d": "bhp",
@@ -142,7 +153,8 @@
     "Przepisy",
     "Mobbing"
    ],
-   "pkt": 5
+   "pkt": 5,
+   "id": "9aca3ead77"
   },
   {
    "d": "ppoz",
@@ -155,7 +167,8 @@
     "Ppoż w obiektach",
     "Szkolenia"
    ],
-   "pkt": 5
+   "pkt": 5,
+   "id": "e841aeb5f6"
   },
   {
    "d": "bhp",
@@ -167,7 +180,8 @@
    "tematy": [
     "Wypadki"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "b3351118ba"
   },
   {
    "d": "ppoz",
@@ -181,7 +195,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "34543642b9"
   },
   {
    "d": "bhp",
@@ -193,7 +208,8 @@
    "tematy": [
     "Kontrole PIP"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "6f135de7c5"
   },
   {
    "d": "ppoz",
@@ -207,7 +223,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "259cec54c9"
   },
   {
    "d": "bhp",
@@ -217,7 +234,8 @@
    "lead": "",
    "czas": "2026-10-22T03:24:10+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "f4b43fe878"
   },
   {
    "d": "bhp",
@@ -229,7 +247,8 @@
    "tematy": [
     "Zdrowie w pracy"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "203b2b97ab"
   },
   {
    "d": "bhp",
@@ -239,7 +258,8 @@
    "lead": "Urząd Miejski w Zabrzu opublikował 84. odcinek „Raportu z Ratusza”. Tym razem w materiale podsumowano m.in. tegoroczną edycję konkursu Zabrzański Biznesplan, uruchomienie pilotażowego programu „Bezpieczne Zabrze 360°” oraz zakończenie remontu Filii nr 18 Miejskiej Biblioteki Publicznej. Poznaliśmy laureatów konkursu Zabrzański Biznesplan Jednym z tematów najnowszego „Raportu z Ratusza” jest rozstrzygnięcie kolejnej edycji konkursu Zabrzański Biznesplan. …",
    "czas": "2026-10-21T21:10:00+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "b481f09f0b"
   },
   {
    "d": "bhp",
@@ -251,7 +271,8 @@
    "tematy": [
     "Szkolenia"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "78f32f9a65"
   },
   {
    "d": "ppoz",
@@ -263,7 +284,8 @@
    "tematy": [
     "Ppoż w obiektach"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "291872c30f"
   },
   {
    "d": "bhp",
@@ -276,7 +298,8 @@
     "Zdrowie w pracy",
     "Wypadki"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "bfe05d0911"
   },
   {
    "d": "ppoz",
@@ -288,7 +311,8 @@
    "tematy": [
     "Ppoż w obiektach"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "5535a95950"
   },
   {
    "d": "ppoz",
@@ -301,7 +325,8 @@
     "Przepisy",
     "Ppoż w obiektach"
    ],
-   "pkt": 5
+   "pkt": 5,
+   "id": "6aafc2b443"
   },
   {
    "d": "bhp",
@@ -311,7 +336,8 @@
    "lead": "Poczta Polska jest bardzo uzwiązkowiona. Zarządzanie nią nie jest łatwe, często na śniadanie trzeba zjadać rzeczy, na które nie ma się ochoty. Ale udało nam się",
    "czas": "2026-10-21T15:13:18+00:00",
    "tematy": [],
-   "pkt": 1
+   "pkt": 1,
+   "id": "62e18a2322"
   },
   {
    "d": "ppoz",
@@ -321,7 +347,8 @@
    "lead": "Nie ma zapachu ani koloru, a jego obecność w mieszkaniu może doprowadzić do śmiertelnego zatrucia. Tlenek węgla, nazywany czadem, stanowi szczególne zagrożenie w lokalach wyposażonych w piece węglowe i gazowe podgrzewacze wody. Zarząd Komunalnych Zasobów Lokalowych w Poznaniu przypomina o możliwości bezpłatnego otrzymania czujnika, który ostrzeże mieszkańców przed niebezpieczeństwem. Z programu skorzystały już tysiące Poznaniaków.",
    "czas": "2026-10-21T14:59:35+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "07b70a62bb"
   },
   {
    "d": "ppoz",
@@ -335,7 +362,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "94a21045e7"
   },
   {
    "d": "ppoz",
@@ -349,7 +377,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "8108e7f4ab"
   },
   {
    "d": "ppoz",
@@ -362,7 +391,8 @@
     "Przepisy",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "a2cde134bb"
   },
   {
    "d": "ppoz",
@@ -375,7 +405,8 @@
     "Kontrole PIP",
     "Pożary"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "a23fe8839a"
   },
   {
    "d": "ppoz",
@@ -387,7 +418,8 @@
    "tematy": [
     "Ppoż w obiektach"
    ],
-   "pkt": 4
+   "pkt": 4,
+   "id": "8865641cc8"
   },
   {
    "d": "ppoz",
@@ -400,7 +432,8 @@
     "Szkolenia",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "431a6262b2"
   },
   {
    "d": "ppoz",
@@ -412,7 +445,8 @@
    "tematy": [
     "Ppoż w obiektach"
    ],
-   "pkt": 4
+   "pkt": 4,
+   "id": "12a6ebe73a"
   },
   {
    "d": "bhp",
@@ -424,7 +458,8 @@
    "tematy": [
     "Wypadki"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "46b3250f90"
   },
   {
    "d": "ppoz",
@@ -434,7 +469,8 @@
    "lead": "Wraz z nadejściem chłodniejszych dni rozpoczął się sezon grzewczy 2026/2027.",
    "czas": "2026-10-21T12:13:44+00:00",
    "tematy": [],
-   "pkt": 2
+   "pkt": 2,
+   "id": "deb5a53a19"
   },
   {
    "d": "ppoz",
@@ -448,7 +484,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 5
+   "pkt": 5,
+   "id": "cb6092fd04"
   },
   {
    "d": "bhp",
@@ -461,7 +498,8 @@
     "Przepisy",
     "Mobbing"
    ],
-   "pkt": 5
+   "pkt": 5,
+   "id": "3f74c03a1a"
   },
   {
    "d": "bhp",
@@ -473,7 +511,8 @@
    "tematy": [
     "Wypadki"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "22c96276c9"
   },
   {
    "d": "ppoz",
@@ -487,7 +526,8 @@
     "Wypadki",
     "Pożary"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "876f4d6f67"
   },
   {
    "d": "ppoz",
@@ -501,7 +541,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "f5b9ecba08"
   },
   {
    "d": "ppoz",
@@ -514,7 +555,8 @@
     "Przepisy",
     "Ppoż w obiektach"
    ],
-   "pkt": 7
+   "pkt": 7,
+   "id": "64ab2c6100"
   },
   {
    "d": "bhp",
@@ -524,7 +566,8 @@
    "lead": "Z inicjatywą tzw. urlopu godzinowego wyszła fundacja \"Można Lepiej!\". Czy dzielenie urlopu na godziny zamiast dni to dobry pomysł? O tym w \"Sygnałach dnia\" mówił Błażej Prośniewski.",
    "czas": "2026-10-21T09:59:44+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "705cc2583f"
   },
   {
    "d": "ppoz",
@@ -536,7 +579,8 @@
    "tematy": [
     "Ppoż w obiektach"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "9b345b4640"
   },
   {
    "d": "ppoz",
@@ -549,7 +593,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "a5ed9a4f8a"
   },
   {
    "d": "ppoz",
@@ -562,7 +607,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "7ab525765f"
   },
   {
    "d": "bhp",
@@ -575,7 +621,8 @@
     "Przepisy",
     "Mobbing"
    ],
-   "pkt": 5
+   "pkt": 5,
+   "id": "8c11d83203"
   },
   {
    "d": "ppoz",
@@ -588,7 +635,8 @@
     "Wypadki",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "3d20519bde"
   },
   {
    "d": "ppoz",
@@ -602,7 +650,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "bd0d49e003"
   },
   {
    "d": "ppoz",
@@ -615,7 +664,8 @@
     "Wypadki",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "be9063a717"
   },
   {
    "d": "bhp",
@@ -625,7 +675,8 @@
    "lead": "Ciepło z centrów danych może pokryć nawet 17% potrzeb polskiego ciepłownictwa. PLDCA prognozuje rozwój rynku i odzysk 19,7 tys. TJ energii rocznie.",
    "czas": "2026-10-21T07:17:23+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "002156be24"
   },
   {
    "d": "bhp",
@@ -635,7 +686,8 @@
    "lead": "Zmiana czasu z letniego na zimowy w nocy z 24 na 25 października 2026 roku niesie ze sobą istotne skutki finansowe i organizacyjne. Wielu pracowników zyska doda...",
    "czas": "2026-10-21T07:17:00+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "266f42d832"
   },
   {
    "d": "ppoz",
@@ -649,7 +701,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "32ddf03245"
   },
   {
    "d": "ppoz",
@@ -662,7 +715,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "ef3cda8c75"
   },
   {
    "d": "bhp",
@@ -674,7 +728,8 @@
    "tematy": [
     "Przepisy"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "3730238fcf"
   },
   {
    "d": "bhp",
@@ -686,7 +741,8 @@
    "tematy": [
     "Przepisy"
    ],
-   "pkt": 4
+   "pkt": 4,
+   "id": "e8d75524f9"
   },
   {
    "d": "ppoz",
@@ -696,7 +752,8 @@
    "lead": "",
    "czas": "2026-10-21T06:00:00+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "5537b8c0d4"
   },
   {
    "d": "bhp",
@@ -706,7 +763,8 @@
    "lead": "Dr Monika Konieczyńska w wywiadzie dla e-magazyny opowiada o tym, czy ciepło z lata może być przechowywane i wykorzystywane zimą.",
    "czas": "2026-10-21T05:01:17+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "671d35adf1"
   },
   {
    "d": "bhp",
@@ -719,7 +777,8 @@
     "Przepisy",
     "Zdrowie w pracy"
    ],
-   "pkt": 5
+   "pkt": 5,
+   "id": "eb35c86721"
   },
   {
    "d": "bhp",
@@ -729,7 +788,8 @@
    "lead": "",
    "czas": "2026-10-21T03:24:07+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "5ae60a1042"
   },
   {
    "d": "bhp",
@@ -742,7 +802,8 @@
     "Kontrole PIP",
     "Wypadki"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "92e39844b8"
   },
   {
    "d": "ppoz",
@@ -756,7 +817,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "a4295d6112"
   },
   {
    "d": "bhp",
@@ -768,7 +830,8 @@
    "tematy": [
     "Przepisy"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "ab7b816c51"
   },
   {
    "d": "ppoz",
@@ -781,7 +844,8 @@
     "Ppoż w obiektach",
     "Straż"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "b8cecaa408"
   },
   {
    "d": "ppoz",
@@ -793,7 +857,8 @@
    "tematy": [
     "Ppoż w obiektach"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "8ecfa7324d"
   },
   {
    "d": "ppoz",
@@ -806,7 +871,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "5c0e658486"
   },
   {
    "d": "bhp",
@@ -818,7 +884,8 @@
    "tematy": [
     "Przepisy"
    ],
-   "pkt": 4
+   "pkt": 4,
+   "id": "daa97dc3b7"
   },
   {
    "d": "ppoz",
@@ -831,7 +898,8 @@
     "Przepisy",
     "Ppoż w obiektach"
    ],
-   "pkt": 5
+   "pkt": 5,
+   "id": "45ae3befae"
   },
   {
    "d": "ppoz",
@@ -844,7 +912,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "f3c902a4aa"
   },
   {
    "d": "ppoz",
@@ -857,7 +926,8 @@
     "Przepisy",
     "Ppoż w obiektach"
    ],
-   "pkt": 5
+   "pkt": 5,
+   "id": "c50f4d477b"
   },
   {
    "d": "bhp",
@@ -869,7 +939,8 @@
    "tematy": [
     "Przepisy"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "e2b7acb40e"
   },
   {
    "d": "ppoz",
@@ -881,7 +952,8 @@
    "tematy": [
     "Pożary"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "c81e688de2"
   },
   {
    "d": "ppoz",
@@ -891,7 +963,8 @@
    "lead": "",
    "czas": "2026-10-20T12:19:14+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "dd8f5c780e"
   },
   {
    "d": "bhp",
@@ -903,7 +976,8 @@
    "tematy": [
     "Kontrole PIP"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "9d0cf0237c"
   },
   {
    "d": "ppoz",
@@ -913,7 +987,8 @@
    "lead": "Zarząd Powiatu Wschowskiego odpowiedział na stanowisko Gminy Wschowa z 15 października w sprawie Przedszkola nr 3 „Wesoła Trójeczka”. Publikujemy pełną...",
    "czas": "2026-10-20T11:11:00+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "b007f56a5a"
   },
   {
    "d": "ppoz",
@@ -926,7 +1001,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "f5f4e6a709"
   },
   {
    "d": "bhp",
@@ -936,7 +1012,8 @@
    "lead": "Konkurs na dyrektora szpitala w Chełmie już trwa. Sprawdź, kto może kandydować i kiedy poznamy nowego szefa placówki.",
    "czas": "2026-10-20T10:45:00+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "9a1fdefad9"
   },
   {
    "d": "bhp",
@@ -948,7 +1025,8 @@
    "tematy": [
     "Kontrole PIP"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "ad35113bfa"
   },
   {
    "d": "ppoz",
@@ -962,7 +1040,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 5
+   "pkt": 5,
+   "id": "5f2da043d9"
   },
   {
    "d": "bhp",
@@ -972,7 +1051,8 @@
    "lead": "Zmiana czasu 25.10.2026: nocna zmiana godzinę dłużej. Wynagrodzenie, dodatek nocny 5,46 zł, nadgodziny i czas wolny – co Ci się należy.",
    "czas": "2026-10-20T10:00:48+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "6be2972b9e"
   },
   {
    "d": "bhp",
@@ -984,7 +1064,8 @@
    "tematy": [
     "Przepisy"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "0402fc9e1b"
   },
   {
    "d": "bhp",
@@ -994,7 +1075,8 @@
    "lead": "",
    "czas": "2026-10-20T09:52:00+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "f10c479389"
   },
   {
    "d": "bhp",
@@ -1007,7 +1089,8 @@
     "Przepisy",
     "Zdrowie w pracy"
    ],
-   "pkt": 5
+   "pkt": 5,
+   "id": "04c9727ec0"
   },
   {
    "d": "bhp",
@@ -1019,7 +1102,8 @@
    "tematy": [
     "Przepisy"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "c2c9e89a56"
   },
   {
    "d": "bhp",
@@ -1031,7 +1115,8 @@
    "tematy": [
     "Przepisy"
    ],
-   "pkt": 4
+   "pkt": 4,
+   "id": "9c36e797e6"
   },
   {
    "d": "ppoz",
@@ -1044,7 +1129,8 @@
     "Ppoż w obiektach",
     "Pożary"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "72bf0b43e8"
   },
   {
    "d": "ppoz",
@@ -1056,7 +1142,8 @@
    "tematy": [
     "Ppoż w obiektach"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "2174f093c4"
   },
   {
    "d": "bhp",
@@ -1068,7 +1155,8 @@
    "tematy": [
     "Kontrole PIP"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "027a221085"
   },
   {
    "d": "bhp",
@@ -1080,7 +1168,8 @@
    "tematy": [
     "Kontrole PIP"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "784311186c"
   },
   {
    "d": "ppoz",
@@ -1094,7 +1183,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "6f7077301b"
   },
   {
    "d": "bhp",
@@ -1106,7 +1196,8 @@
    "tematy": [
     "Zdrowie w pracy"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "20598a4a20"
   },
   {
    "d": "ppoz",
@@ -1116,7 +1207,8 @@
    "lead": "Niewiele brakowało, a doszłoby do tragedii w jednym z domów jednorodzinnych przy ulicy Kuklińskiego w Kaliszu. W budynku zaczął ulatniać się tlenek węgla.",
    "czas": "2026-10-19T17:37:07+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "ddf41612a4"
   },
   {
    "d": "bhp",
@@ -1128,7 +1220,8 @@
    "tematy": [
     "Kontrole PIP"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "ec71998f5d"
   },
   {
    "d": "bhp",
@@ -1138,7 +1231,8 @@
    "lead": "",
    "czas": "2026-10-19T15:24:24+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "3e8ed9a924"
   },
   {
    "d": "ppoz",
@@ -1151,7 +1245,8 @@
     "Kontrole PIP",
     "Pożary"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "4059aac20f"
   },
   {
    "d": "bhp",
@@ -1161,7 +1256,8 @@
    "lead": "",
    "czas": "2026-10-19T13:41:39+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "b9d626f299"
   },
   {
    "d": "bhp",
@@ -1173,7 +1269,8 @@
    "tematy": [
     "Wypadki"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "7c9e1b1aee"
   },
   {
    "d": "bhp",
@@ -1186,7 +1283,8 @@
     "Przepisy",
     "Mobbing"
    ],
-   "pkt": 5
+   "pkt": 5,
+   "id": "3488a60541"
   },
   {
    "d": "bhp",
@@ -1198,7 +1296,8 @@
    "tematy": [
     "Wypadki"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "f7da8c7d6b"
   },
   {
    "d": "bhp",
@@ -1210,7 +1309,8 @@
    "tematy": [
     "Przepisy"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "a0c00e16ab"
   },
   {
    "d": "bhp",
@@ -1223,7 +1323,8 @@
     "Przepisy",
     "Wypadki"
    ],
-   "pkt": 4
+   "pkt": 4,
+   "id": "3fd015985e"
   },
   {
    "d": "bhp",
@@ -1236,7 +1337,8 @@
     "Przepisy",
     "Mobbing"
    ],
-   "pkt": 5
+   "pkt": 5,
+   "id": "e8598f0e18"
   },
   {
    "d": "ppoz",
@@ -1250,7 +1352,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 4
+   "pkt": 4,
+   "id": "3ea2de5544"
   },
   {
    "d": "ppoz",
@@ -1260,7 +1363,8 @@
    "lead": "Nekrolog: śp. BOŻENA DOMINIKIEWICZ, lat 55, zm. 19 października 2026 r. Pogrzeb 21 października 2026 r. o godz. 15:00. Msza: Świętych Apostołów Filipa i Jakuba w Osielcu.",
    "czas": "2026-10-19T10:42:30+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "c3ef33aaea"
   },
   {
    "d": "bhp",
@@ -1272,7 +1376,8 @@
    "tematy": [
     "Przepisy"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "a43603a70f"
   },
   {
    "d": "bhp",
@@ -1284,7 +1389,8 @@
    "tematy": [
     "Przepisy"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "fd498d03c8"
   },
   {
    "d": "bhp",
@@ -1296,21 +1402,8 @@
    "tematy": [
     "Kontrole PIP"
    ],
-   "pkt": 2
-  },
-  {
-   "d": "ppoz",
-   "t": "Policjant z Pelplina i Strażnicy Leśni wspólnie patrolowali lasy w ramach działań „Jesień 2026”",
-   "z": "Komenda Powiatowa Policji w Tczewie",
-   "url": "https://tczew.policja.gov.pl/m15/informacje/wiadomosci/159802,Policjant-z-Pelplina-i-Straznicy-Lesni-wspolnie-patrolowali-lasy-w-ramach-dziala.html",
-   "lead": "Policjant z Komisariatu Policji w Pelplinie wspólnie z funkcjonariuszami Straży Leśnej Nadleśnictwa Starogard kontrolował tereny leśne i akweny wodne. W ramach działań „Jesień 2026” mundurowi sprawdzali między innymi miejsca narażone na zaśmiecanie, nielegalny wjazd do lasu oraz obszary związane z pozyskiwaniem i składowaniem drewna. Zwracali również uwagę na przestrzeganie przepisów przeciwpożarowych.",
-   "czas": "2026-10-19T09:51:01+00:00",
-   "tematy": [
-    "Przepisy",
-    "Kontrole PIP",
-    "Ppoż w obiektach"
-   ],
-   "pkt": 4
+   "pkt": 2,
+   "id": "8abb1187cb"
   },
   {
    "d": "bhp",
@@ -1323,7 +1416,8 @@
     "Przepisy",
     "Mobbing"
    ],
-   "pkt": 5
+   "pkt": 5,
+   "id": "323dee8ccb"
   },
   {
    "d": "ppoz",
@@ -1335,7 +1429,8 @@
    "tematy": [
     "Szkolenia"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "fb90af8489"
   },
   {
    "d": "ppoz",
@@ -1348,7 +1443,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "a8934dd22c"
   },
   {
    "d": "ppoz",
@@ -1361,7 +1457,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "63eb63cde3"
   },
   {
    "d": "ppoz",
@@ -1375,7 +1472,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "f0ecb917b2"
   },
   {
    "d": "ppoz",
@@ -1388,7 +1486,8 @@
     "Ppoż w obiektach",
     "Straż"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "d7ab5c7833"
   },
   {
    "d": "ppoz",
@@ -1401,7 +1500,8 @@
     "Przepisy",
     "Kontrole PIP"
    ],
-   "pkt": 5
+   "pkt": 5,
+   "id": "2ed4f256f3"
   },
   {
    "d": "bhp",
@@ -1413,7 +1513,8 @@
    "tematy": [
     "Wypadki"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "e6b2070067"
   },
   {
    "d": "bhp",
@@ -1423,7 +1524,8 @@
    "lead": "Osiem lat temu niedzielne zakupy stały się w Polsce wyjątkiem. Dziś pojawia się pomysł, który może całkowicie odwrócić ten kierunek. Co ciekawe, za powrotem handlu w niedziele nie opowiadają się tym razem przedstawiciele sklepów czy organizacji przedsiębiorców, ale… związkowcy, którzy chcą całkowitego zniesienia ograniczeń. Jednocześnie proponują rozwiązanie, które miałoby sprawić, że praca w niedzielę będzie znacznie lepiej wynagradzana.",
    "czas": "2026-10-19T05:03:00+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "9dc6f43275"
   },
   {
    "d": "bhp",
@@ -1433,7 +1535,8 @@
    "lead": "",
    "czas": "2026-10-19T04:23:56+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "c7b33624c9"
   },
   {
    "d": "bhp",
@@ -1443,7 +1546,8 @@
    "lead": "",
    "czas": "2026-10-19T03:24:21+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "74740852bd"
   },
   {
    "d": "ppoz",
@@ -1456,7 +1560,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "f8bf16e01c"
   },
   {
    "d": "bhp",
@@ -1468,7 +1573,8 @@
    "tematy": [
     "Wypadki"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "1709941a4f"
   },
   {
    "d": "ppoz",
@@ -1481,7 +1587,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "08896df96d"
   },
   {
    "d": "bhp",
@@ -1493,7 +1600,8 @@
    "tematy": [
     "Wypadki"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "2c6188f57e"
   },
   {
    "d": "ppoz",
@@ -1505,7 +1613,8 @@
    "tematy": [
     "Ppoż w obiektach"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "c1c05fdb9d"
   },
   {
    "d": "ppoz",
@@ -1518,7 +1627,8 @@
     "Wypadki",
     "Pożary"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "aa226eecd6"
   },
   {
    "d": "bhp",
@@ -1530,7 +1640,8 @@
    "tematy": [
     "Kontrole PIP"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "98c32d4b3b"
   },
   {
    "d": "ppoz",
@@ -1540,7 +1651,8 @@
    "lead": "Alerty RCB przypominają, jak ważna jest znajomość miejsc, w których można szukać ochrony. Warto sprawdzić je wcześniej, w pobliżu domu, pracy czy...",
    "czas": "2026-10-18T07:02:16+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "3ccaa21530"
   },
   {
    "d": "ppoz",
@@ -1552,7 +1664,8 @@
    "tematy": [
     "Przepisy"
    ],
-   "pkt": 4
+   "pkt": 4,
+   "id": "fac0132904"
   },
   {
    "d": "bhp",
@@ -1566,7 +1679,8 @@
     "Kontrole PIP",
     "Zdrowie w pracy"
    ],
-   "pkt": 6
+   "pkt": 6,
+   "id": "ceb9f4dc94"
   },
   {
    "d": "ppoz",
@@ -1579,7 +1693,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "c638b54591"
   },
   {
    "d": "bhp",
@@ -1591,7 +1706,8 @@
    "tematy": [
     "Przepisy"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "039fdf1330"
   },
   {
    "d": "bhp",
@@ -1604,7 +1720,8 @@
     "Przepisy",
     "Zdrowie w pracy"
    ],
-   "pkt": 4
+   "pkt": 4,
+   "id": "94dbdbecf3"
   },
   {
    "d": "bhp",
@@ -1614,7 +1731,8 @@
    "lead": "Manuel Pellegrini wściekły po meczu z Barceloną. Uderzył w sędziego",
    "czas": "2026-10-17T20:47:03+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "8f942eee3c"
   },
   {
    "d": "ppoz",
@@ -1626,7 +1744,8 @@
    "tematy": [
     "Straż"
    ],
-   "pkt": 0
+   "pkt": 0,
+   "id": "e207d6431e"
   },
   {
    "d": "ppoz",
@@ -1639,7 +1758,8 @@
     "Przepisy",
     "Ppoż w obiektach"
    ],
-   "pkt": 7
+   "pkt": 7,
+   "id": "a60cb5aca4"
   },
   {
    "d": "ppoz",
@@ -1653,7 +1773,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "fa5b365929"
   },
   {
    "d": "ppoz",
@@ -1667,7 +1788,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "c2655c7410"
   },
   {
    "d": "ppoz",
@@ -1680,7 +1802,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "427730c9bb"
   },
   {
    "d": "bhp",
@@ -1692,7 +1815,8 @@
    "tematy": [
     "Wypadki"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "4ade788c9c"
   },
   {
    "d": "bhp",
@@ -1702,7 +1826,8 @@
    "lead": "Od 1 stycznia 2027 roku zmienią się zasady obliczania kwoty wynagrodzenia chronionej przed zajęciem komorniczym. Dla wielu zadłużonych Polaków...",
    "czas": "2026-10-17T18:40:45+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "6cab84b385"
   },
   {
    "d": "ppoz",
@@ -1714,7 +1839,8 @@
    "tematy": [
     "Straż"
    ],
-   "pkt": 0
+   "pkt": 0,
+   "id": "14af3979e3"
   },
   {
    "d": "ppoz",
@@ -1727,7 +1853,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "c7f984ec0d"
   },
   {
    "d": "ppoz",
@@ -1741,7 +1868,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "523b33df51"
   },
   {
    "d": "ppoz",
@@ -1754,7 +1882,8 @@
     "Ppoż w obiektach",
     "Pożary"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "a23f27bbd3"
   },
   {
    "d": "ppoz",
@@ -1767,7 +1896,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "8d7780cc23"
   },
   {
    "d": "ppoz",
@@ -1780,7 +1910,21 @@
     "Wypadki",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "50b2c4db9a"
+  },
+  {
+   "d": "ppoz",
+   "t": "Gmina Zaręby Kościelne stawia na bezpieczeństwo. Spotkanie z przedstawicielami służb (zdjęcia)",
+   "z": "OPI Ostrowski Portal Internetowy - Ostrów Mazowiecka",
+   "url": "https://www.ostrowmaz.com/aktualnosci/48486",
+   "lead": "Punkty schronienia, system alarmowania, procedury reagowania na zagrożenia oraz bezpieczeństwo dzieci i młodzieży - to najważniejsze tematy spotkania, które odbyło się 12 października 2026 r. w gminie Zaręby Kościelne. W rozmowach uczestniczyli przedstawiciele służb, dyrektorzy placówek oświatowych oraz pracownicy samorządowi odpowiedzialni za zarządzanie kryzysowe, ochronę ludności i obronę cywilną.",
+   "czas": "2026-10-17T11:39:00+00:00",
+   "tematy": [
+    "Ppoż w obiektach"
+   ],
+   "pkt": 2,
+   "id": "be164354c7"
   },
   {
    "d": "ppoz",
@@ -1793,7 +1937,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "aca8d75fc0"
   },
   {
    "d": "ppoz",
@@ -1807,7 +1952,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "6f1d38b881"
   },
   {
    "d": "ppoz",
@@ -1819,7 +1965,8 @@
    "tematy": [
     "Kontrole PIP"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "e066589648"
   },
   {
    "d": "ppoz",
@@ -1833,20 +1980,22 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "6100ddeb30"
   },
   {
    "d": "ppoz",
    "t": "Nadali sygnał \"Ratunek\". Nie żyje dwóch strażaków. Szczegóły akcji w Nisku",
    "z": "Fakt",
    "url": "https://www.fakt.pl/wydarzenia/polska/rzeszow/smierc-strazakow-w-pozarze-w-nisku-nadali-sygnal-ratunek/rqegk33",
-   "lead": "Cały czas była łączność ze strażakami, którzy gasili pożar sklepu w Nisku (woj. podkarpackie). – W pewnym momencie nadali sygnał \"Ratunek\" – powiedział nadbryg. Tomasz Baran, komendant wojewódzki Państwowej Straży Pożarnej w Rzeszowie. Jeden z nich udało się wydostać dopiero za trzecim podejściem.",
+   "lead": "Cały czas była łączność ze strażakami, którzy gasili pożar sklepu w Nisku (woj. podkarpackie). – W pewnym momencie nadali sygnał \"Ratunek\" – powiedział nadbryg. Tomasz Baran, komendant wojewódzki P...",
    "czas": "2026-10-17T08:07:57+00:00",
    "tematy": [
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "8b8b2d0740"
   },
   {
    "d": "ppoz",
@@ -1860,7 +2009,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "e39b9f6c06"
   },
   {
    "d": "ppoz",
@@ -1870,7 +2020,8 @@
    "lead": "Politechnika Śląska- publiczna uczelnia techniczna w Gliwicach | 17.10.2026 r. odbyła się na Wydziale Mechanicznym Technologicznym Politechniki Śląskiej uroczysta inauguracja piątej już edycji Studiów Podyplomowych",
    "czas": "2026-10-17T07:00:00+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "a7ad3850c6"
   },
   {
    "d": "ppoz",
@@ -1884,7 +2035,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "d17005b664"
   },
   {
    "d": "ppoz",
@@ -1898,7 +2050,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "3498bec5d5"
   },
   {
    "d": "ppoz",
@@ -1911,7 +2064,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "ff3a2e3578"
   },
   {
    "d": "ppoz",
@@ -1925,7 +2079,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "110f12a6b7"
   },
   {
    "d": "ppoz",
@@ -1938,7 +2093,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "f255a0e478"
   },
   {
    "d": "bhp",
@@ -1950,7 +2106,8 @@
    "tematy": [
     "Przepisy"
    ],
-   "pkt": 4
+   "pkt": 4,
+   "id": "9f36a09ec8"
   },
   {
    "d": "ppoz",
@@ -1963,7 +2120,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "76025c7cea"
   },
   {
    "d": "ppoz",
@@ -1977,7 +2135,8 @@
     "Kontrole PIP",
     "Ppoż w obiektach"
    ],
-   "pkt": 7
+   "pkt": 7,
+   "id": "9b618e0ed9"
   },
   {
    "d": "ppoz",
@@ -1990,7 +2149,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "40d6c0efde"
   },
   {
    "d": "ppoz",
@@ -2003,7 +2163,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "c9e4479f2a"
   },
   {
    "d": "bhp",
@@ -2013,7 +2174,8 @@
    "lead": "Zobacz program tv dla The Office PL 2, sezon 2, odc. 2. Oglądaj online ulubione seriale.",
    "czas": "2026-10-16T22:24:53+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "dc05307fae"
   },
   {
    "d": "ppoz",
@@ -2027,7 +2189,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "453967eae1"
   },
   {
    "d": "ppoz",
@@ -2041,7 +2204,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "13e1055507"
   },
   {
    "d": "ppoz",
@@ -2053,7 +2217,8 @@
    "tematy": [
     "Straż"
    ],
-   "pkt": 0
+   "pkt": 0,
+   "id": "afedc9a66b"
   },
   {
    "d": "bhp",
@@ -2065,7 +2230,8 @@
    "tematy": [
     "Przepisy"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "f4b400778e"
   },
   {
    "d": "bhp",
@@ -2078,7 +2244,8 @@
     "Przepisy",
     "Mobbing"
    ],
-   "pkt": 5
+   "pkt": 5,
+   "id": "2cee0f8c62"
   },
   {
    "d": "bhp",
@@ -2090,7 +2257,8 @@
    "tematy": [
     "Przepisy"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "47e9b22261"
   },
   {
    "d": "ppoz",
@@ -2103,7 +2271,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "a2579ffa9e"
   },
   {
    "d": "ppoz",
@@ -2116,7 +2285,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "a004c6e34b"
   },
   {
    "d": "ppoz",
@@ -2130,7 +2300,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "5cbdfb9c8b"
   },
   {
    "d": "ppoz",
@@ -2142,7 +2313,8 @@
    "tematy": [
     "Pożary"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "762ab3aaca"
   },
   {
    "d": "ppoz",
@@ -2155,7 +2327,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "41284b62e0"
   },
   {
    "d": "ppoz",
@@ -2168,7 +2341,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "fb9e4cb4da"
   },
   {
    "d": "ppoz",
@@ -2178,7 +2352,8 @@
    "lead": "Tygodnik Poradnik Rolniczy to portal rolniczy z wiadomościami rolniczymi, cenami rolniczymi oraz artykułami o dopłatach bezpośrednich i dotacjach, ciągnikach",
    "czas": "2026-10-16T14:18:46+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "203984ecc0"
   },
   {
    "d": "ppoz",
@@ -2192,7 +2367,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "0eb433ffbd"
   },
   {
    "d": "ppoz",
@@ -2206,7 +2382,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "e30cf98875"
   },
   {
    "d": "ppoz",
@@ -2220,7 +2397,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "afd77ad495"
   },
   {
    "d": "ppoz",
@@ -2234,7 +2412,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "449ec5b9d0"
   },
   {
    "d": "ppoz",
@@ -2248,7 +2427,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "d476aa4ae0"
   },
   {
    "d": "ppoz",
@@ -2261,7 +2441,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "b7bb3d6858"
   },
   {
    "d": "bhp",
@@ -2273,7 +2454,8 @@
    "tematy": [
     "Wypadki"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "b83cdacfe0"
   },
   {
    "d": "ppoz",
@@ -2287,7 +2469,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "20947f4b33"
   },
   {
    "d": "ppoz",
@@ -2300,7 +2483,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "0c03d58f32"
   },
   {
    "d": "ppoz",
@@ -2313,7 +2497,8 @@
     "Ppoż w obiektach",
     "Straż"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "f42f98e59f"
   },
   {
    "d": "ppoz",
@@ -2327,7 +2512,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "9edd1df76f"
   },
   {
    "d": "ppoz",
@@ -2340,7 +2526,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "07fff7ccfb"
   },
   {
    "d": "ppoz",
@@ -2352,7 +2539,8 @@
    "tematy": [
     "Pożary"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "ac3188054c"
   },
   {
    "d": "ppoz",
@@ -2366,7 +2554,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "a73c600e07"
   },
   {
    "d": "ppoz",
@@ -2379,7 +2568,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "d9ff15a7bf"
   },
   {
    "d": "ppoz",
@@ -2392,33 +2582,50 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "b40205dcf9"
+  },
+  {
+   "d": "ppoz",
+   "t": "Dwóch strażaków zginęło w pożarze magazynu w Nisku na Podkarpaciu. Dziś w całej Polsce zawyją syreny",
+   "z": "iSokolka.eu",
+   "url": "https://isokolka.eu/kraj-swiat/72508-dwoch-strazakow-zginelo-w-pozarze-magazynu-w-nisku-na-podkarpaciu-dzis-w-calej-polsce-zawyja-syreny",
+   "lead": "Sokółka, Dąbrowa Białostocka, Suchowola, Krynki, powiat sokólski. Informacje, forum, ogłoszenia - iSokolka.eu",
+   "czas": "2026-10-16T11:41:19+00:00",
+   "tematy": [
+    "Pożary",
+    "Straż"
+   ],
+   "pkt": 1,
+   "id": "36d1f3ca85"
   },
   {
    "d": "ppoz",
    "t": "Zginęli w czasie służby, walcząc z pożarem. Tak zostaną uhonorowani",
    "z": "Fakt",
    "url": "https://www.fakt.pl/wydarzenia/polska/rzeszow/pozar-w-nisku-tak-uhonoruja-pamiec-dwoch-zmarlych-strazakow/2555p5w",
-   "lead": "Pożar magazynu i sklepu w Nisku (woj. podkarpackie) przybrał dramatyczny obrót, gdy ogień odciął drogę ucieczki dwóm strażakom. Niestety, ich życia nie udało się uratować. Zmarli to mł. kpt. Wojcie...",
+   "lead": "Pożar magazynu i sklepu w Nisku (woj. podkarpackie) przybrał dramatyczny obrót, gdy ogień odciął drogę ucieczki dwóm strażakom. Niestety, ich życia nie udało się uratować. Zmarli to mł. kpt.",
    "czas": "2026-10-16T11:38:00+00:00",
    "tematy": [
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "9cd27e1996"
   },
   {
    "d": "ppoz",
    "t": "SOK może dostać nowe uprawnienia. Sprawdzą bagaż i użyją dronów",
    "z": "Fakt",
    "url": "https://www.fakt.pl/pieniadze/projekt-zmian-dla-strazy-ochrony-kolei-prewencyjne-kontrole-i-nowe-technologie/ktcwg0n",
-   "lead": "Straż Ochrony Kolei może zyskać nowe uprawnienia. Projekt nowelizacji ustawy o transporcie kolejowym przewiduje m.in. prewencyjne sprawdzanie osób i bagażu, wykorzystanie dronów i kamer nasobnych o...",
+   "lead": "Straż Ochrony Kolei może zyskać nowe uprawnienia. Projekt nowelizacji ustawy o transporcie kolejowym przewiduje m.in. prewencyjne sprawdzanie osób i bagażu, wykorzystanie dronów i kamer nasobnych oraz szersze stosowanie środków przymusu bezpośredniego.",
    "czas": "2026-10-16T11:30:00+00:00",
    "tematy": [
     "Przepisy",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "5bef02771e"
   },
   {
    "d": "ppoz",
@@ -2431,7 +2638,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "771020b447"
   },
   {
    "d": "bhp",
@@ -2443,7 +2651,8 @@
    "tematy": [
     "Przepisy"
    ],
-   "pkt": 4
+   "pkt": 4,
+   "id": "1a5f6972fe"
   },
   {
    "d": "ppoz",
@@ -2457,7 +2666,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "7e43a5e76a"
   },
   {
    "d": "ppoz",
@@ -2467,7 +2677,8 @@
    "lead": "Służby zatrzymały nie tylko dwóch obywateli Turcji podejrzanych o podpalenie stacji Starlink w Woli Krobowskiej na Mazowszu, ale również osobę, która wcześniej prowadziła rozpoznanie obiektu i jego zabezpieczeń. Jak wynika z informacji ABW, śledczy badają nie tylko przebieg samego ataku, lecz także możliwy udział rosyjskich służb specjalnych oraz rolę potencjalnych organizatorów i zleceniodawców.",
    "czas": "2026-10-16T10:36:03+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "8776807e9c"
   },
   {
    "d": "ppoz",
@@ -2477,7 +2688,8 @@
    "lead": "Troska o dziedzictwo kulturowe, budowanie relacji międzyludzkich i przygotowanie na współczesne wyzwania.",
    "czas": "2026-10-16T10:24:23+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "3454a67b0c"
   },
   {
    "d": "ppoz",
@@ -2490,7 +2702,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "ca3a847116"
   },
   {
    "d": "ppoz",
@@ -2504,7 +2717,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "e22eabc154"
   },
   {
    "d": "ppoz",
@@ -2518,7 +2732,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "ce96074360"
   },
   {
    "d": "ppoz",
@@ -2532,7 +2747,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "13d0a8f7c7"
   },
   {
    "d": "ppoz",
@@ -2545,7 +2761,8 @@
     "Ppoż w obiektach",
     "Straż"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "00fc9bb9d1"
   },
   {
    "d": "ppoz",
@@ -2558,7 +2775,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "52ee606ad8"
   },
   {
    "d": "ppoz",
@@ -2572,7 +2790,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "51ab0d6709"
   },
   {
    "d": "ppoz",
@@ -2585,7 +2804,8 @@
     "Przepisy",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "c77ced8c42"
   },
   {
    "d": "ppoz",
@@ -2598,7 +2818,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "e2d564a5ed"
   },
   {
    "d": "ppoz",
@@ -2612,7 +2833,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "50d7b41902"
   },
   {
    "d": "ppoz",
@@ -2625,7 +2847,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "afbcf4d10f"
   },
   {
    "d": "ppoz",
@@ -2639,7 +2862,8 @@
     "Wypadki",
     "Pożary"
    ],
-   "pkt": 4
+   "pkt": 4,
+   "id": "8d69384d9e"
   },
   {
    "d": "ppoz",
@@ -2652,7 +2876,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "a7103817a7"
   },
   {
    "d": "ppoz",
@@ -2666,7 +2891,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "1e880ebbb7"
   },
   {
    "d": "ppoz",
@@ -2679,7 +2905,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "c067cf8a06"
   },
   {
    "d": "ppoz",
@@ -2692,7 +2919,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "8ef360ba07"
   },
   {
    "d": "ppoz",
@@ -2705,7 +2933,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "8c09dd1910"
   },
   {
    "d": "ppoz",
@@ -2719,7 +2948,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "63073b5ba7"
   },
   {
    "d": "ppoz",
@@ -2733,7 +2963,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "d4cb944b2f"
   },
   {
    "d": "ppoz",
@@ -2746,7 +2977,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "b85d8d3a3e"
   },
   {
    "d": "ppoz",
@@ -2759,7 +2991,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "71c273d586"
   },
   {
    "d": "ppoz",
@@ -2772,7 +3005,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "0495357063"
   },
   {
    "d": "ppoz",
@@ -2785,7 +3019,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "55d5ddf95f"
   },
   {
    "d": "ppoz",
@@ -2798,7 +3033,8 @@
     "Przepisy",
     "Ppoż w obiektach"
    ],
-   "pkt": 7
+   "pkt": 7,
+   "id": "c62a8ab1bf"
   },
   {
    "d": "ppoz",
@@ -2811,7 +3047,8 @@
     "Przepisy",
     "Ppoż w obiektach"
    ],
-   "pkt": 7
+   "pkt": 7,
+   "id": "39601360b4"
   },
   {
    "d": "ppoz",
@@ -2824,20 +3061,22 @@
     "Ppoż w obiektach",
     "Pożary"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "a2a84291ca"
   },
   {
    "d": "bhp",
    "t": "Mobbing. Duże zmiany w Kodeksie pracy od 5 listopada 2026",
    "z": "My Company Polska",
    "url": "https://mycompanypolska.pl/artykul/mobbing-w-pracy-nowe-przepisy-juz-od-5-listopada/21248",
-   "lead": "",
+   "lead": "Nowelizacja Kodeksu pracy ma wzmocnić ochronę pracowników przed mobbingiem i dyskryminacją. Zmieni się definicja nękania, wzrośnie minimalne zadośćuczynienie, a firmy zatrudniające co najmniej 10 osób będą musiały zadbać o odpowiednie procedury.",
    "czas": "2026-10-16T07:00:00+00:00",
    "tematy": [
     "Przepisy",
     "Mobbing"
    ],
-   "pkt": 5
+   "pkt": 5,
+   "id": "1e0f143efc"
   },
   {
    "d": "bhp",
@@ -2847,7 +3086,8 @@
    "lead": "Wynagrodzenie postojowe przysługuje w sytuacji, gdy pracownik z powodów od niego niezależnych nie ma możliwości wykonywania pracy. Przeczytaj!",
    "czas": "2026-10-16T07:00:00+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "f367e29fd9"
   },
   {
    "d": "bhp",
@@ -2860,7 +3100,8 @@
     "Przepisy",
     "Zdrowie w pracy"
    ],
-   "pkt": 4
+   "pkt": 4,
+   "id": "a45b2bf58e"
   },
   {
    "d": "bhp",
@@ -2870,7 +3111,8 @@
    "lead": "Honorowe krwiodawstwo, to piękna i niezwykle potrzebna społecznie idea, którą realizuje liczna grupa honorowych dawców krwi. Okazuje się, że pewne problemy organizacyjne w związku z oddawaniem krwi przez swoich pracowników, mają pracodawcy. Po pierwsze nie dostają żadnych rekompensat ani ulg w związku z nieobecnością w pracy (dwa dni wolne) pracowników oddających honorowo krew. A nawet nie mogą się sprzeciwić wybranemu przez pracownika terminowi oddania krwi. Kwestię tę podniesiono w interpelacji poselskiej, na którą odpowiedział Minister Zdrowia a także Minister Rodziny, Pracy i Polityki Społecznej.",
    "czas": "2026-10-16T07:00:00+00:00",
    "tematy": [],
-   "pkt": 1
+   "pkt": 1,
+   "id": "61f8d84591"
   },
   {
    "d": "bhp",
@@ -2880,7 +3122,8 @@
    "lead": "W czwartek (15.10.2026) policjanci z Komisariatu Policji w Kętach oraz Wojewódzki Konserwator Zabytków, otrzymali zgłoszenie, iż podczas prac ziemnych w rejonie rzeki Soły w Bielanach, operator koparki odkopał w ziemi duży metalowy obiekt.",
    "czas": "2026-10-16T06:39:32+00:00",
    "tematy": [],
-   "pkt": 0
+   "pkt": 0,
+   "id": "db39ea4b6b"
   },
   {
    "d": "ppoz",
@@ -2893,7 +3136,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "2e2dad0cf2"
   },
   {
    "d": "ppoz",
@@ -2905,7 +3149,8 @@
    "tematy": [
     "Ppoż w obiektach"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "41d9ad8dbe"
   },
   {
    "d": "ppoz",
@@ -2917,7 +3162,8 @@
    "tematy": [
     "Pożary"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "92a53a28bb"
   },
   {
    "d": "ppoz",
@@ -2930,7 +3176,8 @@
     "Przepisy",
     "Ppoż w obiektach"
    ],
-   "pkt": 5
+   "pkt": 5,
+   "id": "1d4ddbd597"
   },
   {
    "d": "ppoz",
@@ -2943,7 +3190,8 @@
     "Szkolenia",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "6c27ea98ae"
   },
   {
    "d": "ppoz",
@@ -2956,7 +3204,8 @@
     "Przepisy",
     "Ppoż w obiektach"
    ],
-   "pkt": 5
+   "pkt": 5,
+   "id": "d237a8c36a"
   },
   {
    "d": "ppoz",
@@ -2969,7 +3218,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "c9d3098db3"
   },
   {
    "d": "ppoz",
@@ -2979,7 +3229,8 @@
    "lead": "",
    "czas": "2026-10-15T16:37:14+00:00",
    "tematy": [],
-   "pkt": 2
+   "pkt": 2,
+   "id": "43d5c6e1b9"
   },
   {
    "d": "ppoz",
@@ -2992,7 +3243,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "ed3f0ed797"
   },
   {
    "d": "bhp",
@@ -3004,7 +3256,8 @@
    "tematy": [
     "Kontrole PIP"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "36b1741d30"
   },
   {
    "d": "ppoz",
@@ -3017,7 +3270,8 @@
     "Przepisy",
     "Ppoż w obiektach"
    ],
-   "pkt": 5
+   "pkt": 5,
+   "id": "dca9f4c82e"
   },
   {
    "d": "ppoz",
@@ -3030,7 +3284,8 @@
     "Przepisy",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "f9bfb5bd98"
   },
   {
    "d": "bhp",
@@ -3042,7 +3297,8 @@
    "tematy": [
     "Zdrowie w pracy"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "e855bf9e07"
   },
   {
    "d": "bhp",
@@ -3055,7 +3311,8 @@
     "Przepisy",
     "Zdrowie w pracy"
    ],
-   "pkt": 4
+   "pkt": 4,
+   "id": "74b71c4f2b"
   },
   {
    "d": "ppoz",
@@ -3069,7 +3326,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 3
+   "pkt": 3,
+   "id": "5eb4455b6e"
   },
   {
    "d": "ppoz",
@@ -3083,7 +3341,8 @@
     "Ppoż w obiektach",
     "Pożary"
    ],
-   "pkt": 6
+   "pkt": 6,
+   "id": "a3927b1ecd"
   },
   {
    "d": "ppoz",
@@ -3095,7 +3354,8 @@
    "tematy": [
     "Pożary"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "5bba229e41"
   },
   {
    "d": "bhp",
@@ -3107,17 +3367,8 @@
    "tematy": [
     "Przepisy"
    ],
-   "pkt": 3
-  },
-  {
-   "d": "bhp",
-   "t": "Urlop wypoczynkowy dzielony na godziny? Ta petycja ucieszy wielu pracowników",
-   "z": "Kobiece Inspiracje",
-   "url": "https://kobieceinspiracje.pl/188480,urlop-wypoczynkowy-dzielony-na-godziny-ta-petycja-ucieszy-wielu-pracownikow.html",
-   "lead": "Urlop wypoczynkowy na godziny zamiast całego dnia? Petycja do Sejmu: max 3 dni (24 h) elastycznie, wniosek pracownika, zgoda pracodawcy. Szczegóły i termin 2027.",
-   "czas": "2026-10-15T09:03:11+00:00",
-   "tematy": [],
-   "pkt": 0
+   "pkt": 3,
+   "id": "47f3a9cca9"
   },
   {
    "d": "luz",
@@ -3129,7 +3380,8 @@
    "tematy": [
     "Straż"
    ],
-   "pkt": 0
+   "pkt": 0,
+   "id": "a1666d84ab"
   },
   {
    "d": "luz",
@@ -3141,7 +3393,8 @@
    "tematy": [
     "Straż"
    ],
-   "pkt": 0
+   "pkt": 0,
+   "id": "541514459f"
   },
   {
    "d": "luz",
@@ -3153,7 +3406,8 @@
    "tematy": [
     "Straż"
    ],
-   "pkt": 0
+   "pkt": 0,
+   "id": "69c71f6d77"
   },
   {
    "d": "luz",
@@ -3165,7 +3419,8 @@
    "tematy": [
     "Straż"
    ],
-   "pkt": 0
+   "pkt": 0,
+   "id": "0fca9ce9e7"
   },
   {
    "d": "luz",
@@ -3177,7 +3432,8 @@
    "tematy": [
     "Straż"
    ],
-   "pkt": 0
+   "pkt": 0,
+   "id": "5814a9e54e"
   },
   {
    "d": "luz",
@@ -3189,7 +3445,8 @@
    "tematy": [
     "Straż"
    ],
-   "pkt": 0
+   "pkt": 0,
+   "id": "7fe6116a66"
   },
   {
    "d": "luz",
@@ -3201,7 +3458,8 @@
    "tematy": [
     "Straż"
    ],
-   "pkt": 0
+   "pkt": 0,
+   "id": "e498a80f5e"
   },
   {
    "d": "luz",
@@ -3213,7 +3471,8 @@
    "tematy": [
     "Straż"
    ],
-   "pkt": 0
+   "pkt": 0,
+   "id": "62f0dff522"
   },
   {
    "d": "luz",
@@ -3226,7 +3485,8 @@
     "Ppoż w obiektach",
     "Straż"
    ],
-   "pkt": 2
+   "pkt": 2,
+   "id": "76ca7f270e"
   },
   {
    "d": "luz",
@@ -3238,7 +3498,8 @@
    "tematy": [
     "Straż"
    ],
-   "pkt": 0
+   "pkt": 0,
+   "id": "35b2cd93ef"
   },
   {
    "d": "luz",
@@ -3251,7 +3512,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "e812890afb"
   },
   {
    "d": "luz",
@@ -3263,7 +3525,8 @@
    "tematy": [
     "Straż"
    ],
-   "pkt": 0
+   "pkt": 0,
+   "id": "dfc7e3eb75"
   },
   {
    "d": "luz",
@@ -3275,7 +3538,8 @@
    "tematy": [
     "Straż"
    ],
-   "pkt": 0
+   "pkt": 0,
+   "id": "c6e399b7b9"
   },
   {
    "d": "luz",
@@ -3288,7 +3552,8 @@
     "Pożary",
     "Straż"
    ],
-   "pkt": 1
+   "pkt": 1,
+   "id": "83d159a49e"
   },
   {
    "d": "luz",
@@ -3300,7 +3565,8 @@
    "tematy": [
     "Straż"
    ],
-   "pkt": 0
+   "pkt": 0,
+   "id": "ea7acfc233"
   },
   {
    "d": "luz",
@@ -3312,7 +3578,8 @@
    "tematy": [
     "Straż"
    ],
-   "pkt": 0
+   "pkt": 0,
+   "id": "f09e51b4fd"
   },
   {
    "d": "luz",
@@ -3324,7 +3591,8 @@
    "tematy": [
     "Straż"
    ],
-   "pkt": 0
+   "pkt": 0,
+   "id": "b3a4a23356"
   }
  ]
 }

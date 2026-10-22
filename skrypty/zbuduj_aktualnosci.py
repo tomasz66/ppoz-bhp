@@ -5,6 +5,7 @@
 # - ręcznie albo raz dziennie automatem (GitHub Actions po wystawieniu aplikacji).
 # Użycie: python3 skrypty/zbuduj_aktualnosci.py   (z folderu bhp-ppoz)
 import email.utils
+import hashlib
 import html
 import json
 import os
@@ -15,6 +16,8 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
+from tekst_artykulu import akapity, streszczenie
+
 DNI_WSTECZ = 14
 MAX_WPISOW = 250
 WATKI = 12
@@ -23,6 +26,10 @@ UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/60
 GOOGLE = "https://news.google.com/rss/search?q={}+when:{}d&hl=pl&gl=PL&ceid=PL:pl"
 DNI_LUZ = 30
 PAMIEC = "zrodla/pamiec_aktualnosci.json"
+ARTYKULY = "app/data/artykuly.json"
+# Materiały urzędowe nie są chronione prawem autorskim (art. 4 pr. aut.) - pełny tekst w aplikacji.
+# Z mediów bierzemy tylko kilka zdań-streszczenia i odsyłamy do źródła.
+URZEDOWE = re.compile(r"(^|\.)(gov\.pl|pip\.gov\.pl|ciop\.pl|policja\.pl|sejm\.gov\.pl)$")
 POMIJANE_ZRODLA = ["vietnam", "ukrinform"]
 
 
@@ -107,8 +114,7 @@ def rozkoduj_google(link):
     return json.loads(json.loads(odp.split("\n\n")[1])[0][2])[1]
 
 
-def zajawka(url):
-    strona, _ = pobierz(url)
+def zajawka_ze_strony(strona):
     for wzor in (r'<meta[^>]+(?:property|name)=["\']og:description["\'][^>]+content=["\']([^"\']*)',
                  r'<meta[^>]+content=["\']([^"\']*)["\'][^>]+(?:property|name)=["\']og:description',
                  r'<meta[^>]+name=["\']description["\'][^>]+content=["\']([^"\']*)'):
@@ -119,18 +125,26 @@ def zajawka(url):
 
 
 def uzupelnij(w, pamiec):
-    # Adres i zajawkę zapamiętujemy, żeby kolejne uruchomienia nie pobierały ich drugi raz.
-    if w["link"] in pamiec:
-        w.update(pamiec[w["link"]])
+    # Adres, zajawkę, streszczenie i (dla urzędów) pełny tekst zapamiętujemy,
+    # żeby kolejne uruchomienia nie pobierały ich drugi raz.
+    zapis = pamiec.get(w["link"])
+    if zapis and "skrot" in zapis:
+        w.update(zapis)
         return w
+    tresc = []
     try:
         if "news.google.com" in w["link"]:
             w["url"] = rozkoduj_google(w["link"])
+        strona, _ = pobierz(w["url"])
         if not w.get("lead"):
-            w["lead"] = zajawka(w["url"])
+            w["lead"] = zajawka_ze_strony(strona)
+        tresc = akapity(strona)
     except Exception:
         pass
-    pamiec[w["link"]] = {"url": w["url"], "lead": w.get("lead", "")}
+    w["skrot"] = streszczenie(w["t"], w.get("lead", ""), tresc)
+    domena = urllib.parse.urlparse(w["url"]).netloc.lower().removeprefix("www.")
+    w["tekst"] = tresc if URZEDOWE.search(domena) else []
+    pamiec[w["link"]] = {"url": w["url"], "lead": w.get("lead", ""), "skrot": w["skrot"], "tekst": w["tekst"]}
     return w
 
 
@@ -192,9 +206,14 @@ def main():
         wpisy = list(pula.map(lambda w: uzupelnij(w, pamiec), wpisy))
     json.dump(pamiec, open(PAMIEC, "w", encoding="utf-8"), ensure_ascii=False)
 
+    artykuly = {}
     for w in wpisy:
         ocen(w)
         w.pop("link", None)
+        # Treść do czytnika w osobnym pliku - lista wiadomości ładuje się szybko, treść dopiero po otwarciu.
+        w["id"] = hashlib.sha1(w["url"].encode()).hexdigest()[:10]
+        artykuly[w["id"]] = {"skrot": w.pop("skrot", []), "tekst": w.pop("tekst", [])}
+    json.dump(artykuly, open(ARTYKULY, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     z_zajawka = sum(1 for w in wpisy if w.get("lead"))
     json.dump({"pobrano": datetime.now(ZoneInfo("Europe/Warsaw")).strftime("%Y-%m-%d %H:%M"), "wpisy": wpisy},
               open("app/data/aktualnosci.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
