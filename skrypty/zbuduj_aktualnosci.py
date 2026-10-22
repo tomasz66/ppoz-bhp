@@ -13,6 +13,7 @@ import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 
 DNI_WSTECZ = 14
 MAX_WPISOW = 250
@@ -195,7 +196,7 @@ def main():
         ocen(w)
         w.pop("link", None)
     z_zajawka = sum(1 for w in wpisy if w.get("lead"))
-    json.dump({"pobrano": datetime.now().strftime("%Y-%m-%d %H:%M"), "wpisy": wpisy},
+    json.dump({"pobrano": datetime.now(ZoneInfo("Europe/Warsaw")).strftime("%Y-%m-%d %H:%M"), "wpisy": wpisy},
               open("app/data/aktualnosci.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print("zapisano", len(wpisy), "wpisów, z zajawką:", z_zajawka)
 
