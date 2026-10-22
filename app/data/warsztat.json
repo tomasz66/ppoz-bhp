@@ -1,0 +1,934 @@
+{
+ "obchod": [
+  {
+   "id": "dok",
+   "tytul": "Dokumenty i organizacja",
+   "ikona": "📋",
+   "punkty": [
+    {
+     "id": "ibp",
+     "co": "Jest instrukcja bezpieczeństwa pożarowego, aktualizowana co najmniej raz na 2 lata.",
+     "zal": "Opracować lub zaktualizować instrukcję bezpieczeństwa pożarowego. Aktualizacja co najmniej raz na 2 lata i po zmianie sposobu użytkowania obiektu. Nie jest wymagana m.in. dla budynku lub strefy do 1000 m³ bez strefy zagrożenia wybuchem.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p6",
+      "u": "ust. 7"
+     },
+     "dowod": "co najmniej raz na 2 lata"
+    },
+    {
+     "id": "ibp-dostep",
+     "co": "Instrukcja bezpieczeństwa pożarowego leży w miejscu dostępnym dla straży.",
+     "zal": "Umieścić egzemplarz instrukcji w miejscu dostępnym dla ekip ratowniczych (np. przy wejściu, w portierni).",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p6",
+      "u": "ust. 9"
+     },
+     "dowod": "w miejscach dostępnych dla ekip ratowniczych"
+    },
+    {
+     "id": "instr-pozar",
+     "co": "W widocznym miejscu wisi instrukcja postępowania na wypadek pożaru z telefonami alarmowymi.",
+     "zal": "Wywiesić w widocznych miejscach instrukcję postępowania na wypadek pożaru z wykazem telefonów alarmowych.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 2 pkt 3"
+     },
+     "dowod": "umieszczają w widocznych miejscach instrukcje postępowania na wypadek pożaru"
+    },
+    {
+     "id": "zapoznanie",
+     "co": "Pracownicy zostali zapoznani z przepisami przeciwpożarowymi.",
+     "zal": "Zapoznać pracowników z przepisami przeciwpożarowymi i instrukcją, potwierdzić to podpisami.",
+     "zr": {
+      "a": "ustawa-ppoz",
+      "j": "a4",
+      "u": "ust. 1 pkt 6"
+     },
+     "dowod": "zapoznać pracowników z przepisami przeciwpożarowymi"
+    },
+    {
+     "id": "wyznaczeni",
+     "co": "Wyznaczono pracowników do gaszenia pożarów, ewakuacji i pierwszej pomocy.",
+     "zal": "Wyznaczyć na piśmie pracowników do udzielania pierwszej pomocy oraz do działań przy zwalczaniu pożarów i ewakuacji.",
+     "zr": {
+      "dok": "DU_1974_141",
+      "j": "a2091",
+      "u": "art. 209¹ § 1 pkt 2"
+     },
+     "dowod": "wykonywania działań w zakresie zwalczania pożarów i ewakuacji pracowników"
+    },
+    {
+     "id": "probna-ewak",
+     "co": "Próbna ewakuacja odbyła się w ciągu ostatnich 2 lat (obiekt dla ponad 50 stałych użytkowników).",
+     "zal": "Przeprowadzić praktyczne sprawdzenie organizacji i warunków ewakuacji (co najmniej raz na 2 lata; szkoły i przedszkola - raz w roku). Powiadomić komendanta powiatowego PSP najpóźniej tydzień wcześniej.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p17",
+      "u": "ust. 1"
+     },
+     "dowod": "co najmniej raz na 2 lata przeprowadzać praktyczne sprawdzenie"
+    }
+   ]
+  },
+  {
+   "id": "gasnice",
+   "tytul": "Gaśnice",
+   "ikona": "🧯",
+   "punkty": [
+    {
+     "id": "gas-rodzaj",
+     "co": "Rodzaj gaśnic pasuje do tego, co może się palić (np. gaśnica klasy F w kuchni z frytownicą).",
+     "zal": "Dobrać gaśnice do grup pożarów występujących w obiekcie (A, B, C, D, F).",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p32",
+      "u": "ust. 2"
+     },
+     "dowod": "Rodzaj gaśnic powinien być dostosowany"
+    },
+    {
+     "id": "gas-ilosc",
+     "co": "Liczba gaśnic wystarcza: 2 kg środka gaśniczego na 100 m² (ZL, magazyny ponad 500 MJ/m², wybuch) lub na 300 m² (pozostałe strefy).",
+     "zal": "Uzupełnić gaśnice do wymaganej ilości: jedna jednostka 2 kg (lub 3 dm³) środka na każde 100 m² albo 300 m² strefy pożarowej.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p32",
+      "u": "ust. 3"
+     },
+     "dowod": "na każde 100 m2"
+    },
+    {
+     "id": "gas-30m",
+     "co": "Z każdego miejsca do najbliższej gaśnicy jest nie więcej niż 30 m.",
+     "zal": "Rozmieścić gaśnice tak, żeby odległość z każdego miejsca, w którym może przebywać człowiek, do najbliższej gaśnicy nie przekraczała 30 m.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p33",
+      "u": "ust. 2 pkt 1"
+     },
+     "dowod": "nie powinna być większa niż 30 m"
+    },
+    {
+     "id": "gas-dostep",
+     "co": "Do gaśnic jest wolne przejście szerokości co najmniej 1 m.",
+     "zal": "Usunąć przedmioty zastawiające gaśnice - zapewnić dostęp szerokości co najmniej 1 m.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p33",
+      "u": "ust. 2 pkt 2"
+     },
+     "dowod": "dostęp o szerokości co najmniej 1 m"
+    },
+    {
+     "id": "gas-miejsce",
+     "co": "Gaśnice wiszą w miejscach widocznych, z dala od pieców i grzejników.",
+     "zal": "Przenieść gaśnice w miejsca łatwo dostępne i widoczne (wejścia, klatki schodowe, korytarze), z dala od źródeł ciepła.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p33",
+      "u": "ust. 1"
+     },
+     "dowod": "działanie źródeł ciepła"
+    },
+    {
+     "id": "gas-przeglad",
+     "co": "Gaśnice mają aktualny przegląd (data na etykiecie, nie starszy niż rok).",
+     "zal": "Zlecić przegląd i konserwację gaśnic - w terminach producenta, nie rzadziej niż raz w roku.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p3",
+      "u": "ust. 3"
+     },
+     "dowod": "nie rzadziej jednak niż raz w roku"
+    },
+    {
+     "id": "gas-znak",
+     "co": "Miejsca gaśnic są oznakowane znakiem.",
+     "zal": "Oznakować miejsca gaśnic i urządzeń przeciwpożarowych znakami zgodnymi z Polskimi Normami.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 2 pkt 4 lit. b"
+     },
+     "dowod": "miejsca usytuowania urządzeń przeciwpożarowych i gaśnic"
+    }
+   ]
+  },
+  {
+   "id": "urzadzenia",
+   "tytul": "Hydranty, prąd, urządzenia",
+   "ikona": "🚒",
+   "punkty": [
+    {
+     "id": "urz-przeglad",
+     "co": "Urządzenia przeciwpożarowe (hydranty, sygnalizacja pożaru, oświetlenie awaryjne, drzwi ppoż, oddymianie) mają aktualny przegląd.",
+     "zal": "Zlecić przeglądy i konserwację urządzeń przeciwpożarowych - nie rzadziej niż raz w roku, wpisać do książki obiektu lub protokołu.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p3",
+      "u": "ust. 3"
+     },
+     "dowod": "nie rzadziej jednak niż raz w roku"
+    },
+    {
+     "id": "weze",
+     "co": "Węże hydrantowe przeszły próbę ciśnieniową w ciągu ostatnich 5 lat.",
+     "zal": "Zlecić próbę ciśnieniową węży hydrantów wewnętrznych (raz na 5 lat).",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p3",
+      "u": "ust. 4"
+     },
+     "dowod": "raz na 5 lat poddawane próbie ciśnieniowej"
+    },
+    {
+     "id": "hydr-miejsce",
+     "co": "Przed hydrantem jest wolne miejsce na rozwinięcie węża.",
+     "zal": "Usunąć przedmioty sprzed hydrantu - zapewnić przestrzeń do rozwinięcia linii gaśniczej.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p21",
+      "u": "ust. 4"
+     },
+     "dowod": "dostateczną przestrzeń do rozwinięcia linii gaśniczej"
+    },
+    {
+     "id": "hydr-wys",
+     "co": "Zawór hydrantu jest na wysokości ok. 1,35 m od podłogi.",
+     "zal": "Skorygować wysokość zaworu hydrantu do 1,35 ± 0,1 m od podłogi (do wykonania przez instalatora).",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p21",
+      "u": "ust. 1"
+     },
+     "dowod": "1,35±0,1 m"
+    },
+    {
+     "id": "ppwp",
+     "co": "Jest przeciwpożarowy wyłącznik prądu (gdy wymagają go warunki techniczne).",
+     "zal": "Sprawdzić, czy obiekt wymaga przeciwpożarowego wyłącznika prądu, i zlecić jego montaż oraz oznakowanie.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 2 pkt 2"
+     },
+     "dowod": "przeciwpożarowe wyłączniki prądu"
+    },
+    {
+     "id": "rozdzielnica",
+     "co": "Dostęp do tablic elektrycznych, wyłączników i głównego kurka gazu jest wolny.",
+     "zal": "Odsłonić tablice rozdzielcze, wyłączniki prądu i kurki główne gazu.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 1 pkt 18 lit. f"
+     },
+     "dowod": "wyłączników i tablic rozdzielczych prądu elektrycznego"
+    },
+    {
+     "id": "instalacje",
+     "co": "Instalacje i urządzenia są sprawne (bez uszkodzonych kabli, przeciążonych przedłużaczy, prowizorek).",
+     "zal": "Wyłączyć z użytku niesprawne urządzenia i instalacje, naprawić je i zapewnić okresowe kontrole (np. pomiary elektryczne).",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 1 pkt 2"
+     },
+     "dowod": "użytkowanie instalacji, urządzeń i narzędzi niesprawnych technicznie"
+    }
+   ]
+  },
+  {
+   "id": "ewakuacja",
+   "tytul": "Ewakuacja",
+   "ikona": "🚪",
+   "punkty": [
+    {
+     "id": "drzwi-ewak",
+     "co": "Drzwi ewakuacyjne otwierają się od razu, bez szukania klucza.",
+     "zal": "Zmienić sposób zamykania drzwi ewakuacyjnych tak, żeby dało się je natychmiast otworzyć (np. zamek antypaniczny).",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 1 pkt 14"
+     },
+     "dowod": "zamykanie drzwi ewakuacyjnych w sposób uniemożliwiający ich natychmiastowe użycie"
+    },
+    {
+     "id": "drogi-ewak",
+     "co": "Na korytarzach i drogach ewakuacyjnych nie stoją kartony, palety ani meble.",
+     "zal": "Usunąć materiały palne i przedmioty z dróg ewakuacyjnych.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 1 pkt 11"
+     },
+     "dowod": "składowanie materiałów palnych na drogach komunikacji ogólnej służących ewakuacji"
+    },
+    {
+     "id": "drzwi-ppoz",
+     "co": "Drzwi przeciwpożarowe nie są podparte klinem ani przywiązane.",
+     "zal": "Usunąć kliny i blokady z drzwi przeciwpożarowych - muszą same się zamknąć w razie pożaru (dopuszczalne trzymacze zwalniane przez system alarmowy).",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 1 pkt 15"
+     },
+     "dowod": "blokowanie drzwi i bram przeciwpożarowych"
+    },
+    {
+     "id": "znaki-ewak",
+     "co": "Drogi i wyjścia ewakuacyjne są oznakowane.",
+     "zal": "Oznakować drogi i wyjścia ewakuacyjne znakami zgodnymi z Polskimi Normami.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 2 pkt 4 lit. a"
+     },
+     "dowod": "drogi i wyjścia ewakuacyjne"
+    },
+    {
+     "id": "oswietlenie",
+     "co": "Oświetlenie awaryjne działa (tam, gdzie jest wymagane).",
+     "zal": "Naprawić lub uzupełnić oświetlenie awaryjne i zlecić jego przegląd.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p15",
+      "u": "ust. 1 pkt 5"
+     },
+     "dowod": "oświetlenia awaryjnego"
+    },
+    {
+     "id": "okna",
+     "co": "Wyjścia ewakuacyjne i okna dla ekip ratowniczych nie są zastawione.",
+     "zal": "Odsłonić wyjścia ewakuacyjne i okna przeznaczone dla ekip ratowniczych.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 1 pkt 18 lit. e"
+     },
+     "dowod": "wyjść ewakuacyjnych albo okien dla ekip ratowniczych"
+    }
+   ]
+  },
+  {
+   "id": "porzadek",
+   "tytul": "Porządek i materiały palne",
+   "ikona": "🔥",
+   "punkty": [
+    {
+     "id": "odl-05",
+     "co": "Materiały palne i dekoracje są co najmniej 0,5 m od pieców, lamp grzewczych i gorących urządzeń.",
+     "zal": "Odsunąć materiały palne i palny wystrój na co najmniej 0,5 m od urządzeń nagrzewających się powyżej 100°C.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 1 pkt 8"
+     },
+     "dowod": "w odległości mniejszej niż 0,5 m od"
+    },
+    {
+     "id": "techniczne",
+     "co": "W pomieszczeniach technicznych, na strychu i w piwnicy nie składuje się rzeczy palnych.",
+     "zal": "Usunąć materiały palne z pomieszczeń technicznych (kotłownia, rozdzielnia), strychów i korytarzy piwnicznych.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 1 pkt 12"
+     },
+     "dowod": "składowanie materiałów palnych w pomieszczeniach technicznych"
+    },
+    {
+     "id": "butle",
+     "co": "Butle z gazem palnym nie stoją w piwnicy ani na strychu.",
+     "zal": "Przenieść butle z gazem palnym (także puste) z piwnic, strychów i nieużytkowych poddaszy.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 1 pkt 13"
+     },
+     "dowod": "butli przeznaczonych do gazów palnych na nieużytkowych poddaszach i strychach oraz w piwnicach"
+    },
+    {
+     "id": "grzejniki",
+     "co": "Grzejniki elektryczne nie stoją bezpośrednio na palnej podłodze (chyba że producent na to pozwala).",
+     "zal": "Ustawić grzejniki elektryczne na podłożu niepalnym albo zgodnie z instrukcją producenta.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 1 pkt 7"
+     },
+     "dowod": "elektrycznych urządzeń ogrzewczych ustawionych bezpośrednio na podłożu palnym"
+    },
+    {
+     "id": "ogien",
+     "co": "Przy materiałach niebezpiecznych pożarowo nie pali się papierosów i nie używa ognia.",
+     "zal": "Wprowadzić i oznakować zakaz palenia i używania otwartego ognia w miejscach z materiałami niebezpiecznymi pożarowo.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 1 pkt 1 lit. b"
+     },
+     "dowod": "w miejscach występowania materiałów niebezpiecznych pożarowo"
+    },
+    {
+     "id": "kominy",
+     "co": "Przewody kominowe są czyszczone (paliwo stałe co 3 miesiące, gaz i olej co 6 miesięcy, gastronomia co miesiąc, wentylacja raz w roku).",
+     "zal": "Zlecić kominiarzowi czyszczenie przewodów dymowych, spalinowych i wentylacyjnych w wymaganych terminach.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p34",
+      "u": "ust. 1"
+     },
+     "dowod": "co najmniej raz na 3 miesiące"
+    },
+    {
+     "id": "prace-poz",
+     "co": "Spawanie, cięcie i inne prace pożarowo niebezpieczne mają ustaloną procedurę (ocena zagrożenia, osoba odpowiedzialna, sprzęt gaśniczy, kontrola po pracy).",
+     "zal": "Wprowadzić zasady zabezpieczania prac pożarowo niebezpiecznych (np. pisemne zezwolenie): ocena zagrożenia, wyznaczenie odpowiedzialnych, sprzęt gaśniczy na miejscu, kontrola miejsca po pracy.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p36",
+      "u": "ust. 1"
+     },
+     "dowod": "ocenia zagrożenie pożarowe w miejscu"
+    }
+   ]
+  },
+  {
+   "id": "teren",
+   "tytul": "Teren wokół obiektu",
+   "ikona": "🌳",
+   "punkty": [
+    {
+     "id": "droga-poz",
+     "co": "Droga pożarowa jest przejezdna (bez zaparkowanych aut, kontenerów, szlabanu bez klucza).",
+     "zal": "Udrożnić drogę pożarową i utrzymywać ją w stanie umożliwiającym przejazd wozów strażackich.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p5",
+      "u": ""
+     },
+     "dowod": "w stanie umożliwiającym wykorzystanie tych dróg"
+    },
+    {
+     "id": "sklad-sciana",
+     "co": "Rzeczy składowane pod ścianą budynku są co najmniej 5 m od drogi pożarowej.",
+     "zal": "Przenieść składowane materiały tak, żeby zachować co najmniej 5 m od drogi pożarowej i dostęp do budynku.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 4 pkt 4"
+     },
+     "dowod": "minimalnej odległości 5 m od drogi pożarowej"
+    },
+    {
+     "id": "granica",
+     "co": "Gałęzie, chrust i inne materiały palne leżą co najmniej 4 m od granicy działki.",
+     "zal": "Przenieść materiały palne (gałęzie, chrust, odpady roślinne) na co najmniej 4 m od granicy sąsiedniej działki.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 1 pkt 6"
+     },
+     "dowod": "w odległości mniejszej niż 4 m od granicy działki sąsiedniej"
+    },
+    {
+     "id": "woda",
+     "co": "Dostęp do hydrantów zewnętrznych i innych źródeł wody do gaszenia jest wolny.",
+     "zal": "Odsłonić hydranty zewnętrzne i źródła wody do celów przeciwpożarowych.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 1 pkt 18 lit. c"
+     },
+     "dowod": "źródeł wody do celów przeciwpożarowych"
+    },
+    {
+     "id": "pas-2m",
+     "co": "Wokół placu składowego jest pas ochronny szerokości 2 m (niepalny lub oczyszczony grunt).",
+     "zal": "Wykonać wokół placu składowego pas ochronny o szerokości co najmniej 2 m z nawierzchni niepalnej lub oczyszczonego gruntu.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 3"
+     },
+     "dowod": "pas ochronny o minimalnej szerokości 2 m"
+    }
+   ]
+  },
+  {
+   "id": "bhp",
+   "tytul": "BHP - pracodawca",
+   "ikona": "👷",
+   "punkty": [
+    {
+     "id": "orz",
+     "co": "Ryzyko zawodowe jest ocenione i udokumentowane, a pracownicy o nim poinformowani.",
+     "zal": "Ocenić i udokumentować ryzyko zawodowe na każdym stanowisku, poinformować pracowników (podpisy).",
+     "zr": {
+      "dok": "DU_1974_141",
+      "j": "a226",
+      "u": "art. 226"
+     },
+     "dowod": "ocenia i dokumentuje ryzyko zawodowe"
+    },
+    {
+     "id": "szkolenia",
+     "co": "Pracownicy mają szkolenie BHP wstępne i aktualne okresowe.",
+     "zal": "Przeprowadzić brakujące szkolenia BHP (wstępne przed dopuszczeniem do pracy, okresowe w terminach).",
+     "zr": {
+      "dok": "DU_1974_141",
+      "j": "a2373",
+      "u": "art. 237³ § 2"
+     },
+     "dowod": "przed dopuszczeniem go do pracy"
+    },
+    {
+     "id": "apteczka",
+     "co": "Jest apteczka i działa system pierwszej pomocy.",
+     "zal": "Zapewnić apteczki (ilość i wyposażenie ustalić z lekarzem medycyny pracy) i wyznaczyć osoby do ich obsługi.",
+     "zr": {
+      "dok": "DU_1997_844",
+      "j": "para_44",
+      "u": "§ 44"
+     },
+     "dowod": "środki do udzielania pierwszej pomocy"
+    },
+    {
+     "id": "rejestr",
+     "co": "Pracodawca prowadzi rejestr wypadków przy pracy.",
+     "zal": "Założyć rejestr wypadków przy pracy; dokumentację powypadkową przechowywać 10 lat.",
+     "zr": {
+      "dok": "DU_1974_141",
+      "j": "a234",
+      "u": "art. 234 § 3"
+     },
+     "dowod": "prowadzić rejestr wypadków przy pracy"
+    },
+    {
+     "id": "napoje",
+     "co": "Pracownicy mają dostęp do wody pitnej lub innych napojów.",
+     "zal": "Zapewnić wszystkim pracownikom wodę zdatną do picia lub inne napoje.",
+     "zr": {
+      "dok": "DU_1997_844",
+      "j": "para_112",
+      "u": "§ 112"
+     },
+     "dowod": "wodę zdatną do picia"
+    },
+    {
+     "id": "kontrole",
+     "co": "Stan BHP jest systematycznie kontrolowany, a usterki zapisywane i usuwane.",
+     "zal": "Ustalić systematyczne kontrole stanu BHP oraz sposób zapisywania i usuwania nieprawidłowości.",
+     "zr": {
+      "dok": "DU_1997_844",
+      "j": "para_40",
+      "u": "§ 40"
+     },
+     "dowod": "systematyczne kontrole stanu bezpieczeństwa i higieny pracy"
+    }
+   ]
+  }
+ ],
+ "wzory": [
+  {
+   "id": "ibp",
+   "tytul": "Instrukcja bezpieczeństwa pożarowego",
+   "ikona": "🔥",
+   "kolor": "#c0392b",
+   "opis": "Krok po kroku według § 6 rozporządzenia o ochronie ppoż budynków. Wymagana m.in. w obiektach użyteczności publicznej, zamieszkania zbiorowego, produkcyjnych, magazynowych i inwentarskich.",
+   "glowa": [
+    "Nazwa obiektu",
+    "Adres",
+    "Właściciel / zarządca",
+    "Data opracowania"
+   ],
+   "uwagi": [
+    {
+     "t": "Nie jest wymagana, gdy nie ma strefy zagrożenia wybuchem, a budynek lub strefa ma do 1000 m³ (inwentarski do 1500 m³, obiekt inny niż budynek do 1000 m²).",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p6",
+      "u": "ust. 8"
+     },
+     "dowod": "nie przekracza 1000 m3"
+    },
+    {
+     "t": "Aktualizacja co najmniej raz na 2 lata i po zmianach wpływających na ochronę ppoż.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p6",
+      "u": "ust. 7"
+     },
+     "dowod": "co najmniej raz na 2 lata"
+    }
+   ],
+   "kroki": [
+    {
+     "id": "warunki",
+     "tytul": "Warunki ochrony przeciwpożarowej",
+     "pomoc": "Opisz obiekt: przeznaczenie, sposób użytkowania, technologię, co i gdzie się składuje, konstrukcję, kategorię zagrożenia ludzi (ZL) lub gęstość obciążenia ogniowego, strefy pożarowe, zagrożenie wybuchem.",
+     "przyklad": "Budynek handlowy, 1 kondygnacja, 450 m², strefa ZL III. Brak strefy zagrożenia wybuchem.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p6",
+      "u": "ust. 1 pkt 1"
+     },
+     "dowod": "warunki ochrony przeciwpożarowej, wynikające z przeznaczenia"
+    },
+    {
+     "id": "wyposazenie",
+     "tytul": "Urządzenia przeciwpożarowe i gaśnice + przeglądy",
+     "pomoc": "Wypisz gaśnice (typ, liczba, miejsce), hydranty, sygnalizację, oświetlenie awaryjne, wyłącznik prądu. Dla każdego: kto i jak często robi przegląd (min. raz w roku).",
+     "przyklad": "6 gaśnic proszkowych GP-6 ABC (wejście, korytarz, zaplecze). Przegląd: firma serwisowa, raz w roku, wrzesień.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p6",
+      "u": "ust. 1 pkt 2"
+     },
+     "dowod": "określenie wyposażenia w wymagane urządzenia przeciwpożarowe i gaśnice"
+    },
+    {
+     "id": "postepowanie",
+     "tytul": "Postępowanie na wypadek pożaru i innego zagrożenia",
+     "pomoc": "Kto alarmuje, pod jaki numer (112 / 998), kto wyłącza prąd i gaz, kto prowadzi ewakuację, kto czeka na straż i przekazuje informacje.",
+     "przyklad": "",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p6",
+      "u": "ust. 1 pkt 3"
+     },
+     "dowod": "sposoby postępowania na wypadek pożaru i innego zagrożenia"
+    },
+    {
+     "id": "prace",
+     "tytul": "Zabezpieczenie prac pożarowo niebezpiecznych",
+     "pomoc": "Jeśli przewiduje się spawanie, cięcie, prace z otwartym ogniem: kto wydaje zgodę, jak przygotować miejsce, jaki sprzęt gaśniczy, kontrola po pracy.",
+     "przyklad": "",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p6",
+      "u": "ust. 1 pkt 4"
+     },
+     "dowod": "sposoby zabezpieczenia prac niebezpiecznych pod względem pożarowym"
+    },
+    {
+     "id": "ewakuacja",
+     "tytul": "Warunki i organizacja ewakuacji, praktyczne sprawdzanie",
+     "pomoc": "Drogi i wyjścia ewakuacyjne, miejsce zbiórki, kto sprawdza pomieszczenia, osoby z niepełnosprawnościami. Próbna ewakuacja: jak często i kto ją prowadzi.",
+     "przyklad": "",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p6",
+      "u": "ust. 1 pkt 5"
+     },
+     "dowod": "warunki i organizację ewakuacji ludzi oraz praktyczne sposoby ich sprawdzania"
+    },
+    {
+     "id": "zapoznanie",
+     "tytul": "Zapoznanie użytkowników i pracowników z przepisami i instrukcją",
+     "pomoc": "Jak i kiedy (przy przyjęciu do pracy, po aktualizacji), potwierdzenie podpisem.",
+     "przyklad": "",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p6",
+      "u": "ust. 1 pkt 6"
+     },
+     "dowod": "sposoby zapoznania użytkowników obiektu"
+    },
+    {
+     "id": "obowiazki",
+     "tytul": "Zadania i obowiązki stałych użytkowników",
+     "pomoc": "Obowiązki właściciela, kierownika, pracowników, osób wyznaczonych do ewakuacji i gaszenia.",
+     "przyklad": "",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p6",
+      "u": "ust. 1 pkt 7"
+     },
+     "dowod": "zadania i obowiązki w zakresie ochrony przeciwpożarowej"
+    },
+    {
+     "id": "plany",
+     "tytul": "Plany obiektu i terenu",
+     "pomoc": "Rysunki z: wymiarami i liczbą kondygnacji, odległościami od sąsiednich obiektów, strefami pożarowymi, drogami i wyjściami ewakuacyjnymi, gaśnicami i urządzeniami, kurkiem gazu, wyłącznikiem prądu, hydrantami zewnętrznymi, drogami pożarowymi i wjazdami.",
+     "przyklad": "",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p6",
+      "u": "ust. 1 pkt 8"
+     },
+     "dowod": "plany obiektów, obejmujące także ich usytuowanie"
+    },
+    {
+     "id": "autor",
+     "tytul": "Kto opracował instrukcję",
+     "pomoc": "Imię i nazwisko, uprawnienia (np. inspektor ochrony przeciwpożarowej), data.",
+     "przyklad": "",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p6",
+      "u": "ust. 1 pkt 9"
+     },
+     "dowod": "wskazanie osób lub podmiotów opracowujących instrukcję"
+    }
+   ]
+  },
+  {
+   "id": "wypadek",
+   "tytul": "Wypadek przy pracy - postępowanie",
+   "ikona": "🩹",
+   "kolor": "#2f5d8a",
+   "opis": "Notatki zespołu powypadkowego krok po kroku, według rozporządzenia o ustalaniu okoliczności i przyczyn wypadków przy pracy. Sam protokół sporządza się na urzędowym wzorze - te notatki pomagają go wypełnić.",
+   "glowa": [
+    "Pracodawca",
+    "Poszkodowany (imię, nazwisko, stanowisko)",
+    "Data i godzina wypadku",
+    "Miejsce wypadku"
+   ],
+   "uwagi": [
+    {
+     "t": "Protokół powypadkowy - najpóźniej 14 dni od zawiadomienia o wypadku, na wzorze ustalonym przez ministra.",
+     "zr": {
+      "dok": "DU_2009_870",
+      "j": "p9",
+      "u": "§ 9"
+     },
+     "dowod": "nie później niż w terminie 14 dni"
+    },
+    {
+     "t": "Wypadek śmiertelny, ciężki lub zbiorowy - pracodawca niezwłocznie zawiadamia inspektora pracy i prokuratora.",
+     "zr": {
+      "dok": "DU_1974_141",
+      "j": "a234",
+      "u": "art. 234 § 2"
+     },
+     "dowod": "zawiadomić właściwego okręgowego inspektora pracy i prokuratora"
+    },
+    {
+     "t": "Protokół i dokumentację powypadkową przechowuje się 10 lat.",
+     "zr": {
+      "dok": "DU_1974_141",
+      "j": "a234",
+      "u": "art. 234 § 3¹"
+     },
+     "dowod": "przez 10 lat"
+    }
+   ],
+   "kroki": [
+    {
+     "id": "zabezpieczenie",
+     "tytul": "Zabezpieczenie miejsca wypadku",
+     "pomoc": "Kto zabezpieczył miejsce i jak: brak osób postronnych, maszyny zatrzymane, nic nie przestawiano. Zmiany tylko za zgodą pracodawcy (przy ciężkim - po uzgodnieniu z inspektorem pracy i prokuratorem) albo dla ratowania ludzi.",
+     "przyklad": "",
+     "zr": {
+      "dok": "DU_2009_870",
+      "j": "p3",
+      "u": "§ 3"
+     },
+     "dowod": "zabezpieczyć miejsce wypadku"
+    },
+    {
+     "id": "zespol",
+     "tytul": "Skład zespołu powypadkowego",
+     "pomoc": "Pracownik służby BHP + społeczny inspektor pracy (w mniejszych firmach: pracodawca lub pracownik z przeszkoleniem BHP, specjalista spoza zakładu, przedstawiciel pracowników).",
+     "przyklad": "",
+     "zr": {
+      "dok": "DU_2009_870",
+      "j": "p4",
+      "u": "§ 4"
+     },
+     "dowod": "pracownik służby bezpieczeństwa i higieny pracy oraz społeczny inspektor pracy"
+    },
+    {
+     "id": "ogledziny",
+     "tytul": "Oględziny miejsca i warunków pracy",
+     "pomoc": "Stan maszyn i urządzeń ochronnych, warunki pracy, organizacja, środki ochrony indywidualnej, pora, oświetlenie, nawierzchnia.",
+     "przyklad": "",
+     "zr": {
+      "dok": "DU_2009_870",
+      "j": "p7",
+      "u": "§ 7 ust. 1 pkt 1"
+     },
+     "dowod": "dokonać oględzin miejsca wypadku"
+    },
+    {
+     "id": "szkic",
+     "tytul": "Szkic lub zdjęcia miejsca wypadku",
+     "pomoc": "Co sfotografowano, opis szkicu, wymiary, położenie przedmiotów.",
+     "przyklad": "",
+     "zr": {
+      "dok": "DU_2009_870",
+      "j": "p7",
+      "u": "§ 7 ust. 1 pkt 2"
+     },
+     "dowod": "sporządzić szkic lub wykonać fotografię miejsca wypadku"
+    },
+    {
+     "id": "poszkodowany",
+     "tytul": "Wyjaśnienia poszkodowanego",
+     "pomoc": "Jeśli stan zdrowia pozwala: co robił, jak doszło do zdarzenia, czy był przeszkolony, jakie miał środki ochrony.",
+     "przyklad": "",
+     "zr": {
+      "dok": "DU_2009_870",
+      "j": "p7",
+      "u": "§ 7 ust. 1 pkt 3"
+     },
+     "dowod": "wysłuchać wyjaśnień poszkodowanego"
+    },
+    {
+     "id": "swiadkowie",
+     "tytul": "Informacje od świadków",
+     "pomoc": "Imiona, nazwiska, co widzieli.",
+     "przyklad": "",
+     "zr": {
+      "dok": "DU_2009_870",
+      "j": "p7",
+      "u": "§ 7 ust. 1 pkt 4"
+     },
+     "dowod": "zebrać informacje dotyczące wypadku od świadków wypadku"
+    },
+    {
+     "id": "lekarz",
+     "tytul": "Opinia lekarza (i innych specjalistów)",
+     "pomoc": "Rodzaj urazu, skutki, czy wypadek ciężki. Inne dowody: dokumentacja szkoleń, badań lekarskich, ocena ryzyka.",
+     "przyklad": "",
+     "zr": {
+      "dok": "DU_2009_870",
+      "j": "p7",
+      "u": "§ 7 ust. 1 pkt 5"
+     },
+     "dowod": "zasięgnąć opinii lekarza"
+    },
+    {
+     "id": "przyczyny",
+     "tytul": "Okoliczności i przyczyny",
+     "pomoc": "Przebieg zdarzenia w kolejności. Przyczyny techniczne, organizacyjne i ludzkie (zwykle jest ich kilka).",
+     "przyklad": "",
+     "zr": {
+      "dok": "DU_2009_870",
+      "j": "p7",
+      "u": "§ 7 ust. 1"
+     },
+     "dowod": "ustalenia okoliczności i przyczyn wypadku"
+    },
+    {
+     "id": "kwalifikacja",
+     "tytul": "Kwalifikacja prawna",
+     "pomoc": "Czy to wypadek przy pracy według art. 3 ustawy wypadkowej: nagłe zdarzenie, przyczyna zewnętrzna, uraz lub śmierć, związek z pracą. Jeśli nie - uzasadnienie.",
+     "przyklad": "",
+     "zr": {
+      "dok": "DU_2009_870",
+      "j": "p7",
+      "u": "§ 7 ust. 1 pkt 7"
+     },
+     "dowod": "dokonać prawnej kwalifikacji wypadku"
+    },
+    {
+     "id": "profilaktyka",
+     "tytul": "Środki profilaktyczne i wnioski",
+     "pomoc": "Co zmienić, żeby wypadek się nie powtórzył - także w ocenie ryzyka zawodowego na tym stanowisku. Termin i osoba odpowiedzialna.",
+     "przyklad": "",
+     "zr": {
+      "dok": "DU_2009_870",
+      "j": "p7",
+      "u": "§ 7 ust. 1 pkt 8"
+     },
+     "dowod": "określić środki profilaktyczne oraz wnioski"
+    },
+    {
+     "id": "zapoznanie",
+     "tytul": "Zapoznanie poszkodowanego z protokołem",
+     "pomoc": "Data zapoznania, uwagi i zastrzeżenia poszkodowanego. Poszkodowany może przeglądać akta i robić kopie.",
+     "przyklad": "",
+     "zr": {
+      "dok": "DU_2009_870",
+      "j": "p11",
+      "u": "§ 11"
+     },
+     "dowod": "zapoznać poszkodowanego z treścią protokołu powypadkowego"
+    },
+    {
+     "id": "zatwierdzenie",
+     "tytul": "Zatwierdzenie przez pracodawcę",
+     "pomoc": "Pracodawca zatwierdza protokół najpóźniej 5 dni od sporządzenia i niezwłocznie doręcza go poszkodowanemu.",
+     "przyklad": "",
+     "zr": {
+      "dok": "DU_2009_870",
+      "j": "p13",
+      "u": "§ 13 ust. 1"
+     },
+     "dowod": "nie później niż w terminie 5 dni"
+    }
+   ]
+  },
+  {
+   "id": "orz",
+   "tytul": "Ocena ryzyka zawodowego",
+   "ikona": "⚠️",
+   "kolor": "#b25000",
+   "opis": "Karta oceny ryzyka dla jednego stanowiska. Ocena ryzyka jest obowiązkowa (art. 226 KP), metoda jest dowolna - tu skala trzystopniowa jak w normie PN-N-18002 (norma, nie przepis).",
+   "glowa": [
+    "Firma",
+    "Stanowisko",
+    "Opis pracy, maszyny i narzędzia",
+    "Liczba pracowników na stanowisku",
+    "Data oceny i oceniający"
+   ],
+   "uwagi": [
+    {
+     "t": "Kolejność środków: najpierw usunąć zagrożenie, potem rozwiązania techniczne i organizacyjne (ochrona zbiorowa), na końcu środki ochrony indywidualnej.",
+     "zr": {
+      "dok": "DU_1997_844",
+      "j": "para_39",
+      "u": "§ 39"
+     },
+     "dowod": "środki ochrony indywidualnej"
+    },
+    {
+     "t": "Pracowników trzeba poinformować o ryzyku i zasadach ochrony przed zagrożeniami (najlepiej z podpisem).",
+     "zr": {
+      "dok": "DU_1974_141",
+      "j": "a226",
+      "u": "art. 226 pkt 2"
+     },
+     "dowod": "informuje pracowników o ryzyku zawodowym"
+    }
+   ],
+   "zagrozenia": [
+    "Upadek na tym samym poziomie (poślizgnięcie, potknięcie)",
+    "Upadek z wysokości",
+    "Uderzenie o nieruchome przedmioty",
+    "Spadające przedmioty",
+    "Ruchome części maszyn",
+    "Ostre krawędzie, narzędzia tnące",
+    "Porażenie prądem elektrycznym",
+    "Pożar",
+    "Wybuch",
+    "Gorące powierzchnie, oparzenia",
+    "Substancje chemiczne",
+    "Pyły",
+    "Hałas",
+    "Drgania (wibracje)",
+    "Niewłaściwe oświetlenie",
+    "Praca przy monitorze ekranowym",
+    "Ręczne przenoszenie ciężarów",
+    "Wymuszona pozycja ciała",
+    "Mikroklimat gorący lub zimny",
+    "Ruch pojazdów, wózki widłowe",
+    "Stres, praca zmianowa",
+    "Czynniki biologiczne"
+   ],
+   "zr": {
+    "dok": "DU_1974_141",
+    "j": "a226",
+    "u": "art. 226 pkt 1"
+   },
+   "dowod": "ocenia i dokumentuje ryzyko zawodowe"
+  }
+ ]
+}

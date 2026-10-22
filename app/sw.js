@@ -1,7 +1,7 @@
 // Działanie offline: najpierw sieć (świeże dane), a bez internetu - kopia z pamięci telefonu.
-const CACHE = "ppoz-bhp-v8";
-const PLIKI = ["./", "index.html", "style.css", "app.js", "manifest.json",
-  "data/akty.json", "data/sciagi.json", "data/pytania.json", "data/obserwowane.json", "data/nowosci.json", "data/aktualnosci.json", "data/ciekawostki.json", "icons/icon-180.png"];
+const CACHE = "ppoz-bhp-v9";
+const PLIKI = ["./", "index.html", "style.css", "app.js", "warsztat.js", "manifest.json",
+  "data/akty.json", "data/sciagi.json", "data/pytania.json", "data/obserwowane.json", "data/nowosci.json", "data/aktualnosci.json", "data/ciekawostki.json", "data/warsztat.json", "icons/icon-180.png"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(PLIKI)));

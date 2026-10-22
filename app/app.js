@@ -187,6 +187,11 @@ function widokStart() {
       <a class="tile" href="#/nauka"><div class="tile-num">${n.opanowane}/${stan.pytania.length}</div><div class="tile-label">pytań opanowanych</div></a>
     </div>
     <div class="btn-row"><button class="btn" onclick="startLekcji()">Lekcja - ${PYTAN_W_LEKCJI} pytań</button></div>
+    <div class="section-label">Warsztat</div>
+    <div class="list-group">
+      <a class="row" href="#/obchod/nowy">${kafel("🔍", "#c0392b")}<span class="row-main"><span class="row-title">Obchód obiektu</span><span class="row-sub">${tekst("Lista kontrolna ppoż i BHP → zalecenia z paragrafami")}</span></span><span class="row-chev">›</span></a>
+      <a class="row" href="#/warsztat">${kafel("📄", "#2f5d8a")}<span class="row-main"><span class="row-title">Wzory dokumentów i zapisane obchody</span><span class="row-sub">${tekst("IBP, wypadek przy pracy, ocena ryzyka")}</span></span><span class="row-chev">›</span></a>
+    </div>
     <div class="section-label">Czy wiesz, że… · dziś</div>
     ${kartaCiekawostki(ciekawostkaDnia())}
     <div class="list-group"><a class="row" href="#/czywiesz">${kafel("💡", "#e8a200")}<span class="row-main"><span class="row-title">Czy wiesz, że…</span><span class="row-sub">${wszystkieCiekawostki().length} sytuacji z życia z podstawą prawną</span></span><span class="row-chev">›</span></a></div>
@@ -1317,6 +1322,7 @@ async function odswiezWszystko() {
     stan.indeks = null;
     stan.dokZaladowane = null;
     stan.wszystkieDok = null;
+    stan.warsztat = null;
     const wynik = await sprawdzZmiany(true);
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.getRegistration().then((r) => r && r.update()).catch(() => {});
