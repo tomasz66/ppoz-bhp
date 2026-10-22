@@ -4,7 +4,10 @@
   "dziedzina": "bhp",
   "tytul": "Nowa definicja mobbingu i obowiązkowy regulamin antymobbingowy",
   "od": "2026-11-05",
-  "termin": {"data": "2027-05-05", "opis": "dostosowanie regulaminu (6 miesięcy od wejścia w życie)"},
+  "termin": {
+   "data": "2027-05-05",
+   "opis": "dostosowanie regulaminu (6 miesięcy od wejścia w życie)"
+  },
   "co": [
    "Mobbing to „uporczywe nękanie” - powtarzalne, nawracające lub stałe. Mobbingiem są takie zachowania także wtedy, gdy ich celem nie było nękanie, i bez względu na to, czy pochodzą od szefa, kolegi czy podwładnego.",
    "Pracodawca musi systematycznie przeciwdziałać mobbingowi: prewencja, wykrywanie, reagowanie, wsparcie poszkodowanych.",
@@ -13,7 +16,10 @@
   ],
   "szansa": "Każda firma od 10 pracowników ma pół roku na nowy regulamin i procedurę. To konkretna usługa do zaproponowania obecnym i nowym klientom BHP.",
   "zrodla": [
-   {"opis": "Dz.U. 2026 poz. 1046 - art. 1 pkt 5-7, art. 4", "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260001046"}
+   {
+    "opis": "Dz.U. 2026 poz. 1046 - art. 1 pkt 5-7, art. 4",
+    "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260001046"
+   }
   ]
  },
  {
@@ -30,7 +36,10 @@
   ],
   "szansa": "Przed sezonem letnim 2027 firmy będą potrzebować procedury „upał”: pomiary, przerwy, napoje, harmonogram prac, konsultacja z pracownikami. Dobra usługa na wiosnę.",
   "zrodla": [
-   {"opis": "Dz.U. 2026 poz. 927 - nowy § 30a ogólnych przepisów BHP", "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000927"}
+   {
+    "opis": "Dz.U. 2026 poz. 927 - nowy § 30a ogólnych przepisów BHP",
+    "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000927"
+   }
   ]
  },
  {
@@ -45,7 +54,10 @@
   ],
   "szansa": "Więcej osób na etatach oznacza więcej obowiązków BHP po stronie małych firm: badania, szkolenia, ocena ryzyka.",
   "zrodla": [
-   {"opis": "Dz.U. 2026 poz. 473 - art. 1 pkt 2 (art. 11 ust. 1 pkt 7a ustawy o PIP)", "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000473"}
+   {
+    "opis": "Dz.U. 2026 poz. 473 - art. 1 pkt 2 (art. 11 ust. 1 pkt 7a ustawy o PIP)",
+    "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000473"
+   }
   ]
  },
  {
@@ -60,8 +72,14 @@
   ],
   "szansa": "Szkolenia wstępne i dokumentacja dla klientów mogą być w pełni cyfrowe - mniej papieru i mniej dojazdów.",
   "zrodla": [
-   {"opis": "Dz.U. 2025 poz. 1640 - § 12 rozporządzenia o szkoleniach BHP", "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001640"},
-   {"opis": "Dz.U. 2026 poz. 25 - art. 237⁴ § 3 KP", "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000025"}
+   {
+    "opis": "Dz.U. 2025 poz. 1640 - § 12 rozporządzenia o szkoleniach BHP",
+    "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001640"
+   },
+   {
+    "opis": "Dz.U. 2026 poz. 25 - art. 237⁴ § 3 KP",
+    "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000025"
+   }
   ]
  },
  {
@@ -69,7 +87,10 @@
   "dziedzina": "ppoz",
   "tytul": "Czujki dymu w hotelach, pensjonatach i mieszkaniach",
   "od": "2026-06-30",
-  "termin": {"data": "2030-01-01", "opis": "obowiązek dla istniejących lokali mieszkalnych"},
+  "termin": {
+   "data": "2030-01-01",
+   "opis": "obowiązek dla istniejących lokali mieszkalnych"
+  },
   "co": [
    "Każdy pokój z usługami hotelarskimi i każdy lokal mieszkalny - co najmniej 1 autonomiczna czujka dymu (chyba że chroni go system sygnalizacji pożarowej).",
    "Pomieszczenie ze spalaniem paliwa (kominek, piec, kocioł bez zamkniętej komory) w strefie ZL - czujka tlenku węgla.",
@@ -77,8 +98,14 @@
   ],
   "szansa": "Pensjonaty i agroturystyka na Jurze już muszą mieć czujki. Przegląd obiektu z listą braków to prosta usługa na start.",
   "zrodla": [
-   {"opis": "§ 28a rozporządzenia o ochronie ppoż budynków (Dz.U. 2024 poz. 1716)", "url": "#/akt/rozp-ochrona-budynkow/p28a"},
-   {"opis": "Dz.U. 2024 poz. 1716 w ISAP", "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001716"}
+   {
+    "opis": "§ 28a rozporządzenia o ochronie ppoż budynków (Dz.U. 2024 poz. 1716)",
+    "url": "#/akt/rozp-ochrona-budynkow/p28a"
+   },
+   {
+    "opis": "Dz.U. 2024 poz. 1716 w ISAP",
+    "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001716"
+   }
   ]
  },
  {
@@ -86,15 +113,24 @@
   "dziedzina": "ppoz",
   "tytul": "Oznakowanie punktów schronienia",
   "od": "2026-09-30",
-  "termin": {"data": "2026-12-31", "opis": "oznakowanie punktów zidentyfikowanych wcześniej"},
+  "termin": {
+   "data": "2026-12-31",
+   "opis": "oznakowanie punktów zidentyfikowanych wcześniej"
+  },
   "co": [
    "Właściciele i zarządcy oznakowują punkty schronienia (ustawa o ochronie ludności i obronie cywilnej): niebieski trójkąt na pomarańczowym tle (tabliczka 200 × 200 mm i naklejki 80 × 80 mm na drzwiach) oraz zielona tabliczka „PUNKT SCHRONIENIA”.",
    "Punkty zidentyfikowane przed 30.09.2026 trzeba oznakować najpóźniej do 31.12.2026."
   ],
   "szansa": "Szkoły, urzędy i duże obiekty mają termin do końca roku - przy okazji przeglądu ppoż można sprawdzić także to oznakowanie.",
   "zrodla": [
-   {"opis": "§ 4 ust. 2 pkt 7 rozporządzenia o ochronie ppoż budynków", "url": "#/akt/rozp-ochrona-budynkow/p4"},
-   {"opis": "Dz.U. 2026 poz. 1276 w ISAP", "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260001276"}
+   {
+    "opis": "§ 4 ust. 2 pkt 7 rozporządzenia o ochronie ppoż budynków",
+    "url": "#/akt/rozp-ochrona-budynkow/p4"
+   },
+   {
+    "opis": "Dz.U. 2026 poz. 1276 w ISAP",
+    "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260001276"
+   }
   ]
  },
  {
@@ -102,7 +138,10 @@
   "dziedzina": "ppoz",
   "tytul": "Warunki techniczne budynków - stare uchylone, nowych brak",
   "od": "2026-09-20",
-  "termin": {"data": "2028-03-20", "opis": "koniec 18-miesięcznego okresu przejściowego"},
+  "termin": {
+   "data": "2028-03-20",
+   "opis": "koniec 18-miesięcznego okresu przejściowego"
+  },
   "co": [
    "Rozporządzenie o warunkach technicznych z 2002 r. jest w ISAP oznaczone jako uznane za uchylone. Nowych warunków technicznych do 22.10.2026 nie ogłoszono.",
    "Przez 18 miesięcy od 20.09.2026 inwestor może stosować przepisy obowiązujące do 19.09.2026 przy projektach, zgłoszeniach i budowach (po złożeniu oświadczenia).",
@@ -110,8 +149,14 @@
   ],
   "szansa": "Śledź, kiedy wyjdą nowe WT - ich dział o bezpieczeństwie pożarowym zmieni podstawę wielu instrukcji pożarowych.",
   "zrodla": [
-   {"opis": "Dz.U. 2026 poz. 1161 - art. 102a-102c Prawa budowlanego", "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260001161"},
-   {"opis": "WT 2002 w ISAP", "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20020750690"}
+   {
+    "opis": "Dz.U. 2026 poz. 1161 - art. 102a-102c Prawa budowlanego",
+    "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260001161"
+   },
+   {
+    "opis": "WT 2002 w ISAP",
+    "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20020750690"
+   }
   ]
  },
  {
@@ -119,14 +164,39 @@
   "dziedzina": "bhp",
   "tytul": "Niższe dopuszczalne stężenie ołowiu we krwi",
   "od": "2026-06-04",
-  "termin": {"data": "2029-01-01", "opis": "wartość 15 μg Pb/100 ml krwi"},
+  "termin": {
+   "data": "2029-01-01",
+   "opis": "wartość 15 μg Pb/100 ml krwi"
+  },
   "co": [
    "Do 31.12.2028 wartość wiążąca to 30 μg Pb/100 ml krwi, od 1.01.2029 - 15 μg Pb/100 ml.",
    "Badania profilaktyczne m.in. gdy ołów w powietrzu przekracza 0,015 mg/m³ albo we krwi jest ponad 9 μg/100 ml. Dla pracownic w wieku rozrodczym próg to 4,5 μg/100 ml."
   ],
   "szansa": "Dotyczy warsztatów, lakierni, recyklingu akumulatorów - sprawdź przy ocenie ryzyka u takich klientów.",
   "zrodla": [
-   {"opis": "Dz.U. 2026 poz. 726", "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000726"}
+   {
+    "opis": "Dz.U. 2026 poz. 726",
+    "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000726"
+   }
+  ]
+ },
+ {
+  "id": "e-orzeczenia",
+  "dziedzina": "bhp",
+  "tytul": "Elektroniczne orzeczenia lekarskie z badań pracowniczych",
+  "od": "2026-10-18",
+  "co": [
+   "Orzeczenie z badania wstępnego, okresowego i kontrolnego lekarz wystawia elektronicznie: zapisuje się je w Systemie Informacji Medycznej, a pracownik widzi je na Internetowym Koncie Pacjenta.",
+   "Wersja papierowa tylko wtedy, gdy nie ma dostępu do systemu (oraz dla wybranych służb specjalnych). Na żądanie pracownik dostaje wydruk z podpisem lekarza.",
+   "Pracodawcy orzeczenie przekazuje jednostka medycyny pracy - w terminie i w sposób z umowy z tą jednostką.",
+   "Stare wzory można było stosować najdłużej 6 miesięcy od wejścia zmiany w życie (17.04.2026)."
+  ],
+  "szansa": "Sprawdź u klientów umowy z medycyną pracy - muszą określać, jak i kiedy orzeczenie trafia do pracodawcy. Bez orzeczenia nie wolno dopuścić pracownika do pracy.",
+  "zrodla": [
+   {
+    "opis": "Dz.U. 2026 poz. 456 - § 1 pkt 4 i § 2",
+    "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000456"
+   }
   ]
  }
 ]
