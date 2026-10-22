@@ -173,11 +173,8 @@ def tekst_aktu(eli, meta):
         pobierz_plik(API + eli + "/text.html", sciezka)
         p = Parser()
         p.feed(open(sciezka, encoding="utf-8").read())
-        jedn = [j for j in p.jednostki if j.get("etykieta")]
-        # W obwieszczeniu jednostki aktu zaczynają się od pierwszego rozdziału / § 1 załącznika.
-        startowe = [k for k, j in enumerate(jedn) if j["id"].startswith(("chpt", "part", "sect")) or re.match(r"^(Art\. 1|§ 1)$", j["etykieta"].split("D")[0].strip())]
-        if startowe and any(j["id"].startswith(("chpt", "part", "sect")) for j in jedn):
-            jedn = [j for j in jedn if j["id"].startswith(("chpt", "part", "sect"))]
+        # Jednostki z identyfikatorem "pass_..." to punkty samego obwieszczenia (lista zmian), nie treść aktu.
+        jedn = [j for j in p.jednostki if j.get("etykieta") and not j["id"].startswith("pass_")]
         for j in jedn:
             e = re.match(rf"^(§|Art\.)\s?({NUMER})", j["etykieta"])
             j["etykieta"] = ladna_etykieta(f"{e.group(1)} {e.group(2)}") if e else j["etykieta"]

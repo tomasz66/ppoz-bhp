@@ -276,3 +276,9 @@ mark { background: var(--amber-bg); color: inherit; border-radius: 3px; padding:
 .card.source .btn { margin-top: 4px; }
 .post-link { color: inherit; display: block; }
 .post-link:active { opacity: .6; }
+
+/* Wyszukiwarka wszystkiego i przypadki */
+.search-box.big { height: 50px; border-radius: 14px; border: 2px solid var(--accent); background: var(--surface); }
+.search-box.big .search-input { font-size: 17px; }
+.case-s { font-weight: 700; }
+.card.fun mark, .card mark { padding: 0 1px; }

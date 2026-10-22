@@ -1,4 +1,939 @@
 {
+ "przypadki": [
+  {
+   "d": "ppoz",
+   "s": "Właściciel podgrzewa smołę palnikiem przy remoncie dachu garażu, metr od ściany.",
+   "t": "Nie wolno rozgrzewać smoły otwartym ogniem bliżej niż 5 m od budynku, składowiska lub placu z materiałami palnymi. Wyjątek: dach niepalny w budowanym obiekcie albo specjalny podgrzewacz.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p4",
+    "u": "ust. 1 pkt 4"
+   },
+   "dowod": "w odległości mniejszej niż 5 m od obiektu",
+   "tagi": [
+    "smoła",
+    "dach",
+    "remont",
+    "ogień"
+   ]
+  },
+  {
+   "d": "ppoz",
+   "s": "Sąsiad układa gałęzie i chrust pod płotem, przy granicy działki.",
+   "t": "Materiałów palnych, w tym gałęzi, chrustu i resztek roślin, nie wolno składować poza budynkami bliżej niż 4 m od granicy działki sąsiedniej.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p4",
+    "u": "ust. 1 pkt 6"
+   },
+   "dowod": "w odległości mniejszej niż 4 m od granicy działki sąsiedniej",
+   "tagi": [
+    "gałęzie",
+    "chrust",
+    "ogród",
+    "działka",
+    "ogrodzenie",
+    "płot"
+   ]
+  },
+  {
+   "d": "ppoz",
+   "s": "Rolnik chce wiosną wypalić suchą trawę na łące.",
+   "t": "Wypalanie wierzchniej warstwy gleby i traw jest zabronione w miejscu, w którym może zapalić materiały palne lub sąsiednie obiekty. Ten sam zakaz dotyczy rozpalania ognia i wysypywania gorącego popiołu.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p4",
+    "u": "ust. 1 pkt 5"
+   },
+   "dowod": "wypalanie wierzchniej warstwy gleby i traw",
+   "tagi": [
+    "trawa",
+    "wypalanie",
+    "popiół",
+    "ognisko",
+    "łąka"
+   ]
+  },
+  {
+   "d": "ppoz",
+   "s": "W sklepie drzwi ewakuacyjne na noc i w dzień zamyka się na kłódkę „żeby nikt nie wyszedł bez płacenia”.",
+   "t": "Zakazane jest zamykanie drzwi ewakuacyjnych w sposób uniemożliwiający ich natychmiastowe użycie w razie pożaru lub innego zagrożenia.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p4",
+    "u": "ust. 1 pkt 14"
+   },
+   "dowod": "zamykanie drzwi ewakuacyjnych w sposób uniemożliwiający ich natychmiastowe użycie",
+   "tagi": [
+    "drzwi",
+    "ewakuacja",
+    "kłódka",
+    "sklep",
+    "wyjście"
+   ]
+  },
+  {
+   "d": "ppoz",
+   "s": "Drzwi przeciwpożarowe na klatce schodowej są podparte klinem, bo „ciężko się otwierają”.",
+   "t": "Nie wolno blokować drzwi i bram przeciwpożarowych tak, że nie zamkną się same w razie pożaru.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p4",
+    "u": "ust. 1 pkt 15"
+   },
+   "dowod": "blokowanie drzwi i bram przeciwpożarowych",
+   "tagi": [
+    "drzwi przeciwpożarowe",
+    "klin",
+    "klatka schodowa"
+   ]
+  },
+  {
+   "d": "ppoz",
+   "s": "Na korytarzu prowadzącym do wyjścia stoją kartony i palety.",
+   "t": "Materiałów palnych nie wolno składować na drogach komunikacji ogólnej służących ewakuacji ani zwężać ich przedmiotami poniżej wymaganych wymiarów.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p4",
+    "u": "ust. 1 pkt 11"
+   },
+   "dowod": "składowanie materiałów palnych na drogach komunikacji ogólnej służących ewakuacji",
+   "tagi": [
+    "korytarz",
+    "droga ewakuacyjna",
+    "kartony",
+    "palety",
+    "magazyn"
+   ]
+  },
+  {
+   "d": "ppoz",
+   "s": "Gaśnica wisi za regałem z towarem, trzeba go odsunąć, żeby ją zdjąć.",
+   "t": "Zakazane jest uniemożliwianie lub ograniczanie dostępu do gaśnic i urządzeń przeciwpożarowych, a także do wyłączników prądu i głównych kurków gazu.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p4",
+    "u": "ust. 1 pkt 18"
+   },
+   "dowod": "uniemożliwianie lub ograniczanie dostępu do",
+   "tagi": [
+    "gaśnica",
+    "dostęp",
+    "regał",
+    "hydrant",
+    "wyłącznik prądu",
+    "kurek gazu"
+   ]
+  },
+  {
+   "d": "ppoz",
+   "s": "W piwnicy bloku lokator trzyma butlę z gazem do grilla.",
+   "t": "Butli do gazów palnych - pełnych, niepełnych i pustych - nie wolno przechowywać w piwnicach, na strychach i nieużytkowych poddaszach.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p4",
+    "u": "ust. 1 pkt 13"
+   },
+   "dowod": "butli przeznaczonych do gazów palnych na nieużytkowych poddaszach i strychach oraz w piwnicach",
+   "tagi": [
+    "butla",
+    "gaz",
+    "piwnica",
+    "strych",
+    "grill"
+   ]
+  },
+  {
+   "d": "ppoz",
+   "s": "Na strychu kamienicy mieszkańcy trzymają stare meble i gazety.",
+   "t": "Materiałów palnych nie wolno składować w pomieszczeniach technicznych, na nieużytkowych poddaszach i strychach oraz na korytarzach w piwnicach.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p4",
+    "u": "ust. 1 pkt 12"
+   },
+   "dowod": "składowanie materiałów palnych w pomieszczeniach technicznych",
+   "tagi": [
+    "strych",
+    "poddasze",
+    "piwnica",
+    "meble",
+    "kotłownia"
+   ]
+  },
+  {
+   "d": "ppoz",
+   "s": "Zasłony w restauracji wiszą tuż przy gorącym piecu.",
+   "t": "Materiałów palnych i palnego wystroju nie wolno trzymać bliżej niż 0,5 m od urządzeń, których powierzchnia może nagrzać się powyżej 100°C.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p4",
+    "u": "ust. 1 pkt 8"
+   },
+   "dowod": "w odległości mniejszej niż 0,5 m od",
+   "tagi": [
+    "zasłony",
+    "piec",
+    "dekoracje",
+    "wystrój",
+    "grzejnik"
+   ]
+  },
+  {
+   "d": "ppoz",
+   "s": "Abażur lampy z papieru dotyka żarówki.",
+   "t": "Osłony punktów świetlnych nie mogą być z materiałów palnych. Materiały trudno zapalne są dopuszczalne co najmniej 0,05 m od żarówki.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p4",
+    "u": "ust. 1 pkt 9"
+   },
+   "dowod": "stosowanie na osłony punktów świetlnych materiałów palnych",
+   "tagi": [
+    "lampa",
+    "żarówka",
+    "abażur",
+    "oświetlenie"
+   ]
+  },
+  {
+   "d": "ppoz",
+   "s": "Kierowca wstawia motocykl na zimę do pomieszczenia gospodarczego, z pełnym bakiem.",
+   "t": "W pomieszczeniu, które nie jest garażem, pojazd może stać tylko z opróżnionym zbiornikiem paliwa i na stałe odłączonym akumulatorem.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p4",
+    "u": "ust. 1 pkt 3"
+   },
+   "dowod": "jeżeli nie opróżniono zbiornika paliwa pojazdu",
+   "tagi": [
+    "garaż",
+    "samochód",
+    "motocykl",
+    "paliwo",
+    "akumulator"
+   ]
+  },
+  {
+   "d": "ppoz",
+   "s": "Właściciel hurtowni pyta, czy musi wywiesić instrukcję, co robić w razie pożaru.",
+   "t": "Tak. Właściciele, zarządcy i użytkownicy budynków (poza domami jednorodzinnymi) umieszczają w widocznych miejscach instrukcje postępowania na wypadek pożaru z wykazem telefonów alarmowych.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p4",
+    "u": "ust. 2 pkt 3"
+   },
+   "dowod": "umieszczają w widocznych miejscach instrukcje postępowania na wypadek pożaru",
+   "tagi": [
+    "instrukcja",
+    "telefony alarmowe",
+    "tablica",
+    "hurtownia"
+   ]
+  },
+  {
+   "d": "ppoz",
+   "s": "Szkoła planuje próbną ewakuację na jutro i nikogo nie informuje.",
+   "t": "O terminie praktycznego sprawdzenia ewakuacji trzeba powiadomić komendanta powiatowego (miejskiego) PSP najpóźniej tydzień wcześniej.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p17",
+    "u": "ust. 4"
+   },
+   "dowod": "nie później niż na tydzień przed ich przeprowadzeniem",
+   "tagi": [
+    "próbna ewakuacja",
+    "szkoła",
+    "komendant",
+    "PSP"
+   ]
+  },
+  {
+   "d": "ppoz",
+   "s": "Instrukcja bezpieczeństwa pożarowego w hotelu ma 4 lata i nikt jej nie ruszał.",
+   "t": "Instrukcję bezpieczeństwa pożarowego aktualizuje się co najmniej raz na 2 lata oraz po każdej zmianie sposobu użytkowania lub procesu, która wpływa na warunki ochrony ppoż.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p6",
+    "u": "ust. 7"
+   },
+   "dowod": "co najmniej raz na 2 lata",
+   "tagi": [
+    "instrukcja bezpieczeństwa pożarowego",
+    "IBP",
+    "aktualizacja",
+    "hotel"
+   ]
+  },
+  {
+   "d": "ppoz",
+   "s": "Mały warsztat (budynek 600 m³, bez strefy zagrożenia wybuchem) - czy potrzebna jest instrukcja bezpieczeństwa pożarowego?",
+   "t": "Nie jest wymagana, gdy nie ma strefy zagrożenia wybuchem, a kubatura brutto budynku nie przekracza 1000 m³.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p6",
+    "u": "ust. 8 pkt 1"
+   },
+   "dowod": "nie przekracza 1000 m3",
+   "tagi": [
+    "instrukcja bezpieczeństwa pożarowego",
+    "IBP",
+    "warsztat",
+    "kubatura"
+   ]
+  },
+  {
+   "d": "ppoz",
+   "s": "Właściciel sklepu pyta, czy musi zapoznać pracowników z przepisami ppoż.",
+   "t": "Tak. Właściciel obiektu ma obowiązek zapoznać pracowników z przepisami przeciwpożarowymi i ustalić sposoby postępowania na wypadek pożaru.",
+   "zr": {
+    "a": "ustawa-ppoz",
+    "j": "a4",
+    "u": "ust. 1 pkt 6-7"
+   },
+   "dowod": "zapoznać pracowników z przepisami przeciwpożarowymi",
+   "tagi": [
+    "szkolenie ppoż",
+    "pracownicy",
+    "sklep"
+   ]
+  },
+  {
+   "d": "ppoz",
+   "s": "Wynajmujący lokal mówi, że za ppoż odpowiada właściciel budynku, bo „to jego budynek”.",
+   "t": "Odpowiedzialność przechodzi na zarządcę lub użytkownika, jeśli przejął ją umową. Bez umowy odpowiada ten, kto faktycznie włada obiektem.",
+   "zr": {
+    "a": "ustawa-ppoz",
+    "j": "a4",
+    "u": "ust. 1a"
+   },
+   "dowod": "faktycznie władającym budynkiem",
+   "tagi": [
+    "najem",
+    "odpowiedzialność",
+    "umowa",
+    "właściciel"
+   ]
+  },
+  {
+   "d": "ppoz",
+   "s": "Przed halą zaparkowano dostawczaki na drodze pożarowej.",
+   "t": "Właściciel lub zarządca terenu musi utrzymywać drogę pożarową w stanie umożliwiającym przejazd wozów straży pożarnej.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p5",
+    "u": ""
+   },
+   "dowod": "utrzymują znajdujące się na nich drogi pożarowe",
+   "tagi": [
+    "droga pożarowa",
+    "parking",
+    "hala",
+    "dojazd"
+   ]
+  },
+  {
+   "d": "ppoz",
+   "s": "W hali produkcyjnej na belkach zalega gruba warstwa pyłu drzewnego.",
+   "t": "W obiektach produkcyjnych i magazynowych, gdzie zalegają warstwy pyłów palnych, trzeba regularnie sprzątać według zasad z Polskich Norm.",
+   "zr": {
+    "a": "rozp-ochrona-budynkow",
+    "j": "p4",
+    "u": "ust. 6"
+   },
+   "dowod": "pyły palne zalegające w warstwach",
+   "tagi": [
+    "pył",
+    "stolarnia",
+    "hala",
+    "sprzątanie",
+    "wybuch"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Szef każe wejść na rusztowanie bez barierek. Pracownik się boi - może odmówić?",
+   "t": "Tak. Gdy warunki łamią przepisy BHP i stwarzają bezpośrednie zagrożenie zdrowia lub życia, pracownik może powstrzymać się od pracy, od razu zawiadamiając przełożonego. Zachowuje wynagrodzenie i nie mogą go spotkać negatywne konsekwencje.",
+   "zr": {
+    "dok": "DU_1974_141",
+    "j": "a210",
+    "u": "§ 1-3"
+   },
+   "dowod": "ma prawo powstrzymać się od wykonywania pracy",
+   "tagi": [
+    "odmowa pracy",
+    "zagrożenie",
+    "rusztowanie",
+    "prawa pracownika"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Nowy pracownik ma zacząć jutro, a badań jeszcze nie zrobił. Może wejść na halę „na próbę”?",
+   "t": "Nie. Pracodawca nie może dopuścić do pracy nikogo bez aktualnego orzeczenia lekarskiego o braku przeciwwskazań na danym stanowisku.",
+   "zr": {
+    "dok": "DU_1974_141",
+    "j": "a229",
+    "u": "§ 4"
+   },
+   "dowod": "nie może dopuścić do pracy pracownika bez aktualnego orzeczenia lekarskiego",
+   "tagi": [
+    "badania lekarskie",
+    "nowy pracownik",
+    "orzeczenie",
+    "medycyna pracy"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Pracownik wraca do tej samej firmy na to samo stanowisko po 3 tygodniach przerwy. Znowu badania wstępne?",
+   "t": "Nie, jeśli wraca w ciągu 30 dni od końca poprzedniej umowy na to samo stanowisko lub o takich samych warunkach.",
+   "zr": {
+    "dok": "DU_1974_141",
+    "j": "a229",
+    "u": "§ 1¹ pkt 1"
+   },
+   "dowod": "w ciągu 30 dni po rozwiązaniu lub wygaśnięciu poprzedniego stosunku pracy",
+   "tagi": [
+    "badania wstępne",
+    "powrót do pracy",
+    "30 dni"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Pracownik był na zwolnieniu 5 tygodni. Może od razu wrócić do pracy?",
+   "t": "Po chorobie trwającej dłużej niż 30 dni pracownik musi przejść kontrolne badania lekarskie.",
+   "zr": {
+    "dok": "DU_1974_141",
+    "j": "a229",
+    "u": "§ 2"
+   },
+   "dowod": "trwającej dłużej niż 30 dni",
+   "tagi": [
+    "badania kontrolne",
+    "L4",
+    "zwolnienie lekarskie",
+    "choroba"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Kto płaci za badania okresowe i czy pracownik idzie na nie w czasie pracy?",
+   "t": "Płaci pracodawca. Badania okresowe i kontrolne przeprowadza się w miarę możliwości w godzinach pracy, a pracownik zachowuje za ten czas wynagrodzenie.",
+   "zr": {
+    "dok": "DU_1974_141",
+    "j": "a229",
+    "u": "§ 3, § 6"
+   },
+   "dowod": "na koszt pracodawcy",
+   "tagi": [
+    "badania okresowe",
+    "koszt",
+    "wynagrodzenie"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Nowa osoba na magazynie ma zacząć od razu, „szkolenie się zrobi później”.",
+   "t": "Nie wolno. Pracodawca musi przeszkolić pracownika z BHP przed dopuszczeniem do pracy. Szkolenia odbywają się w czasie pracy i na koszt pracodawcy.",
+   "zr": {
+    "dok": "DU_1974_141",
+    "j": "a2373",
+    "u": "§ 2-3"
+   },
+   "dowod": "przed dopuszczeniem go do pracy",
+   "tagi": [
+    "szkolenie wstępne",
+    "instruktaż",
+    "nowy pracownik",
+    "magazyn"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Jak często szkolenie okresowe BHP ma magazynier, a jak często księgowa?",
+   "t": "Stanowiska robotnicze - nie rzadziej niż raz na 3 lata (prace szczególnie niebezpieczne - co rok). Kierownicy i pracodawcy - raz na 5 lat. Stanowiska administracyjno-biurowe - raz na 6 lat.",
+   "zr": {
+    "dok": "DU_2004_1860",
+    "j": "para_15",
+    "u": "ust. 1-2"
+   },
+   "dowod": "nie rzadziej niż raz na 3 lata",
+   "tagi": [
+    "szkolenie okresowe",
+    "częstotliwość",
+    "biuro",
+    "robotnik"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Firma awansowała pracownika na brygadzistę. Kiedy pierwsze szkolenie okresowe?",
+   "t": "Osoby kierujące pracownikami przechodzą pierwsze szkolenie okresowe do 6 miesięcy od objęcia stanowiska. Pozostali pracownicy - do 12 miesięcy.",
+   "zr": {
+    "dok": "DU_2004_1860",
+    "j": "para_15",
+    "u": "ust. 4"
+   },
+   "dowod": "w okresie do 6 miesięcy od rozpoczęcia pracy",
+   "tagi": [
+    "szkolenie okresowe",
+    "kierownik",
+    "brygadzista",
+    "awans"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Biuro rachunkowe pyta, czy księgowe w ogóle muszą mieć szkolenie okresowe.",
+   "t": "Nie muszą, jeśli przeważająca działalność firmy ma kategorię ryzyka nie wyższą niż trzecia. Obowiązek wraca, gdy ocena ryzyka pokaże taką potrzebę - wtedy szkolenie najpóźniej w ciągu 6 miesięcy.",
+   "zr": {
+    "dok": "DU_1974_141",
+    "j": "a2373",
+    "u": "§ 2²-2⁴"
+   },
+   "dowod": "nie jest wymagane w przypadku pracownika na stanowisku administracyjno-biurowym",
+   "tagi": [
+    "szkolenie okresowe",
+    "biuro rachunkowe",
+    "administracyjno-biurowe",
+    "kategoria ryzyka"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Pracownik przechodzi z biura na produkcję. Wystarczy mu szkolenie, które już ma?",
+   "t": "Nie. Przy przeniesieniu na stanowisko robotnicze albo z czynnikami szkodliwymi trzeba zrobić instruktaż stanowiskowy, zakończony sprawdzianem wiedzy i umiejętności.",
+   "zr": {
+    "dok": "DU_2004_1860",
+    "j": "para_11",
+    "u": "ust. 1 pkt 2, ust. 6"
+   },
+   "dowod": "pracownika przenoszonego na stanowisko",
+   "tagi": [
+    "instruktaż stanowiskowy",
+    "przeniesienie",
+    "produkcja"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Pracownik raz jeździ wózkiem, a raz obsługuje prasę. Ile instruktaży?",
+   "t": "Pracownik pracujący na kilku stanowiskach powinien odbyć instruktaż stanowiskowy na każdym z nich.",
+   "zr": {
+    "dok": "DU_2004_1860",
+    "j": "para_11",
+    "u": "ust. 2"
+   },
+   "dowod": "na każdym z tych stanowisk",
+   "tagi": [
+    "instruktaż stanowiskowy",
+    "kilka stanowisk",
+    "wózek"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Pracodawca każe pracownikom kupić sobie buty robocze.",
+   "t": "Nie może. Odzież i obuwie robocze pracodawca dostarcza nieodpłatnie, gdy własne ubranie może się zniszczyć lub mocno zabrudzić albo wymagają tego względy BHP. Za zgodą pracownika może on używać własnych - wtedy dostaje ekwiwalent.",
+   "zr": {
+    "dok": "DU_1974_141",
+    "j": "a2377",
+    "u": "§ 1, § 4"
+   },
+   "dowod": "dostarczyć pracownikowi nieodpłatnie odzież i obuwie robocze",
+   "tagi": [
+    "odzież robocza",
+    "buty",
+    "ekwiwalent",
+    "ubranie"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Operator maszyny chce pracować we własnym kombinezonie za ekwiwalent.",
+   "t": "Przy bezpośredniej obsłudze maszyn i przy pracach mocno brudzących lub skażających nie wolno pozwolić na własną odzież roboczą - zapewnia ją pracodawca.",
+   "zr": {
+    "dok": "DU_1974_141",
+    "j": "a2377",
+    "u": "§ 3"
+   },
+   "dowod": "bezpośrednią obsługą maszyn",
+   "tagi": [
+    "odzież robocza",
+    "maszyny",
+    "ekwiwalent"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Firma ma 8 pracowników. Czy szef może sam „robić BHP”?",
+   "t": "Tak, jeśli ukończył odpowiednie szkolenie i zatrudnia do 10 pracowników (albo do 50 przy kategorii ryzyka nie wyższej niż trzecia). Powyżej 100 pracowników trzeba utworzyć służbę BHP.",
+   "zr": {
+    "dok": "DU_1974_141",
+    "j": "a23711",
+    "u": "§ 1"
+   },
+   "dowod": "zatrudnia do 10 pracowników",
+   "tagi": [
+    "służba BHP",
+    "mała firma",
+    "pracodawca",
+    "bhpowiec"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Firma bez BHP-owca na etacie chce zlecić BHP komuś z zewnątrz.",
+   "t": "Może. Gdy brakuje kompetentnych pracowników, pracodawca powierza zadania służby BHP specjaliście spoza zakładu pracy, który musi mieć wymagane kwalifikacje.",
+   "zr": {
+    "dok": "DU_1974_141",
+    "j": "a23711",
+    "u": "§ 2"
+   },
+   "dowod": "specjalistom spoza zakładu pracy",
+   "tagi": [
+    "służba BHP",
+    "outsourcing",
+    "specjalista",
+    "usługi BHP"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Kto w firmie ma udzielać pierwszej pomocy i ewakuować ludzi przy pożarze?",
+   "t": "Pracodawca musi wyznaczyć pracowników do pierwszej pomocy oraz do gaszenia pożarów i ewakuacji, zapewnić im środki i łączność ze służbami. Jeśli zatrudnia wyłącznie młodocianych lub niepełnosprawnych, może to robić sam.",
+   "zr": {
+    "dok": "DU_1974_141",
+    "j": "a2091",
+    "u": "§ 1, § 4"
+   },
+   "dowod": "wyznaczyć pracowników do",
+   "tagi": [
+    "pierwsza pomoc",
+    "ewakuacja",
+    "gaszenie pożarów",
+    "wyznaczeni pracownicy"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Ile apteczek ma być w zakładzie i kto je obsługuje?",
+   "t": "Liczbę, miejsce i wyposażenie apteczek ustala się z lekarzem medycyny pracy. Na każdej zmianie obsługują je przeszkoleni pracownicy, a przy apteczce wisi instrukcja pierwszej pomocy i lista tych osób.",
+   "zr": {
+    "dok": "DU_1997_844",
+    "j": "para_44",
+    "u": "ust. 2-4"
+   },
+   "dowod": "w porozumieniu z lekarzem",
+   "tagi": [
+    "apteczka",
+    "pierwsza pomoc",
+    "lekarz medycyny pracy"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Pracownik spadł z drabiny. Kto ustala przyczyny wypadku?",
+   "t": "Zespół powypadkowy powołany przez pracodawcę - pracownik służby BHP i społeczny inspektor pracy.",
+   "zr": {
+    "dok": "DU_2009_870",
+    "j": "p4",
+    "u": ""
+   },
+   "dowod": "pracownik służby bezpieczeństwa i higieny pracy oraz społeczny inspektor pracy",
+   "tagi": [
+    "wypadek przy pracy",
+    "zespół powypadkowy",
+    "postępowanie powypadkowe"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Ile czasu jest na protokół powypadkowy?",
+   "t": "Zespół powypadkowy sporządza protokół najpóźniej w 14 dni od zawiadomienia o wypadku. Opóźnienie trzeba uzasadnić w protokole.",
+   "zr": {
+    "dok": "DU_2009_870",
+    "j": "p9",
+    "u": "ust. 1-2"
+   },
+   "dowod": "nie później niż w terminie 14 dni",
+   "tagi": [
+    "protokół powypadkowy",
+    "termin",
+    "wypadek przy pracy"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Na budowie zginął pracownik. Kogo pracodawca musi zawiadomić?",
+   "t": "O wypadku śmiertelnym, ciężkim lub zbiorowym pracodawca niezwłocznie zawiadamia okręgowego inspektora pracy i prokuratora.",
+   "zr": {
+    "dok": "DU_1974_141",
+    "j": "a234",
+    "u": "§ 2"
+   },
+   "dowod": "niezwłocznie zawiadomić właściwego okręgowego inspektora pracy i prokuratora",
+   "tagi": [
+    "wypadek śmiertelny",
+    "ciężki wypadek",
+    "PIP",
+    "prokurator"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Jak długo trzymać dokumentację z wypadku przy pracy?",
+   "t": "Protokół powypadkowy z pozostałą dokumentacją pracodawca przechowuje przez 10 lat. Musi też prowadzić rejestr wypadków.",
+   "zr": {
+    "dok": "DU_1974_141",
+    "j": "a234",
+    "u": "§ 3-3¹"
+   },
+   "dowod": "przez 10 lat",
+   "tagi": [
+    "dokumentacja powypadkowa",
+    "archiwum",
+    "rejestr wypadków"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Pracownik po alkoholu przewrócił się na hali i złamał rękę. Czy dostanie odszkodowanie z ZUS?",
+   "t": "Świadczenia wypadkowe nie przysługują, jeśli nietrzeźwy pracownik w znacznym stopniu przyczynił się do wypadku. Nie przysługują też, gdy jedyną przyczyną było umyślne lub rażąco niedbałe złamanie przepisów BHP przez pracownika.",
+   "zr": {
+    "dok": "DU_2002_1673",
+    "j": "a21",
+    "u": "ust. 1-2"
+   },
+   "dowod": "będąc w stanie nietrzeźwości",
+   "tagi": [
+    "alkohol",
+    "wypadek",
+    "ZUS",
+    "odszkodowanie",
+    "nietrzeźwość"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Księgowa pracuje przy komputerze 8 godzin bez przerwy.",
+   "t": "Pracodawca zapewnia albo przeplatanie pracy przy monitorze z inną pracą (nie dłużej niż godzina ciągiem), albo co najmniej 5 minut przerwy po każdej godzinie - wliczanej do czasu pracy.",
+   "zr": {
+    "dok": "DU_1998_973",
+    "j": "p7",
+    "u": ""
+   },
+   "dowod": "co najmniej 5-minutową przerwę",
+   "tagi": [
+    "komputer",
+    "monitor",
+    "przerwa",
+    "biuro"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Pracownik biurowy potrzebuje okularów do pracy przy komputerze. Kto płaci?",
+   "t": "Pracodawca zapewnia okulary lub soczewki korygujące wzrok, jeśli badanie okulistyczne w ramach medycyny pracy wykaże ich potrzebę przy pracy z monitorem.",
+   "zr": {
+    "dok": "DU_1998_973",
+    "j": "p8",
+    "u": "ust. 2"
+   },
+   "dowod": "okulary lub szkła kontaktowe korygujące wzrok",
+   "tagi": [
+    "okulary",
+    "monitor",
+    "komputer",
+    "biuro"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "W małym pokoju biurowym siedzi 6 osób na 9 m².",
+   "t": "Na każdego pracownika w pomieszczeniu stałej pracy powinno przypadać co najmniej 13 m³ wolnej objętości i 2 m² wolnej powierzchni podłogi.",
+   "zr": {
+    "dok": "DU_1997_844",
+    "j": "para_19",
+    "u": "ust. 2"
+   },
+   "dowod": "13 m3 wolnej objętości",
+   "tagi": [
+    "biuro",
+    "metraż",
+    "pomieszczenie pracy",
+    "powierzchnia"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Od jakiej wysokości praca to już „praca na wysokości”?",
+   "t": "Od 1,0 m nad podłogą lub ziemią.",
+   "zr": {
+    "dok": "DU_1997_844",
+    "j": "para_105",
+    "u": "ust. 1"
+   },
+   "dowod": "co najmniej 1,0 m nad poziomem podłogi lub ziemi",
+   "tagi": [
+    "praca na wysokości",
+    "antresola",
+    "podest"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Na antresoli magazynu nie ma barierki, bo „przecież każdy uważa”.",
+   "t": "Powierzchnie wyżej niż 1,0 m, na których przebywają pracownicy, wymagają balustrady: poręcz na wysokości co najmniej 1,1 m, krawężnik co najmniej 0,15 m i poprzeczka w połowie.",
+   "zr": {
+    "dok": "DU_1997_844",
+    "j": "para_106",
+    "u": "ust. 1"
+   },
+   "dowod": "co najmniej 1,1 m",
+   "tagi": [
+    "balustrada",
+    "barierka",
+    "antresola",
+    "praca na wysokości"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Pracownik niesie po drabinie worek cementu 25 kg.",
+   "t": "Drabiną nie wolno przenosić ciężarów powyżej 10 kg. Zakazane jest też m.in. używanie drabiny rozstawnej jako przystawnej, schodzenie plecami i noszenie drabiny dłuższej niż 4 m w pojedynkę.",
+   "zr": {
+    "dok": "DU_1997_844",
+    "j": "para_50",
+    "u": "ust. 2"
+   },
+   "dowod": "o masie powyżej 10 kg",
+   "tagi": [
+    "drabina",
+    "ciężar",
+    "budowa",
+    "remont"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Monter pracuje na drabinie na 3 m bez szelek i kasku.",
+   "t": "Przy pracach na drabinach powyżej 2 m pracodawca zapewnia sprzęt chroniący przed upadkiem (np. szelki z linką) i hełmy ochronne do prac na wysokości.",
+   "zr": {
+    "dok": "DU_1997_844",
+    "j": "para_110",
+    "u": "ust. 1"
+   },
+   "dowod": "hełmów ochronnych",
+   "tagi": [
+    "drabina",
+    "szelki",
+    "kask",
+    "praca na wysokości"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Czy pracodawca musi dawać pracownikom wodę do picia?",
+   "t": "Tak - wszystkim pracownikom wodę zdatną do picia lub inne napoje, a przy pracy w warunkach szczególnie uciążliwych dodatkowo inne napoje.",
+   "zr": {
+    "dok": "DU_1997_844",
+    "j": "para_112",
+    "u": ""
+   },
+   "dowod": "wodę zdatną do picia",
+   "tagi": [
+    "woda",
+    "napoje",
+    "upał"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Lipiec 2027, w hali jest 36°C.",
+   "t": "Od 11.01.2027 w pomieszczeniach pracy temperatura nie może przekraczać 35°C (chyba że nie pozwala na to technologia). Powyżej 28°C pracodawca musi zastosować rozwiązania techniczne lub organizacyjne.",
+   "zr": {
+    "dok": "DU_2026_927",
+    "j": "p1",
+    "u": "§ 30a"
+   },
+   "dowod": "niewyższą niż 35",
+   "tagi": [
+    "upał",
+    "temperatura",
+    "hala",
+    "lato"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Firma zatrudnia 12 osób. Czy potrzebny jest regulamin antymobbingowy?",
+   "t": "Tak. Pracodawca zatrudniający co najmniej 10 pracowników ustala reguły i procedury przeciwdziałania mobbingowi i dyskryminacji w regulaminie (osobnym albo w regulaminie pracy).",
+   "zr": {
+    "dok": "DU_1974_141",
+    "j": "a943a",
+    "u": "§ 1"
+   },
+   "dowod": "co najmniej 10 pracowników",
+   "tagi": [
+    "mobbing",
+    "regulamin",
+    "dyskryminacja"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Kierownik skarży się, że zespół go izoluje i ośmiesza. Czy to może być mobbing?",
+   "t": "Tak. Według nowych przepisów mobbing może pochodzić od pracodawcy, przełożonego, współpracownika, ale też od podwładnego - od jednej osoby albo od grupy.",
+   "zr": {
+    "dok": "DU_1974_141",
+    "j": "a943_2",
+    "u": "§ 8"
+   },
+   "dowod": "podwładnego",
+   "tagi": [
+    "mobbing",
+    "kierownik",
+    "podwładny"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Inspektor pracy uznał, że zleceniobiorca pracuje jak etatowiec.",
+   "t": "Inspektor może najpierw polecić zawarcie umowy o pracę, a jeśli pracodawca tego nie zrobi - w drodze decyzji stwierdzić istnienie stosunku pracy.",
+   "zr": {
+    "dok": "DU_2026_473",
+    "j": "a1",
+    "u": "pkt 2"
+   },
+   "dowod": "stwierdzania, w drodze decyzji, istnienia stosunku pracy",
+   "tagi": [
+    "PIP",
+    "umowa zlecenie",
+    "B2B",
+    "etat"
+   ]
+  },
+  {
+   "d": "bhp",
+   "s": "Pracownik nie dostał papierowego orzeczenia z medycyny pracy. Gdzie je znajdzie?",
+   "t": "Orzeczenie w postaci elektronicznej trafia do Systemu Informacji Medycznej, a pracownik widzi je na Internetowym Koncie Pacjenta. Papierowy wydruk dostaje na żądanie.",
+   "zr": {
+    "dok": "DU_2026_456",
+    "j": "p1",
+    "u": "pkt 4"
+   },
+   "dowod": "Internetowego Konta Pacjenta",
+   "tagi": [
+    "orzeczenie lekarskie",
+    "IKP",
+    "medycyna pracy",
+    "e-orzeczenie"
+   ]
+  }
+ ],
  "ciekawostki": [
   {
    "t": "Przepis o omłotach wciąż obowiązuje: miejsce omłotów musi mieć pojemnik z co najmniej 200 litrami wody - do gaszenia wiadrem.",
@@ -6,7 +941,8 @@
     "a": "rozp-ochrona-budynkow",
     "j": "p32",
     "u": "ust. 5"
-   }
+   },
+   "d": "ppoz"
   },
   {
    "t": "Gałęzie i chrust też są „materiałem palnym”. Nie wolno ich składować bliżej niż 4 m od granicy działki sąsiada.",
@@ -14,7 +950,8 @@
     "a": "rozp-ochrona-budynkow",
     "j": "p4",
     "u": "ust. 1 pkt 6"
-   }
+   },
+   "d": "ppoz"
   },
   {
    "t": "Smoły nie wolno rozgrzewać otwartym ogniem bliżej niż 5 m od budynku albo składowiska materiałów palnych.",
@@ -22,7 +959,8 @@
     "a": "rozp-ochrona-budynkow",
     "j": "p4",
     "u": "ust. 1 pkt 4"
-   }
+   },
+   "d": "ppoz"
   },
   {
    "t": "Auto można wstawić do pomieszczenia, które nie jest garażem, tylko z pustym bakiem i na stałe odłączonym akumulatorem.",
@@ -30,7 +968,8 @@
     "a": "rozp-ochrona-budynkow",
     "j": "p4",
     "u": "ust. 1 pkt 3"
-   }
+   },
+   "d": "ppoz"
   },
   {
    "t": "Grzejnik elektryczny postawiony wprost na drewnianej podłodze to wykroczenie - chyba że producent na to pozwala.",
@@ -38,7 +977,8 @@
     "a": "rozp-ochrona-budynkow",
     "j": "p4",
     "u": "ust. 1 pkt 7"
-   }
+   },
+   "d": "ppoz"
   },
   {
    "t": "Węże hydrantów wewnętrznych co 5 lat przechodzą próbę ciśnieniową. Sam przegląd hydrantu raz w roku nie wystarczy.",
@@ -46,7 +986,8 @@
     "a": "rozp-ochrona-budynkow",
     "j": "p3",
     "u": "ust. 4"
-   }
+   },
+   "d": "ppoz"
   },
   {
    "t": "W domu jednorodzinnym komin możesz wyczyścić sam - kwalifikacje kominiarskie są potrzebne w pozostałych budynkach.",
@@ -54,7 +995,8 @@
     "a": "rozp-ochrona-budynkow",
     "j": "p34",
     "u": "ust. 4"
-   }
+   },
+   "d": "ppoz"
   },
   {
    "t": "Restauracja musi czyścić przewody dymowe co miesiąc - 12 razy częściej niż przewody wentylacyjne.",
@@ -62,7 +1004,8 @@
     "a": "rozp-ochrona-budynkow",
     "j": "p34",
     "u": "ust. 1-2"
-   }
+   },
+   "d": "ppoz"
   },
   {
    "t": "Ciecz palna według przepisów ppoż to ciecz o temperaturze zapłonu poniżej 55°C (328,15 K) - przepis podaje ją także w kelwinach.",
@@ -70,7 +1013,8 @@
     "a": "rozp-ochrona-budynkow",
     "j": "p2",
     "u": "ust. 1 pkt 1 lit. b"
-   }
+   },
+   "d": "ppoz"
   },
   {
    "t": "W mieszkaniu możesz przechowywać do 5 litrów cieczy o temperaturze zapłonu poniżej 21°C (np. benzyny) i do 20 litrów cieczy o zapłonie 21-55°C.",
@@ -78,7 +1022,8 @@
     "a": "rozp-ochrona-budynkow",
     "j": "p8",
     "u": "ust. 1 pkt 1"
-   }
+   },
+   "d": "ppoz"
   },
   {
    "t": "Pod kuchenkę gazową czujka czadu nie jest wymagana - przepis wprost ją wyłącza. Pod kominek już tak.",
@@ -86,7 +1031,8 @@
     "a": "rozp-ochrona-budynkow",
     "j": "p28a",
     "u": "ust. 3-4"
-   }
+   },
+   "d": "ppoz"
   },
   {
    "t": "Droga pożarowa w mieście musi wytrzymać nacisk osi 100 kN - mniej więcej 10 ton na jedną oś wozu.",
@@ -94,7 +1040,8 @@
     "a": "rozp-woda-drogi",
     "j": "p13",
     "u": "ust. 2"
-   }
+   },
+   "d": "ppoz"
   },
   {
    "t": "Wóz strażacki nie lubi ciasnych zakrętów: zewnętrzny promień łuku drogi pożarowej to co najmniej 11 m.",
@@ -102,7 +1049,8 @@
     "a": "rozp-woda-drogi",
     "j": "p12",
     "u": "ust. 11"
-   }
+   },
+   "d": "ppoz"
   },
   {
    "t": "Między drogą pożarową a ścianą budynku nie może rosnąć drzewo wyższe niż 3 m, jeśli zasłania dostęp drabinie.",
@@ -110,7 +1058,8 @@
     "a": "rozp-woda-drogi",
     "j": "p12",
     "u": "ust. 2"
-   }
+   },
+   "d": "ppoz"
   },
   {
    "t": "Szkolenie inspektora ppoż może kosztować najwyżej połowę przeciętnego wynagrodzenia z poprzedniego roku - limit jest w ustawie.",
@@ -118,7 +1067,8 @@
     "a": "ustawa-ppoz",
     "j": "a4a",
     "u": "ust. 9"
-   }
+   },
+   "d": "ppoz"
   },
   {
    "t": "Gdy nie ma umowy najmu ani zarządu, za ochronę ppoż odpowiada ten, kto faktycznie włada budynkiem.",
@@ -126,7 +1076,8 @@
     "a": "ustawa-ppoz",
     "j": "a4",
     "u": "ust. 1a"
-   }
+   },
+   "d": "ppoz"
   },
   {
    "t": "Szkoła musi zrobić próbną ewakuację co roku, najpóźniej 3 miesiące po przyjściu nowych uczniów. Biuro - co 2 lata.",
@@ -134,121 +1085,32 @@
     "a": "rozp-ochrona-budynkow",
     "j": "p17",
     "u": "ust. 1-2"
-   }
+   },
+   "d": "ppoz"
   },
   {
    "t": "Od 11.01.2027 limit 35°C w miejscu pracy nie obejmuje funkcjonariuszy PSP - strażacy zostają przy ogniu.",
    "zr": {
     "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000927",
     "opis": "§ 30a ust. 8 - Dz.U. 2026 poz. 927"
-   }
+   },
+   "d": "bhp"
   },
   {
    "t": "Od 5.11.2026 mobbingiem może być też zachowanie podwładnego wobec szefa.",
    "zr": {
     "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260001046",
     "opis": "art. 94³ § 8 KP - Dz.U. 2026 poz. 1046"
-   }
+   },
+   "d": "bhp"
   },
   {
    "t": "Za mobbing przysługuje co najmniej 6-krotność płacy minimalnej, a pracodawca może potem dochodzić zwrotu od mobbera.",
    "zr": {
     "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260001046",
     "opis": "art. 94³ § 11-12 KP - Dz.U. 2026 poz. 1046"
-   }
-  }
- ],
- "zarty": [
-  "Gaśnica schowana za szafą gasi tylko jedno - sumienie właściciela.",
-  "Drzwi przeciwpożarowe podparte gaśnicą: dwa urządzenia przeciwpożarowe, zero ochrony.",
-  "Przepis mówi: dostęp do gaśnicy co najmniej 1 m. Praktyka: 1 m palet przed gaśnicą.",
-  "Inspektor: „Kiedy był ostatni przegląd gaśnic?” Właściciel: „Jak ją kupiłem, była nowa”.",
-  "Próbna ewakuacja: 3 minuty wychodzenia i 40 minut szukania pana Zbyszka, który „tylko kończył maila”.",
-  "Czujka dymu bez baterii to najcichszy pracownik w firmie. I najmniej przydatny.",
-  "Kask na głowie waży 400 gramów. Kask w szafce waży cały protokół powypadkowy.",
-  "Hydrant wewnętrzny to nie wieszak na kurtki. Choć wygląda, jakby o to prosił.",
-  "Strefa zagrożenia wybuchem - jedyne miejsce, gdzie „zapalić się do pracy” to fatalny pomysł.",
-  "Instrukcja bezpieczeństwa pożarowego zamknięta w sejfie. Ekipa ratownicza na pewno doceni.",
-  "Najpopularniejsza droga ewakuacyjna w Polsce prowadzi przez magazyn kartonów.",
-  "Szkolenie okresowe BHP: jedyne spotkanie, na którym wszyscy znają odpowiedź „nie dotyczy”. Do pierwszego wypadku.",
-  "Upał 2027. „Szefie, 36 stopni.” - „To pracuj szybciej, zrobi się wiatr.” Od 11 stycznia ta odpowiedź łamie przepisy.",
-  "Pracodawca: „U nas nie ma mobbingu”. Od listopada 2026 lepiej mieć to w regulaminie, a nie tylko w głowie.",
-  "BHP-owiec widzi drabinę i myśli o trzech rzeczach: stabilności, kącie nachylenia i tym, kto ją trzyma. Reszta świata widzi drabinę."
- ],
- "memy": [
-  {
-   "typ": "klasyk",
-   "gora": "Drzwi przeciwpożarowe podparte gaśnicą",
-   "emoji": "🚪🧯",
-   "dol": "Dwa zabezpieczenia. Zero ochrony."
-  },
-  {
-   "typ": "drake",
-   "nie": "Przegląd gaśnic raz w roku",
-   "tak": "Gaśnica jako ozdoba recepcji od 2009 roku"
-  },
-  {
-   "typ": "nikt",
-   "linie": [
-    "Nikt:",
-    "Absolutnie nikt:",
-    "Pan Zbyszek podczas próbnej ewakuacji: „tylko dokończę maila”"
-   ],
-   "emoji": "💻🚶"
-  },
-  {
-   "typ": "klasyk",
-   "gora": "Ja po szkoleniu BHP",
-   "emoji": "😇 ➜ 🤸",
-   "dol": "Ja 5 minut później na drabinie"
-  },
-  {
-   "typ": "drake",
-   "nie": "Hydrant wewnętrzny do gaszenia",
-   "tak": "Hydrant wewnętrzny jako wieszak na kurtki"
-  },
-  {
-   "typ": "klasyk",
-   "gora": "Inspektor: „Poproszę instrukcję bezpieczeństwa pożarowego”",
-   "emoji": "📂🔍",
-   "dol": "Właściciel: „Gdzieś tu była… w 2014”"
-  },
-  {
-   "typ": "klasyk",
-   "gora": "Kask: na głowie",
-   "emoji": "⛑️ ➜ 🚗",
-   "dol": "Kask: w aucie. Też bezpieczny."
-  },
-  {
-   "typ": "klasyk",
-   "gora": "Czujka dymu o 3:00 w nocy",
-   "emoji": "🔋📢",
-   "dol": "PIIIP. (bateria. tylko bateria.)"
-  },
-  {
-   "typ": "drake",
-   "nie": "Droga ewakuacyjna wolna",
-   "tak": "Droga ewakuacyjna przez magazyn kartonów"
-  },
-  {
-   "typ": "klasyk",
-   "gora": "Upał 2027. 36°C. Szef: „Pracuj szybciej, zrobi się wiatr”",
-   "emoji": "🥵📜",
-   "dol": "§ 30a: no to porozmawiajmy"
-  },
-  {
-   "typ": "nikt",
-   "linie": [
-    "Kot: siedzi na drzewie 2 dni",
-    "Strażacy: przyjeżdżają z drabiną",
-    "Kot: schodzi sam, gdy wóz już stoi"
-   ],
-   "emoji": "🐈🌳🚒"
-  },
-  {
-   "typ": "drake",
-   "nie": "„U nas nie ma mobbingu”",
-   "tak": "„U nas nie ma mobbingu” - w regulaminie, z procedurą, od 5.11.2026"
+   },
+   "d": "bhp"
   }
  ]
 }

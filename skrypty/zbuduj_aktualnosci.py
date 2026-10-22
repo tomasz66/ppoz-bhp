@@ -53,10 +53,6 @@ ZRODLA = [
     ("bhp", None, google('"badania lekarskie" pracowników OR "medycyna pracy"')),
     ("bhp", None, google('"Kodeks pracy" zmiany')),
     ("bhp", None, google('upał w pracy OR "temperatura w pracy"')),
-    # Na luzie: nietypowe i zabawne interwencje (bez tragedii - patrz SMUTNE).
-    ("luz", None, google('"nietypowa interwencja" strażaków OR "nietypowa akcja" strażaków', DNI_LUZ)),
-    ("luz", None, google('strażacy uratowali kota OR psa OR dzika OR sowę OR konia', DNI_LUZ)),
-    ("luz", None, google('"nietypowe zgłoszenie" strażacy', DNI_LUZ)),
 ]
 # Zabawne historie nie mogą dotyczyć czyjejś krzywdy - takie wpisy pomijamy w kanale "luz".
 SMUTNE = ["zgin", "nie zyje", "smierc", "smiertel", "ofiar", "ranny", "ranna", "rannych", "tragedi", "splon",

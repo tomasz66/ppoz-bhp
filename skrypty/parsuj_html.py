@@ -6,7 +6,7 @@ import re
 import sys
 from html.parser import HTMLParser
 
-POZIOMY = {"unit_chpt": 0, "unit_para": 1, "unit_arti": 1, "unit_pass": 2, "unit_pint": 3, "unit_lett": 4, "unit_tiret": 5}
+POZIOMY = {"unit_bran": 0, "unit_part": 0, "unit_chpt": 0, "unit_para": 1, "unit_arti": 1, "unit_pass": 2, "unit_pint": 3, "unit_lett": 4, "unit_tiret": 5}
 
 
 class Parser(HTMLParser):

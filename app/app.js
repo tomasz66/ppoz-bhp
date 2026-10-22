@@ -15,7 +15,7 @@ const CIEKAWOSTKA_CO = 3;
 const DZIEN_MS = 86400000;
 const KLUCZ = { motyw: "bhp-motyw", nauka: "bhp-nauka", zmiany: "bhp-zmiany", tematy: "bhp-tematy", wizyta: "bhp-wizyta-czytnik" };
 
-const stan = { spis: [], dok: {}, artykuly: null, akty: [], aktyMapa: {}, sciagi: [], pytania: [], obserwowane: null, nowosci: [], aktualnosci: { wpisy: [] }, ciekawostki: { ciekawostki: [], zarty: [] }, sesja: null };
+const stan = { spis: [], dok: {}, artykuly: null, akty: [], aktyMapa: {}, sciagi: [], pytania: [], obserwowane: null, nowosci: [], aktualnosci: { wpisy: [] }, ciekawostki: { przypadki: [], ciekawostki: [] }, sesja: null };
 const widok = document.getElementById("widok");
 
 // ── Pomocnicze ──
@@ -140,7 +140,7 @@ const TRASY = [
   [/^#\/egzamin$/, () => widokPytanie()],
   [/^#\/wynik$/, () => widokWynik()],
   [/^#\/(zmiany|nowosci)$/, () => widokZmiany()],
-  [/^#\/luz$/, () => widokLuz()],
+  [/^#\/(czywiesz|luz)$/, () => widokCzyWiesz()],
   [/^#\/news\/(\w+)$/, (m) => widokNews(m[1])],
   [/^#\/dok\/(\w+)$/, (m) => widokDok(m[1])],
   [/^#\/dok\/(\w+)\/(\w+)$/, (m) => widokDokJednostka(m[1], m[2])],
@@ -186,9 +186,9 @@ function widokStart() {
       <a class="tile" href="#/nauka"><div class="tile-num">${n.opanowane}/${stan.pytania.length}</div><div class="tile-label">pytań opanowanych</div></a>
     </div>
     <div class="btn-row"><button class="btn" onclick="startLekcji()">Lekcja - ${PYTAN_W_LEKCJI} pytań</button></div>
-    <div class="section-label">Ciekawostka dnia</div>
+    <div class="section-label">Czy wiesz, że… · dziś</div>
     ${kartaCiekawostki(ciekawostkaDnia())}
-    <div class="list-group"><a class="row" href="#/luz">${kafel("😄", "#e8a200")}<span class="row-main"><span class="row-title">Na luzie</span><span class="row-sub">Mem dnia, nietypowe interwencje strażaków, żarty z BHP</span></span><span class="row-chev">›</span></a></div>
+    <div class="list-group"><a class="row" href="#/czywiesz">${kafel("💡", "#e8a200")}<span class="row-main"><span class="row-title">Czy wiesz, że…</span><span class="row-sub">${wszystkieCiekawostki().length} sytuacji z życia z podstawą prawną</span></span><span class="row-chev">›</span></a></div>
     ${najblizszeTerminy()}
     <div class="section-label">Z branży</div>
     <div class="list-group">${najwazniejsze(3).map(wierszAktualnosci).join("")}
@@ -202,29 +202,52 @@ function widokStart() {
   podepnijSzukanie();
 }
 
-// Ciekawostki ze źródłem w przepisie i żarty z branży - jedna na dzień na Start, co kilka dobrych odpowiedzi w nauce.
+// "Czy wiesz, że…": przypadki z życia (sytuacja + co mówi prawo) i ciekawostki - każdy z podstawą prawną.
+function wszystkieCiekawostki() {
+  return stan.ciekawostki.przypadki.concat(stan.ciekawostki.ciekawostki);
+}
+
 function ciekawostkaDnia() {
-  const lista = stan.ciekawostki.ciekawostki;
-  const dzien = Math.floor(Date.now() / DZIEN_MS);
-  return { rodzaj: "fakt", ...lista[dzien % lista.length] };
+  const lista = wszystkieCiekawostki();
+  return lista[Math.floor(Date.now() / DZIEN_MS) % lista.length];
 }
 
 function losowaPrzerwa() {
-  stan.przerwa = (stan.przerwa || 0) + 1;
-  if (stan.przerwa % 2 === 0) {
-    const z = stan.ciekawostki.zarty;
-    return { rodzaj: "zart", t: z[Math.floor(Math.random() * z.length)] };
-  }
-  const c = stan.ciekawostki.ciekawostki;
-  return { rodzaj: "fakt", ...c[Math.floor(Math.random() * c.length)] };
+  const lista = wszystkieCiekawostki();
+  return lista[Math.floor(Math.random() * lista.length)];
 }
 
-function kartaCiekawostki(c) {
-  if (c.rodzaj === "zart") {
-    return `<div class="card fun"><div class="fun-label">😄 Z przymrużeniem oka</div><p>${tekst(c.t)}</p></div>`;
+function zrodloCiekawostki(zr) {
+  if (zr.dok) {
+    const o = stan.obserwowane.akty.find((x) => x.eli === zr.dok.replace(/^DU_(\d+)_(\d+)$/, "DU/$1/$2"));
+    const nazwa = o ? o.nazwa : zr.dok.replace(/^DU_(\d+)_(\d+)$/, "Dz.U. $1 poz. $2");
+    return `<a class="chip red" href="#/dok/${zr.dok}/${zr.j}">${esc(zr.u ? zr.u + " · " : "")}${esc(nazwa)} ›</a>`;
   }
-  const zr = c.zr.url ? linkZrodla({ url: c.zr.url, opis: c.zr.opis }) : chipZrodla(c.zr);
-  return `<div class="card fun"><div class="fun-label">💡 Czy wiesz, że…</div><p>${tekst(c.t)}</p><div class="links">${zr}</div></div>`;
+  if (zr.url) {
+    return linkZrodla({ url: zr.url, opis: zr.opis });
+  }
+  return chipZrodla(zr);
+}
+
+function kartaCiekawostki(c, slowa) {
+  const pod = (t) => (slowa ? podswietl(t, slowa) : tekst(t));
+  return `<div class="card fun">
+    ${c.s ? `<div class="fun-label">💡 Sytuacja</div><p class="case-s">${pod(c.s)}</p><div class="fun-label" style="margin-top:10px">⚖️ Co mówi prawo</div>` : `<div class="fun-label">💡 Czy wiesz, że…</div>`}
+    <p>${pod(c.t)}</p><div class="links">${zrodloCiekawostki(c.zr)}</div></div>`;
+}
+
+function widokCzyWiesz() {
+  ustawNaglowek("Czy wiesz, że…");
+  ustawZakladke("czywiesz");
+  const d = stan.filtrCzyWiesz || "all";
+  const lista = wszystkieCiekawostki().filter((c) => d === "all" || c.d === d);
+  widok.innerHTML = `
+    <div class="section-header"><div class="section-title">Czy wiesz, że…</div>
+    <div class="section-sub">${tekst(`Sytuacje z życia firm i domów przełożone na przepisy - ${wszystkieCiekawostki().length} przypadków, każdy z podstawą prawną. Przydadzą się w rozmowie z klientem.`)}</div></div>
+    <div class="seg">${[["all", "Wszystko"], ["bhp", "BHP"], ["ppoz", "PPOŻ"]].map(([k, n]) => `<button class="${d === k ? "on" : ""}" onclick="stan.filtrCzyWiesz='${k}';widokCzyWiesz()">${n}</button>`).join("")}</div>
+    <div class="section-label">${lista.length} pozycji</div>
+    ${lista.map((c) => kartaCiekawostki(c)).join("")}
+    <div class="foot">${tekst("Każdy przypadek jest sprawdzony z brzmieniem przepisu. Dotknij źródła, żeby przeczytać cały artykuł lub paragraf.")}</div>`;
 }
 
 function najblizszeTerminy() {
@@ -247,82 +270,247 @@ function najblizszeTerminy() {
 }
 
 function poleSzukania(wartosc) {
-  return `<div class="search-wrap"><label class="search-box">
-    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-    <input class="search-input" id="szukaj" type="search" placeholder="Szukaj w przepisach, np. gaśnice" value="${esc(wartosc)}" autocomplete="off">
+  return `<div class="search-wrap"><label class="search-box big">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+    <input class="search-input" id="szukaj" type="search" placeholder="Szukaj wszędzie: smoła, gałęzie, gaśnica…" value="${esc(wartosc)}" autocomplete="off" enterkeyhint="search">
   </label></div>`;
 }
 
+// Na Start wpisanie pierwszej litery przenosi do pełnego wyszukiwania (wyniki na żywo).
 function podepnijSzukanie() {
   const pole = document.getElementById("szukaj");
-  pole.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-      sessionStorage.setItem("bhp-q", pole.value);
-      location.hash = "#/szukaj";
-    }
+  pole.addEventListener("input", () => {
+    sessionStorage.setItem("bhp-q", pole.value);
+    location.hash = "#/szukaj";
   });
+  pole.addEventListener("focus", wczytajWszystkieDok, { once: true });
 }
 
-// ── Wyszukiwarka ──
+// ── Wyszukiwarka "wszystko naraz": przypadki, ściągi, przepisy ppoż i BHP, nowości, pytania, wiadomości ──
+// Bez polskich znaków i odmiany: "smola" znajdzie "smoły", "galezie" - "gałęzi", "gasnica" - "gaśnic".
+
+const MIN_RDZEN = 4;
+const KONCOWKA = 3;
+const NA_GRUPE = 6;
+const STOP = new Set(["i", "w", "z", "na", "do", "o", "a", "oraz", "czy", "jak", "sie", "to", "od", "po", "za", "dla", "przy", "co", "nie", "jest", "sa"]);
+// Słowa, które w przepisach występują pod inną nazwą.
+const SYNONIMY = {
+  galez: ["galez", "chrust", "pozostalosci roslin"], galaz: ["galez", "chrust", "pozostalosci roslin"], chrus: ["chrust", "galez"],
+  czad: ["czad", "tlenku wegla"], dym: ["dym"], upal: ["upal", "niewyzsza niz 35", "przekroczy 28"], goraco: ["upal", "niewyzsza niz 35", "przekroczy 28"],
+  komputer: ["komputer", "monitor"], monito: ["monitor", "komputer"], kask: ["kask", "helm"], okular: ["okular", "szkla kontaktowe"],
+  butl: ["butl"], grill: ["grill", "butl"], komin: ["komin", "przewod"], wypadek: ["wypad"], ploty: ["plot", "granicy dzialki"],
+  plot: ["plot", "ploc", "ogrodz", "granicy dzialki"], ploc: ["plot", "ploc", "ogrodz", "granicy dzialki"], sasiad: ["sasiad", "granicy dzialki"], ogrodz: ["ogrodz", "granicy dzialki", "plot"], drabin: ["drabin"],
+  pijan: ["nietrzezw", "alkohol"], alkohol: ["alkohol", "nietrzezw"], l4: ["zwolnien", "niezdolnosci do pracy"],
+};
+
+function rdzen(w) {
+  return w.length <= MIN_RDZEN ? w : w.slice(0, Math.max(MIN_RDZEN, w.length - KONCOWKA));
+}
+
+function warianty(slowo) {
+  const r = rdzen(slowo);
+  const klucz = Object.keys(SYNONIMY).find((k) => r.startsWith(k) || k.startsWith(r));
+  return klucz ? [r, ...SYNONIMY[klucz]] : [r];
+}
+
+async function wczytajWszystkieDok() {
+  if (stan.wszystkieDok) {
+    return stan.wszystkieDok;
+  }
+  stan.wszystkieDok = Promise.all(stan.spis.map((eli) => wczytajDok(eli.replaceAll("/", "_")).catch(() => null)));
+  return stan.wszystkieDok;
+}
+
+function indeks() {
+  // Każdy element: grupa, tekst do przeszukania, HTML wyniku (funkcja) i waga grupy.
+  const el = [];
+  for (const c of wszystkieCiekawostki()) {
+    el.push({ g: "case", txt: (c.s || "") + " " + c.t + " " + (c.tagi || []).join(" "), c });
+  }
+  for (const s of stan.sciagi) {
+    for (const w of s.wiersze) {
+      el.push({ g: "sciaga", txt: s.tytul + " " + w[0] + " " + w[1], s, w });
+    }
+  }
+  for (const a of stan.akty) {
+    for (const j of a.jednostki) {
+      j.linie.forEach((l, i) => el.push({ g: "ppoz", txt: l.t, a, j, i }));
+    }
+  }
+  for (const d of stan.dokZaladowane || []) {
+    if (!d) {
+      continue;
+    }
+    const grupa = d.rola === "akt" ? "bhp" : "zmiany";
+    for (const j of d.jednostki) {
+      j.linie.forEach((l, i) => el.push({ g: grupa, txt: l.t, d, j, i }));
+    }
+  }
+  for (const n of stan.nowosci) {
+    el.push({ g: "nowosci", txt: n.tytul + " " + n.co.join(" ") + " " + n.szansa, n });
+  }
+  for (const q of stan.pytania) {
+    el.push({ g: "pytania", txt: q.q + " " + q.odp[q.ok], q });
+  }
+  for (const w of stan.aktualnosci.wpisy) {
+    if (w.d !== "luz") {
+      el.push({ g: "news", txt: w.t + " " + (w.lead || ""), w });
+    }
+  }
+  for (const e of el) {
+    e.norm = bezOgonkow(e.txt);
+  }
+  return el;
+}
+
+const GRUPY_SZUKANIA = [
+  ["case", "💡 Czy wiesz, że… - przypadki z życia"],
+  ["sciaga", "☰ Ściągi"],
+  ["ppoz", "§ Przepisy ppoż"],
+  ["bhp", "§ Przepisy BHP i warunki techniczne"],
+  ["nowosci", "✦ Nowości w prawie"],
+  ["zmiany", "§ Akty zmieniające"],
+  ["pytania", "✎ Pytania do nauki"],
+  ["news", "📰 Wiadomości z branży"],
+];
+
+function wynikSzukania(e, slowa) {
+  if (e.g === "case") {
+    return kartaCiekawostki(e.c, slowa);
+  }
+  if (e.g === "sciaga") {
+    return `<div class="card"><div class="cheat-k">${esc(e.s.tytul)} · ${podswietl(e.w[0], slowa)}</div><div class="cheat-v">${podswietl(e.w[1], slowa)}</div><div class="cheat-src">${chipZrodla(e.w[2])}</div></div>`;
+  }
+  if (e.g === "ppoz") {
+    return `<a class="row" href="#/akt/${e.a.id}/${e.j.id}" onclick="sessionStorage.setItem('bhp-hit','${e.i}')"><span class="row-main">
+      <span class="row-title small">${esc(e.j.etykieta)} · ${esc(e.a.skrot)}</span><span class="row-sub">${podswietl(wycinek(e.txt, slowa), slowa)}</span></span><span class="row-chev">›</span></a>`;
+  }
+  if (e.g === "bhp" || e.g === "zmiany") {
+    const plik = e.d.eli.replaceAll("/", "_");
+    return `<a class="row" href="#/dok/${plik}/${e.j.id}" onclick="sessionStorage.setItem('bhp-hit','${e.i}')"><span class="row-main">
+      <span class="row-title small">${esc(e.j.etykieta)} · ${esc(nazwaDok(e.d))}</span><span class="row-sub">${podswietl(wycinek(e.txt, slowa), slowa)}</span></span><span class="row-chev">›</span></a>`;
+  }
+  if (e.g === "nowosci") {
+    return `<a class="row" href="#/nowosci"><span class="row-main"><span class="row-title small">${podswietl(e.n.tytul, slowa)}</span>
+      <span class="row-sub">${podswietl(wycinek(e.n.co.join(" "), slowa), slowa)}</span></span><span class="row-chev">›</span></a>`;
+  }
+  if (e.g === "pytania") {
+    return `<div class="card"><p><b>${podswietl(e.q.q, slowa)}</b></p><p>Odpowiedź: ${podswietl(e.q.odp[e.q.ok], slowa)}</p><div class="links">${chipZrodla(e.q.zr)}</div></div>`;
+  }
+  return wierszAktualnosci(e.w);
+}
 
 function widokSzukaj() {
   const q = sessionStorage.getItem("bhp-q") || "";
-  ustawNaglowek("Szukaj", "#/start");
+  ustawNaglowek("Szukaj wszędzie", "#/start");
   ustawZakladke("start");
   widok.innerHTML = `${poleSzukania(q)}<div id="wyniki"></div>`;
   const pole = document.getElementById("szukaj");
+  let czasomierz;
   const pokaz = () => {
     sessionStorage.setItem("bhp-q", pole.value);
-    document.getElementById("wyniki").innerHTML = wynikiSzukania(pole.value);
+    clearTimeout(czasomierz);
+    czasomierz = setTimeout(() => (document.getElementById("wyniki").innerHTML = wynikiSzukania(pole.value)), 120);
   };
   pole.addEventListener("input", pokaz);
-  pokaz();
   pole.focus();
+  pole.setSelectionRange(pole.value.length, pole.value.length);
+  document.getElementById("wyniki").innerHTML = wynikiSzukania(q);
+  // Akty BHP (duże pliki) dociągamy w tle; gdy dojdą, odświeżamy wyniki.
+  if (!stan.dokZaladowane) {
+    wczytajWszystkieDok().then((lista) => {
+      stan.dokZaladowane = lista;
+      stan.indeks = null;
+      if (location.hash === "#/szukaj") {
+        document.getElementById("wyniki").innerHTML = wynikiSzukania(pole.value);
+      }
+    });
+  }
 }
 
 function wynikiSzukania(q) {
-  const slowa = bezOgonkow(q).split(/\s+/).filter((s) => s.length > 1);
+  const slowa = bezOgonkow(q).split(/[\s,.;]+/).filter((s) => s.length > 1 && !STOP.has(s));
   if (!slowa.length) {
-    return `<div class="empty">${tekst("Wpisz słowo, np. hydrant, ewakuacja, czujka.")}</div>`;
+    return `<div class="empty">${tekst("Wpisz, czego szukasz - np. smoła, gałęzie przy płocie, gaśnica, drabina, upał, badania. Przeszukam przypadki, ściągi, przepisy ppoż i BHP, nowości, pytania i wiadomości.")}</div>`;
   }
-  const trafienia = [];
-  for (const a of stan.akty) {
-    for (const j of a.jednostki) {
-      for (let i = 0; i < j.linie.length; i++) {
-        const t = bezOgonkow(j.linie[i].t);
-        if (slowa.every((s) => t.includes(s))) {
-          trafienia.push({ a, j, i });
-        }
+  stan.indeks = stan.indeks || indeks();
+  const grupySlow = slowa.map(warianty);
+  const pasujace = [];
+  for (const e of stan.indeks) {
+    let pkt = 0;
+    let wszystkie = true;
+    for (const war of grupySlow) {
+      const ile = war.reduce((s, w) => s + (e.norm.split(w).length - 1), 0);
+      if (!ile) {
+        wszystkie = false;
+        break;
       }
+      pkt += Math.min(ile, 3);
+    }
+    if (wszystkie) {
+      pasujace.push({ e, pkt });
     }
   }
-  if (!trafienia.length) {
-    return `<div class="empty">Nic nie znaleziono.</div>`;
+  const podswietlane = grupySlow.flat();
+  const ladowanie = !stan.dokZaladowane ? `<div class="spinner">Doczytuję przepisy BHP…</div>` : "";
+  if (!pasujace.length) {
+    return `${ladowanie}<div class="empty">${tekst("Nic nie znaleziono. Spróbuj krótszego słowa albo innego określenia.")}</div>`;
   }
-  const max = 80;
-  return `<div class="section-label">${trafienia.length} trafień</div><div class="list-group">${trafienia.slice(0, max).map(({ a, j, i }) => `
-    <a class="row" href="#/akt/${a.id}/${j.id}" onclick="sessionStorage.setItem('bhp-hit','${i}')">
-      <span class="row-main"><span class="row-title">${esc(j.etykieta)} · ${esc(a.skrot)}</span>
-      <span class="row-sub">${podswietl(wycinek(j.linie[i].t, slowa[0]), slowa)}</span></span><span class="row-chev">›</span>
-    </a>`).join("")}</div>${trafienia.length > max ? `<div class="foot">Pokazano ${max} pierwszych. Doprecyzuj wyszukiwanie.</div>` : ""}`;
+  return ladowanie + GRUPY_SZUKANIA.map(([g, nazwa]) => {
+    const lista = pasujace.filter((x) => x.e.g === g).sort((a, b) => b.pkt - a.pkt);
+    if (!lista.length) {
+      return "";
+    }
+    const limit = (stan.limitySzukania || {})[g] || NA_GRUPE;
+    const lista2 = lista.slice(0, limit).map((x) => wynikSzukania(x.e, podswietlane)).join("");
+    const kontener = ["case", "sciaga", "pytania"].includes(g) ? lista2 : `<div class="list-group">${lista2}</div>`;
+    return `<div class="section-label">${nazwa} · ${lista.length}</div>${kontener}
+      ${lista.length > limit ? `<div class="btn-row"><button class="btn secondary" onclick="pokazWiecej('${g}')">Pokaż więcej (${lista.length - limit})</button></div>` : ""}`;
+  }).join("");
 }
 
-function wycinek(t, slowo) {
-  const i = bezOgonkow(t).indexOf(slowo);
+function pokazWiecej(g) {
+  stan.limitySzukania = stan.limitySzukania || {};
+  stan.limitySzukania[g] = ((stan.limitySzukania[g]) || NA_GRUPE) + 10;
+  document.getElementById("wyniki").innerHTML = wynikiSzukania(document.getElementById("szukaj").value);
+}
+
+function wycinek(t, slowa) {
+  const norm = bezOgonkow(t);
+  const lista = Array.isArray(slowa) ? slowa.flatMap(warianty) : [slowa];
+  const i = Math.max(0, Math.min(...lista.map((s) => norm.indexOf(s)).filter((x) => x >= 0).concat([0])));
   const od = Math.max(0, i - 60);
-  return (od > 0 ? "…" : "") + t.slice(od, od + 200) + (t.length > od + 200 ? "…" : "");
+  return (od > 0 ? "…" : "") + t.slice(od, od + 220) + (t.length > od + 220 ? "…" : "");
 }
 
+// Podświetla wszystkie wystąpienia szukanych rdzeni (bez względu na polskie znaki).
 function podswietl(t, slowa) {
-  let wynik = esc(t);
-  for (const s of slowa) {
-    const surowy = bezOgonkow(wynik);
-    let i = surowy.indexOf(s);
-    if (i >= 0) {
-      wynik = wynik.slice(0, i) + "<mark>" + wynik.slice(i, i + s.length) + "</mark>" + wynik.slice(i + s.length);
+  const zrodlo = nbsp(String(t));
+  const norm = bezOgonkow(zrodlo);
+  const znaczniki = new Array(zrodlo.length).fill(false);
+  for (const s of slowa.flatMap((x) => (x.length > 1 ? [x] : []))) {
+    let i = norm.indexOf(s);
+    while (i >= 0) {
+      for (let k = i; k < i + s.length; k++) {
+        znaczniki[k] = true;
+      }
+      i = norm.indexOf(s, i + s.length);
     }
   }
-  return wynik;
+  let wynik = "";
+  let otwarty = false;
+  for (let k = 0; k < zrodlo.length; k++) {
+    if (znaczniki[k] && !otwarty) {
+      wynik += "<mark>";
+      otwarty = true;
+    }
+    if (!znaczniki[k] && otwarty) {
+      wynik += "</mark>";
+      otwarty = false;
+    }
+    wynik += esc(zrodlo[k]);
+  }
+  return wynik + (otwarty ? "</mark>" : "");
 }
 
 // ── Przepisy ──
@@ -821,8 +1009,8 @@ function skrotDok(d) {
   return pkt.map((x) => `<li>${tekst(x)}</li>`).join("");
 }
 
-function tekstJednostki(j) {
-  return `<div class="law">${j.linie.map((l) => `<p class="l${l.p}">${tekst(l.t)}</p>`).join("")}</div>${j.uwaga ? `<div class="card amber"><p>${tekst(j.uwaga)}</p></div>` : ""}`;
+function tekstJednostki(j, hit) {
+  return `<div class="law">${j.linie.map((l, i) => `<p id="l${i}" class="l${l.p}${String(i) === hit ? " hit" : ""}">${tekst(l.t)}</p>`).join("")}</div>${j.uwaga ? `<div class="card amber"><p>${tekst(j.uwaga)}</p></div>` : ""}`;
 }
 
 function zrodloDok(d) {
@@ -885,62 +1073,26 @@ async function widokDokJednostka(plik, id) {
     return widokDok(plik);
   }
   const j = d.jednostki[idx];
-  ustawNaglowek(`${j.etykieta} · ${nazwaDok(d)}`, `#/dok/${plik}`);
+  const hit = sessionStorage.getItem("bhp-hit");
+  sessionStorage.removeItem("bhp-hit");
+  ustawNaglowek(`${j.etykieta} · ${nazwaDok(d)}`, "back");
   const poprz = d.jednostki[idx - 1];
   const nast = d.jednostki[idx + 1];
   widok.innerHTML = `
     <div class="unit-head"><div class="unit-label">${esc(j.etykieta)}</div>
     <div class="unit-chapter">${esc(j.rozdzial || "")}</div><div class="unit-act">${tekst(d.tytul)}</div></div>
-    ${tekstJednostki(j)}
+    ${tekstJednostki(j, hit)}
     <div class="pager">
       ${poprz ? `<a class="btn secondary" href="#/dok/${plik}/${poprz.id}">‹ ${esc(poprz.etykieta)}</a>` : "<span style='flex:1'></span>"}
       ${nast ? `<a class="btn secondary" href="#/dok/${plik}/${nast.id}">${esc(nast.etykieta)} ›</a>` : "<span style='flex:1'></span>"}
     </div>
     ${zrodloDok(d)}`;
-}
-
-// ── Na luzie: memy (własne), nietypowe interwencje, żarty, ciekawostki ──
-
-function kartaMema(m) {
-  if (m.typ === "drake") {
-    return `<div class="meme drake"><div class="dr-row"><span class="dr-ico">🙅</span><span>${tekst(m.nie)}</span></div>
-      <div class="dr-row yes"><span class="dr-ico">👉</span><span>${tekst(m.tak)}</span></div></div>`;
+  if (hit) {
+    const el = document.getElementById("l" + hit);
+    if (el) {
+      el.scrollIntoView({ block: "center" });
+    }
   }
-  if (m.typ === "nikt") {
-    return `<div class="meme nikt">${m.linie.map((l) => `<p>${tekst(l)}</p>`).join("")}<div class="meme-emoji">${m.emoji}</div></div>`;
-  }
-  return `<div class="meme klasyk"><div class="meme-txt">${tekst(m.gora)}</div><div class="meme-emoji">${m.emoji}</div><div class="meme-txt">${tekst(m.dol)}</div></div>`;
-}
-
-function memDnia() {
-  const m = stan.ciekawostki.memy;
-  return m[Math.floor(Date.now() / DZIEN_MS) % m.length];
-}
-
-function losujMema() {
-  const m = stan.ciekawostki.memy;
-  document.getElementById("mem-dnia").innerHTML = kartaMema(m[Math.floor(Math.random() * m.length)]);
-}
-
-function widokLuz() {
-  ustawNaglowek("Na luzie");
-  ustawZakladke("luz");
-  const historie = stan.aktualnosci.wpisy.filter((w) => w.d === "luz");
-  const c = stan.ciekawostki;
-  widok.innerHTML = `
-    <div class="section-header"><div class="section-title">Na luzie</div>
-    <div class="section-sub">${tekst("Memy, nietypowe akcje strażaków i żarty z BHP - na przerwę w nauce.")}</div></div>
-    <div class="section-label">Mem dnia</div>
-    <div id="mem-dnia">${kartaMema(memDnia())}</div>
-    <div class="btn-row"><button class="btn secondary" onclick="losujMema()">🎲 Losuj innego mema</button></div>
-    ${historie.length ? `<div class="section-label">Nietypowe interwencje · ostatni miesiąc</div>${historie.map((w) => kartaWpisu(w, 0)).join("")}` : ""}
-    <div class="section-label">Wszystkie memy · ${c.memy.length}</div>
-    ${c.memy.map(kartaMema).join("")}
-    <div class="section-label">Żarty z branży</div>
-    ${c.zarty.map((z) => `<div class="card fun"><p>${tekst(z)}</p></div>`).join("")}
-    <div class="section-label">Czy wiesz, że… · ze źródłem</div>
-    ${c.ciekawostki.map((x) => kartaCiekawostki({ rodzaj: "fakt", ...x })).join("")}
-    <div class="foot">${tekst("Memy i żarty są autorskie, pisane dla tej aplikacji. Historie interwencji to linki do artykułów lokalnych mediów.")}</div>`;
 }
 
 // ── Czytnik: własny RSS - dziś, wczoraj, przedwczoraj, reszta tygodnia + najważniejsze ──

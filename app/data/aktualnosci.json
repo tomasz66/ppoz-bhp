@@ -1,6 +1,28 @@
 {
- "pobrano": "2026-10-22 16:45",
+ "pobrano": "2026-10-22 18:00",
  "wpisy": [
+  {
+   "d": "bhp",
+   "t": "Co przyniesie pogoda jutro (23.10)? Poznaj przewidywania dla Wrześni",
+   "z": "Września Nasze Miasto",
+   "url": "https://wrzesnia.naszemiasto.pl/prognoza-pogody-na-jutro-dla-wrzesni-23-10-jaka-bedzie-pogoda-w-piatek/ar/c1p1-19943171",
+   "lead": "",
+   "czas": "2026-10-22T15:23:53+00:00",
+   "tematy": [],
+   "pkt": 0,
+   "id": "bca3b967e9"
+  },
+  {
+   "d": "bhp",
+   "t": "Zmiana czasu 2026 a praca w nocy. Ile wynosi dodatek?",
+   "z": "zWielkopolski24",
+   "url": "https://zwielkopolski24.pl/praca/zmiana-czasu-na-zimowy-praca-w-nocy-wynagrodzenie-nadgodziny/uPTsoI4xHyRnTVAot1gM",
+   "lead": "Zmiana czasu na zimowy 2026 oznacza dodatkową godzinę pracy w nocy. Sprawdź, kiedy należą się nadgodziny, 100% dodatku i wynagrodzenie za pracę nocną.",
+   "czas": "2026-10-22T15:00:00+00:00",
+   "tematy": [],
+   "pkt": 0,
+   "id": "bcd664ab1e"
+  },
   {
    "d": "ppoz",
    "t": "Strażak zarabia na OSP? Gmina płaci, a przepisy budzą pytania",
@@ -69,6 +91,17 @@
    "id": "d0b070353c"
   },
   {
+   "d": "bhp",
+   "t": "Dyrektor RCB: cyfryzacja jest ważna, ale nie można zapominać o backupach papierowych",
+   "z": "Polska Agencja Prasowa SA",
+   "url": "https://www.pap.pl/aktualnosci/dyrektor-rcb-cyfryzacja-jest-wazna-ale-nie-mozna-zapominac-o-backupach-papierowych",
+   "lead": "",
+   "czas": "2026-10-22T12:51:00+00:00",
+   "tematy": [],
+   "pkt": 0,
+   "id": "3bb7ae0d60"
+  },
+  {
    "d": "ppoz",
    "t": "Na elewacji bloku pojawi się specjalna tabliczka. Zarządcy apelują do mieszkańców",
    "z": "Styl Interia",
@@ -91,6 +124,32 @@
    "tematy": [],
    "pkt": 0,
    "id": "5f9646dc20"
+  },
+  {
+   "d": "ppoz",
+   "t": "Alarm i opuszczenie budynku. Sprawdzili przygotowanie szkoły",
+   "z": "Kociewie24.pl",
+   "url": "https://kociewie24.pl/aktualnosci/82767-alarm-i-opuszczenie-budynku-sprawdzili-przygotowanie-szkoly",
+   "lead": "Uczniowie i pracownicy Szkoły Technicznej imienia Dywizjonu 303 Bydgoskiego Zakładu Doskonalenia Zawodowego w Chojnicach uczestniczyli w próbnej ewakuacji. Ćwiczenia przeprowadzono pod nadzorem policjantów, którzy obserwowali przebieg działań",
+   "czas": "2026-10-22T11:24:00+00:00",
+   "tematy": [
+    "Ppoż w obiektach"
+   ],
+   "pkt": 2,
+   "id": "a96f30132d"
+  },
+  {
+   "d": "bhp",
+   "t": "Jak poprawić bezpieczeństwo w kopalniach? Dotyczyła tego narada WUG i PIP",
+   "z": "netTG.pl",
+   "url": "https://nettg.pl/jak-poprawic-bezpieczenstwo-w-kopalniach-dotyczyla-tego-narada-wug-i-pip",
+   "lead": "Przedstawiciele Państwowej Inspekcji Pracy i Wyższego Urzędu Górniczego rozmawiali o bezpieczeństwie pracy w zakładach górniczych.",
+   "czas": "2026-10-22T10:24:00+00:00",
+   "tematy": [
+    "Kontrole PIP"
+   ],
+   "pkt": 2,
+   "id": "74056d6631"
   },
   {
    "d": "bhp",
@@ -132,15 +191,17 @@
    "id": "33f2c82254"
   },
   {
-   "d": "ppoz",
-   "t": "Uczniowie \"Jedynki\" najlepsi w grze terenowej",
-   "z": "TwojGlos",
-   "url": "https://turyki.pl/artykul/uczniowie-jedynki-najlepsi-n1871199",
-   "lead": "Uczniowie Publicznej Szkoły Podstawowej im. Mariana Osińskiego w Rykach zwyciężyli w rywalizacji zaproponowanej przez Centrum Kultury i Sportu20 październi",
-   "czas": "2026-10-22T09:30:00+00:00",
-   "tematy": [],
-   "pkt": 0,
-   "id": "8603c81cd3"
+   "d": "bhp",
+   "t": "Wypadek w Rekownicy! 66-latek spadł z wysokości, lądował śmigłowiec LPR",
+   "z": "Zawsze Pomorze",
+   "url": "https://www.zawszepomorze.pl/artykul/29831,wypadek-w-rekownicy-66-latek-spadl-z-wysokosci-ladowal-smiglowiec-lpr",
+   "lead": "Wypadek przy pracy w Rekownicy w powiecie kościerskim! 66-latek spadł z rusztowania w oczyszczalni ścieków. Na miejscu lądował śmigłowiec LPR.",
+   "czas": "2026-10-22T09:00:00+00:00",
+   "tematy": [
+    "Wypadki"
+   ],
+   "pkt": 1,
+   "id": "ba1a895d29"
   },
   {
    "d": "bhp",
@@ -172,6 +233,19 @@
   },
   {
    "d": "bhp",
+   "t": "D. Baran: Od początku roku w wypadkach przy pracy na Podkarpaciu ucierpiało blisko 1400 osób • Gość dnia",
+   "z": "Polskie Radio Rzeszów",
+   "url": "https://radio.rzeszow.pl/367081/d-baran-od-poczatku-roku-w-wypadkach-przy-pracy-na-podkarpaciu-ucierpialo-blisko-1400-osob/",
+   "lead": "Posłuchaj rozmowy Rośnie liczba wypadków przy pracy na Podkarpaciu Z roku na rok rośnie na Podkarpaciu liczba wypadków przy pracy.",
+   "czas": "2026-10-22T06:39:55+00:00",
+   "tematy": [
+    "Wypadki"
+   ],
+   "pkt": 1,
+   "id": "0cbb142aa3"
+  },
+  {
+   "d": "bhp",
    "t": "Osiek: Wypadek drogowy - zderzenie dostawczaka ze skuterem",
    "z": "Suski.dlawas.info",
    "url": "https://suski.dlawas.info/z-regionu/osiek-wypadek-drogowy-zderzenie-dostawczaka-ze-skuterem/cid,42379,a",
@@ -182,21 +256,6 @@
    ],
    "pkt": 1,
    "id": "b3351118ba"
-  },
-  {
-   "d": "ppoz",
-   "t": "Istebna: Gdzie się ukryć?",
-   "z": "OX.pl",
-   "url": "https://wiadomosci.ox.pl/istebna-gdzie-sie-ukryc,102689",
-   "lead": "Gmina Istebna opublikowała wykaz pięciu punktów schronienia wskazanych przez Państwową Straż Pożarną. Znajdują się one w Istebnej i Koniakowie i mogą służyć mieszkańcom oraz osobom przebywającym na terenie gminy jako miejsca doraźnej ochrony w sytuacji zagrożenia. Samorząd zaproponował również kolejne obiekty, które mogłyby pełnić taką funkcję.",
-   "czas": "2026-10-22T05:30:00+00:00",
-   "tematy": [
-    "Ppoż w obiektach",
-    "Pożary",
-    "Straż"
-   ],
-   "pkt": 3,
-   "id": "34543642b9"
   },
   {
    "d": "bhp",
@@ -341,17 +400,6 @@
   },
   {
    "d": "ppoz",
-   "t": "Czujnik, który może uratować życie, za darmo. ZKZL rozdaje urządzenia Poznaniakom. Kto może je otrzymać?",
-   "z": "Codzienny Poznań",
-   "url": "https://codziennypoznan.pl/artykul/2026-10-21/czujnik-ktory-moze-uratowac-zycie-za-darmo-zkzl-rozdaje-urzadzenia-poznaniakom-kto-moze-je-otrzymac/",
-   "lead": "Nie ma zapachu ani koloru, a jego obecność w mieszkaniu może doprowadzić do śmiertelnego zatrucia. Tlenek węgla, nazywany czadem, stanowi szczególne zagrożenie w lokalach wyposażonych w piece węglowe i gazowe podgrzewacze wody. Zarząd Komunalnych Zasobów Lokalowych w Poznaniu przypomina o możliwości bezpłatnego otrzymania czujnika, który ostrzeże mieszkańców przed niebezpieczeństwem. Z programu skorzystały już tysiące Poznaniaków.",
-   "czas": "2026-10-21T14:59:35+00:00",
-   "tematy": [],
-   "pkt": 0,
-   "id": "07b70a62bb"
-  },
-  {
-   "d": "ppoz",
    "t": "Trwa budowa nowej strażnicy w województwie lubuskim – wmurowano akt erekcyjny",
    "z": "strazacki.pl",
    "url": "https://strazacki.pl/wiadomosci/trwa-budowa-nowej-straznicy-w-wojewodztwie-lubuskim-wmurowano-akt-erekcyjny/",
@@ -462,32 +510,6 @@
    "id": "46b3250f90"
   },
   {
-   "d": "ppoz",
-   "t": "Rozpoczął się sezon grzewczy 2026/2027 - zadbaj o bezpieczeństwo swoje i najbliższych",
-   "z": "Gov.pl",
-   "url": "https://www.gov.pl/web/kppsp-staszow/rozpoczal-sie-sezon-grzewczy-20262027--zadbaj-o-bezpieczenstwo-swoje-i-najblizszych",
-   "lead": "Wraz z nadejściem chłodniejszych dni rozpoczął się sezon grzewczy 2026/2027.",
-   "czas": "2026-10-21T12:13:44+00:00",
-   "tematy": [],
-   "pkt": 2,
-   "id": "deb5a53a19"
-  },
-  {
-   "d": "ppoz",
-   "t": "Oznakowanie punktów schronienia - informacja dla właścicieli i zarządców obiektów",
-   "z": "Gov.pl",
-   "url": "https://www.gov.pl/web/kppsp-staszow/oznakowanie-punktow-schronienia--informacja-dla-wlascicieli-i-zarzadcow-obiektow",
-   "lead": "Komenda Powiatowa Państwowej Straży Pożarnej w Staszowie udostępnia schemat oraz instrukcję prawidłowego oznakowania punktów schronienia (PS). Materiały stanowią praktyczne wsparcie dla właścicieli i zarządców nieruchomości w zakresie właściwego oznaczania miejsc przeznaczonych do zapewnienia ludności doraźnej ochrony w sytuacjach zagrożenia.",
-   "czas": "2026-10-21T12:13:43+00:00",
-   "tematy": [
-    "Ppoż w obiektach",
-    "Pożary",
-    "Straż"
-   ],
-   "pkt": 5,
-   "id": "cb6092fd04"
-  },
-  {
    "d": "bhp",
    "t": "Mobbing i dyskryminacja – nowe przepisy Kodeksu pracy",
    "z": "Poradnik Przedsiębiorcy",
@@ -528,6 +550,17 @@
    ],
    "pkt": 3,
    "id": "876f4d6f67"
+  },
+  {
+   "d": "bhp",
+   "t": "Nic nie ukryją! Obrońcy pana Piotra na gorąco przekazują informacje",
+   "z": "wPolityce.pl",
+   "url": "https://wpolityce.pl/polityka/nic-nie-ukryja-obroncy-pana-piotra-na-goraco-przekazuja-informacje,281576",
+   "lead": "",
+   "czas": "2026-10-21T10:34:46+00:00",
+   "tematy": [],
+   "pkt": 0,
+   "id": "3fd8a77c58"
   },
   {
    "d": "ppoz",
@@ -782,6 +815,19 @@
   },
   {
    "d": "bhp",
+   "t": "Reforma PIP w praktyce. Firmy dostają niepokojące pisma",
+   "z": "Do Rzeczy",
+   "url": "https://dorzeczy.pl/ekonomia/959587/reforma-pip-w-praktyce-firmy-dostaja-niepokojace-pisma.html",
+   "lead": "Firmy zaczęły otrzymywać pisma z okręgowych inspektoratów pracy, w których zachęca się je do samokontroli i dobrowolnego przekształcania zleceń w umowy o pracę. To efekt reformy PIP.",
+   "czas": "2026-10-21T03:45:00+00:00",
+   "tematy": [
+    "Kontrole PIP"
+   ],
+   "pkt": 2,
+   "id": "cf2b31f056"
+  },
+  {
+   "d": "bhp",
    "t": "Dzisiejsze warunki pogodowe (21.10) dla Wrześni. Zobacz szczegółowe przewidywania",
    "z": "Września Nasze Miasto",
    "url": "https://wrzesnia.naszemiasto.pl/pogoda-we-wrzesni-dzisiaj-poznaj-prognoze-pogody-na-niedziele-18-10/ar/c1p1-19943171",
@@ -790,6 +836,19 @@
    "tematy": [],
    "pkt": 0,
    "id": "5ae60a1042"
+  },
+  {
+   "d": "bhp",
+   "t": "TK bez pieniędzy w projekcie budżetu. Były szef PIP zabiera głos",
+   "z": "Money.pl",
+   "url": "https://www.money.pl/praca/tk-bez-pieniedzy-w-budzecie-na-2027-co-z-pensjami-pracownikow-7342178683091040a.html",
+   "lead": "W projekcie budżetu państwa na 2027 r. nie zapisano wydatków na Trybunał Konstytucyjny. W instytucji pracuje 131 osób, dlatego pojawiły się pytania o ich wynagrodzenia. Marcin Stanecki, były Główny Inspektor...",
+   "czas": "2026-10-20T19:38:27+00:00",
+   "tematy": [
+    "Kontrole PIP"
+   ],
+   "pkt": 2,
+   "id": "2f4961ed8d"
   },
   {
    "d": "bhp",
@@ -848,6 +907,19 @@
    "id": "b8cecaa408"
   },
   {
+   "d": "bhp",
+   "t": "Zwrot w sprawie MOCAK-u. Konkurs na dyrektora został odwołany",
+   "z": "WP Kultura",
+   "url": "https://kultura.wp.pl/zwrot-w-sprawie-mocak-u-konkurs-na-dyrektora-zostal-odwolany-7342119684110368a",
+   "lead": "Konkurs na dyrektora krakowskiego MOCAK-u został odwołany po tym, jak Wojewódzki Sąd Administracyjny unieważnił decyzję o zwolnieniu Adama Budaka. Sprawa dotyczy zarzutów o mobbing i dyskryminujące zachowania...",
+   "czas": "2026-10-20T15:24:50+00:00",
+   "tematy": [
+    "Mobbing"
+   ],
+   "pkt": 2,
+   "id": "9df3160be1"
+  },
+  {
    "d": "ppoz",
    "t": "Punkty schronienia - nowe oznakowanie",
    "z": "TVP Kraków",
@@ -886,20 +958,6 @@
    ],
    "pkt": 4,
    "id": "daa97dc3b7"
-  },
-  {
-   "d": "ppoz",
-   "t": "Nowe obowiązki oznakowania punktów schronienia w budynkach!",
-   "z": "e-kolo.pl",
-   "url": "https://www.e-kolo.pl/wiadomosci,29625,nowe-obowiazki-oznakowania-punktow-schronienia-w-budynkach",
-   "lead": "Właściciele i zarządcy budynków muszą oznakować punkty schronienia zgodnie z nowymi przepisami. Czas na wykonanie tego obowiązku upływa z końcem roku dwa tysiące dwudziestego szóstego.",
-   "czas": "2026-10-20T14:00:00+00:00",
-   "tematy": [
-    "Przepisy",
-    "Ppoż w obiektach"
-   ],
-   "pkt": 5,
-   "id": "45ae3befae"
   },
   {
    "d": "ppoz",
@@ -1080,6 +1138,19 @@
   },
   {
    "d": "bhp",
+   "t": "Praca wykładowcy - umowa o pracę czy cywilnoprawna? GIP wydał decyzję",
+   "z": "GazetaPrawna.pl",
+   "url": "https://www.gazetaprawna.pl/praca/prawo-pracy/artykuly/11332839,praca-wykladowcy---umowa-o-prace-czy-cywilnoprawna-gip-wydal-decyzje.html",
+   "lead": "Uczelnia planująca powierzyć prowadzenie zajęć na studiach podyplomowych na podstawie umowy-zlecenia nie może rozstrzygać o charakterze współpracy samym zapisem w kontrakcie. Główny Inspektor Pracy uznał, że w opisanym przypadku organizacja zajęć, podporządkowanie regułom uczelni i powtarzalność pracy przemawiają za stosunkiem pracy. Sama swoboda wykładowcy w doborze metod czy rozliczanie go za godziny nie przesądzają o cywilnoprawnym charakterze umowy.",
+   "czas": "2026-10-20T07:39:55+00:00",
+   "tematy": [
+    "Kontrole PIP"
+   ],
+   "pkt": 2,
+   "id": "9e8b81ebd3"
+  },
+  {
+   "d": "bhp",
    "t": "Medycyna pracy. Profilaktyczne badania lekarskie pracowników – orzeczenia lekarskie w postaci elektronicznej na IKP",
    "z": "INFOR.PL",
    "url": "https://www.infor.pl/prawo/nowosci-prawne/7683433,bhp-wstepne-okresowe-i-kontrolne-badania-lekarskie-pracownikow-zmiana-przepisow-od-18-pazdziernika.html",
@@ -1172,6 +1243,19 @@
    "id": "784311186c"
   },
   {
+   "d": "bhp",
+   "t": "Branża IT, firmy ochroniarskie. Oto jak PiP wybiera do kontroli kontrakty B2B i umowy zlecenia",
+   "z": "Wyborcza.biz",
+   "url": "https://wyborcza.biz/biznes/7,147880,33072884,kalata-firmy-ochroniarska-klamstwa-pip.html",
+   "lead": "",
+   "czas": "2026-10-20T03:56:00+00:00",
+   "tematy": [
+    "Kontrole PIP"
+   ],
+   "pkt": 2,
+   "id": "43b4e38d81"
+  },
+  {
    "d": "ppoz",
    "t": "Próbna ewakuacja w ZPO Miłki z udziałem OSP i PSP",
    "z": "WM112.pl",
@@ -1198,17 +1282,6 @@
    ],
    "pkt": 1,
    "id": "20598a4a20"
-  },
-  {
-   "d": "ppoz",
-   "t": "Odczuwali ból i zawroty głowy. Cichy zabójca zaatakował w Kaliszu",
-   "z": "Calisia.pl",
-   "url": "https://calisia.pl/odczuwali-bol-i-zawroty-glowy-cichy-zabojca-zaatakowal-w-kaliszu,80130",
-   "lead": "Niewiele brakowało, a doszłoby do tragedii w jednym z domów jednorodzinnych przy ulicy Kuklińskiego w Kaliszu. W budynku zaczął ulatniać się tlenek węgla.",
-   "czas": "2026-10-19T17:37:07+00:00",
-   "tematy": [],
-   "pkt": 0,
-   "id": "ddf41612a4"
   },
   {
    "d": "bhp",
@@ -1462,35 +1535,6 @@
   },
   {
    "d": "ppoz",
-   "t": "Gdzie się ukryć w przypadku zagrożenia? Sprawdź miejsca schronienia w powiecie ząbkowickim",
-   "z": "Express-Miejski.pl",
-   "url": "https://zabkowice.express-miejski.pl/wiadomosc/52723,gdzie-sie-ukryc-w-przypadku-zagrozenia-sprawdz-miejsca-schronienia-w-powiecie-zabkowickim",
-   "lead": "Gdzie szukać schronienia w razie zagrożenia? Pomóc może bezpłatny serwis internetowy „Gdzie się ukryć”, przygotowany przez Państwową Straż Pożarną oraz MSWiA.",
-   "czas": "2026-10-19T06:51:00+00:00",
-   "tematy": [
-    "Ppoż w obiektach",
-    "Pożary",
-    "Straż"
-   ],
-   "pkt": 3,
-   "id": "f0ecb917b2"
-  },
-  {
-   "d": "ppoz",
-   "t": "Czad nie ma zapachu. Strażak ostrzega przed sezonem grzewczym. „Nie bać się wietrzyć mieszkań”",
-   "z": "Dziennik Wschodni",
-   "url": "https://www.dziennikwschodni.pl/artykul/393307,czad-nie-ma-zapachu-strazak-ostrzega-przed-sezonem-grzewczym-nie-bac-sie-wietrzyc-mieszkan",
-   "lead": "Strażak z Lublina ostrzega przed czadem: sprawdź piecyk, komin i wentylację. Dowiedz się, jak czujka może uratować życie!",
-   "czas": "2026-10-19T06:49:00+00:00",
-   "tematy": [
-    "Ppoż w obiektach",
-    "Straż"
-   ],
-   "pkt": 2,
-   "id": "d7ab5c7833"
-  },
-  {
-   "d": "ppoz",
    "t": "Masz to w domu? Za takie rzeczy możesz dostać mandat. Wiele osób nie zna przepisów 19.10.2026",
    "z": "GP24",
    "url": "https://gp24.pl/masz-to-w-domu-za-takie-rzeczy-mozesz-dostac-mandat-wiele-osob-nie-zna-przepisow-19-10-2026/ar/c1p2-29370533",
@@ -1548,20 +1592,6 @@
    "tematy": [],
    "pkt": 0,
    "id": "74740852bd"
-  },
-  {
-   "d": "ppoz",
-   "t": "Ogień widoczny z wielu stron Przemyśla. Strażacy otrzymują zgłoszenia",
-   "z": "Przemyśl Nasze Miasto",
-   "url": "https://przemysl.naszemiasto.pl/ogien-widoczny-z-wielu-stron-przemysla-strazacy-otrzymuja-zgloszenia/ar/c1p2-29449853",
-   "lead": "",
-   "czas": "2026-10-18T17:26:37+00:00",
-   "tematy": [
-    "Pożary",
-    "Straż"
-   ],
-   "pkt": 1,
-   "id": "f8bf16e01c"
   },
   {
    "d": "bhp",
@@ -1645,17 +1675,6 @@
   },
   {
    "d": "ppoz",
-   "t": "Gdzie się schronić po alarmie? Oficjalna mapa i aplikacja pomoże znaleźć miejsce w twojej okolicy",
-   "z": "TVP Kielce",
-   "url": "https://kielce.tvp.pl/95991927/gdzie-sie-ukryc-mapa-punktow-schronienia-i-instalacja-aplikacji-krok-po-kroku",
-   "lead": "Alerty RCB przypominają, jak ważna jest znajomość miejsc, w których można szukać ochrony. Warto sprawdzić je wcześniej, w pobliżu domu, pracy czy...",
-   "czas": "2026-10-18T07:02:16+00:00",
-   "tematy": [],
-   "pkt": 0,
-   "id": "3ccaa21530"
-  },
-  {
-   "d": "ppoz",
    "t": "Polacy masowo występują o zaświadczenia z ZUS w 2026. Już prawie 900 tys. wniosków. Chodzi o dłuższy urlop i wyższe dodatki",
    "z": "INFOR.PL",
    "url": "https://www.infor.pl/twoje-pieniadze/zarobki/7628558,polacy-masowo-wystepuja-o-zaswiadczenia-z-zus-w-2026-juz-prawie-900-tys-wnioskow-chodzi-o-dluzszy-urlop-i-wyzsze-dodatki-gov-staz-pracy-zus-kodeks-pracy-wniosek.html",
@@ -1711,6 +1730,19 @@
   },
   {
    "d": "bhp",
+   "t": "Zmiany w umowach budzą bunt pracodawców. Pojawiają się pierwsze zgrzyty",
+   "z": "Interia Wydarzenia",
+   "url": "https://wydarzenia.interia.pl/kraj/news-bunt-firm-w-sprawie-nowych-przepisow-pierwsze-zgrzyty-widac,nId,23558078",
+   "lead": "Nowe przepisy umożliwiające przekształcanie umów B2B i zleceń na etaty wywołały sprzeciw przedsiębiorców.",
+   "czas": "2026-10-18T06:00:01+00:00",
+   "tematy": [
+    "Przepisy"
+   ],
+   "pkt": 3,
+   "id": "5abc6a7ad9"
+  },
+  {
+   "d": "bhp",
    "t": "Dziś wchodzą nowe zasady u lekarza. Nowa reguła dotyczy wszystkich. To przełom",
    "z": "Rynek Zdrowia",
    "url": "https://www.rynekzdrowia.pl/Prawo/Dzis-wchodza-nowe-zasady-u-lekarza-Nowa-regula-dotyczy-wszystkich-To-przelom,289969,2.html",
@@ -1733,19 +1765,6 @@
    "tematy": [],
    "pkt": 0,
    "id": "8f942eee3c"
-  },
-  {
-   "d": "ppoz",
-   "t": "Już ponad 90 osób podtrutych. Jest sposób, by tego uniknąć [WIDEO]",
-   "z": "TVP Poznań",
-   "url": "https://poznan.tvp.pl/95987467/czad-zatrucie-tlenkiem-wegla-darmowe-czujki-dymu-czujka-jak-dziala-czy-jest-zdrowa-sezon-grzewczy-straz-pozarna",
-   "lead": "Ponad 90 osób podtrutych czadem i przeszło 400 interwencji strażaków w Wielkopolsce od początku roku. Wraz z rozpoczęciem sezonu grzewczego...",
-   "czas": "2026-10-17T20:28:24+00:00",
-   "tematy": [
-    "Straż"
-   ],
-   "pkt": 0,
-   "id": "e207d6431e"
   },
   {
    "d": "ppoz",
@@ -1831,19 +1850,6 @@
   },
   {
    "d": "ppoz",
-   "t": "KP PSP w Grajewie odbyła się narada z dyrektorami szkół",
-   "z": "e-Grajewo",
-   "url": "https://e-grajewo.pl/wiadomosc,kp-psp-w-grajewie-odbyla-sie-narada-z-dyrektorami-szkol,61565.html",
-   "lead": "Grajewo i okolice - portal informacyjny i rozrywkowy miasta Grajewo",
-   "czas": "2026-10-17T18:40:22+00:00",
-   "tematy": [
-    "Straż"
-   ],
-   "pkt": 0,
-   "id": "14af3979e3"
-  },
-  {
-   "d": "ppoz",
    "t": "Prokuratura wszczęła śledztwo ws. pożaru, w którym zginęli dwaj strażacy z Podkarpacia",
    "z": "Rzeszów News",
    "url": "https://rzeszow-news.pl/pozar-nisko-smierc-strazakow-2/",
@@ -1915,19 +1921,6 @@
   },
   {
    "d": "ppoz",
-   "t": "Gmina Zaręby Kościelne stawia na bezpieczeństwo. Spotkanie z przedstawicielami służb (zdjęcia)",
-   "z": "OPI Ostrowski Portal Internetowy - Ostrów Mazowiecka",
-   "url": "https://www.ostrowmaz.com/aktualnosci/48486",
-   "lead": "Punkty schronienia, system alarmowania, procedury reagowania na zagrożenia oraz bezpieczeństwo dzieci i młodzieży - to najważniejsze tematy spotkania, które odbyło się 12 października 2026 r. w gminie Zaręby Kościelne. W rozmowach uczestniczyli przedstawiciele służb, dyrektorzy placówek oświatowych oraz pracownicy samorządowi odpowiedzialni za zarządzanie kryzysowe, ochronę ludności i obronę cywilną.",
-   "czas": "2026-10-17T11:39:00+00:00",
-   "tematy": [
-    "Ppoż w obiektach"
-   ],
-   "pkt": 2,
-   "id": "be164354c7"
-  },
-  {
-   "d": "ppoz",
    "t": "Pożar autobusu komunikacji miejskiej w Krakowie! Straż pożarna ugasiła płonący pojazd. Na miejscu pracują służby. Duże utrudnienia w ruchu",
    "z": "Portal i.pl",
    "url": "https://i.pl/pozar-autobusu-komunikacji-miejskiej-w-krakowie-straz-pozarna-ugasila-plonacy-pojazd-na-miejscu-pracuja-sluzby-duze-utrudnienia-w-ruchu/ar/c1p2-29446947",
@@ -1996,6 +1989,17 @@
    ],
    "pkt": 1,
    "id": "8b8b2d0740"
+  },
+  {
+   "d": "bhp",
+   "t": "Raport: Polacy wśród najczęściej zgłaszanych ofiar wyzysku pracowniczego w rolnictwie",
+   "z": "SadyOgrody",
+   "url": "https://www.sadyogrody.pl/pozostale/108/raport_polacy_wsrod_najczesciej_zglaszanych_ofiar_wyzysku_pracowniczego_w_rolnictwie,55216.html",
+   "lead": "Liczba zidentyfikowanych ofiar wyzysku pracowniczego w Holandii wzrosła w 2025 r. o 13 proc. – wynika z raportu krajowej sprawozdawczyni ds. handlu ludźmi Conny Rijken. W rolnictwie, leśnictwie i rybołówstwie Polacy stanowią drugą najliczniejszą grupę narodowościową wśród zgłoszonych ofiar, po Rumunach.",
+   "czas": "2026-10-17T08:00:00+00:00",
+   "tematy": [],
+   "pkt": 0,
+   "id": "2fb015c0a2"
   },
   {
    "d": "ppoz",
@@ -2122,21 +2126,6 @@
    ],
    "pkt": 1,
    "id": "76025c7cea"
-  },
-  {
-   "d": "ppoz",
-   "t": "Nawet 5 tys. zł mandatu za drzwi w bloku! Wielu mieszkańców robi to codziennie. Jeden szczegół ma ogromne znaczenie",
-   "z": "Warszawa w Pigułce",
-   "url": "https://warszawawpigulce.pl/nawet-5-tys-zl-mandatu-za-drzwi-w-bloku-wielu-mieszkancow-robi-to-codziennie-jeden-szczegol-ma-ogromne-znaczenie/",
-   "lead": "Zwykła czynność wykonywana na klatce schodowej może stać się powodem poważnego konfliktu, a w określonych sytuacjach również konsekwencji finansowych. Jedni mieszkańcy pozostawiają otwarte drzwi wejściowe, żeby przewietrzyć budynek. Inni zakładają dodatkowe zamki, obawiając się włamań i kradzieży. Tymczasem przepisy przeciwpożarowe stawiają wyraźną granicę. Jeżeli zastosowane zabezpieczenia uniemożliwią szybką ewakuację, sprawa może zakończyć się mandatem sięgającym […]",
-   "czas": "2026-10-17T05:47:00+00:00",
-   "tematy": [
-    "Przepisy",
-    "Kontrole PIP",
-    "Ppoż w obiektach"
-   ],
-   "pkt": 7,
-   "id": "9b618e0ed9"
   },
   {
    "d": "ppoz",
@@ -2682,6 +2671,19 @@
   },
   {
    "d": "ppoz",
+   "t": "O tym, jak prawidłowo oznakować punkt schronienia",
+   "z": "Gov.pl",
+   "url": "https://www.gov.pl/web/kppsp-szydlowiec/o-tym-jak-prawidlowo-oznakowac-punkt-schronienia",
+   "lead": "",
+   "czas": "2026-10-16T10:25:55+00:00",
+   "tematy": [
+    "Ppoż w obiektach"
+   ],
+   "pkt": 4,
+   "id": "5f2a49f10d"
+  },
+  {
+   "d": "ppoz",
    "t": "Bezpieczeństwo dóbr kultury i rola społeczników. Za nami Małopolskie Forum Ochrony Zabytków",
    "z": "informatorbrzeski.pl",
    "url": "https://www.informatorbrzeski.pl/bezpieczenstwo-dobr-kultury-i-rola-spolecznikow-za-nami-malopolskie-forum-ochrony-zabytkow/",
@@ -2704,6 +2706,19 @@
    ],
    "pkt": 1,
    "id": "ca3a847116"
+  },
+  {
+   "d": "bhp",
+   "t": "Zapaść w szpitalu: Pracownicy wciąż bez pełnych wypłat, a PIP przypomina o potężnych narzędziach",
+   "z": "Grudziadz365.pl",
+   "url": "https://grudziadz365.pl/pl/11_wiadomosci/104004_zapasc-w-szpitalu-pracownicy-wciaz-bez-pelnych-wyplat-a-pip-przypomina-o-potezny.html",
+   "lead": "Sytuacja w Regionalnym Szpitalu Specjalistycznym w Grudziądzu wymyka się spod kontroli Do redakcji wciąż napływają dramatyczne głosy od personelu, który częściowo lub całkowicie nie otrzymał należnych pensji na czas",
+   "czas": "2026-10-16T10:12:31+00:00",
+   "tematy": [
+    "Kontrole PIP"
+   ],
+   "pkt": 2,
+   "id": "c28976c5a9"
   },
   {
    "d": "ppoz",
@@ -3091,16 +3106,15 @@
   },
   {
    "d": "bhp",
-   "t": "Badania lekarskie pracowników – ważne zmiany 2026",
+   "t": "Badania lekarskie pracowników – co zmienia się w 2026 roku?",
    "z": "Poradnik Przedsiębiorcy",
    "url": "https://poradnikprzedsiebiorcy.pl/-zmiany-w-badaniach-medycyny-pracy",
    "lead": "Poznaj najnowsze zasady, jakim podlegają badania lekarskie pracowników. Zobacz, jak cyfryzacja zmienia obieg orzeczeń lekarskich w firmie. Sprawdź to!",
    "czas": "2026-10-16T07:00:00+00:00",
    "tematy": [
-    "Przepisy",
     "Zdrowie w pracy"
    ],
-   "pkt": 4,
+   "pkt": 1,
    "id": "a45b2bf58e"
   },
   {
@@ -3223,17 +3237,6 @@
   },
   {
    "d": "ppoz",
-   "t": "Ćwiczenia z zakresu ratownictwa technicznego",
-   "z": "Gov.pl",
-   "url": "https://www.gov.pl/web/kppsp-czluchow/cwiczenia-z-zakresu-ratownictwa-technicznego",
-   "lead": "",
-   "czas": "2026-10-15T16:37:14+00:00",
-   "tematy": [],
-   "pkt": 2,
-   "id": "43d5c6e1b9"
-  },
-  {
-   "d": "ppoz",
    "t": "Polska Państwowa Straż Pożarna w europejskiej czołówce - wymiana doświadczeń w Powiecie Bodeńskim",
    "z": "Gov.pl",
    "url": "https://www.gov.pl/web/cspsp-czestochowa/polska-panstwowa-straz-pozarna-w-europejskiej-czolowce-wymiana-doswiadczen-w-powiecie-bodenskim",
@@ -3330,19 +3333,17 @@
    "id": "5eb4455b6e"
   },
   {
-   "d": "ppoz",
-   "t": "Państwowa Straż Pożarna i Krajowa Izba Kominiarzy przypominają",
-   "z": "tv28.pl - limanowska telewizja internetowa",
-   "url": "https://tv28.pl/2026/10/panstwowa-straz-pozarna-i-krajowa-izba-kominiarzy-przypomina/",
-   "lead": "W związku z apelem Krajowej Izby Kominiarzy Państwowa Straż Pożarna informuje, że na mocy rozporządzenia Ministra Spraw Wewnętrznych i Administracji z dnia 7 czerwca 2010 r. w sprawie ochrony przeciwpożarowej budynków, innych obiektów budowlanych i terenów, na właścicielach i zarządcach ciąży obowiązek usuwania zanieczyszczeń z przewodów dymowych i spalinowych i wentylacyjnych w następujących terminach: Krajowa […]",
-   "czas": "2026-10-15T11:23:34+00:00",
+   "d": "bhp",
+   "t": "Kontrola w Trybunale Konstytucyjnym. Czy PIP rozliczy Święczkowskiego za zaległe urlopy?",
+   "z": "e-Dziennik Gazeta Prawna",
+   "url": "https://edgp.gazetaprawna.pl/prawo/prawnik/artykuly/11331353,178-dni-zaleglego-urlopu-sedziego-piotrowicza-w-tk-co-zrobi-pip.html",
+   "lead": "Prezes Bogdan Święczkowski potwierdził już oficjalnie, że w Trybunale Konstytucyjnym kontrolę prowadzi Państwowa Inspekcja Pracy. Chodzi o potencjalne naruszenie praw pracowniczych niedopuszczonych do orzekania sędziów. Ciekawostką jest jednak fakt, że po raz kolejny ewidentnych naruszeń można dopatrzeć się w kwestii urlopów.",
+   "czas": "2026-10-15T11:30:06+00:00",
    "tematy": [
-    "Przepisy",
-    "Ppoż w obiektach",
-    "Pożary"
+    "Kontrole PIP"
    ],
-   "pkt": 6,
-   "id": "a3927b1ecd"
+   "pkt": 2,
+   "id": "20583cd7fc"
   },
   {
    "d": "ppoz",
@@ -3356,243 +3357,6 @@
    ],
    "pkt": 1,
    "id": "5bba229e41"
-  },
-  {
-   "d": "bhp",
-   "t": "Resort pracy odpowiada na petycję dot. czasu pracy, nadgodzin oraz finansowania BHP w sektorze budowlanym",
-   "z": "GazetaPrawna.pl",
-   "url": "https://www.gazetaprawna.pl/praca/prawo-pracy/artykuly/11331251,resort-pracy-odpowiada-na-petycje-dot-czasu-pracy-nadgodzin-oraz-finansowania-bhp-w-sektorze-budowlanym.html",
-   "lead": "Inżynier budownictwa złożył do Ministerstwa Rozwoju i Technologii obszerną petycję, wskazując piętnaście problemów systemowych w Prawie budowlanym i przepisach powiązanych – od nadmiernej odpowiedzialności kierowników budowy, przez nadużycia w zakresie czasu pracy inżynierów, po przestarzałe normy bezpieczeństwa. Ministerstwo Rodziny, Pracy i Polityki Społecznej, do którego przekazano część postulatów dotyczących prawa pracy, w swojej odpowiedzi negatywnie rozpatrzyło wnioski odnoszące się do czasu pracy, nadgodzin oraz finansowania BHP, szczegółowo uzasadniając swoje stanowisko na gruncie obowiązujących przepisów Kodeksu pracy.",
-   "czas": "2026-10-15T10:11:25+00:00",
-   "tematy": [
-    "Przepisy"
-   ],
-   "pkt": 3,
-   "id": "47f3a9cca9"
-  },
-  {
-   "d": "luz",
-   "t": "Koń wpadł do grząskiego rowu. Strażacy uratowali zwierzę!",
-   "z": "MyGlogow",
-   "url": "https://myglogow.pl/pl/11_dzieje-sie/193641_kon-wpadl-do-grzaskiego-rowu-strazacy-uratowali-zwierze.html",
-   "lead": "Spektakularna akcja ratownicza miała dziś miejsce pod Przemkowem.",
-   "czas": "2026-10-22T13:07:00+00:00",
-   "tematy": [
-    "Straż"
-   ],
-   "pkt": 0,
-   "id": "a1666d84ab"
-  },
-  {
-   "d": "luz",
-   "t": "Nietypowa interwencja strażaków w Rudawie. Sowa utknęła w kominie",
-   "z": "M jak Małopolska",
-   "url": "https://www.mjakmalopolska.pl/artykul/10219,nietypowa-interwencja-strazakow-w-rudawie-sowa-utknela-w-kominie",
-   "lead": "Strażacy z OSP Rudawa uratowali sowę uwięzioną w kominie. Zobacz, jak przebiegła nietypowa akcja i szczęśliwy finał!",
-   "czas": "2026-10-20T15:41:00+00:00",
-   "tematy": [
-    "Straż"
-   ],
-   "pkt": 0,
-   "id": "541514459f"
-  },
-  {
-   "d": "luz",
-   "t": "Strażacy w Rudawie dostali nietypowe zgłoszenie. Sowa utknęła w kominie",
-   "z": "Onet",
-   "url": "https://www.onet.pl/informacje/krakowdlawas/sowa-utknela-w-przewodzie-kominowym-na-miejsce-ruszyli-strazacy/g3wsw8z,0666d3f1",
-   "lead": "Nietypowe zgłoszenie postawiło we wtorkowy poranek, 20 października, na nogi strażaków w Rudawie (powiat krakowski). Chwilę po godzinie 9 otrzymali informację o sowie, która wpadła do przewodu kominowego. Ptak utknął i nie był w stanie wydostać się o własnych siłach.",
-   "czas": "2026-10-20T13:49:14+00:00",
-   "tematy": [
-    "Straż"
-   ],
-   "pkt": 0,
-   "id": "69c71f6d77"
-  },
-  {
-   "d": "luz",
-   "t": "Wezwali strażaków, bo bali się o życie. Nietypowa interwencja w Ostrołęce",
-   "z": "eOstrołęka",
-   "url": "https://www.eostroleka.pl/wezwali-strazakow-bo-bali-sie-o-zycie-nietypowa-interwencja-w-ostrolece,art132539.html",
-   "lead": "Przeraźliwy alarm czujnika czadu przerwał spokój mieszkańców jednego z domów w Ostrołęce. W obawie przed śmiertelnie niebezpiecznym gazem wezwali strażaków.",
-   "czas": "2026-10-19T10:09:00+00:00",
-   "tematy": [
-    "Straż"
-   ],
-   "pkt": 0,
-   "id": "0fca9ce9e7"
-  },
-  {
-   "d": "luz",
-   "t": "Na dwa dni utknął na drzewie. Kota uratowali strażacy z Obrzycka",
-   "z": "Szamotuły Nasze Miasto",
-   "url": "https://szamotuly.naszemiasto.pl/na-dwa-dni-utknal-na-drzewie-kota-uratowali-strazacy-z-obrzycka/ar/c1p2-29450823",
-   "lead": "",
-   "czas": "2026-10-19T08:29:18+00:00",
-   "tematy": [
-    "Straż"
-   ],
-   "pkt": 0,
-   "id": "5814a9e54e"
-  },
-  {
-   "d": "luz",
-   "t": "Sowa w kominie. Strażacy wezwani na pomoc",
-   "z": "TygodnikZamojski.pl",
-   "url": "https://tygodnikzamojski.pl/artykul/sowa-w-kominie-strazacy-n2538750",
-   "lead": "Nietypowe zgłoszenie otrzymali druhowie z OSP Bortatycze. W Wysokiem sowa utknęła w przewodzie kominowym. Na pomoc ptakowi ruszyli strażacy.Do interwencji d",
-   "czas": "2026-10-19T07:35:00+00:00",
-   "tematy": [
-    "Straż"
-   ],
-   "pkt": 0,
-   "id": "7fe6116a66"
-  },
-  {
-   "d": "luz",
-   "t": "Nietypowa akcja strażaków w Jagodniku. Ratowali sowę",
-   "z": "WP",
-   "url": "https://informacje.wp.pl/wiadomosci/nietypowa-akcja-strazakow-w-jagodniku-ratowali-sowe-7340588509677600a",
-   "lead": "Nietypowa interwencja strażaków w Jagodniku w woj. dolnośląskim. W pobliżu wału przeciwpowodziowego nad rzeką Piławą uszatka zwyczajna zaplątała się w metalowe ogrodzenie. Ptak nie był w stanie samodzielnie się...",
-   "czas": "2026-10-16T09:38:43+00:00",
-   "tematy": [
-    "Straż"
-   ],
-   "pkt": 0,
-   "id": "e498a80f5e"
-  },
-  {
-   "d": "luz",
-   "t": "Nietypowa akcja strażaków w Jagodniku. Ratowali sowę uwięzioną w metalowym ogrodzeniu",
-   "z": "info112.pl",
-   "url": "https://info112.pl/2026/10/16/nietypowa-akcja-strazakow-w-jagodniku-ratowali-sowe-uwieziona-w-metalowym-ogrodzeniu/",
-   "lead": "Najnowsze informacje z Polski. Aktualne wydarzenia na Świecie",
-   "czas": "2026-10-16T07:15:00+00:00",
-   "tematy": [
-    "Straż"
-   ],
-   "pkt": 0,
-   "id": "62f0dff522"
-  },
-  {
-   "d": "luz",
-   "t": "Strażacy uratowali sowę uwięzioną w metalowej siatce [FOTO]",
-   "z": "Swidnica24.pl",
-   "url": "https://swidnica24.pl/2026/10/strazacy-uratowali-sowe-uwieziona-w-metalowej-siatce-foto/",
-   "lead": "Nietypowa interwencja strażaków miała miejsce 15 października w Jagodniku. Sowa uszata zaplątała się w metalowe ogrodzenie w rejonie wału przeciwpowodziowego nad rzeką Piławą. Zgłoszenie wpłynęło do Stanowiska Kierowania Komendanta Powiatowego PSP w Świdnicy o godz. 16.22. Na miejsce skierowano jeden zastęp z Jednostki Ratowniczo-Gaśniczej PSP w Świdnicy. - Strażacy uwolnili uwięzionego ptaka z metalowej siatki,",
-   "czas": "2026-10-16T04:30:00+00:00",
-   "tematy": [
-    "Ppoż w obiektach",
-    "Straż"
-   ],
-   "pkt": 2,
-   "id": "76ca7f270e"
-  },
-  {
-   "d": "luz",
-   "t": "Powalone drzewa, poszukiwania i krowa w opałach. Strażacy mieli pełne ręce roboty",
-   "z": "http://www.korsokolbuszowskie.pl/wiadomosci",
-   "url": "https://korsokolbuszowskie.pl/wiadomosci/powalone-drzewa-poszukiwania-i-krowa-w-opalach-strazacy-mieli-pelne-rece-roboty/yGJnBqlDSwjF6j1AUjx2",
-   "lead": "Powalone i pochylone drzewa, poszukiwania osób oraz nietypowa interwencja z krową w roli głównej - tak wyglądał miniony weekend strażaków z powiatu kolbuszowskiego.",
-   "czas": "2026-10-12T07:00:00+00:00",
-   "tematy": [
-    "Straż"
-   ],
-   "pkt": 0,
-   "id": "35b2cd93ef"
-  },
-  {
-   "d": "luz",
-   "t": "Nietypowa interwencja strażaków. Właściciel znalazł go w basenie",
-   "z": "o2",
-   "url": "https://www.o2.pl/informacje/nietypowa-interwencja-strazakow-wlasciciel-znalazl-go-w-basenie-7337130284128672a",
-   "lead": "Strażacy z Ochotniczej Straży Pożarnej Subkowy interweniowali w nietypowej sprawie na posesji w Wielgłowach na Pomorzu. Dzik wszedł na teren przy ulicy Słonecznej, a następnie znalazł się w basenie, z którego...",
-   "czas": "2026-10-06T07:00:00+00:00",
-   "tematy": [
-    "Pożary",
-    "Straż"
-   ],
-   "pkt": 1,
-   "id": "e812890afb"
-  },
-  {
-   "d": "luz",
-   "t": "Nietypowa akcja strażaków. Wyciągali łódź elektrykiem. Auto poszło na dno",
-   "z": "Onet",
-   "url": "https://www.onet.pl/informacje/krakowdlawas/wodowanie-wymknelo-sie-spod-kontroli-auto-poszlo-na-dno/r579lsp,0666d3f1",
-   "lead": "Podczas próby wyciągnięcia łodzi z zalewu Bagry w Krakowie doszło do zatopienia samochodu elektrycznego. Na miejsce skierowano strażaków z JRG 4 w Krakowie oraz Specjalistyczną Grupę Ratownictwa Wodno-Nurkowego. Nurkowie zamocowali zaczep do pojazdu i pomyślnie wydobyli go z wody.",
-   "czas": "2026-10-04T07:00:00+00:00",
-   "tematy": [
-    "Straż"
-   ],
-   "pkt": 0,
-   "id": "dfc7e3eb75"
-  },
-  {
-   "d": "luz",
-   "t": "Elektrykiem do wody? Nietypowa akcja strażaków na krakowskich Bagrach",
-   "z": "KR24.pl",
-   "url": "https://kr24.pl/krakow/elektrykiem-do-wody-nietypowa-akcja-strazakow-na-krakowskich-bagrach/",
-   "lead": "Niecodzienna interwencja na krakowskich Bagrach. Elektryczna Tesla znalazła się całkowicie pod wodą podczas próby wyciągania łodzi. Na miejsce ruszyli strażacy, nurkowie i policjanci. Samochód trzeba było wydobywać z zalewu przy pomocy specjalistycznego sprzętu. ZawartośćZ pozoru zwykła akcja, która szybko się skomplikowałaNurkowie musieli odnaleźć zatopiony samochódWyciągarka strażacka i lawetaBagry i kolejna nietypowa interwencjaSamochód wrócił na brzegZ […]",
-   "czas": "2026-10-04T06:48:11+00:00",
-   "tematy": [
-    "Straż"
-   ],
-   "pkt": 0,
-   "id": "c6e399b7b9"
-  },
-  {
-   "d": "luz",
-   "t": "Strażacy uratowali kota z drzewa w Leśnicy",
-   "z": "WM112.pl",
-   "url": "https://wm112.pl/ostroda/strazacy-uratowali-kota-z-drzewa-w-lesnicy/",
-   "lead": "Strażacy uratowali kota z drzewa w Leśnicy Lead: Strażacy zostali zadysponowani do akcji ratunkowej w miejscowości Leśnica 02.10.2026 r. o godz. 18:52. Na drzewie, na znacznej wysokości, znajdował się kot — interwencję przeprowadził zastęp GBARt 539N71 MAN; akcja zakończyła się pomyślnie. Treść: W piątek, 2 października 2026 r., o godzinie 18:52 straż pożarna odebrała zgłoszenie […]",
-   "czas": "2026-10-02T21:52:36+00:00",
-   "tematy": [
-    "Pożary",
-    "Straż"
-   ],
-   "pkt": 1,
-   "id": "83d159a49e"
-  },
-  {
-   "d": "luz",
-   "t": "Nietypowa interwencja strażaków. Dzik pływał w basenie",
-   "z": "TVN24",
-   "url": "https://tvn24.pl/trojmiasto/wielglowy-dzik-plywal-w-basenie-pomogli-strazacy-st9266257",
-   "lead": "Strażacy z OSP w Subkowach zostali wezwani do niecodziennego zdarzenia. Właściciel poprosił o pomoc w sprawie pływającego w jego basenie dzika.",
-   "czas": "2026-10-02T07:00:00+00:00",
-   "tematy": [
-    "Straż"
-   ],
-   "pkt": 0,
-   "id": "ea7acfc233"
-  },
-  {
-   "d": "luz",
-   "t": "Nietypowa interwencja strażaków z Subków. Dzik wpadł do basenu",
-   "z": "TVP Gdańsk",
-   "url": "https://gdansk.tvp.pl/95716588/nietypowa-interwencja-strazakow-z-subkow-dzik-wpadl-do-basenu",
-   "lead": "Na terenie jednej z posesji w miejscowości Wielgłowy w gminie Subkowy do przydomowego basenu ogrodowego wpadł dzik. Zwierzę nie potrafiło samodzielnie wydostać...",
-   "czas": "2026-10-02T07:00:00+00:00",
-   "tematy": [
-    "Straż"
-   ],
-   "pkt": 0,
-   "id": "f09e51b4fd"
-  },
-  {
-   "d": "luz",
-   "t": "Strażacy z OSP Subkowy uratowali dzika z basenu w Wielgłowach! Nietypowa akcja",
-   "z": "Zawsze Pomorze",
-   "url": "https://www.zawszepomorze.pl/artykul/29442,strazacy-z-subkow-uratowali-dzika-z-basenu-niezwykla-akcja-poruszyla-mieszkancow",
-   "lead": "Strażacy z OSP Subkowy uratowali dzika, który wpadł do basenu w Wielgłowach. Sprawdź, jak przebiegła ta niezwykła akcja ratunkowa!",
-   "czas": "2026-10-02T07:00:00+00:00",
-   "tematy": [
-    "Straż"
-   ],
-   "pkt": 0,
-   "id": "b3a4a23356"
   }
  ]
 }
