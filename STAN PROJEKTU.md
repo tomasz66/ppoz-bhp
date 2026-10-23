@@ -55,6 +55,8 @@ Po nowej zmianie w prawie: pobrać akt zmieniający, dopisać w `zbuduj_dane.py`
 - [x] Pełny tekst aktów BHP w czytniku (22.10) - [ ] do zrobienia: ściągi i pytania z BHP, wyszukiwarka główna obejmująca akty BHP
 - [ ] WT - dział VI (bezpieczeństwo pożarowe) gdy wyjaśni się sytuacja z nowymi WT
 - [ ] Tekst „Służba BHP” (DU/1997/704) jest ze skanu z błędami - poprawić źródło (PDF/ręcznie)
+- [ ] Lektor (speechSynthesis) NIE działa na iPhonie Tomka w aplikacji z ekranu początkowego - nie obiecywać, zamiennik: Odczytaj ekran iOS
+- [ ] Wzbogacać bazę dla asystenta: więcej kart pojęć, przypadków, aktów (np. poprawny tekst „Służba BHP”)
 - [x] Plan nauki 23.10: karty pojęć, mapa liczb, „Znajdź błąd” - zrobione
 - [ ] Więcej kart pojęć (Tomek dopisuje te, które sprawiają kłopot)
 - [ ] Więcej pytań (cel: 150+), m.in. z WT i ustawy (art. 5, 6, 7)
