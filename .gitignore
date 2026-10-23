@@ -4,3 +4,6 @@
 
 # Prywatna baza wiedzy Tomka (ceny, plany, sprawy służbowe) - tylko lokalnie.
 BAZA WIEDZY.md
+
+# Pliki dla projektu ChatGPT - generowane skryptem, nie trzymamy w repo.
+baza-chatgpt/
