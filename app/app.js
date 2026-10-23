@@ -15,7 +15,7 @@ const CIEKAWOSTKA_CO = 3;
 const DZIEN_MS = 86400000;
 const KLUCZ = { motyw: "bhp-motyw", nauka: "bhp-nauka", zmiany: "bhp-zmiany", tematy: "bhp-tematy", wizyta: "bhp-wizyta-czytnik" };
 
-const stan = { spis: [], dok: {}, artykuly: null, akty: [], aktyMapa: {}, sciagi: [], pytania: [], obserwowane: null, nowosci: [], aktualnosci: { wpisy: [] }, ciekawostki: { przypadki: [], ciekawostki: [] }, sesja: null };
+const stan = { pojecia: [], spis: [], dok: {}, artykuly: null, akty: [], aktyMapa: {}, sciagi: [], pytania: [], obserwowane: null, nowosci: [], aktualnosci: { wpisy: [] }, ciekawostki: { przypadki: [], ciekawostki: [] }, sesja: null };
 const widok = document.getElementById("widok");
 
 // ── Pomocnicze ──
@@ -335,6 +335,9 @@ function indeks() {
   for (const c of wszystkieCiekawostki()) {
     el.push({ g: "case", txt: (c.s || "") + " " + c.t + " " + (c.tagi || []).join(" "), c });
   }
+  for (const k of stan.pojecia) {
+    el.push({ g: "pojecie", txt: k.nazwa + " " + k.def + " " + k.przyklad + " " + k.dopytania.map((p) => p.q + " " + p.a).join(" "), k });
+  }
   for (const s of stan.sciagi) {
     for (const w of s.wiersze) {
       el.push({ g: "sciaga", txt: s.tytul + " " + w[0] + " " + w[1], s, w });
@@ -373,6 +376,7 @@ function indeks() {
 
 const GRUPY_SZUKANIA = [
   ["case", "💡 Czy wiesz, że… - przypadki z życia"],
+  ["pojecie", "📖 Karty pojęć"],
   ["sciaga", "☰ Ściągi"],
   ["ppoz", "§ Przepisy ppoż"],
   ["bhp", "§ Przepisy BHP i warunki techniczne"],
@@ -385,6 +389,9 @@ const GRUPY_SZUKANIA = [
 function wynikSzukania(e, slowa) {
   if (e.g === "case") {
     return kartaCiekawostki(e.c, slowa);
+  }
+  if (e.g === "pojecie") {
+    return wierszPojecia(e.k);
   }
   if (e.g === "sciaga") {
     return `<div class="card"><div class="cheat-k">${esc(e.s.tytul)} · ${podswietl(e.w[0], slowa)}</div><div class="cheat-v">${podswietl(e.w[1], slowa)}</div><div class="cheat-src">${chipZrodla(e.w[2])}</div></div>`;
@@ -684,6 +691,13 @@ function widokNauka() {
     </div>
     <div class="btn-row"><button class="btn" onclick="startLekcji()">Lekcja - ${PYTAN_W_LEKCJI} pytań</button></div>
     <div class="btn-row"><button class="btn secondary" onclick="startEgzaminu()">Egzamin próbny</button></div>
+    <div class="section-label">Inne sposoby nauki</div>
+    <div class="list-group">
+      <a class="row" href="#/pojecia">${kafel("📖", "#2f5d8a")}<span class="row-main"><span class="row-title">Karty pojęć</span><span class="row-sub">${tekst(`${stan.pojecia.length} pojęć: definicja, przykład, błąd, jak powiedzieć klientowi, dopytania`)}</span></span><span class="row-chev">›</span></a>
+      <a class="row" href="#/mapa">${kafel("📏", "#248a3d")}<span class="row-main"><span class="row-title">Mapa liczb</span><span class="row-sub">${tekst("Wszystkie odległości i terminy na jednym rysunku")}</span></span><span class="row-chev">›</span></a>
+      <a class="row" href="#/bledy">${kafel("📷", "#b25000")}<span class="row-main"><span class="row-title">Znajdź błąd</span><span class="row-sub">${tekst("Twoje zdjęcia z terenu jako zadania")}</span></span><span class="row-chev">›</span></a>
+      <a class="row" href="#/asystent">${kafel("🎙", "#5e35b1")}<span class="row-main"><span class="row-title">Asystent</span><span class="row-sub">${tekst("Zapytaj albo daj się przepytać")}</span></span><span class="row-chev">›</span></a>
+    </div>
     <div class="card info"><p>${tekst(`Egzamin próbny: ${Math.min(PYTAN_W_EGZAMINIE, stan.pytania.length)} pytań w losowej kolejności, wynik na końcu, próg zaliczenia ${PROG_EGZAMINU * 100}% - jak na prawdziwym egzaminie (60 pytań, 70%).`)}</p>
     <p>${tekst(`Pytania ułożyłem sam z treści przepisów - to nie jest oficjalna pula egzaminacyjna, której nie publikuje się. Pula ma teraz ${stan.pytania.length} pytań i będzie rosła.`)}</p></div>
     ${n.egzaminy.length ? `<div class="section-label">Historia egzaminów</div><div class="list-group">${n.egzaminy.slice(-5).reverse().map((e) => `
@@ -1298,10 +1312,11 @@ async function init() {
 async function wczytajDane(swieze) {
   const dopisek = swieze ? `?t=${Date.now()}` : "";
   const opcje = swieze ? { cache: "no-store" } : {};
-  const [akty, sciagi, pytania, obserwowane, nowosci, aktualnosci, ciekawostki, spis] = await Promise.all(
-    ["akty", "sciagi", "pytania", "obserwowane", "nowosci", "aktualnosci", "ciekawostki", "dok/spis"].map((n) => fetch(`data/${n}.json${dopisek}`, opcje).then((r) => r.json()))
+  const [akty, sciagi, pytania, obserwowane, nowosci, aktualnosci, ciekawostki, spis, pojecia] = await Promise.all(
+    ["akty", "sciagi", "pytania", "obserwowane", "nowosci", "aktualnosci", "ciekawostki", "dok/spis", "pojecia"].map((n) => fetch(`data/${n}.json${dopisek}`, opcje).then((r) => r.json()))
   );
   stan.nowosci = nowosci;
+  stan.pojecia = pojecia;
   stan.spis = spis;
   stan.aktualnosci = aktualnosci;
   stan.ciekawostki = ciekawostki;

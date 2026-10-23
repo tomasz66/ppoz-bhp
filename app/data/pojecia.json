@@ -1,0 +1,1000 @@
+[
+ {
+  "id": "strefa-pozarowa",
+  "nazwa": "Strefa pożarowa",
+  "d": "ppoz",
+  "def": "Budynek albo jego część oddzielona od reszty ścianami i stropami oddzielenia przeciwpożarowego albo pasem wolnego terenu - tak, żeby pożar nie przeszedł dalej.",
+  "zr": {
+   "dok": "DU_2002_690",
+   "j": "para_226",
+   "u": "§ 226 ust. 1 WT"
+  },
+  "dowod": "Strefę pożarową stanowi budynek albo jego część",
+  "przyklad": "Hala magazynowa z biurem oddzielonym ścianą ogniową i drzwiami przeciwpożarowymi - to dwie strefy: magazynowa (PM) i biurowa (ZL III).",
+  "blad": "Przebicie ściany oddzielenia pod nową instalację bez uszczelnienia przejścia albo wymiana drzwi przeciwpożarowych na zwykłe - strefa przestaje być strefą.",
+  "klient": "To część budynku, w której pożar ma zostać zamknięty na tyle długo, żeby ludzie zdążyli wyjść, a strażacy dojechać.",
+  "powiazane": [
+   "zl",
+   "pm",
+   "goo",
+   "gasnica"
+  ],
+  "dopytania": [
+   {
+    "q": "Jak liczy się powierzchnię strefy pożarowej?",
+    "a": "Jako powierzchnię wewnętrzną budynku lub jego części, łącznie z antresolami.",
+    "zr": {
+     "dok": "DU_2002_690",
+     "j": "para_226",
+     "u": "§ 226 ust. 3 WT"
+    },
+    "dowod": "wlicza się do niej także powierzchnię antresoli"
+   },
+   {
+    "q": "Czy jedno piętro może być osobną strefą?",
+    "a": "Tak - kondygnacja może być częścią budynku tworzącą strefę, jeśli klatki schodowe i szyby dźwigowe spełniają wymagania dla klatek.",
+    "zr": {
+     "dok": "DU_2002_690",
+     "j": "para_226",
+     "u": "§ 226 ust. 2 WT"
+    },
+    "dowod": "jest także jego kondygnacja"
+   },
+   {
+    "q": "Po co mi wiedzieć, ile ma strefa?",
+    "a": "Od powierzchni strefy zależy m.in. liczba gaśnic: 2 kg środka gaśniczego na każde 100 m² albo 300 m² strefy.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p32",
+     "u": "ust. 3"
+    },
+    "dowod": "na każde 100 m2"
+   }
+  ]
+ },
+ {
+  "id": "zl",
+  "nazwa": "Kategorie zagrożenia ludzi (ZL I-V)",
+  "d": "ppoz",
+  "def": "Podział budynków i stref, w których przebywają ludzie (mieszkalne, zamieszkania zbiorowego, użyteczności publicznej), według tego, kto w nich przebywa i jak łatwo się ewakuuje.",
+  "zr": {
+   "dok": "DU_2002_690",
+   "j": "para_209",
+   "u": "§ 209 ust. 2 WT"
+  },
+  "dowod": "zalicza się do jednej lub do więcej niż jedna spośród następujących kategorii zagrożenia ludzi",
+  "przyklad": "ZL I - kino, sala weselna (ponad 50 osób z zewnątrz). ZL II - przedszkole, szpital, DPS. ZL III - urząd, biuro, sklep. ZL IV - mieszkania. ZL V - hotel, internat.",
+  "blad": "Przyjęcie, że mały sklep to zawsze ZL III - jeśli jest w nim pomieszczenie dla ponad 50 klientów naraz, wchodzi ZL I z ostrzejszymi wymaganiami.",
+  "klient": "Kategoria mówi, jak trudna będzie ewakuacja. Im trudniejsza (np. dzieci, chorzy, tłum obcych ludzi), tym ostrzejsze przepisy.",
+  "powiazane": [
+   "strefa-pozarowa",
+   "pm",
+   "ewakuacja",
+   "hydrant"
+  ],
+  "dopytania": [
+   {
+    "q": "Do jakiej kategorii należy przedszkole?",
+    "a": "ZL II - budynki przeznaczone przede wszystkim dla ludzi o ograniczonej zdolności poruszania się, np. szpitale, żłobki, przedszkola, domy dla osób starszych.",
+    "zr": {
+     "dok": "DU_2002_690",
+     "j": "para_209",
+     "u": "§ 209 ust. 2 pkt 2 WT"
+    },
+    "dowod": "żłobki, przedszkola"
+   },
+   {
+    "q": "Kiedy budynek wpada do ZL I?",
+    "a": "Gdy ma pomieszczenia do jednoczesnego przebywania ponad 50 osób, które nie są jego stałymi użytkownikami (i nie jest przeznaczony głównie dla osób o ograniczonej zdolności poruszania się).",
+    "zr": {
+     "dok": "DU_2002_690",
+     "j": "para_209",
+     "u": "§ 209 ust. 2 pkt 1 WT"
+    },
+    "dowod": "ponad 50 osób niebędących ich stałymi użytkownikami"
+   },
+   {
+    "q": "A blok mieszkalny?",
+    "a": "ZL IV - budynki mieszkalne.",
+    "zr": {
+     "dok": "DU_2002_690",
+     "j": "para_209",
+     "u": "§ 209 ust. 2 pkt 4 WT"
+    },
+    "dowod": "ZL IV - mieszkalne"
+   }
+  ]
+ },
+ {
+  "id": "pm",
+  "nazwa": "Strefa PM (produkcyjna i magazynowa)",
+  "d": "ppoz",
+  "def": "Budynki i strefy produkcyjne i magazynowe. Do PM zalicza się też garaże, kotłownie, hydrofornie, rozdzielnie elektryczne i podobne pomieszczenia.",
+  "zr": {
+   "dok": "DU_2002_690",
+   "j": "para_209",
+   "u": "§ 209 ust. 1 i 3 WT"
+  },
+  "dowod": "garaży, hydroforni, kotłowni",
+  "przyklad": "Warsztat samochodowy, stolarnia, magazyn hurtowni, kotłownia w szkole.",
+  "blad": "Traktowanie kotłowni czy garażu w budynku biurowym jak zwykłego pomieszczenia biurowego.",
+  "klient": "W strefach PM o zagrożeniu decyduje nie liczba ludzi, tylko to, ile i czego się tam pali - stąd pytania o ilość i rodzaj składowanych materiałów.",
+  "powiazane": [
+   "goo",
+   "strefa-pozarowa",
+   "zl"
+  ],
+  "dopytania": [
+   {
+    "q": "Od czego zależą wymagania w strefie PM?",
+    "a": "Głównie od gęstości obciążenia ogniowego - np. przy ponad 500 MJ/m² jedna gaśnica (2 kg środka) przypada na każde 100 m², a nie 300 m².",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p32",
+     "u": "ust. 3 pkt 1 lit. b"
+    },
+    "dowod": "produkcyjnej i magazynowej o gęstości obciążenia ogniowego ponad 500 MJ/m2"
+   }
+  ]
+ },
+ {
+  "id": "goo",
+  "nazwa": "Gęstość obciążenia ogniowego",
+  "d": "ppoz",
+  "def": "Ile energii (ciepła) wydzieliłoby się przy spaleniu wszystkiego, co palne w pomieszczeniu lub strefie, w przeliczeniu na 1 m² - w MJ/m². Zasady jej ustalania podaje Polska Norma, do której odsyłają warunki techniczne.",
+  "zr": {
+   "dok": "DU_2002_690",
+   "j": "para_208",
+   "u": "§ 208 WT"
+  },
+  "dowod": "gęstości obciążenia ogniowego pomieszczeń i stref pożarowych",
+  "przyklad": "Magazyn kartonów i palet ma dużą gęstość (często ponad 500 MJ/m²), magazyn stalowych profili - małą.",
+  "blad": "Zmiana tego, co się składuje (np. z metalu na tworzywa), bez sprawdzenia, czy nie przekroczono progów 500, 1000 albo 4000 MJ/m².",
+  "klient": "To miara, „ile paliwa” leży w hali. Więcej paliwa - większy pożar - więcej gaśnic i ostrzejsze wymagania.",
+  "powiazane": [
+   "pm",
+   "strefa-pozarowa",
+   "gasnica"
+  ],
+  "dopytania": [
+   {
+    "q": "Jaki próg najczęściej zmienia wymagania?",
+    "a": "500 MJ/m² - np. dla liczby gaśnic w strefach produkcyjnych i magazynowych.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p32",
+     "u": "ust. 3 pkt 1 lit. b"
+    },
+    "dowod": "ponad 500 MJ/m2"
+   }
+  ]
+ },
+ {
+  "id": "materialy-niebezpieczne",
+  "nazwa": "Materiały niebezpieczne pożarowo",
+  "d": "ppoz",
+  "def": "M.in. gazy palne, ciecze palne o temperaturze zapłonu poniżej 55°C, materiały samozapalne, wybuchowe i pirotechniczne oraz inne, jeśli sposób ich składowania lub użycia może spowodować pożar.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p2",
+   "u": "ust. 1 pkt 1"
+  },
+  "dowod": "ciecze palne o temperaturze zapłonu poniżej 328,15 K (55ºC)",
+  "przyklad": "Benzyna, rozpuszczalniki i farby w warsztacie, butle z propanem, fajerwerki w sklepie.",
+  "blad": "Kanister benzyny w kotłowni albo rozpuszczalniki przy grzejniku.",
+  "klient": "To rzeczy, które zapalą się łatwo albo gwałtownie - trzymamy je osobno, oznaczone i z dala od ognia.",
+  "powiazane": [
+   "strefa-wybuchu",
+   "prace-pozarowe"
+  ],
+  "dopytania": [
+   {
+    "q": "Czy takie miejsca trzeba oznakować?",
+    "a": "Tak - pomieszczenia i tereny z materiałami niebezpiecznymi pożarowo oznakowuje się znakami zgodnymi z Polskimi Normami.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p4",
+     "u": "ust. 2 pkt 4 lit. e"
+    },
+    "dowod": "pomieszczenia i tereny z materiałami niebezpiecznymi pożarowo"
+   },
+   {
+    "q": "Czy można tam palić?",
+    "a": "Nie - w miejscach występowania materiałów niebezpiecznych pożarowo zakazany jest otwarty ogień i palenie tytoniu.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p4",
+     "u": "ust. 1 pkt 1 lit. b"
+    },
+    "dowod": "w miejscach występowania materiałów niebezpiecznych pożarowo"
+   }
+  ]
+ },
+ {
+  "id": "strefa-wybuchu",
+  "nazwa": "Strefa zagrożenia wybuchem",
+  "d": "ppoz",
+  "def": "Przestrzeń, w której może powstać mieszanina wybuchowa substancji palnych z powietrzem (stężenie między dolną a górną granicą wybuchowości).",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p2",
+   "u": "ust. 1 pkt 6"
+  },
+  "dowod": "mieszanina wybuchowa substancji palnych z powietrzem",
+  "przyklad": "Lakiernia, magazyn gazów, silos z pyłem drzewnym lub mąką.",
+  "blad": "Spawanie w pomieszczeniu, gdzie wcześniej malowano, bez sprawdzenia stężenia par.",
+  "klient": "Tu wystarczy iskra, żeby doszło do wybuchu - dlatego żadnego ognia, iskrzących narzędzi i zwykłych urządzeń elektrycznych.",
+  "powiazane": [
+   "materialy-niebezpieczne",
+   "prace-pozarowe",
+   "ibp"
+  ],
+  "dopytania": [
+   {
+    "q": "Czy przy strefie wybuchu zawsze trzeba mieć IBP?",
+    "a": "Zwolnienie z instrukcji (małe obiekty do 1000 m³) działa tylko, gdy nie ma strefy zagrożenia wybuchem.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p6",
+     "u": "ust. 8"
+    },
+    "dowod": "jeżeli nie występuje w nich strefa zagrożenia wybuchem"
+   },
+   {
+    "q": "Kiedy wolno tam spawać?",
+    "a": "Tylko gdy stężenie par lub gazów w miejscu pracy nie przekracza 10% dolnej granicy wybuchowości.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p36",
+     "u": "ust. 2 pkt 2"
+    },
+    "dowod": "nie przekracza 10% ich dolnej granicy wybuchowości"
+   }
+  ]
+ },
+ {
+  "id": "urzadzenia-ppoz",
+  "nazwa": "Urządzenia przeciwpożarowe",
+  "d": "ppoz",
+  "def": "Urządzenia do zapobiegania, wykrywania i zwalczania pożaru albo ograniczania jego skutków: m.in. instalacje gaśnicze, sygnalizacja pożarowa, oświetlenie ewakuacyjne, hydranty, oddymianie, drzwi przeciwpożarowe sterowane systemem, przeciwpożarowe wyłączniki prądu.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p2",
+   "u": "ust. 1 pkt 9"
+  },
+  "dowod": "hydranty wewnętrzne i zawory hydrantowe",
+  "przyklad": "W biurowcu: czujki i centrala sygnalizacji pożaru, hydranty na korytarzach, oprawy oświetlenia awaryjnego nad wyjściami.",
+  "blad": "Brak przeglądu, bo „przecież nic się nie paliło”, albo zastawione elementy sterujące (przyciski oddymiania, ROP).",
+  "klient": "To sprzęt, który ma zadziałać w najgorszym momencie - jeśli nie jest sprawdzany, nie wiadomo, czy zadziała.",
+  "powiazane": [
+   "gasnica",
+   "hydrant",
+   "ppwp"
+  ],
+  "dopytania": [
+   {
+    "q": "Jak często przegląd?",
+    "a": "W terminach producenta, ale nie rzadziej niż raz w roku.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p3",
+     "u": "ust. 3"
+    },
+    "dowod": "nie rzadziej jednak niż raz w roku"
+   },
+   {
+    "q": "A autonomiczne czujki dymu w mieszkaniu?",
+    "a": "Do nich nie stosuje się tych zasad przeglądów - montuje się je, konserwuje i eksploatuje według instrukcji producenta.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p3",
+     "u": "ust. 3a"
+    },
+    "dowod": "autonomicznych czujek dymu"
+   }
+  ]
+ },
+ {
+  "id": "gasnica",
+  "nazwa": "Gaśnica - dobór i rozmieszczenie",
+  "d": "ppoz",
+  "def": "Gaśnica musi pasować do grup pożarów, które mogą wystąpić: A - ciała stałe, B - ciecze, C - gazy, D - metale, F - tłuszcze w urządzeniach kuchennych.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p32",
+   "u": "ust. 2"
+  },
+  "dowod": "F - tłuszczów i olejów w urządzeniach kuchennych",
+  "przyklad": "Kuchnia restauracji z frytownicą - gaśnica do grupy F. Biuro - zwykle proszkowa ABC lub pianowa.",
+  "blad": "Gaśnica proszkowa przy frytownicy zamiast gaśnicy do tłuszczów, albo gaśnica schowana za regałem.",
+  "klient": "Gaśnica ma wisieć tam, gdzie każdy ją zobaczy i dobiegnie w kilka sekund, i ma pasować do tego, co się może zapalić.",
+  "powiazane": [
+   "urzadzenia-ppoz",
+   "strefa-pozarowa",
+   "goo"
+  ],
+  "dopytania": [
+   {
+    "q": "Ile gaśnic?",
+    "a": "Jedna jednostka 2 kg (lub 3 dm³) środka gaśniczego na każde 100 m² strefy (ZL I, II, III, V, PM ponad 500 MJ/m², wybuch) albo na 300 m² w pozostałych.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p32",
+     "u": "ust. 3"
+    },
+    "dowod": "na każde 100 m2"
+   },
+   {
+    "q": "Jak daleko do gaśnicy?",
+    "a": "Z każdego miejsca, gdzie może być człowiek, nie więcej niż 30 m.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p33",
+     "u": "ust. 2 pkt 1"
+    },
+    "dowod": "nie powinna być większa niż 30 m"
+   },
+   {
+    "q": "Ile miejsca przed gaśnicą?",
+    "a": "Dostęp o szerokości co najmniej 1 m.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p33",
+     "u": "ust. 2 pkt 2"
+    },
+    "dowod": "dostęp o szerokości co najmniej 1 m"
+   },
+   {
+    "q": "Gdzie wieszać?",
+    "a": "W miejscach łatwo dostępnych i widocznych: przy wejściach, na klatkach schodowych, korytarzach, przy wyjściach na zewnątrz - z dala od pieców i grzejników.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p33",
+     "u": "ust. 1"
+    },
+    "dowod": "przy wyjściach z pomieszczeń na zewnątrz"
+   }
+  ]
+ },
+ {
+  "id": "hydrant",
+  "nazwa": "Hydrant wewnętrzny (25, 33, 52)",
+  "d": "ppoz",
+  "def": "Punkt poboru wody w budynku: hydrant 25 i 33 (wąż półsztywny), hydrant 52 (wąż płasko składany) albo sam zawór 52 dla straży.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p18",
+   "u": "ust. 1"
+  },
+  "dowod": "hydrantem 52",
+  "przyklad": "Szafka hydrantowa 25 na korytarzu biurowca z wężem półsztywnym na zwijadle.",
+  "blad": "Szafka zastawiona szafą lub kartonami, wąż bez próby ciśnieniowej od lat.",
+  "klient": "To „kran strażacki” - może z niego skorzystać pracownik (hydrant 25) albo straż. Musi być do niego wolny dostęp.",
+  "powiazane": [
+   "urzadzenia-ppoz",
+   "zl",
+   "gasnica"
+  ],
+  "dopytania": [
+   {
+    "q": "Na jakiej wysokości zawór?",
+    "a": "1,35 ± 0,1 m od podłogi.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p21",
+     "u": "ust. 1"
+    },
+    "dowod": "1,35±0,1 m"
+   },
+   {
+    "q": "Co ile próba węży?",
+    "a": "Raz na 5 lat próba ciśnieniowa na maksymalne ciśnienie robocze.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p3",
+     "u": "ust. 4"
+    },
+    "dowod": "raz na 5 lat poddawane próbie ciśnieniowej"
+   },
+   {
+    "q": "Jak długo musi być woda?",
+    "a": "Zasilanie hydrantów wewnętrznych - co najmniej przez 1 godzinę.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p18",
+     "u": "ust. 4"
+    },
+    "dowod": "co najmniej przez 1 godzinę"
+   }
+  ]
+ },
+ {
+  "id": "ppwp",
+  "nazwa": "Przeciwpożarowy wyłącznik prądu",
+  "d": "ppoz",
+  "def": "Urządzenie do odcięcia prądu w budynku na potrzeby akcji gaśniczej. Obiekty wyposaża się w nie zgodnie z warunkami technicznymi.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p4",
+   "u": "ust. 2 pkt 2"
+  },
+  "dowod": "przeciwpożarowe wyłączniki prądu",
+  "przyklad": "Czerwony przycisk w skrzynce przy wejściu do hali, opisany „Przeciwpożarowy wyłącznik prądu”.",
+  "blad": "Wyłącznik zastawiony, bez oznakowania, albo nikt nie wie, co wyłącza.",
+  "klient": "Dzięki niemu strażak może bezpiecznie lać wodę, bo instalacja nie jest pod napięciem.",
+  "powiazane": [
+   "urzadzenia-ppoz"
+  ],
+  "dopytania": [
+   {
+    "q": "Czy dostęp do niego musi być wolny?",
+    "a": "Tak - zakazane jest ograniczanie dostępu do wyłączników i tablic rozdzielczych prądu.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p4",
+     "u": "ust. 1 pkt 18 lit. f"
+    },
+    "dowod": "wyłączników i tablic rozdzielczych prądu elektrycznego"
+   }
+  ]
+ },
+ {
+  "id": "ewakuacja",
+  "nazwa": "Przejście i droga ewakuacyjna",
+  "d": "ppoz",
+  "def": "Przejście ewakuacyjne to droga w pomieszczeniu do wyjścia z niego. Jego długość jest ograniczona, np. w strefach ZL do 40 m.",
+  "zr": {
+   "dok": "DU_2002_690",
+   "j": "para_237",
+   "u": "§ 237 ust. 1 WT"
+  },
+  "dowod": "przejściem ewakuacyjnym",
+  "przyklad": "W hali magazynowej z regałami: od najdalszego regału do drzwi wyjściowych.",
+  "blad": "Palety na korytarzu, drzwi ewakuacyjne zamknięte na klucz „żeby nikt nie wychodził”.",
+  "klient": "To droga, którą ludzie wyjdą w dymie i panice - musi być krótka, wolna i oznakowana.",
+  "powiazane": [
+   "zl",
+   "probna-ewakuacja",
+   "ibp"
+  ],
+  "dopytania": [
+   {
+    "q": "Czy drzwi ewakuacyjne można zamykać na klucz?",
+    "a": "Nie w sposób, który uniemożliwia ich natychmiastowe użycie w razie pożaru.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p4",
+     "u": "ust. 1 pkt 14"
+    },
+    "dowod": "zamykanie drzwi ewakuacyjnych w sposób uniemożliwiający ich natychmiastowe użycie"
+   },
+   {
+    "q": "Czy muszą być oznakowane?",
+    "a": "Tak - drogi i wyjścia ewakuacyjne oznakowuje się znakami zgodnymi z Polskimi Normami (poza budynkami mieszkalnymi).",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p4",
+     "u": "ust. 2 pkt 4 lit. a"
+    },
+    "dowod": "drogi i wyjścia ewakuacyjne"
+   },
+   {
+    "q": "A oświetlenie awaryjne?",
+    "a": "Tak, w pomieszczeniach i na drogach ewakuacyjnych wymienionych w przepisach techniczno-budowlanych.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p15",
+     "u": "ust. 1 pkt 5"
+    },
+    "dowod": "oświetlenia awaryjnego"
+   }
+  ]
+ },
+ {
+  "id": "droga-pozarowa",
+  "nazwa": "Droga pożarowa",
+  "d": "ppoz",
+  "def": "Utwardzona droga, którą wozy straży dojadą do budynku o każdej porze roku. Wymagana m.in. dla budynków ZL I i ZL II, wysokich oraz dużych stref PM.",
+  "zr": {
+   "a": "rozp-woda-drogi",
+   "j": "p12",
+   "u": "§ 12 ust. 1"
+  },
+  "dowod": "Drogę pożarową o utwardzonej nawierzchni",
+  "przyklad": "Pas wzdłuż dłuższego boku przedszkola, z którego drabina sięgnie okien.",
+  "blad": "Parking, kontener na śmieci albo szlaban bez klucza na drodze pożarowej.",
+  "klient": "To droga dla wozu strażackiego i drabiny - jeśli jest zastawiona, pomoc stoi kilkadziesiąt metrów dalej.",
+  "powiazane": [
+   "zl",
+   "ewakuacja"
+  ],
+  "dopytania": [
+   {
+    "q": "Jaka szerokość?",
+    "a": "Co najmniej 4 m (w miejscach ustawienia wozów i 10 m od nich), na pozostałych odcinkach 3,5 m albo 3 m.",
+    "zr": {
+     "a": "rozp-woda-drogi",
+     "j": "p13",
+     "u": "§ 13 ust. 1"
+    },
+    "dowod": "co najmniej 4 m"
+   },
+   {
+    "q": "Jak daleko od ściany?",
+    "a": "Bliższa krawędź drogi 5-15 m od ściany budynku ZL i 5-25 m dla pozostałych.",
+    "zr": {
+     "a": "rozp-woda-drogi",
+     "j": "p12",
+     "u": "§ 12 ust. 2"
+    },
+    "dowod": "o 5–15 m dla obiektów zaliczanych do kategorii zagrożenia ludzi"
+   },
+   {
+    "q": "A jeśli droga jest ślepa?",
+    "a": "Musi być przejazd bez cofania albo plac manewrowy 20 m × 20 m (lub inne rozwiązanie do zawracania).",
+    "zr": {
+     "a": "rozp-woda-drogi",
+     "j": "p12",
+     "u": "§ 12 ust. 9"
+    },
+    "dowod": "20 m x 20 m"
+   }
+  ]
+ },
+ {
+  "id": "ibp",
+  "nazwa": "Instrukcja bezpieczeństwa pożarowego (IBP)",
+  "d": "ppoz",
+  "def": "Dokument z warunkami ochrony ppoż obiektu, wyposażeniem i przeglądami, postępowaniem w razie pożaru, ewakuacją, obowiązkami ludzi i planami. Wymagany w obiektach użyteczności publicznej, zamieszkania zbiorowego, produkcyjnych, magazynowych i inwentarskich.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p6",
+   "u": "ust. 1"
+  },
+  "dowod": "zapewniają i wdrażają instrukcję bezpieczeństwa pożarowego",
+  "przyklad": "Sklep 450 m² z zapleczem - IBP z planem, rozmieszczeniem 6 gaśnic i opisem ewakuacji.",
+  "blad": "Instrukcja „z szuflady” sprzed 6 lat, nieaktualna po przebudowie, której nikt z pracowników nie zna.",
+  "klient": "To instrukcja obsługi budynku na wypadek pożaru - kto co robi, gdzie jest sprzęt, którędy wychodzimy.",
+  "powiazane": [
+   "ewakuacja",
+   "probna-ewakuacja",
+   "strefa-wybuchu",
+   "wlasciciel"
+  ],
+  "dopytania": [
+   {
+    "q": "Kiedy nie jest wymagana?",
+    "a": "Gdy nie ma strefy zagrożenia wybuchem, a budynek lub strefa ma do 1000 m³ (inwentarski do 1500 m³, obiekt inny niż budynek do 1000 m²).",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p6",
+     "u": "ust. 8"
+    },
+    "dowod": "nie przekracza 1000 m3"
+   },
+   {
+    "q": "Co ile aktualizacja?",
+    "a": "Co najmniej raz na 2 lata i po zmianach wpływających na ochronę ppoż.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p6",
+     "u": "ust. 7"
+    },
+    "dowod": "co najmniej raz na 2 lata"
+   },
+   {
+    "q": "Gdzie ją trzymać?",
+    "a": "W miejscach dostępnych dla ekip ratowniczych.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p6",
+     "u": "ust. 9"
+    },
+    "dowod": "w miejscach dostępnych dla ekip ratowniczych"
+   }
+  ]
+ },
+ {
+  "id": "probna-ewakuacja",
+  "nazwa": "Praktyczne sprawdzenie ewakuacji (próbna ewakuacja)",
+  "d": "ppoz",
+  "def": "Ćwiczenie organizacji i warunków ewakuacji z całego obiektu - co najmniej raz na 2 lata w obiekcie dla ponad 50 stałych użytkowników (poza ZL IV).",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p17",
+   "u": "ust. 1"
+  },
+  "dowod": "co najmniej raz na 2 lata przeprowadzać praktyczne sprawdzenie",
+  "przyklad": "Biurowiec z 80 pracownikami - alarm, wyjście wszystkich na miejsce zbiórki, sprawdzenie czasu i problemów.",
+  "blad": "Ćwiczenie „na papierze” bez wyjścia ludzi albo bez powiadomienia straży.",
+  "klient": "Raz na jakiś czas sprawdzamy w praktyce, czy wszyscy wiedzą, którędy i dokąd wyjść - lepiej odkryć problem na ćwiczeniu niż w dymie.",
+  "powiazane": [
+   "ewakuacja",
+   "ibp",
+   "zl"
+  ],
+  "dopytania": [
+   {
+    "q": "A w szkole i przedszkolu?",
+    "a": "Co najmniej raz w roku, najpóźniej 3 miesiące od przyjścia nowych użytkowników.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p17",
+     "u": "ust. 2"
+    },
+    "dowod": "co najmniej raz na rok"
+   },
+   {
+    "q": "Czy trzeba zgłosić straży?",
+    "a": "Tak - komendanta powiatowego PSP powiadamia się najpóźniej tydzień wcześniej.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p17",
+     "u": "ust. 4"
+    },
+    "dowod": "nie później niż na tydzień"
+   }
+  ]
+ },
+ {
+  "id": "prace-pozarowe",
+  "nazwa": "Prace niebezpieczne pod względem pożarowym",
+  "d": "ppoz",
+  "def": "Prace remontowo-budowlane z otwartym ogniem, cięciem z iskrami i spawaniem - w obiektach, na dachach, terenach przyległych i placach składowych - oraz prace w strefach zagrożonych wybuchem.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p2",
+   "u": "ust. 1 pkt 4"
+  },
+  "dowod": "prace remontowo-budowlane związane z użyciem otwartego ognia",
+  "przyklad": "Spawanie konstrukcji w hali, cięcie szlifierką na dachu, zgrzewanie papy palnikiem.",
+  "blad": "Spawacz z zewnętrznej firmy zaczyna bez sprawdzenia miejsca i bez gaśnicy, a po pracy wszyscy wychodzą - żar tli się w izolacji.",
+  "klient": "Większość pożarów przy remontach zaczyna się od iskry, którą ktoś przegapił. Dlatego przed pracą oceniamy miejsce, a po pracy je kontrolujemy.",
+  "powiazane": [
+   "strefa-wybuchu",
+   "materialy-niebezpieczne",
+   "ibp"
+  ],
+  "dopytania": [
+   {
+    "q": "Co musi zrobić właściciel przed pracą?",
+    "a": "M.in. ocenić zagrożenie pożarowe w miejscu pracy, ustalić zabezpieczenia, wskazać odpowiedzialnych i dopuścić tylko osoby z kwalifikacjami.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p36",
+     "u": "ust. 1"
+    },
+    "dowod": "ocenia zagrożenie pożarowe w miejscu"
+   },
+   {
+    "q": "A po pracy?",
+    "a": "Skontrolować miejsce pracy i rejony przyległe.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p36",
+     "u": "ust. 2 pkt 4"
+    },
+    "dowod": "poddać kontroli miejsce"
+   }
+  ]
+ },
+ {
+  "id": "wlasciciel",
+  "nazwa": "Obowiązki właściciela obiektu (art. 4 ustawy)",
+  "d": "ppoz",
+  "def": "Właściciel m.in. przestrzega wymagań ppoż, wyposaża obiekt w urządzenia i gaśnice, zapewnia ich przeglądy, zapewnia ewakuację, przygotowuje obiekt do akcji, zapoznaje pracowników z przepisami i ustala postępowanie na wypadek pożaru.",
+  "zr": {
+   "a": "ustawa-ppoz",
+   "j": "a4",
+   "u": "ust. 1"
+  },
+  "dowod": "wyposażyć budynek, obiekt budowlany lub teren w wymagane urządzenia przeciwpożarowe i gaśnice",
+  "przyklad": "Właściciel hurtowni: gaśnice z przeglądem, IBP, przeszkoleni pracownicy, droga pożarowa wolna.",
+  "blad": "Właściciel wynajmuje halę i uważa, że „to sprawa najemcy”, choć umowa nic o tym nie mówi.",
+  "klient": "Za bezpieczeństwo pożarowe odpowiada właściciel - chyba że umowa przekazuje to zarządcy lub najemcy.",
+  "powiazane": [
+   "ibp",
+   "urzadzenia-ppoz",
+   "inspektor"
+  ],
+  "dopytania": [
+   {
+    "q": "A jeśli budynek jest wynajęty?",
+    "a": "Odpowiedzialność przejmuje (w całości lub części) zarządca lub użytkownik na podstawie umowy; bez umowy - ten, kto faktycznie włada obiektem.",
+    "zr": {
+     "a": "ustawa-ppoz",
+     "j": "a4",
+     "u": "ust. 1a"
+    },
+    "dowod": "faktycznie władającym budynkiem"
+   }
+  ]
+ },
+ {
+  "id": "inspektor",
+  "nazwa": "Inspektor ochrony przeciwpożarowej",
+  "d": "ppoz",
+  "def": "Uprawnienia nabywa się na 5 lat po szkoleniu inspektorów albo szkoleniu aktualizującym w szkołach i ośrodkach PSP.",
+  "zr": {
+   "a": "ustawa-ppoz",
+   "j": "a4a",
+   "u": "ust. 1"
+  },
+  "dowod": "nabywa na okres 5 lat",
+  "przyklad": "Inspektor przygotowuje IBP, sprawdza obiekt, szkoli pracowników z ppoż.",
+  "blad": "Spóźnienie z aktualizacją - uprawnienia wygasają i trzeba robić pełny kurs od nowa.",
+  "klient": "Osoba z uprawnieniami, która może wykonywać za właściciela czynności z zakresu ochrony przeciwpożarowej.",
+  "powiazane": [
+   "wlasciciel",
+   "ibp"
+  ],
+  "dopytania": [
+   {
+    "q": "Kiedy zrobić szkolenie aktualizujące?",
+    "a": "W okresie ważności uprawnień.",
+    "zr": {
+     "a": "ustawa-ppoz",
+     "j": "a4a",
+     "u": "ust. 4"
+    },
+    "dowod": "w okresie ważności nabytych uprawnień"
+   },
+   {
+    "q": "Jakie wykształcenie jest potrzebne?",
+    "a": "Co najmniej średnie lub średnie branżowe i uprawnienia inspektora (albo kwalifikacje technika pożarnictwa) - do czynności z art. 4 ust. 1.",
+    "zr": {
+     "a": "ustawa-ppoz",
+     "j": "a4",
+     "u": "ust. 2b"
+    },
+    "dowod": "co najmniej wykształcenie średnie lub średnie branżowe"
+   }
+  ]
+ },
+ {
+  "id": "ryzyko-zawodowe",
+  "nazwa": "Ryzyko zawodowe",
+  "d": "bhp",
+  "def": "Prawdopodobieństwo niepożądanych zdarzeń związanych z pracą, powodujących straty - zwłaszcza niekorzystnych skutków zdrowotnych u pracowników.",
+  "zr": {
+   "dok": "DU_1997_844",
+   "j": "para_2",
+   "u": "§ 2 ust. 1 pkt 7 ogólnych przepisów BHP"
+  },
+  "dowod": "prawdopodobieństwo wystąpienia niepożądanych zdarzeń",
+  "przyklad": "Magazynier: upadek z drabiny, potrącenie wózkiem, dźwiganie. Każde zagrożenie ma swoje ryzyko.",
+  "blad": "Ocena ryzyka skopiowana z internetu, niepasująca do stanowiska, bez podpisów pracowników.",
+  "klient": "Ocena ryzyka to lista: co tu może komuś zrobić krzywdę, jak bardzo i co z tym robimy.",
+  "powiazane": [
+   "wypadek",
+   "szkolenie-bhp",
+   "nds"
+  ],
+  "dopytania": [
+   {
+    "q": "Czy to obowiązek?",
+    "a": "Tak - pracodawca ocenia i dokumentuje ryzyko zawodowe i informuje o nim pracowników.",
+    "zr": {
+     "dok": "DU_1974_141",
+     "j": "a226",
+     "u": "art. 226 KP"
+    },
+    "dowod": "ocenia i dokumentuje ryzyko zawodowe"
+   },
+   {
+    "q": "Jaka kolejność środków?",
+    "a": "Najpierw usunąć zagrożenie, potem rozwiązania organizacyjne i techniczne, ochrona zbiorowa, a dopiero na końcu środki ochrony indywidualnej.",
+    "zr": {
+     "dok": "DU_1997_844",
+     "j": "para_39",
+     "u": "§ 39 ogólnych przepisów BHP"
+    },
+    "dowod": "środki ochrony indywidualnej"
+   }
+  ]
+ },
+ {
+  "id": "wypadek",
+  "nazwa": "Wypadek przy pracy",
+  "d": "bhp",
+  "def": "Nagłe zdarzenie wywołane przyczyną zewnętrzną, powodujące uraz lub śmierć, które nastąpiło w związku z pracą.",
+  "zr": {
+   "dok": "DU_2002_1673",
+   "j": "a3",
+   "u": "art. 3 ust. 1 ustawy wypadkowej"
+  },
+  "dowod": "nagłe zdarzenie wywołane przyczyną zewnętrzną",
+  "przyklad": "Pracownik poślizgnął się na mokrej posadzce w magazynie i złamał rękę.",
+  "blad": "Uznanie, że to nie wypadek, „bo sam był nieuważny” - nieuwaga nie wyklucza wypadku przy pracy.",
+  "klient": "Cztery warunki: nagle, z zewnątrz, uraz, w związku z pracą. Jeśli są wszystkie - to wypadek przy pracy.",
+  "powiazane": [
+   "ryzyko-zawodowe",
+   "zespol-powypadkowy"
+  ],
+  "dopytania": [
+   {
+    "q": "Ile czasu na protokół?",
+    "a": "Zespół powypadkowy sporządza protokół najpóźniej 14 dni od zawiadomienia o wypadku.",
+    "zr": {
+     "dok": "DU_2009_870",
+     "j": "p9",
+     "u": "§ 9 rozp. o wypadkach"
+    },
+    "dowod": "nie później niż w terminie 14 dni"
+   },
+   {
+    "q": "Kogo zawiadomić przy ciężkim wypadku?",
+    "a": "Niezwłocznie okręgowego inspektora pracy i prokuratora (wypadek śmiertelny, ciężki, zbiorowy).",
+    "zr": {
+     "dok": "DU_1974_141",
+     "j": "a234",
+     "u": "art. 234 § 2 KP"
+    },
+    "dowod": "zawiadomić właściwego okręgowego inspektora pracy i prokuratora"
+   }
+  ]
+ },
+ {
+  "id": "zespol-powypadkowy",
+  "nazwa": "Zespół powypadkowy",
+  "d": "bhp",
+  "def": "Zespół powołany przez pracodawcę do ustalenia okoliczności i przyczyn wypadku: pracownik służby BHP i społeczny inspektor pracy.",
+  "zr": {
+   "dok": "DU_2009_870",
+   "j": "p4",
+   "u": "§ 4 rozp. o wypadkach"
+  },
+  "dowod": "pracownik służby bezpieczeństwa i higieny pracy oraz społeczny inspektor pracy",
+  "przyklad": "W firmie 30-osobowej bez społecznego inspektora: pracodawca powołuje BHP-owca z zewnątrz i przedstawiciela pracowników.",
+  "blad": "Ustalanie przyczyn przez szefa „na szybko”, bez oględzin, zdjęć i rozmowy ze świadkami.",
+  "klient": "Zespół ma ustalić, co się stało i dlaczego - rzetelnie, bo od protokołu zależą pieniądze poszkodowanego z ZUS.",
+  "powiazane": [
+   "wypadek",
+   "sluzba-bhp"
+  ],
+  "dopytania": [
+   {
+    "q": "Co zespół robi najpierw?",
+    "a": "Niezwłocznie: oględziny miejsca, szkic lub zdjęcia, wyjaśnienia poszkodowanego, świadkowie, opinia lekarza, kwalifikacja prawna, wnioski.",
+    "zr": {
+     "dok": "DU_2009_870",
+     "j": "p7",
+     "u": "§ 7 rozp. o wypadkach"
+    },
+    "dowod": "dokonać oględzin miejsca wypadku"
+   },
+   {
+    "q": "Ile ma pracodawca na zatwierdzenie protokołu?",
+    "a": "Najpóźniej 5 dni od sporządzenia.",
+    "zr": {
+     "dok": "DU_2009_870",
+     "j": "p13",
+     "u": "§ 13 rozp. o wypadkach"
+    },
+    "dowod": "nie później niż w terminie 5 dni"
+   }
+  ]
+ },
+ {
+  "id": "sluzba-bhp",
+  "nazwa": "Służba BHP",
+  "d": "bhp",
+  "def": "Komórka lub osoba pełniąca funkcje doradcze i kontrolne w BHP. Pracodawca z ponad 100 pracownikami tworzy służbę BHP, do 100 - powierza zadania pracownikowi zatrudnionemu przy innej pracy.",
+  "zr": {
+   "dok": "DU_1974_141",
+   "j": "a23711",
+   "u": "art. 237¹¹ § 1 KP"
+  },
+  "dowod": "Pracodawca zatrudniający więcej niż 100 pracowników tworzy służbę",
+  "przyklad": "Firma 40-osobowa (handel) - szef po szkoleniu może sam pełnić zadania służby BHP albo zlecić je specjaliście z zewnątrz.",
+  "blad": "Przekonanie, że mała firma „nie musi mieć nic z BHP” - zadania służby trzeba komuś powierzyć.",
+  "klient": "Ktoś w firmie musi pilnować BHP - albo pracownik, albo szef po szkoleniu, albo firma z zewnątrz.",
+  "powiazane": [
+   "szkolenie-bhp",
+   "zespol-powypadkowy"
+  ],
+  "dopytania": [
+   {
+    "q": "Kiedy szef może sam pełnić zadania służby BHP?",
+    "a": "Po odpowiednim szkoleniu, jeśli zatrudnia do 10 pracowników albo do 50 przy kategorii ryzyka nie wyższej niż trzecia.",
+    "zr": {
+     "dok": "DU_1974_141",
+     "j": "a23711",
+     "u": "art. 237¹¹ § 1 KP"
+    },
+    "dowod": "zatrudnia do 10 pracowników"
+   },
+   {
+    "q": "Czy można zlecić to firmie z zewnątrz?",
+    "a": "Tak - w braku kompetentnych pracowników pracodawca może powierzyć zadania specjalistom spoza zakładu.",
+    "zr": {
+     "dok": "DU_1974_141",
+     "j": "a23711",
+     "u": "art. 237¹¹ § 2 KP"
+    },
+    "dowod": "specjalistom spoza zakładu pracy"
+   }
+  ]
+ },
+ {
+  "id": "szkolenie-bhp",
+  "nazwa": "Szkolenie BHP - wstępne i okresowe",
+  "d": "bhp",
+  "def": "Szkolenie BHP prowadzi się jako wstępne (instruktaż ogólny i stanowiskowy przed dopuszczeniem do pracy) i okresowe (aktualizacja wiedzy).",
+  "zr": {
+   "dok": "DU_2004_1860",
+   "j": "para_6",
+   "u": "§ 6 rozp. o szkoleniach"
+  },
+  "dowod": "szkolenie wstępne i szkolenie okresowe",
+  "przyklad": "Nowy magazynier: instruktaż ogólny w pierwszym dniu, stanowiskowy u kierownika, potem okresowe co 3 lata.",
+  "blad": "Pracownik zaczyna pracę „od jutra”, a instruktaż stanowiskowy „kiedyś się zrobi”.",
+  "klient": "Zanim ktoś zacznie pracę, musi wiedzieć, jak jej nie przypłacić zdrowiem. Potem co kilka lata odświeżamy.",
+  "powiazane": [
+   "ryzyko-zawodowe",
+   "sluzba-bhp"
+  ],
+  "dopytania": [
+   {
+    "q": "Co ile okresowe dla robotników?",
+    "a": "Nie rzadziej niż raz na 3 lata, a przy pracach szczególnie niebezpiecznych - raz w roku.",
+    "zr": {
+     "dok": "DU_2004_1860",
+     "j": "para_15",
+     "u": "§ 15 ust. 1 rozp. o szkoleniach"
+    },
+    "dowod": "nie rzadziej niż raz na 3 lata"
+   },
+   {
+    "q": "A dla biurowych?",
+    "a": "Nie rzadziej niż raz na 6 lat (o ile w ogóle są wymagane - przy niskiej kategorii ryzyka mogą być zwolnieni).",
+    "zr": {
+     "dok": "DU_2004_1860",
+     "j": "para_15",
+     "u": "§ 15 ust. 2 rozp. o szkoleniach"
+    },
+    "dowod": "raz na 6 lat"
+   },
+   {
+    "q": "Czy można dopuścić do pracy bez szkolenia?",
+    "a": "Nie - pracodawca zapewnia szkolenie BHP przed dopuszczeniem do pracy.",
+    "zr": {
+     "dok": "DU_1974_141",
+     "j": "a2373",
+     "u": "art. 237³ § 2 KP"
+    },
+    "dowod": "przed dopuszczeniem go do pracy"
+   }
+  ]
+ },
+ {
+  "id": "nds",
+  "nazwa": "NDS i NDSCh",
+  "d": "bhp",
+  "def": "NDS - najwyższe dopuszczalne stężenie: średnia ważona stężenia z 8-godzinnej zmiany, która przez całe życie zawodowe nie powinna zaszkodzić pracownikowi ani jego przyszłym pokoleniom. NDSCh - stężenie chwilowe (do 15 minut).",
+  "zr": {
+   "dok": "DU_2018_1286",
+   "j": "para_2",
+   "u": "§ 2 rozp. NDS/NDN"
+  },
+  "dowod": "wartość średnia ważona stężenia",
+  "przyklad": "Lakiernia: pomiary par rozpuszczalników, stolarnia: pył drewna twardego.",
+  "blad": "Brak pomiarów, bo „wentylacja jest”, albo pomiary z czasów, gdy była inna technologia.",
+  "klient": "To granica, poniżej której wdychanie pyłów czy oparów przez lata pracy nie powinno szkodzić.",
+  "powiazane": [
+   "ryzyko-zawodowe"
+  ],
+  "dopytania": [
+   {
+    "q": "Czym różni się NDSCh?",
+    "a": "To średnia stężenia, które nie powinno zaszkodzić, jeśli występuje krótko w ciągu zmiany.",
+    "zr": {
+     "dok": "DU_2018_1286",
+     "j": "para_2",
+     "u": "§ 2 rozp. NDS/NDN"
+    },
+    "dowod": "najwyższe dopuszczalne stężenie chwilowe (NDSCh)"
+   }
+  ]
+ }
+]

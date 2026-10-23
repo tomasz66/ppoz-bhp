@@ -234,6 +234,22 @@ async function zapytajAI(system, tresc, naTekst) {
   return odp.content.filter((b) => b.type === "text").map((b) => b.text).join("");
 }
 
+// Jedno pytanie bez historii rozmowy (np. zdjęcie do oceny) - zwraca sam tekst odpowiedzi.
+async function zapytajJednorazowo(tresc) {
+  const client = await klientAI();
+  const model = wybranyModel();
+  const zapytanie = { model: model.id, max_tokens: MAX_TOKENOW, output_config: { effort: "low" }, messages: [{ role: "user", content: tresc }] };
+  const strumien = model.id.startsWith("claude-opus")
+    ? client.beta.messages.stream({ ...zapytanie, betas: [FALLBACK_BETA], fallbacks: "default" })
+    : client.messages.stream(zapytanie);
+  const odp = await strumien.finalMessage();
+  if (odp.stop_reason === "refusal") {
+    throw new Error("odmowa");
+  }
+  stan.asystent.koszt += (odp.usage.input_tokens * model.wej + odp.usage.output_tokens * model.wyj) / MILION;
+  return odp.content.filter((b) => b.type === "text").map((b) => b.text).join("");
+}
+
 function opisBledu(e) {
   const A = stan.Anthropic;
   if (e.message === "odmowa") {
@@ -413,6 +429,16 @@ function zmienTryb(tryb) {
 }
 
 function widokAsystenta(ustawieniaOtwarte) {
+  // Wejście z karty pojęcia ("Przepytaj mnie") - od razu pytanie o to pojęcie.
+  if (stan.przepytajPojecie) {
+    const id = stan.przepytajPojecie;
+    stan.przepytajPojecie = null;
+    stan.asystent.tryb = "przepytaj";
+    if (czytaj(KLUCZ_A.klucz, "")) {
+      przepytajZPojecia(id);
+      return;
+    }
+  }
   ustawNaglowek("Asystent", "#/start");
   ustawZakladke("start");
   const a = stan.asystent;
@@ -520,4 +546,23 @@ async function noweZadanie() {
   const temat = { etykieta: paragraf ? paragraf.etykieta : "Temat", tekst: los.temat, adres: adresZrodla(los.zr) };
   const kontekst = dopiszZrodla([temat, ...(paragraf ? [paragraf] : []), ...fragmenty.slice(0, 3)]);
   wymiana(SYSTEM_PRZEPYTAJ, `Fragmenty przepisów:\n\n${kontekst}\n\nTryb: ${a.styl}. Zadaj jedno pytanie.`, "");
+}
+
+// Pytanie o konkretne pojęcie: karta (definicja + dopytania) i pełne paragrafy, na które się powołuje.
+async function przepytajZPojecia(id) {
+  const a = stan.asystent;
+  const k = stan.pojecia.find((x) => x.id === id);
+  zatrzymajLektora();
+  Object.assign(a, { tryb: "przepytaj", rozmowa: [], wiadomosci: [], zrodla: [] });
+  widokAsystenta(false);
+  if (!stan.dokZaladowane) {
+    stan.dokZaladowane = await wczytajWszystkieDok();
+    stan.indeks = null;
+  }
+  const karta = { etykieta: `Pojęcie: ${k.nazwa}`, tekst: `${k.def}\n${k.dopytania.map((p) => `${p.q} ${p.a}`).join("\n")}`, adres: `#/pojecie/${k.id}` };
+  const paragrafy = [k.zr, ...k.dopytania.map((p) => p.zr)].map(paragrafZrodla).filter(Boolean)
+    .filter((f, i, lista) => lista.findIndex((y) => y.adres === f.adres) === i);
+  const powiazane = k.powiazane.map((p) => (stan.pojecia.find((x) => x.id === p) || {}).nazwa).filter(Boolean).join(", ");
+  const kontekst = dopiszZrodla([karta, ...paragrafy]);
+  wymiana(SYSTEM_PRZEPYTAJ, `Fragmenty przepisów:\n\n${kontekst}\n\nTryb: ${a.styl}. Zadaj jedno pytanie o pojęcie „${k.nazwa}”${powiazane ? ` (możesz też zahaczyć o pojęcia powiązane: ${powiazane})` : ""}.`, "");
 }

@@ -1,0 +1,362 @@
+[
+ {
+  "id": "gas30",
+  "w": "30 m",
+  "co": "Maksymalna odległość z każdego miejsca, gdzie może być człowiek, do najbliższej gaśnicy.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p33",
+   "u": "ust. 2 pkt 1"
+  },
+  "dowod": "nie powinna być większa niż 30 m",
+  "g": "mapa"
+ },
+ {
+  "id": "gas1",
+  "w": "1 m",
+  "co": "Wolny dostęp do gaśnicy - co najmniej 1 m szerokości.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p33",
+   "u": "ust. 2 pkt 2"
+  },
+  "dowod": "dostęp o szerokości co najmniej 1 m",
+  "g": "mapa"
+ },
+ {
+  "id": "gas2kg",
+  "w": "2 kg / 100 m²",
+  "co": "Jedna jednostka 2 kg (3 dm³) środka gaśniczego na każde 100 m² strefy (ZL I, II, III, V, PM ponad 500 MJ/m², wybuch) - w pozostałych na 300 m².",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p32",
+   "u": "ust. 3"
+  },
+  "dowod": "na każde 100 m2",
+  "g": "mapa"
+ },
+ {
+  "id": "piec05",
+  "w": "0,5 m",
+  "co": "Materiały palne i palny wystrój (zasłony, dekoracje) co najmniej 0,5 m od urządzeń nagrzewających się powyżej 100°C.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p4",
+   "u": "ust. 1 pkt 8"
+  },
+  "dowod": "w odległości mniejszej niż 0,5 m od",
+  "g": "mapa"
+ },
+ {
+  "id": "hydr135",
+  "w": "1,35 m",
+  "co": "Wysokość zaworu hydrantu wewnętrznego od podłogi (± 0,1 m).",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p21",
+   "u": "ust. 1"
+  },
+  "dowod": "1,35±0,1 m",
+  "g": "mapa"
+ },
+ {
+  "id": "galezie4",
+  "w": "4 m",
+  "co": "Gałęzie, chrust i inne materiały palne składowane poza budynkiem - co najmniej 4 m od granicy działki sąsiedniej.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p4",
+   "u": "ust. 1 pkt 6"
+  },
+  "dowod": "w odległości mniejszej niż 4 m od granicy działki sąsiedniej",
+  "g": "mapa"
+ },
+ {
+  "id": "smola5",
+  "w": "5 m",
+  "co": "Rozgrzewanie smoły otwartym ogniem - co najmniej 5 m od budynku i składowisk materiałów palnych.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p4",
+   "u": "ust. 1 pkt 4"
+  },
+  "dowod": "w odległości mniejszej niż 5 m od obiektu",
+  "g": "mapa"
+ },
+ {
+  "id": "pas2",
+  "w": "2 m",
+  "co": "Pas ochronny wokół placu składowego (niepalny lub oczyszczony grunt).",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p4",
+   "u": "ust. 3"
+  },
+  "dowod": "pas ochronny o minimalnej szerokości 2 m",
+  "g": "mapa"
+ },
+ {
+  "id": "sklad5",
+  "w": "5 m",
+  "co": "Materiały palne składowane pod ścianą budynku - co najmniej 5 m od drogi pożarowej.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p4",
+   "u": "ust. 4 pkt 4"
+  },
+  "dowod": "minimalnej odległości 5 m od drogi pożarowej",
+  "g": "mapa"
+ },
+ {
+  "id": "droga4",
+  "w": "4 m",
+  "co": "Minimalna szerokość drogi pożarowej (w miejscu ustawienia wozów i 10 m od niego); dalej 3,5 m albo 3 m.",
+  "zr": {
+   "a": "rozp-woda-drogi",
+   "j": "p13",
+   "u": "§ 13 ust. 1"
+  },
+  "dowod": "co najmniej 4 m",
+  "g": "mapa"
+ },
+ {
+  "id": "droga515",
+  "w": "5-15 m",
+  "co": "Odległość bliższej krawędzi drogi pożarowej od ściany budynku ZL (dla pozostałych 5-25 m). Między drogą a ścianą bez drzew i elementów wyższych niż 3 m.",
+  "zr": {
+   "a": "rozp-woda-drogi",
+   "j": "p12",
+   "u": "§ 12 ust. 2"
+  },
+  "dowod": "o 5–15 m dla obiektów zaliczanych do kategorii zagrożenia ludzi",
+  "g": "mapa"
+ },
+ {
+  "id": "plac",
+  "w": "20 × 20 m",
+  "co": "Plac manewrowy na końcu drogi pożarowej bez przejazdu (albo inne rozwiązanie do zawracania).",
+  "zr": {
+   "a": "rozp-woda-drogi",
+   "j": "p12",
+   "u": "§ 12 ust. 9"
+  },
+  "dowod": "20 m x 20 m",
+  "g": "mapa"
+ },
+ {
+  "id": "dojscie",
+  "w": "1,5 m · 50 m",
+  "co": "Dojście od wyjścia z budynku do drogi pożarowej: szerokość min. 1,5 m, długość max 50 m.",
+  "zr": {
+   "a": "rozp-woda-drogi",
+   "j": "p12",
+   "u": "§ 12 ust. 4"
+  },
+  "dowod": "dojściem o szerokości minimalnej 1,5 m i długości nie większej niż 50 m",
+  "g": "mapa"
+ },
+ {
+  "id": "przeglad",
+  "w": "raz w roku",
+  "co": "Przeglądy i konserwacja urządzeń przeciwpożarowych i gaśnic - w terminach producenta, nie rzadziej niż raz w roku.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p3",
+   "u": "ust. 3"
+  },
+  "dowod": "nie rzadziej jednak niż raz w roku",
+  "g": "ppoz"
+ },
+ {
+  "id": "weze",
+  "w": "co 5 lat",
+  "co": "Próba ciśnieniowa węży hydrantów wewnętrznych.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p3",
+   "u": "ust. 4"
+  },
+  "dowod": "raz na 5 lat poddawane próbie ciśnieniowej",
+  "g": "ppoz"
+ },
+ {
+  "id": "hydr1h",
+  "w": "1 godzina",
+  "co": "Minimalny czas zasilania hydrantów wewnętrznych wodą.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p18",
+   "u": "ust. 4"
+  },
+  "dowod": "co najmniej przez 1 godzinę",
+  "g": "ppoz"
+ },
+ {
+  "id": "ibp2",
+  "w": "co 2 lata",
+  "co": "Aktualizacja instrukcji bezpieczeństwa pożarowego (i po zmianach w obiekcie).",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p6",
+   "u": "ust. 7"
+  },
+  "dowod": "co najmniej raz na 2 lata",
+  "g": "ppoz"
+ },
+ {
+  "id": "ewak2",
+  "w": "co 2 lata",
+  "co": "Próbna ewakuacja w obiekcie dla ponad 50 stałych użytkowników.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p17",
+   "u": "ust. 1"
+  },
+  "dowod": "co najmniej raz na 2 lata przeprowadzać praktyczne sprawdzenie",
+  "g": "ppoz"
+ },
+ {
+  "id": "ewak1",
+  "w": "raz w roku",
+  "co": "Próbna ewakuacja w szkołach, przedszkolach, internatach - najpóźniej 3 miesiące od przyjścia nowych użytkowników.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p17",
+   "u": "ust. 2"
+  },
+  "dowod": "co najmniej raz na rok",
+  "g": "ppoz"
+ },
+ {
+  "id": "psp7",
+  "w": "tydzień przed",
+  "co": "Powiadomienie komendanta powiatowego PSP o terminie próbnej ewakuacji.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p17",
+   "u": "ust. 4"
+  },
+  "dowod": "nie później niż na tydzień",
+  "g": "ppoz"
+ },
+ {
+  "id": "komin1",
+  "w": "co miesiąc",
+  "co": "Czyszczenie przewodów dymowych od palenisk gastronomii i zbiorowego żywienia.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p34",
+   "u": "ust. 1 pkt 1"
+  },
+  "dowod": "co najmniej raz w miesiącu",
+  "g": "ppoz"
+ },
+ {
+  "id": "komin3",
+  "w": "co 3 miesiące",
+  "co": "Czyszczenie przewodów od palenisk na paliwo stałe (poza gastronomią).",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p34",
+   "u": "ust. 1 pkt 2"
+  },
+  "dowod": "co najmniej raz na 3 miesiące",
+  "g": "ppoz"
+ },
+ {
+  "id": "komin6",
+  "w": "co 6 miesięcy",
+  "co": "Czyszczenie przewodów od palenisk na paliwo płynne i gazowe.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p34",
+   "u": "ust. 1 pkt 3"
+  },
+  "dowod": "co najmniej raz na 6 miesięcy",
+  "g": "ppoz"
+ },
+ {
+  "id": "wentyl",
+  "w": "raz w roku",
+  "co": "Czyszczenie przewodów wentylacyjnych w obiektach z paleniskami.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p34",
+   "u": "ust. 2"
+  },
+  "dowod": "co najmniej raz w roku",
+  "g": "ppoz"
+ },
+ {
+  "id": "szk3",
+  "w": "co 3 lata",
+  "co": "Szkolenie okresowe BHP pracowników na stanowiskach robotniczych (prace szczególnie niebezpieczne - co roku).",
+  "zr": {
+   "dok": "DU_2004_1860",
+   "j": "para_15",
+   "u": "§ 15 ust. 1"
+  },
+  "dowod": "nie rzadziej niż raz na 3 lata",
+  "g": "bhp"
+ },
+ {
+  "id": "szk6",
+  "w": "co 6 lat",
+  "co": "Szkolenie okresowe BHP pracowników administracyjno-biurowych (jeśli wymagane).",
+  "zr": {
+   "dok": "DU_2004_1860",
+   "j": "para_15",
+   "u": "§ 15 ust. 2"
+  },
+  "dowod": "raz na 6 lat",
+  "g": "bhp"
+ },
+ {
+  "id": "szk5",
+  "w": "co 5 lat",
+  "co": "Szkolenie okresowe BHP pracodawców, kierowników i pracowników inżynieryjno-technicznych.",
+  "zr": {
+   "dok": "DU_2004_1860",
+   "j": "para_15",
+   "u": "§ 15 ust. 2"
+  },
+  "dowod": "nie rzadziej niż raz na 5 lat",
+  "g": "bhp"
+ },
+ {
+  "id": "wyp14",
+  "w": "14 dni",
+  "co": "Termin na protokół powypadkowy od zawiadomienia o wypadku.",
+  "zr": {
+   "dok": "DU_2009_870",
+   "j": "p9",
+   "u": "§ 9 ust. 1"
+  },
+  "dowod": "nie później niż w terminie 14 dni",
+  "g": "bhp"
+ },
+ {
+  "id": "wyp5",
+  "w": "5 dni",
+  "co": "Termin na zatwierdzenie protokołu powypadkowego przez pracodawcę.",
+  "zr": {
+   "dok": "DU_2009_870",
+   "j": "p13",
+   "u": "§ 13 ust. 1"
+  },
+  "dowod": "nie później niż w terminie 5 dni",
+  "g": "bhp"
+ },
+ {
+  "id": "wyp10",
+  "w": "10 lat",
+  "co": "Przechowywanie protokołu i dokumentacji powypadkowej.",
+  "zr": {
+   "dok": "DU_1974_141",
+   "j": "a234",
+   "u": "art. 234 § 3¹"
+  },
+  "dowod": "przez 10 lat",
+  "g": "bhp"
+ }
+]
