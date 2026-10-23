@@ -275,11 +275,6 @@ function opisBledu(e) {
 
 // ── Lektor (mowa iPhone'a) ──
 
-function glosPolski() {
-  const glosy = speechSynthesis.getVoices().filter((v) => v.lang && v.lang.toLowerCase().startsWith("pl"));
-  return glosy.find((v) => /premium|enhanced|zosia|ewa/i.test(v.name)) || glosy[0] || null;
-}
-
 // iOS pozwala stronie mówić dopiero po dotknięciu ekranu. Cicha, krótka wypowiedź przy dotknięciu
 // "odblokowuje" lektora, żeby mógł potem sam przeczytać odpowiedź, która przychodzi kilka sekund później.
 // (Pusta wypowiedź nie wystarcza - iOS ją pomija.)
@@ -298,26 +293,30 @@ function czytajNaGlos(t) {
     pokazKomunikat("Ten telefon nie ma lektora w przeglądarce.");
     return;
   }
-  // Błąd iOS: wypowiedź dodana tuż po cancel() bywa gubiona - dlatego krótka pauza.
-  const bylo = speechSynthesis.speaking || speechSynthesis.pending;
-  if (bylo) {
-    speechSynthesis.cancel();
+  // Dźwięk jak z odtwarzacza - gra także przy włączonym wyciszeniu iPhone'a (Safari 17+).
+  if (navigator.audioSession) {
+    navigator.audioSession.type = "playback";
   }
-  setTimeout(() => mow(t), bylo ? PAUZA_PO_CANCEL_MS : 0);
+  // iPhone mówi tylko wtedy, gdy speak() pada od razu w dotknięciu - bez żadnego opóźnienia.
+  // Wyjątek: gdy coś już czyta, po cancel() potrzebna jest krótka pauza (inaczej iOS gubi wypowiedź).
+  if (speechSynthesis.speaking || speechSynthesis.pending) {
+    speechSynthesis.cancel();
+    setTimeout(() => mow(t), PAUZA_PO_CANCEL_MS);
+    return;
+  }
+  mow(t);
 }
 
 function mow(t) {
   const czysty = t.replace(/\[\d+\]/g, "").replace(/[*#_]/g, "");
   // Długie teksty iOS potrafi uciąć - czytamy zdanie po zdaniu.
   const zdania = czysty.match(new RegExp(`[^.!?]{1,${ZDANIE_LEKTORA}}[.!?]?`, "g")) || [czysty];
-  const glos = glosPolski();
+  // Głosu nie wybieramy na siłę (wybrany, a niepobrany głos iOS potrafi milczeć) - wystarczy język.
   // Trzymamy wypowiedzi w pamięci - inaczej Safari potrafi je usunąć w trakcie czytania.
   stan.wypowiedzi = zdania.map((z) => {
     const u = new SpeechSynthesisUtterance(z.trim());
     u.lang = "pl-PL";
-    if (glos) {
-      u.voice = glos;
-    }
+    u.onerror = (ev) => pokazKomunikat(`Lektor: błąd „${ev.error}”. Sprawdź wyciszenie i głośność.`);
     speechSynthesis.speak(u);
     return u;
   });
@@ -378,9 +377,12 @@ function sluchaj() {
       wyslijDoAsystenta();
     }
   };
-  r.onerror = () => {
+  r.onerror = (ev) => {
     mic.classList.remove("on");
-    pokazKomunikat("Mikrofon nie zadziałał - użyj 🎤 na klawiaturze iPhone'a.");
+    // Np. "not-allowed" (brak zgody) albo "service-not-allowed" (iPhone blokuje w aplikacji z ekranu początkowego).
+    stan.dyktowanie = true;
+    pole.focus();
+    pokazKomunikat(`Mikrofon w aplikacji nie zadziałał („${ev.error}”). Dotknij 🎤 na klawiaturze - pytanie wyśle się samo.`);
   };
   r.start();
 }
