@@ -179,6 +179,7 @@ function widokStart() {
       <div class="section-sub">${tekst("Przepisy, ściągi i nauka do egzaminu inspektora ochrony przeciwpożarowej. Każdy przepis z linkiem do oryginału.")}</div>
     </div>
     ${poleSzukania("")}
+    <div class="list-group"><a class="row" href="#/asystent">${kafel("🎙", "#5e35b1")}<span class="row-main"><span class="row-title">Asystent - zapytaj lub przepytaj mnie</span><span class="row-sub">${tekst("Objaśnienia z paragrafów, lektor i mikrofon")}</span></span><span class="row-chev">›</span></a></div>
     ${kartaAktualnosci()}
     ${nowe.length ? `<div class="section-label">Uwaga</div><a class="card alert" style="display:block" href="#/nowosci"><h3>${nowe.length} ${nowe.length === 1 ? "nowa zmiana" : "nowe zmiany"} w prawie</h3><p>${tekst("Sejm opublikował zmianę w akcie, który obserwujesz. Dotknij, żeby zobaczyć.")}</p></a>` : ""}
     <div class="section-label">Nauka</div>
@@ -306,6 +307,7 @@ const SYNONIMY = {
   komputer: ["komputer", "monitor"], monito: ["monitor", "komputer"], kask: ["kask", "helm"], okular: ["okular", "szkla kontaktowe"],
   butl: ["butl"], grill: ["grill", "butl"], komin: ["komin", "przewod"], wypadek: ["wypad"], ploty: ["plot", "granicy dzialki"],
   plot: ["plot", "ploc", "ogrodz", "granicy dzialki"], ploc: ["plot", "ploc", "ogrodz", "granicy dzialki"], sasiad: ["sasiad", "granicy dzialki"], ogrodz: ["ogrodz", "granicy dzialki", "plot"], drabin: ["drabin"],
+  probn: ["probn", "praktyczne sprawdzenie"], cwicze: ["cwicze", "praktyczne sprawdzenie"],
   pijan: ["nietrzezw", "alkohol"], alkohol: ["alkohol", "nietrzezw"], l4: ["zwolnien", "niezdolnosci do pracy"],
 };
 

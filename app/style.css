@@ -337,3 +337,28 @@ a.btn { text-decoration: none; }
   .dokument p, .dokument .zr { color: #000 !important; }
 }
 .uwaga-wzoru + .uwaga-wzoru { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border-2); }
+
+/* Asystent */
+.opis-trybu { font-size: 14px; color: var(--text-muted); line-height: 1.45; margin: 10px 20px 0; }
+#rozmowa { display: flex; flex-direction: column; gap: 10px; margin: 14px 16px 0; }
+.dymek { border-radius: 16px; padding: 12px 14px; font-size: 16px; line-height: 1.5; max-width: 92%; }
+.dymek.ja { align-self: flex-end; background: var(--accent); color: #fff; border-bottom-right-radius: 4px; }
+.dymek.ai { align-self: flex-start; background: var(--surface-2); color: var(--text); border-bottom-left-radius: 4px; }
+.dymek.ai.blad { background: var(--amber-bg); border: 1px solid var(--amber); }
+.dymek .links { margin-top: 10px; }
+.dymek .chip.red { margin-top: 10px; }
+.przypis { display: inline-block; font-size: 11px; font-weight: 700; min-width: 18px; text-align: center; background: var(--accent-bg); border-radius: 5px; padding: 0 4px; margin: 0 1px; vertical-align: 2px; }
+.pasek-asystenta { position: sticky; bottom: var(--tab-h); z-index: 10; background: var(--bg); padding: 10px 16px 8px; margin-top: 12px; border-top: 1px solid var(--border); }
+.pasek-asystenta .przerwij { margin-bottom: 8px; background: var(--amber); }
+.pasek-asystenta .przerwij[hidden] { display: none; }
+.wpis { display: flex; gap: 8px; align-items: flex-end; }
+.wpis textarea { flex: 1; font: inherit; font-size: 16px; color: var(--text); background: var(--surface-2); border: 1px solid var(--border); border-radius: 20px; padding: 10px 14px; resize: none; outline: none; min-height: 44px; max-height: 120px; }
+.okragly { width: 44px; height: 44px; border-radius: 22px; border: none; background: var(--surface-2); font-size: 20px; cursor: pointer; flex-shrink: 0; color: var(--text); }
+.okragly.wyslij { background: var(--accent); color: #fff; font-weight: 800; }
+.okragly.on { background: var(--accent); animation: puls 1s infinite; }
+.okragly:disabled, .btn:disabled { opacity: .4; }
+@keyframes puls { 50% { transform: scale(1.08); } }
+.koszt { font-size: 11px; color: var(--text-faint); text-align: center; margin-top: 4px; min-height: 13px; }
+.ustawienia summary { cursor: pointer; list-style: none; display: flex; gap: 8px; align-items: center; }
+.ustawienia[open] summary { margin-bottom: 10px; }
+.przelacznik { display: flex; gap: 8px; align-items: center; font-size: 14px; margin-top: 14px; color: var(--text-2); }
