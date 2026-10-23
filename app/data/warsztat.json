@@ -536,6 +536,658 @@
  ],
  "wzory": [
   {
+   "id": "praca",
+   "tytul": "Praca projektowa - analiza bezpieczeństwa pożarowego",
+   "ikona": "🎓",
+   "kolor": "#5e35b1",
+   "word": true,
+   "opis": "Kreator pracy zaliczeniowej na kurs inspektora ppoż (CS PSP): 34 punkty z wytycznych, przy każdym podpowiedź i podstawa prawna. Na końcu gotowy dokument do pobrania jako plik Word.",
+   "glowa": [
+    "Imię i nazwisko (jak na stronie tytułowej)",
+    "Rodzaj budynku (do tytułu, np. szkoły podstawowej)",
+    "Nazwa i adres obiektu",
+    "Termin szkolenia"
+   ],
+   "uwagi": [
+    {
+     "t": "Budynek musi spełniać kryteria opracowania instrukcji bezpieczeństwa pożarowego - IBP nie jest wymagana m.in. dla budynku do 1000 m³ bez strefy zagrożenia wybuchem. Wybierz większy obiekt.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p6",
+      "u": "ust. 8"
+     },
+     "dowod": "nie przekracza 1000 m3"
+    },
+    {
+     "t": "Termin: praca do 9.11.2026 na wlodarczyka@cspsp.pl. Plik: nazwisko_imię_data rozpoczęcia (np. musialik_tomasz_26.10.26), Times New Roman 10 pkt, interlinia 1,0, .doc/.docx/.pdf. Obowiązkowe 3 załączniki graficzne (bez nich praca nie jest oceniana) - spakuj wszystko w jeden .zip.",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p6",
+      "u": "ust. 1 pkt 8"
+     },
+     "dowod": "plany obiektów, obejmujące także ich usytuowanie"
+    },
+    {
+     "t": "Uwaga: wytyczne wymieniają rozporządzenie o uzgadnianiu projektów z 2021 r. (Dz.U. 2021 poz. 1722) - zostało zastąpione rozporządzeniem z 5.08.2023 (Dz.U. 2023 poz. 1563). W pracy podaj aktualne. WT 2002 są od 20.09.2026 uznane za uchylone i stosowane w okresie przejściowym - wytyczne każą się na nie powoływać.",
+     "zr": {
+      "dok": "DU_2023_1563",
+      "j": "para_1",
+      "u": "§ 1"
+     },
+     "dowod": "rodzaje obiektów budowlanych istotnych"
+    }
+   ],
+   "kroki": [
+    {
+     "id": "p1",
+     "nr": 1,
+     "tytul": "Ogólna charakterystyka budynku",
+     "pomoc": "Przeznaczenie i krótki opis prowadzonej działalności: co to za obiekt, kto go używa, w jakich godzinach, ile osób.",
+     "przyklad": "Szkoła podstawowa, 3 kondygnacje nadziemne, ok. 420 uczniów i 45 pracowników, zajęcia 7:30-16:00.",
+     "podstawa": "-",
+     "zr": null,
+     "dowod": ""
+    },
+    {
+     "id": "p2",
+     "nr": 2,
+     "tytul": "Kwalifikacja budynku ze względu na sposób użytkowania (ZL, PM, IN)",
+     "pomoc": "Wpisz, czy budynek (lub jego strefy) to ZL, PM czy IN.",
+     "przyklad": "",
+     "podstawa": "§ 209 ust. 1 rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_209",
+      "u": "§ 209 ust. 1 WT"
+     },
+     "dowod": "produkcyjne i magazynowe, określane dalej jako PM"
+    },
+    {
+     "id": "p3",
+     "nr": 3,
+     "tytul": "Kategoria zagrożenia ludzi i dane stref",
+     "pomoc": "Dla każdej strefy: kategoria ZL (I-V) lub PM/IN. Do tego: powierzchnia zabudowy, powierzchnia użytkowa, wysokość, kubatura, liczba kondygnacji, grupa wysokości (N do 12 m, SW 12-25 m, W 25-55 m, WW ponad 55 m).",
+     "przyklad": "Strefa 1: ZL II (przedszkole), pow. zabudowy 640 m², użytkowa 1150 m², wys. 8,4 m, kubatura 5200 m³, 2 kondygnacje, budynek niski (N).",
+     "podstawa": "§ 209 ust. 2 i § 8 rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225) + dane z dokumentacji budowlanej",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_8",
+      "u": "§ 8 WT"
+     },
+     "dowod": "niskie (N) - do 12 m włącznie"
+    },
+    {
+     "id": "p4",
+     "nr": 4,
+     "tytul": "Gęstość obciążenia ogniowego (tylko PM)",
+     "pomoc": "Jeśli są strefy PM - podaj obliczenia gęstości obciążenia ogniowego (MJ/m²) według Polskiej Normy. Dla budynku tylko ZL wpisz „nie dotyczy”.",
+     "przyklad": "",
+     "podstawa": "PN-B-02852:2001 (zasady ustalania - § 208 WT)",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_208",
+      "u": "§ 208 WT"
+     },
+     "dowod": "gęstości obciążenia ogniowego pomieszczeń i stref pożarowych"
+    },
+    {
+     "id": "p5",
+     "nr": 5,
+     "tytul": "Materiały niebezpieczne pożarowo",
+     "pomoc": "Czy występują? Jakie i gdzie (np. butle gazowe, farby, rozpuszczalniki, paliwo)?",
+     "przyklad": "",
+     "podstawa": "§ 2 ust. 1 pkt 1 rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 7 czerwca 2010 r. w sprawie ochrony przeciwpożarowej budynków, innych obiektów budowlanych i terenów (Dz.U. z 2023 r. poz. 822 ze zm.)",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p2",
+      "u": "ust. 1 pkt 1"
+     },
+     "dowod": "materiałach niebezpiecznych pożarowo"
+    },
+    {
+     "id": "p6",
+     "nr": 6,
+     "tytul": "Strefy zagrożenia wybuchem",
+     "pomoc": "TAK/NIE. Jeśli tak - gdzie i jakie strefy (0, 1, 2 dla gazów i par, 20, 21, 22 dla pyłów).",
+     "przyklad": "",
+     "podstawa": "§ 5 rozporządzenie Ministra Gospodarki z dnia 8 lipca 2010 r. w sprawie minimalnych wymagań, dotyczących bezpieczeństwa i higieny pracy, związanych z możliwością wystąpienia w miejscu pracy atmosfery wybuchowej (Dz.U. Nr 138, poz. 931) + dokumentacja techniczna",
+     "zr": {
+      "dok": "DU_2010_931",
+      "j": "p5",
+      "u": "§ 5"
+     },
+     "dowod": "Pracodawca dzieli przestrzenie zagrożone wybuchem na strefy"
+    },
+    {
+     "id": "p7",
+     "nr": 7,
+     "tytul": "Pomieszczenia zagrożone wybuchem",
+     "pomoc": "TAK/NIE. Jeśli tak - gdzie, jakie strefy i na jakiej podstawie to ustalono (ocena zagrożenia wybuchem).",
+     "przyklad": "",
+     "podstawa": "§ 37 rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 7 czerwca 2010 r. w sprawie ochrony przeciwpożarowej budynków, innych obiektów budowlanych i terenów (Dz.U. z 2023 r. poz. 822 ze zm.)",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p37",
+      "u": "ust. 1-2"
+     },
+     "dowod": "dokonuje się oceny zagrożenia wybuchem"
+    },
+    {
+     "id": "p8",
+     "nr": 8,
+     "tytul": "Wymagana klasa odporności pożarowej",
+     "pomoc": "Podaj klasę (A-E) dla tego obiektu lub stref. Nie kopiuj tabeli z rozporządzenia.",
+     "przyklad": "",
+     "podstawa": "§ 212 rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_212",
+      "u": "§ 212 WT"
+     },
+     "dowod": "pięć klas odporności pożarowej"
+    },
+    {
+     "id": "p9",
+     "nr": 9,
+     "tytul": "Z jakich materiałów są elementy budynku",
+     "pomoc": "Opisz: a) główna konstrukcja nośna, b) konstrukcja dachu, c) strop, d) ściana zewnętrzna, e) ściana wewnętrzna, f) przekrycie dachu.",
+     "przyklad": "a) żelbet monolityczny, b) drewniana więźba, c) strop Teriva, d) ceramika + styropian, e) cegła pełna, f) blachodachówka.",
+     "podstawa": "dokumentacja budowlana obiektu",
+     "zr": null,
+     "dowod": ""
+    },
+    {
+     "id": "p10",
+     "nr": 10,
+     "tytul": "Odporność ogniowa elementów - istniejąca i wymagana",
+     "pomoc": "Dla elementów a-f z pkt 9: klasa istniejąca (z dokumentacji) i wymagana (z tabeli dla Twojej klasy odporności pożarowej), np. R 60, REI 60, E 30.",
+     "przyklad": "",
+     "podstawa": "§ 216 ust. 1 rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_216",
+      "u": "§ 216 ust. 1 WT"
+     },
+     "dowod": "nośność ogniowa"
+    },
+    {
+     "id": "p11",
+     "nr": 11,
+     "tytul": "Liczba stref pożarowych i sposób ich wydzielenia",
+     "pomoc": "Na ile stref podzielono budynek i czym (ściany, stropy oddzielenia przeciwpożarowego).",
+     "przyklad": "",
+     "podstawa": "§ 226 rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_226",
+      "u": "§ 226 ust. 1 WT"
+     },
+     "dowod": "Strefę pożarową stanowi budynek albo jego część"
+    },
+    {
+     "id": "p12",
+     "nr": 12,
+     "tytul": "Klasa odporności ogniowej elementów oddzielenia stref",
+     "pomoc": "Tylko gdy jest więcej niż jedna strefa: wymagana klasa ścian i stropów oddzielenia oraz drzwi w nich.",
+     "przyklad": "",
+     "podstawa": "§ 232 rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_232",
+      "u": "§ 232 WT"
+     },
+     "dowod": "Ściany i stropy stanowiące elementy oddzielenia przeciwpożarowego"
+    },
+    {
+     "id": "p13",
+     "nr": 13,
+     "tytul": "Powierzchnia stref - istniejąca i dopuszczalna",
+     "pomoc": "Powierzchnia każdej strefy (wewnętrzna, z antresolami) i dopuszczalna wg tabeli (ZL - § 227, PM - § 228, IN - § 231), z ewentualnym powiększeniem za tryskacze i oddymianie.",
+     "przyklad": "",
+     "podstawa": "§ 227 / § 228 / § 231 rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_227",
+      "u": "§ 227 WT"
+     },
+     "dowod": "Dopuszczalne powierzchnie stref pożarowych ZL"
+    },
+    {
+     "id": "p14",
+     "nr": 14,
+     "tytul": "Przestrzenie wydzielone pożarowo",
+     "pomoc": "Czy są np. kotłownia, pompownia, serwerownia, magazyn? Jeśli tak - jakie.",
+     "przyklad": "",
+     "podstawa": "przepisy szczegółowe WT dla danego pomieszczenia (np. kotłownie) + dokumentacja budowlana",
+     "zr": null,
+     "dowod": ""
+    },
+    {
+     "id": "p15",
+     "nr": 15,
+     "tytul": "Klasa odporności ogniowej elementów wydzielenia",
+     "pomoc": "Dla pomieszczeń z pkt 14 - wymagana klasa ścian, stropów i drzwi wydzielających.",
+     "przyklad": "",
+     "podstawa": "przepisy szczegółowe WT dla danego pomieszczenia",
+     "zr": null,
+     "dowod": ""
+    },
+    {
+     "id": "p16",
+     "nr": 16,
+     "tytul": "Liczba osób - w budynku i na kondygnacjach",
+     "pomoc": "a) ile osób może przebywać w budynku, b) ile na każdej kondygnacji. Gdy nie wynika to z przeznaczenia - przyjmij wg powierzchni (§ 236 ust. 6).",
+     "przyklad": "",
+     "podstawa": "§ 236 ust. 6 rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_236",
+      "u": "§ 236 ust. 6 WT"
+     },
+     "dowod": "liczbę tę należy przyjmować w odniesieniu do powierzchni"
+    },
+    {
+     "id": "p17",
+     "nr": 17,
+     "tytul": "Wyjścia, klatki schodowe, obudowa i oddymianie",
+     "pomoc": "a) liczba wyjść z obiektu, b) liczba klatek schodowych, c) czy klatki są obudowane i oddymiane.",
+     "przyklad": "",
+     "podstawa": "dokumentacja budowlana obiektu + § 245 rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_245",
+      "u": "§ 245 WT"
+     },
+     "dowod": "obudowane i zamykane drzwiami dymoszczelnymi"
+    },
+    {
+     "id": "p18",
+     "nr": 18,
+     "tytul": "Długość przejść ewakuacyjnych",
+     "pomoc": "Rzeczywista (zmierz na planie od najdalszego miejsca do wyjścia z pomieszczenia) i dopuszczalna (ZL - 40 m, PM - 75/100 m, z możliwym powiększeniem).",
+     "przyklad": "",
+     "podstawa": "§ 237 ust. 1 rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_237",
+      "u": "§ 237 ust. 1 WT"
+     },
+     "dowod": "przejściem ewakuacyjnym"
+    },
+    {
+     "id": "p19",
+     "nr": 19,
+     "tytul": "Długość dojść ewakuacyjnych",
+     "pomoc": "Rzeczywista (od wyjścia z pomieszczenia do wyjścia na zewnątrz lub do innej strefy, wzdłuż osi drogi) i dopuszczalna.",
+     "przyklad": "",
+     "podstawa": "§ 256 rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_256",
+      "u": "§ 256 WT"
+     },
+     "dowod": "dojściem ewakuacyjnym"
+    },
+    {
+     "id": "p20",
+     "nr": 20,
+     "tytul": "Parametry klatki schodowej",
+     "pomoc": "Rzeczywiste i wymagane: a) szerokość biegu, b) szerokość spocznika, c) wysokość stopnia, d) szerokość stopnia (z warunku 2h + s).",
+     "przyklad": "",
+     "podstawa": "§ 68 rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_68",
+      "u": "§ 68 WT"
+     },
+     "dowod": "Graniczne wymiary schodów stałych"
+    },
+    {
+     "id": "p21",
+     "nr": 21,
+     "tytul": "Szerokości przejść i dojść ewakuacyjnych",
+     "pomoc": "Rzeczywiste i wymagane. Drogi poziome: min. 0,6 m na 100 osób, nie mniej niż 1,4 m (do 20 osób - 1,2 m).",
+     "przyklad": "",
+     "podstawa": "§ 242 rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_242",
+      "u": "§ 242 ust. 1 WT"
+     },
+     "dowod": "nie mniej niż 1,4 m"
+    },
+    {
+     "id": "p22",
+     "nr": 22,
+     "tytul": "Szerokości drzwi ewakuacyjnych",
+     "pomoc": "a) drzwi z pomieszczeń, b) na drogach ewakuacyjnych, c) wyjściowe z budynku - rzeczywiste i wymagane (min. 0,6 m na 100 osób, najmniej 0,9 m, do 3 osób 0,8 m).",
+     "przyklad": "",
+     "podstawa": "§ 239 rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_239",
+      "u": "§ 239 ust. 1 WT"
+     },
+     "dowod": "najmniejsza szerokość drzwi w świetle ościeżnicy powinna wynosić 0,9 m"
+    },
+    {
+     "id": "p23",
+     "nr": 23,
+     "tytul": "Stan sprawności osób w obiekcie",
+     "pomoc": "TAK/NIE - czy uwzględniono osoby z ograniczoną sprawnością (dzieci, chorzy, niepełnosprawni). Jeśli tak - jakie rozwiązania (np. pochylnie, strefy oczekiwania, ewakuacja pozioma).",
+     "przyklad": "",
+     "podstawa": "-",
+     "zr": null,
+     "dowod": ""
+    },
+    {
+     "id": "p24a",
+     "nr": "24a",
+     "tytul": "Urządzenia ppoż: system sygnalizacji pożarowej",
+     "pomoc": "Wymagany? TAK + krótki opis (np. firma, zasięg, rodzaj czujek, ROP) albo NIE.",
+     "przyklad": "",
+     "podstawa": "§ 28 rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 7 czerwca 2010 r. w sprawie ochrony przeciwpożarowej budynków, innych obiektów budowlanych i terenów (Dz.U. z 2023 r. poz. 822 ze zm.)",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p28",
+      "u": "ust. 1"
+     },
+     "dowod": "Stosowanie systemu sygnalizacji pożarowej"
+    },
+    {
+     "id": "p24b",
+     "nr": "24b",
+     "tytul": "Urządzenia ppoż: dźwiękowy system ostrzegawczy",
+     "pomoc": "Wymagany? TAK/NIE + opis.",
+     "przyklad": "",
+     "podstawa": "§ 29 rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 7 czerwca 2010 r. w sprawie ochrony przeciwpożarowej budynków, innych obiektów budowlanych i terenów (Dz.U. z 2023 r. poz. 822 ze zm.)",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p29",
+      "u": "ust. 1"
+     },
+     "dowod": "dźwiękowego systemu ostrzegawczego"
+    },
+    {
+     "id": "p24c",
+     "nr": "24c",
+     "tytul": "Urządzenia ppoż: oddymianie, kurtyny dymowe",
+     "pomoc": "Wymagane? TAK/NIE + opis (np. klapy dymowe w klatkach).",
+     "przyklad": "",
+     "podstawa": "§ 245 i § 270 rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_270",
+      "u": "§ 270 WT"
+     },
+     "dowod": "Instalacja wentylacji oddymiającej powinna"
+    },
+    {
+     "id": "p24d",
+     "nr": "24d",
+     "tytul": "Urządzenia ppoż: przeciwpożarowe klapy odcinające",
+     "pomoc": "Wymagane? Przy przejściu przewodów wentylacyjnych przez oddzielenia przeciwpożarowe.",
+     "przyklad": "",
+     "podstawa": "§ 268 ust. 4 rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_268",
+      "u": "§ 268 ust. 4 WT"
+     },
+     "dowod": "przeciwpożarowe klapy odcinające"
+    },
+    {
+     "id": "p24e",
+     "nr": "24e",
+     "tytul": "Urządzenia ppoż: stałe urządzenia gaśnicze",
+     "pomoc": "Wymagane? (tryskacze, gazowe itp.) TAK/NIE + opis.",
+     "przyklad": "",
+     "podstawa": "§ 27 rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 7 czerwca 2010 r. w sprawie ochrony przeciwpożarowej budynków, innych obiektów budowlanych i terenów (Dz.U. z 2023 r. poz. 822 ze zm.)",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p27",
+      "u": "ust. 1"
+     },
+     "dowod": "stałych urządzeń gaśniczych"
+    },
+    {
+     "id": "p24f",
+     "nr": "24f",
+     "tytul": "Urządzenia ppoż: hydranty wewnętrzne i zawory",
+     "pomoc": "Wymagane? Jakie (25, 33, 52) i gdzie.",
+     "przyklad": "",
+     "podstawa": "§ 19 rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 7 czerwca 2010 r. w sprawie ochrony przeciwpożarowej budynków, innych obiektów budowlanych i terenów (Dz.U. z 2023 r. poz. 822 ze zm.)",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p19",
+      "u": "ust. 1"
+     },
+     "dowod": "Hydranty 25 muszą być stosowane"
+    },
+    {
+     "id": "p24g",
+     "nr": "24g",
+     "tytul": "Urządzenia ppoż: hydranty zewnętrzne (woda do gaszenia)",
+     "pomoc": "Wymagane? TAK/NIE.",
+     "przyklad": "",
+     "podstawa": "§ 3 rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 24 lipca 2009 r. w sprawie przeciwpożarowego zaopatrzenia w wodę oraz dróg pożarowych (Dz.U. Nr 124, poz. 1030)",
+     "zr": {
+      "a": "rozp-woda-drogi",
+      "j": "p3",
+      "u": "§ 3"
+     },
+     "dowod": "zewnętrznego gaszenia pożaru jest wymagane"
+    },
+    {
+     "id": "p24h",
+     "nr": "24h",
+     "tytul": "Urządzenia ppoż: oświetlenie ewakuacyjne",
+     "pomoc": "Wymagane? TAK/NIE + opis.",
+     "przyklad": "",
+     "podstawa": "§ 181 rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_181",
+      "u": "§ 181 WT"
+     },
+     "dowod": "samoczynnie załączające się oświetlenie awaryjne"
+    },
+    {
+     "id": "p24i",
+     "nr": "24i",
+     "tytul": "Urządzenia ppoż: przeciwpożarowy wyłącznik prądu",
+     "pomoc": "Wymagany? Gdzie jest i co wyłącza.",
+     "przyklad": "",
+     "podstawa": "§ 4 ust. 2 pkt 2 rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 7 czerwca 2010 r. w sprawie ochrony przeciwpożarowej budynków, innych obiektów budowlanych i terenów (Dz.U. z 2023 r. poz. 822 ze zm.) (wymóg wg przepisów techniczno-budowlanych)",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 2 pkt 2"
+     },
+     "dowod": "przeciwpożarowe wyłączniki prądu"
+    },
+    {
+     "id": "p24j",
+     "nr": "24j",
+     "tytul": "Urządzenia ppoż: drzwi i bramy przeciwpożarowe",
+     "pomoc": "Wymagane? Gdzie, jaka klasa (np. EI 30).",
+     "przyklad": "",
+     "podstawa": "§ 232 ust. 1 rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_232",
+      "u": "§ 232 ust. 1 WT"
+     },
+     "dowod": "drzwi przeciwpożarowych"
+    },
+    {
+     "id": "p24k",
+     "nr": "24k",
+     "tytul": "Urządzenia ppoż: dźwigi dla ekip ratowniczych",
+     "pomoc": "Wymagane? (budynki ZL z kondygnacją powyżej 25 m).",
+     "przyklad": "",
+     "podstawa": "§ 253 rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_253",
+      "u": "§ 253 ust. 1 WT"
+     },
+     "dowod": "przystosowany do potrzeb ekip ratowniczych"
+    },
+    {
+     "id": "p25",
+     "nr": 25,
+     "tytul": "Ilość środka gaśniczego w gaśnicach",
+     "pomoc": "Rzeczywista i wymagana: 2 kg (3 dm³) środka na każde 100 m² (ZL I, II, III, V; PM ponad 500 MJ/m²) albo 300 m² (pozostałe).",
+     "przyklad": "",
+     "podstawa": "§ 32 ust. 3 rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 7 czerwca 2010 r. w sprawie ochrony przeciwpożarowej budynków, innych obiektów budowlanych i terenów (Dz.U. z 2023 r. poz. 822 ze zm.)",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p32",
+      "u": "ust. 3"
+     },
+     "dowod": "na każde 100 m2"
+    },
+    {
+     "id": "p26",
+     "nr": 26,
+     "tytul": "Typy, rodzaje i liczba gaśnic, inny sprzęt",
+     "pomoc": "Np. 8 × GP-6x ABC, 2 × GS-5x (CO₂) przy rozdzielni, koc gaśniczy w kuchni. Dobór do grup pożarów A, B, C, D, F.",
+     "przyklad": "",
+     "podstawa": "§ 32 ust. 2 rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 7 czerwca 2010 r. w sprawie ochrony przeciwpożarowej budynków, innych obiektów budowlanych i terenów (Dz.U. z 2023 r. poz. 822 ze zm.)",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p32",
+      "u": "ust. 2"
+     },
+     "dowod": "Rodzaj gaśnic powinien być dostosowany"
+    },
+    {
+     "id": "p27",
+     "nr": 27,
+     "tytul": "Odległości od budynków sąsiednich (i lasu)",
+     "pomoc": "Rzeczywiste odległości i minimalne wg przepisów.",
+     "przyklad": "",
+     "podstawa": "§ 271 rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)",
+     "zr": {
+      "dok": "DU_2002_690",
+      "j": "para_271",
+      "u": "§ 271 ust. 1 WT"
+     },
+     "dowod": "Odległość między zewnętrznymi ścianami budynków"
+    },
+    {
+     "id": "p28",
+     "nr": 28,
+     "tytul": "Czy budynek wymaga drogi pożarowej",
+     "pomoc": "TAK/NIE + uzasadnienie (który punkt § 12 ust. 1) i parametry, jeśli jest.",
+     "przyklad": "",
+     "podstawa": "§ 12 rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 24 lipca 2009 r. w sprawie przeciwpożarowego zaopatrzenia w wodę oraz dróg pożarowych (Dz.U. Nr 124, poz. 1030)",
+     "zr": {
+      "a": "rozp-woda-drogi",
+      "j": "p12",
+      "u": "§ 12 ust. 1"
+     },
+     "dowod": "Drogę pożarową o utwardzonej nawierzchni"
+    },
+    {
+     "id": "p29",
+     "nr": 29,
+     "tytul": "Woda do zewnętrznego gaszenia - czy wymagana i ile",
+     "pomoc": "TAK/NIE; jeśli tak - ilość w dm³/s z tabel w załączniku (wg kubatury, strefy, kategorii).",
+     "przyklad": "",
+     "podstawa": "§ 3-6 rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 24 lipca 2009 r. w sprawie przeciwpożarowego zaopatrzenia w wodę oraz dróg pożarowych (Dz.U. Nr 124, poz. 1030)",
+     "zr": {
+      "a": "rozp-woda-drogi",
+      "j": "p3",
+      "u": "§ 3"
+     },
+     "dowod": "zewnętrznego gaszenia pożaru jest wymagane dla"
+    },
+    {
+     "id": "p30",
+     "nr": 30,
+     "tytul": "Źródła wody, hydranty zewnętrzne, stanowiska czerpania",
+     "pomoc": "Opisz, gdzie są hydranty (DN 80/100), zbiorniki i dojazdy dla wozów.",
+     "przyklad": "",
+     "podstawa": "§ 10 rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 24 lipca 2009 r. w sprawie przeciwpożarowego zaopatrzenia w wodę oraz dróg pożarowych (Dz.U. Nr 124, poz. 1030)",
+     "zr": {
+      "a": "rozp-woda-drogi",
+      "j": "p10",
+      "u": "§ 10"
+     },
+     "dowod": "hydranty zewnętrzne nadziemne o średnicy nominalnej DN 80"
+    },
+    {
+     "id": "p31",
+     "nr": 31,
+     "tytul": "Odległości źródeł wody",
+     "pomoc": "Rzeczywiste i minimalne: najbliższy hydrant od obiektu do 75 m, kolejne do 150 m, od ściany co najmniej 5 m, od krawędzi jezdni do 15 m.",
+     "przyklad": "",
+     "podstawa": "§ 10 ust. 6 rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 24 lipca 2009 r. w sprawie przeciwpożarowego zaopatrzenia w wodę oraz dróg pożarowych (Dz.U. Nr 124, poz. 1030)",
+     "zr": {
+      "a": "rozp-woda-drogi",
+      "j": "p10",
+      "u": "§ 10 ust. 6"
+     },
+     "dowod": "najbliższego hydrantu od chronionego obiektu budowlanego"
+    },
+    {
+     "id": "p32",
+     "nr": 32,
+     "tytul": "Zabezpieczenie instalacji użytkowych",
+     "pomoc": "Wentylacyjna, grzewcza, gazowa, elektryczna, teletechniczna, odgromowa - jak zabezpieczone i czy spełniają przepisy (przeglądy, pomiary).",
+     "przyklad": "",
+     "podstawa": "§ 4 ust. 1 pkt 2 rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 7 czerwca 2010 r. w sprawie ochrony przeciwpożarowej budynków, innych obiektów budowlanych i terenów (Dz.U. z 2023 r. poz. 822 ze zm.) + przepisy techniczno-budowlane i normy",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p4",
+      "u": "ust. 1 pkt 2"
+     },
+     "dowod": "niepoddawanych okresowym kontrolom"
+    },
+    {
+     "id": "p33",
+     "nr": 33,
+     "tytul": "Informacja o warunkach i strategii ewakuacji",
+     "pomoc": "Czy w budynku są procedury ewakuacji, instrukcja postępowania na wypadek pożaru, plany ewakuacji, wyznaczone osoby.",
+     "przyklad": "",
+     "podstawa": "§ 6 ust. 1 pkt 5 rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 7 czerwca 2010 r. w sprawie ochrony przeciwpożarowej budynków, innych obiektów budowlanych i terenów (Dz.U. z 2023 r. poz. 822 ze zm.)",
+     "zr": {
+      "a": "rozp-ochrona-budynkow",
+      "j": "p6",
+      "u": "ust. 1 pkt 5"
+     },
+     "dowod": "warunki i organizację ewakuacji ludzi"
+    },
+    {
+     "id": "p34",
+     "nr": 34,
+     "tytul": "Czy projekt wymaga uzgodnienia z rzeczoznawcą ds. zabezpieczeń ppoż",
+     "pomoc": "TAK/NIE + uzasadnienie: sprawdź, czy obiekt jest na liście obiektów istotnych w § 3 rozporządzenia z 2023 r. (np. wg kategorii ZL, kubatury, wysokości).",
+     "przyklad": "",
+     "podstawa": "art. 6b ustawa z dnia 24 sierpnia 1991 r. o ochronie przeciwpożarowej (Dz.U. z 2025 r. poz. 188 ze zm.); rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 5 sierpnia 2023 r. w sprawie uzgadniania projektu zagospodarowania działki lub terenu, projektu architektoniczno-budowlanego, projektu technicznego oraz projektu urządzenia przeciwpożarowego pod względem zgodności z wymaganiami ochrony przeciwpożarowej (Dz.U. z 2023 r. poz. 1563)",
+     "zr": {
+      "a": "ustawa-ppoz",
+      "j": "a6b",
+      "u": "art. 6b"
+     },
+     "dowod": "wymagają uzgodnienia z rzeczoznawcą"
+    }
+   ],
+   "zalaczniki": [
+    "Załącznik 1 - karta charakterystyki substancji niebezpiecznej występującej w zakładzie w największej ilości (tylko budynki PM).",
+    "Załącznik 2 - plan usytuowania budynku: wymiary, odległości od sąsiednich obiektów, strefy pożarowe, ściany oddzielenia, hydranty zewnętrzne (lub inne źródła wody), miejsce zbiórki, drogi dojazdowe i pożarowe, przeciwpożarowy wyłącznik prądu.",
+    "Załącznik 3 - plan ewakuacji z budynku i każdej kondygnacji: kierunki ewakuacji, znaki ewakuacyjne, gaśnice, urządzenia ppoż, przeciwpożarowy wyłącznik prądu, ściany oddzielenia, przestrzenie wydzielone."
+   ],
+   "podstawy": [
+    "rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)",
+    "rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 5 sierpnia 2023 r. w sprawie uzgadniania projektu zagospodarowania działki lub terenu, projektu architektoniczno-budowlanego, projektu technicznego oraz projektu urządzenia przeciwpożarowego pod względem zgodności z wymaganiami ochrony przeciwpożarowej (Dz.U. z 2023 r. poz. 1563)",
+    "rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 7 czerwca 2010 r. w sprawie ochrony przeciwpożarowej budynków, innych obiektów budowlanych i terenów (Dz.U. z 2023 r. poz. 822 ze zm.)",
+    "rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 24 lipca 2009 r. w sprawie przeciwpożarowego zaopatrzenia w wodę oraz dróg pożarowych (Dz.U. Nr 124, poz. 1030)"
+   ]
+  },
+  {
    "id": "ibp",
    "tytul": "Instrukcja bezpieczeństwa pożarowego",
    "ikona": "🔥",

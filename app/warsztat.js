@@ -342,10 +342,11 @@ async function widokWzoru(wzorId, id, zostanNaMiejscu) {
   stan.dokumentId = id;
   const przewiniecie = window.scrollY;
   const kroki = (x.kroki || []).map((k, i) => `<div class="card">
-      <h3>${i + 1}. ${tekst(k.tytul)}</h3>
+      <h3>${k.nr ? `Pkt ${k.nr}` : i + 1}. ${tekst(k.tytul)}</h3>
       <p class="pomoc">${tekst(k.pomoc)}</p>
       ${k.przyklad ? `<p class="pomoc"><i>Przykład: ${tekst(k.przyklad)}</i></p>` : ""}
-      <div class="links">${zrodloCiekawostki(k.zr)}</div>
+      ${k.podstawa ? `<p class="pomoc"><b>Podstawa prawna:</b> ${tekst(k.podstawa)}</p>` : ""}
+      ${k.zr ? `<div class="links">${zrodloCiekawostki(k.zr)}</div>` : ""}
       <textarea class="notatka" oninput="zmienDokument((d)=>d.pola['${k.id}']=this.value)">${esc(d.pola[k.id] || "")}</textarea>
     </div>`).join("");
   const zagrozenia = x.zagrozenia ? `
@@ -377,9 +378,22 @@ function blokiDokumentu(x, d) {
   const bloki = [["h1", x.tytul]];
   x.glowa.forEach((g) => bloki.push(["p", `${g}: ${d.glowa[g] || "-"}`]));
   (x.kroki || []).forEach((k, i) => {
+    // Praca projektowa ma gotowe brzmienie podstawy (pełny tytuł aktu i Dz.U.), pozostałe wzory - z paragrafu.
+    if (k.podstawa) {
+      bloki.push(["h2", `${k.nr}. ${k.tytul}`], ["p", d.pola[k.id] || "(do uzupełnienia)"], ["zr", `Podstawa prawna: ${k.podstawa}`]);
+      return;
+    }
     const pod = podstawa(k.zr);
     bloki.push(["h2", `${i + 1}. ${k.tytul}`], ["p", d.pola[k.id] || "(do uzupełnienia)"], ["zr", `Podstawa: ${pod.etykieta}`, pod.isap]);
   });
+  if (x.zalaczniki) {
+    bloki.push(["h2", "Załączniki graficzne (obowiązkowe)"]);
+    x.zalaczniki.forEach((z) => bloki.push(["li", z]));
+  }
+  if (x.podstawy) {
+    bloki.push(["h2", "Podstawy prawne"]);
+    x.podstawy.forEach((pp, i) => bloki.push(["p", `${i + 1}. ${pp}`]));
+  }
   if (x.zagrozenia) {
     bloki.push(["h2", "Zidentyfikowane zagrożenia"]);
     d.wiersze.forEach((r, i) => {
@@ -406,12 +420,55 @@ async function widokGotowego(wzorId, id) {
   }
   ustawNaglowek("Gotowy dokument", `#/wzor/${wzorId}/${id}`);
   ustawZakladke("start");
-  stan.gotowy = { tytul: x.tytul, bloki: blokiDokumentu(x, d) };
-  widok.innerHTML = `${przyciskiEksportu("eksportDokumentu")}
+  stan.gotowy = { tytul: x.tytul, bloki: blokiDokumentu(x, d), x, d };
+  widok.innerHTML = `${x.word ? `<div class="btn-row no-print"><button class="btn" onclick="pobierzWord()">📄 Pobierz plik Word (.doc)</button></div>` : ""}
+    ${przyciskiEksportu("eksportDokumentu")}
     <div class="card dokument">${blokiNaHtml(stan.gotowy.bloki)}</div>
     <div class="foot no-print">${tekst("Szkic do dopracowania - przeczytaj całość przed podpisaniem lub wysłaniem.")}</div>`;
 }
 
 function eksportDokumentu(jak) {
   eksportuj(stan.gotowy.tytul, blokiNaTekst(stan.gotowy.bloki), jak);
+}
+
+// ── Praca projektowa jako plik Word ──
+// Word otwiera HTML zapisany jako .doc - tak powstaje plik w formacie z wytycznych:
+// strona tytułowa, tabela (Pkt | Wymagania | Analiza | Podstawa prawna), Times New Roman 10 pkt, interlinia 1,0.
+const SPRAWDZAJACY = "kpt. Ariel Włodarczyk";
+
+function nazwaPlikuPracy(d, x) {
+  const [imie = "imie", ...reszta] = (d.glowa[x.glowa[0]] || "").trim().split(/\s+/).filter(Boolean);
+  const nazwisko = reszta.length ? reszta[reszta.length - 1] : "nazwisko";
+  const termin = (d.glowa[x.glowa[3]] || "").match(/(\d{1,2})\.(\d{1,2})(?:\.\d{2}(\d{2}))?/);
+  const data = termin ? `${termin[1].padStart(2, "0")}.${termin[2].padStart(2, "0")}.${termin[3] || String(new Date().getFullYear()).slice(2)}` : "";
+  return `${bezOgonkow(nazwisko)}_${bezOgonkow(imie)}${data ? "_" + data : ""}.doc`;
+}
+
+function pobierzWord() {
+  const { x, d } = stan.gotowy;
+  const g = (i) => esc(d.glowa[x.glowa[i]] || "…");
+  const wiersze = x.kroki.map((k) => `<tr><td>${esc(k.nr)}</td><td>${esc(k.tytul)}</td><td>${esc(d.pola[k.id] || "").replace(/\n/g, "<br>")}</td><td>${esc(k.podstawa)}</td></tr>`).join("");
+  const html = `<html><head><meta charset="utf-8"><style>
+    body { font-family: "Times New Roman", serif; font-size: 10pt; line-height: 1.0; }
+    td, th { font-family: "Times New Roman", serif; font-size: 10pt; border: 1px solid #000; padding: 3pt; vertical-align: top; }
+    table { border-collapse: collapse; width: 100%; } th { background: #d9d9d9; }
+    .tytul { text-align: center; } h1 { font-size: 16pt; } h2 { font-size: 12pt; }
+  </style></head><body>
+    <div class="tytul"><p style="font-size:14pt">Centralna Szkoła Państwowej Straży Pożarnej<br>Szkolenie inspektorów ochrony przeciwpożarowej</p>
+    <p>Termin szkolenia: ${g(3)}</p><br><br><p style="font-size:12pt"><b>${g(0)}</b></p><br><br>
+    <h1>ANALIZA BEZPIECZEŃSTWA POŻAROWEGO BUDYNKU ${g(1).toUpperCase()}</h1><p>${g(2)}</p><br><br>
+    <p style="text-align:right">Sprawdzający:<br><b>${SPRAWDZAJACY}</b></p><br><br><p>Częstochowa ${new Date().getFullYear()} r.</p></div>
+    <br style="page-break-before:always">
+    <h2 style="text-align:center">ANALIZA ZAGROŻENIA POŻAROWEGO</h2>
+    <table><tr><th>Pkt</th><th>Wymagania</th><th>Analiza, opis, parametr, komentarz</th><th>Podstawa prawna</th></tr>${wiersze}</table>
+    <h2>Załączniki</h2>${x.zalaczniki.map((z) => `<p>• ${esc(z)}</p>`).join("")}
+    <h2>Podstawy prawne</h2>${x.podstawy.map((p, i) => `<p>${i + 1}. ${esc(p)}</p>`).join("")}
+  </body></html>`;
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob(["﻿" + html], { type: "application/msword" }));
+  a.download = nazwaPlikuPracy(d, x);
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  pokazKomunikat(`Zapisano ${a.download}. Otwórz w Wordzie lub Pages i dopracuj.`);
 }

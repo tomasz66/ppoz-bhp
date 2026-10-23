@@ -752,6 +752,532 @@
   ]
  },
  {
+  "id": "klasa-odpornosci",
+  "nazwa": "Klasa odporności pożarowej budynku (A-E)",
+  "d": "ppoz",
+  "def": "Pięć klas odporności pożarowej budynków lub ich części: A (najwyższa), B, C, D, E (najniższa). Klasa wynika z kategorii ZL lub gęstości obciążenia ogniowego PM i wysokości budynku, a z niej - wymagana odporność ogniowa elementów.",
+  "zr": {
+   "dok": "DU_2002_690",
+   "j": "para_212",
+   "u": "§ 212 ust. 1 WT"
+  },
+  "dowod": "pięć klas odporności pożarowej",
+  "przyklad": "Szkoła (ZL III), budynek niski - zwykle klasa „C”; wysoki biurowiec - „B”; duża hala PM o dużym obciążeniu ogniowym - „A” albo „B”.",
+  "blad": "Mylenie klasy odporności POŻAROWEJ budynku (litera A-E) z klasą odporności OGNIOWEJ elementu (np. REI 60).",
+  "klient": "To „poziom wytrzymałości” całego budynku na pożar. Od niego zależy, ile minut muszą wytrzymać ściany, stropy i konstrukcja.",
+  "powiazane": [
+   "odpornosc-ogniowa",
+   "zl",
+   "grupy-wysokosci",
+   "goo"
+  ],
+  "dopytania": [
+   {
+    "q": "Jak oznacza się klasy i która jest najwyższa?",
+    "a": "Literami A, B, C, D, E - w kolejności od najwyższej do najniższej.",
+    "zr": {
+     "dok": "DU_2002_690",
+     "j": "para_212",
+     "u": "§ 212 ust. 1 WT"
+    },
+    "dowod": "podanych w kolejności od najwyższej do najniższej"
+   }
+  ]
+ },
+ {
+  "id": "odpornosc-ogniowa",
+  "nazwa": "Odporność ogniowa elementów (R, E, I)",
+  "d": "ppoz",
+  "def": "Czas w minutach, przez jaki element budynku zachowuje swoje funkcje w pożarze: R - nośność, E - szczelność, I - izolacyjność. Np. REI 60 = 60 minut nośności, szczelności i izolacyjności.",
+  "zr": {
+   "dok": "DU_2002_690",
+   "j": "para_216",
+   "u": "§ 216 ust. 1 WT"
+  },
+  "dowod": "R - nośność ogniowa (w minutach)",
+  "przyklad": "Strop żelbetowy REI 60, drzwi przeciwpożarowe EI 30, słup stalowy zabezpieczony farbą pęczniejącą R 60.",
+  "blad": "Wymiana drzwi EI 30 na zwykłe przy remoncie albo stalowa konstrukcja bez zabezpieczenia ogniochronnego.",
+  "klient": "Ile minut ściana, strop czy drzwi wytrzymają ogień, zanim przepuszczą płomienie, ciepło albo się zawalą.",
+  "powiazane": [
+   "klasa-odpornosci",
+   "oddzielenie",
+   "strefa-pozarowa"
+  ],
+  "dopytania": [
+   {
+    "q": "Co oznacza litera E?",
+    "a": "Szczelność ogniową - jak długo element nie przepuszcza płomieni i gorących gazów.",
+    "zr": {
+     "dok": "DU_2002_690",
+     "j": "para_216",
+     "u": "§ 216 WT"
+    },
+    "dowod": "E - szczelność ogniowa (w minutach)"
+   },
+   {
+    "q": "A litera I?",
+    "a": "Izolacyjność ogniową - jak długo strona nienagrzewana nie przekracza dopuszczalnej temperatury.",
+    "zr": {
+     "dok": "DU_2002_690",
+     "j": "para_216",
+     "u": "§ 216 WT"
+    },
+    "dowod": "I - izolacyjność ogniowa (w minutach)"
+   }
+  ]
+ },
+ {
+  "id": "grupy-wysokosci",
+  "nazwa": "Grupy wysokości budynków (N, SW, W, WW)",
+  "d": "ppoz",
+  "def": "Niskie (N) - do 12 m (mieszkalne do 4 kondygnacji), średniowysokie (SW) - ponad 12 do 25 m, wysokie (W) - ponad 25 do 55 m, wysokościowe (WW) - ponad 55 m.",
+  "zr": {
+   "dok": "DU_2002_690",
+   "j": "para_8",
+   "u": "§ 8 WT"
+  },
+  "dowod": "niskie (N) - do 12 m włącznie",
+  "przyklad": "Przedszkole parterowe - N; blok 8-piętrowy - SW lub W; wieżowiec biurowy 80 m - WW.",
+  "blad": "Liczenie wysokości od dachu zamiast według zasad WT albo zapominanie, że dla mieszkalnych liczy się też liczba kondygnacji.",
+  "klient": "Im wyższy budynek, tym trudniej ewakuować ludzi i gasić z zewnątrz - stąd ostrzejsze wymagania.",
+  "powiazane": [
+   "klasa-odpornosci",
+   "zl",
+   "droga-pozarowa"
+  ],
+  "dopytania": [
+   {
+    "q": "Od ilu metrów budynek jest średniowysoki?",
+    "a": "Ponad 12 m do 25 m nad terenem (mieszkalne: ponad 4 do 9 kondygnacji).",
+    "zr": {
+     "dok": "DU_2002_690",
+     "j": "para_8",
+     "u": "§ 8 WT"
+    },
+    "dowod": "średniowysokie (SW) - ponad 12 m do 25 m"
+   },
+   {
+    "q": "A wysoki?",
+    "a": "Ponad 25 m do 55 m (mieszkalne ponad 9 do 18 kondygnacji).",
+    "zr": {
+     "dok": "DU_2002_690",
+     "j": "para_8",
+     "u": "§ 8 WT"
+    },
+    "dowod": "wysokie (W) - ponad 25 m do 55 m"
+   }
+  ]
+ },
+ {
+  "id": "oddzielenie",
+  "nazwa": "Oddzielenie przeciwpożarowe",
+  "d": "ppoz",
+  "def": "Ściany i stropy z materiałów niepalnych, które dzielą budynek na strefy pożarowe. Otwory w nich zamyka się drzwiami lub innymi zamknięciami przeciwpożarowymi albo obudowuje przedsionkami.",
+  "zr": {
+   "dok": "DU_2002_690",
+   "j": "para_232",
+   "u": "§ 232 ust. 1 WT"
+  },
+  "dowod": "powinny być wykonane z materiałów niepalnych",
+  "przyklad": "Ściana REI 120 między halą magazynową a biurowcem, z bramą przeciwpożarową EI 120.",
+  "blad": "Przebicia instalacyjne bez uszczelnień ogniochronnych, zaklinowane drzwi, dodatkowe otwory wycięte w ścianie.",
+  "klient": "To mur, który zatrzymuje ogień po jednej stronie. Każda dziura w nim to furtka dla pożaru.",
+  "powiazane": [
+   "strefa-pozarowa",
+   "odpornosc-ogniowa",
+   "urzadzenia-ppoz"
+  ],
+  "dopytania": [
+   {
+    "q": "Ile otworów może być w ścianie oddzielenia?",
+    "a": "Łączna powierzchnia otworów nie powinna przekraczać 15% powierzchni ściany.",
+    "zr": {
+     "dok": "DU_2002_690",
+     "j": "para_232",
+     "u": "§ 232 ust. 2 WT"
+    },
+    "dowod": "nie powinna przekraczać 15% powierzchni ściany"
+   }
+  ]
+ },
+ {
+  "id": "dojscie-ewakuacyjne",
+  "nazwa": "Dojście ewakuacyjne",
+  "d": "ppoz",
+  "def": "Droga ewakuacyjna od wyjścia z pomieszczenia do wyjścia do innej strefy pożarowej albo na zewnątrz budynku. Jej długość mierzy się wzdłuż osi drogi.",
+  "zr": {
+   "dok": "DU_2002_690",
+   "j": "para_256",
+   "u": "§ 256 ust. 1 WT"
+  },
+  "dowod": "dojściem ewakuacyjnym",
+  "przyklad": "Korytarz szkolny od drzwi klasy do klatki schodowej obudowanej albo do wyjścia na zewnątrz.",
+  "blad": "Mylenie dojścia (korytarz) z przejściem (wewnątrz pomieszczenia) przy liczeniu długości.",
+  "klient": "Przejście to droga w pokoju do drzwi, dojście - korytarzem do bezpiecznego miejsca. Obie mają limity długości.",
+  "powiazane": [
+   "ewakuacja",
+   "drzwi-ewakuacyjne",
+   "strefa-pozarowa"
+  ],
+  "dopytania": [
+   {
+    "q": "Jak mierzy się długość dojścia?",
+    "a": "Wzdłuż osi drogi ewakuacyjnej; przy przedsionku przeciwpożarowym - do jego pierwszych drzwi.",
+    "zr": {
+     "dok": "DU_2002_690",
+     "j": "para_256",
+     "u": "§ 256 ust. 1 WT"
+    },
+    "dowod": "mierzy się wzdłuż osi drogi ewakuacyjnej"
+   }
+  ]
+ },
+ {
+  "id": "drzwi-ewakuacyjne",
+  "nazwa": "Szerokość wyjść i dróg ewakuacyjnych",
+  "d": "ppoz",
+  "def": "Szerokość drzwi ewakuacyjnych liczy się według liczby osób: co najmniej 0,6 m na 100 osób, ale nie mniej niż 0,9 m w świetle (do 3 osób - 0,8 m). Poziome drogi ewakuacyjne - 0,6 m na 100 osób, nie mniej niż 1,4 m.",
+  "zr": {
+   "dok": "DU_2002_690",
+   "j": "para_239",
+   "u": "§ 239 ust. 1 WT"
+  },
+  "dowod": "0,6 m szerokości na 100 osób",
+  "przyklad": "Sala na 250 osób: drzwi łącznie co najmniej 1,5 m (250 × 0,6 m / 100), każde skrzydło min. 0,9 m.",
+  "blad": "Zwężanie korytarza szafkami lub automatami poniżej 1,4 m.",
+  "klient": "Drzwi i korytarze muszą być na tyle szerokie, żeby wszyscy zdążyli wyjść bez korka.",
+  "powiazane": [
+   "ewakuacja",
+   "dojscie-ewakuacyjne"
+  ],
+  "dopytania": [
+   {
+    "q": "Jaka minimalna szerokość korytarza ewakuacyjnego?",
+    "a": "1,4 m (do 20 osób - 1,2 m).",
+    "zr": {
+     "dok": "DU_2002_690",
+     "j": "para_242",
+     "u": "§ 242 ust. 1 WT"
+    },
+    "dowod": "nie mniej niż 1,4 m"
+   },
+   {
+    "q": "Najwęższe dopuszczalne drzwi ewakuacyjne?",
+    "a": "0,9 m w świetle ościeżnicy; dla nie więcej niż 3 osób - 0,8 m.",
+    "zr": {
+     "dok": "DU_2002_690",
+     "j": "para_239",
+     "u": "§ 239 ust. 1 WT"
+    },
+    "dowod": "najmniejsza szerokość drzwi w świetle ościeżnicy powinna wynosić 0,9 m"
+   }
+  ]
+ },
+ {
+  "id": "ssp",
+  "nazwa": "System sygnalizacji pożarowej (SSP)",
+  "d": "ppoz",
+  "def": "Urządzenia do samoczynnego wykrywania pożaru i przekazywania informacji o nim, z urządzeniami odbiorczymi alarmów i sygnałów uszkodzeniowych. Wymagany m.in. w dużych budynkach handlowych, szpitalach, hotelach, budynkach wysokich - lista w § 28.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p28",
+   "u": "ust. 1"
+  },
+  "dowod": "służące do samoczynnego wykrywania i przekazywania informacji o pożarze",
+  "przyklad": "Centrala SSP w portierni, czujki dymu w pokojach hotelowych, ręczne ostrzegacze (ROP) przy wyjściach.",
+  "blad": "Wyłączanie czujek „bo fałszywe alarmy” albo zastawione ROP-y.",
+  "klient": "System sam wykrywa dym i od razu alarmuje - zanim ktokolwiek zauważy pożar.",
+  "powiazane": [
+   "urzadzenia-ppoz",
+   "dso",
+   "sug"
+  ],
+  "dopytania": [
+   {
+    "q": "Czy obiekt z SUG musi mieć też SSP?",
+    "a": "Nie musi - obiekty wyposażone w stałe urządzenia gaśnicze mogą być niewyposażone w system sygnalizacji pożarowej.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p30",
+     "u": "ust. 1"
+    },
+    "dowod": "Obiekty wyposażone w stałe urządzenia gaśnicze mogą być niewyposażone w system sygnalizacji pożarowej"
+   }
+  ]
+ },
+ {
+  "id": "dso",
+  "nazwa": "Dźwiękowy system ostrzegawczy (DSO)",
+  "d": "ppoz",
+  "def": "System rozgłaszający sygnały ostrzegawcze i komunikaty głosowe - automatycznie po sygnale z SSP albo przez operatora. Wymagany m.in. w dużych budynkach handlowych, salach widowiskowych, szpitalach, budynkach wysokich (§ 29).",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p29",
+   "u": "ust. 1"
+  },
+  "dowod": "rozgłaszanie sygnałów ostrzegawczych i komunikatów głosowych",
+  "przyklad": "W galerii handlowej komunikat: „Uwaga, ogłaszamy ewakuację. Proszę kierować się do najbliższego wyjścia”.",
+  "blad": "Komunikaty nagrane niewyraźnie albo zbyt cicho w części obiektu.",
+  "klient": "Zamiast samej syreny - spokojny głos mówi ludziom, co robić. To zmniejsza panikę.",
+  "powiazane": [
+   "ssp",
+   "ewakuacja",
+   "urzadzenia-ppoz"
+  ],
+  "dopytania": [
+   {
+    "q": "Skąd DSO wie, że jest pożar?",
+    "a": "Komunikaty nadaje automatycznie po otrzymaniu sygnału z systemu sygnalizacji pożarowej, a także przez operatora.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p29",
+     "u": "ust. 1"
+    },
+    "dowod": "nadawanych automatycznie po otrzymaniu sygnału z systemu sygnalizacji pożarowej"
+   }
+  ]
+ },
+ {
+  "id": "sug",
+  "nazwa": "Stałe urządzenia gaśnicze (SUG)",
+  "d": "ppoz",
+  "def": "Urządzenia związane na stałe z obiektem, z zapasem środka gaśniczego, uruchamiane samoczynnie we wczesnej fazie pożaru (np. tryskacze, instalacje gazowe). Wymagane m.in. w archiwach, muzeach, serwerowniach i innych obiektach z § 27.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p27",
+   "u": "ust. 1"
+  },
+  "dowod": "uruchamianych samoczynnie we wczesnej fazie rozwoju pożaru",
+  "przyklad": "Tryskacze w magazynie wysokiego składowania, instalacja gazowa w serwerowni.",
+  "blad": "Zastawienie tryskaczy towarem do sufitu, brak przeglądów zaworów.",
+  "klient": "Instalacja, która sama zaczyna gasić, zanim pożar się rozwinie.",
+  "powiazane": [
+   "urzadzenia-ppoz",
+   "ssp",
+   "strefa-pozarowa"
+  ],
+  "dopytania": [
+   {
+    "q": "Co daje tryskaczom większa strefa pożarowa?",
+    "a": "Stałe samoczynne urządzenia gaśnicze wodne pozwalają powiększyć dopuszczalną powierzchnię strefy PM o 100%.",
+    "zr": {
+     "dok": "DU_2002_690",
+     "j": "para_229",
+     "u": "§ 229 ust. 1 WT"
+    },
+    "dowod": "stałymi samoczynnymi urządzeniami gaśniczymi wodnymi - o 100%"
+   }
+  ]
+ },
+ {
+  "id": "oswietlenie-awaryjne",
+  "nazwa": "Oświetlenie awaryjne (ewakuacyjne i zapasowe)",
+  "d": "ppoz",
+  "def": "Samoczynnie załączające się oświetlenie, gdy zaniknie zasilanie - w budynkach, gdzie brak prądu może zagrozić ludziom. Ewakuacyjne pokazuje drogę wyjścia, zapasowe pozwala kontynuować pracę.",
+  "zr": {
+   "dok": "DU_2002_690",
+   "j": "para_181",
+   "u": "§ 181 ust. 1 WT"
+  },
+  "dowod": "samoczynnie załączające się oświetlenie awaryjne",
+  "przyklad": "Oprawy z piktogramem „wyjście” nad drzwiami w kinie, świecące po zaniku prądu.",
+  "blad": "Oprawy z wyczerpanymi akumulatorami - brak testów działania.",
+  "klient": "Gdy zgaśnie światło, te lampy same się zapalają i prowadzą do wyjścia.",
+  "powiazane": [
+   "ewakuacja",
+   "urzadzenia-ppoz"
+  ],
+  "dopytania": [
+   {
+    "q": "Czy właściciel musi je zapewnić na drogach ewakuacyjnych?",
+    "a": "Tak - w pomieszczeniach i na drogach ewakuacyjnych wymienionych w przepisach techniczno-budowlanych.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p15",
+     "u": "ust. 1 pkt 5"
+    },
+    "dowod": "oświetlenia awaryjnego"
+   }
+  ]
+ },
+ {
+  "id": "czujka-czadu",
+  "nazwa": "Czujka dymu i czujka tlenku węgla (czadu)",
+  "d": "ppoz",
+  "def": "Lokale mieszkalne i pokoje hotelowe wyposaża się w co najmniej jedną autonomiczną czujkę dymu. Pomieszczenia z paleniskiem (piec, kocioł gazowy) w lokalach w strefie ZL - w autonomiczną czujkę tlenku węgla.",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p28a",
+   "u": "ust. 1 i 3"
+  },
+  "dowod": "autonomiczną czujkę tlenku węgla",
+  "przyklad": "Łazienka z piecykiem gazowym w mieszkaniu - czujka czadu; pokój w pensjonacie - czujka dymu.",
+  "blad": "Czujka zamontowana i zapomniana, z wyczerpaną baterią.",
+  "klient": "Mała czujka na baterie, która piszczy, gdy pojawi się dym albo czad - najtańsze ratowanie życia.",
+  "powiazane": [
+   "urzadzenia-ppoz"
+  ],
+  "dopytania": [
+   {
+    "q": "A jeśli w hotelu jest SSP?",
+    "a": "Wtedy czujka autonomiczna nie jest wymagana - pomieszczenie chroni system sygnalizacji pożarowej albo stałe urządzenie gaśnicze.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p28a",
+     "u": "ust. 2"
+    },
+    "dowod": "przez system sygnalizacji pożarowej lub stałe samoczynne urządzenie gaśnicze"
+   },
+   {
+    "q": "Jak dbać o taką czujkę?",
+    "a": "Montaż, konserwacja i eksploatacja według instrukcji producenta - nie stosuje się do niej zasad przeglądów urządzeń ppoż.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p3",
+     "u": "ust. 3a"
+    },
+    "dowod": "autonomicznych czujek dymu"
+   }
+  ]
+ },
+ {
+  "id": "budynek-zagrazajacy",
+  "nazwa": "Budynek zagrażający życiu ludzi",
+  "d": "ppoz",
+  "def": "Użytkowany budynek istniejący, w którym warunki techniczne nie zapewniają możliwości ewakuacji. Przesłanki są w § 16 (np. drogi ewakuacyjne węższe o ponad 1/3, za długie, brak wymaganych urządzeń).",
+  "zr": {
+   "a": "rozp-ochrona-budynkow",
+   "j": "p16",
+   "u": "ust. 1"
+  },
+  "dowod": "uznaje się za zagrażający życiu ludzi",
+  "przyklad": "Stary dom kultury z jedną wąską klatką schodową i salą na 200 osób na piętrze.",
+  "blad": "Lekceważenie protokołu PSP z takim stwierdzeniem - w praktyce oznacza to konieczność przebudowy.",
+  "klient": "Budynek, z którego w razie pożaru ludzie mogą nie zdążyć wyjść - wymaga naprawy, często przebudowy.",
+  "powiazane": [
+   "ewakuacja",
+   "drzwi-ewakuacyjne",
+   "dojscie-ewakuacyjne"
+  ],
+  "dopytania": [
+   {
+    "q": "Co może być podstawą takiego uznania?",
+    "a": "Np. szerokość przejścia, dojścia, wyjścia ewakuacyjnego albo biegu lub spocznika klatki mniejsza o ponad jedną trzecią od wymaganej.",
+    "zr": {
+     "a": "rozp-ochrona-budynkow",
+     "j": "p16",
+     "u": "ust. 2 pkt 1"
+    },
+    "dowod": "mniejsza o ponad jedną trzecią"
+   }
+  ]
+ },
+ {
+  "id": "atex",
+  "nazwa": "Atmosfera wybuchowa i strefy 0/1/2, 20/21/22 (ATEX)",
+  "d": "bhp",
+  "def": "Pracodawca dzieli przestrzenie zagrożone wybuchem na strefy wg prawdopodobieństwa i czasu występowania atmosfery wybuchowej: dla gazów, par i mgieł - 0, 1, 2; dla pyłów - 20, 21, 22. Strefa 0 i 20 - zagrożenie stałe lub długotrwałe.",
+  "zr": {
+   "dok": "DU_2010_931",
+   "j": "p5",
+   "u": "§ 5 rozp. ATEX"
+  },
+  "dowod": "Pracodawca dzieli przestrzenie zagrożone wybuchem na strefy",
+  "przyklad": "Wnętrze zbiornika z rozpuszczalnikiem - strefa 0; okolice dystrybutora paliwa - 1 lub 2; silos z mąką - 20.",
+  "blad": "Zwykłe urządzenia elektryczne (lampa, telefon) w strefie zagrożenia wybuchem.",
+  "klient": "W tych miejscach może wybuchnąć od iskry - dlatego tylko sprzęt w wykonaniu przeciwwybuchowym i ścisłe zasady.",
+  "powiazane": [
+   "strefa-wybuchu",
+   "materialy-niebezpieczne",
+   "prace-pozarowe"
+  ],
+  "dopytania": [
+   {
+    "q": "Jaka kolejność środków ochrony przed wybuchem?",
+    "a": "Najpierw zapobiegać tworzeniu się atmosfery wybuchowej, potem jej zapłonowi, na końcu ograniczać skutki wybuchu.",
+    "zr": {
+     "dok": "DU_2010_931",
+     "j": "p4",
+     "u": "§ 4 ust. 1 rozp. ATEX"
+    },
+    "dowod": "zapobieganie tworzeniu się atmosfery wybuchowej"
+   },
+   {
+    "q": "Czym jest strefa 0?",
+    "a": "Przestrzeń, w której atmosfera wybuchowa (gazy, pary, mgły) występuje stale, często lub przez długie okresy.",
+    "zr": {
+     "dok": "DU_2010_931",
+     "j": "p5",
+     "u": "§ 5 rozp. ATEX"
+    },
+    "dowod": "występuje stale, często lub przez długie okresy"
+   }
+  ]
+ },
+ {
+  "id": "uzgodnienie",
+  "nazwa": "Uzgodnienie projektu z rzeczoznawcą ppoż",
+  "d": "ppoz",
+  "def": "Projekty budowlane obiektów istotnych ze względu na ochronę ppoż oraz projekty urządzeń przeciwpożarowych wymagają uzgodnienia z rzeczoznawcą ds. zabezpieczeń przeciwpożarowych. Listę obiektów i zakres danych podaje rozporządzenie MSWiA z 5.08.2023 (Dz.U. 2023 poz. 1563).",
+  "zr": {
+   "a": "ustawa-ppoz",
+   "j": "a6b",
+   "u": "art. 6b"
+  },
+  "dowod": "wymagają uzgodnienia z rzeczoznawcą",
+  "przyklad": "Projekt nowego przedszkola (ZL II) - przed złożeniem wniosku o pozwolenie na budowę uzgadnia go rzeczoznawca.",
+  "blad": "Powoływanie się na stare rozporządzenie z 2021 r. - od 9.08.2023 obowiązuje nowe.",
+  "klient": "Zanim powstanie ważny budynek, specjalista od ppoż sprawdza projekt i przybija pieczątkę.",
+  "powiazane": [
+   "inspektor",
+   "zl",
+   "urzadzenia-ppoz"
+  ],
+  "dopytania": [
+   {
+    "q": "Które budynki na pewno wymagają uzgodnienia?",
+    "a": "M.in. budynek ze strefą ZL I, ZL II lub ZL V oraz budynek średniowysoki, wysoki lub wysokościowy (pełna lista w § 3).",
+    "zr": {
+     "dok": "DU_2023_1563",
+     "j": "para_3",
+     "u": "§ 3 ust. 1 rozp. o uzgadnianiu"
+    },
+    "dowod": "budynek zawierający strefę pożarową zakwalifikowaną do kategorii zagrożenia ludzi ZL I, ZL II lub ZL V"
+   }
+  ]
+ },
+ {
+  "id": "wykroczenie-ppoz",
+  "nazwa": "Wykroczenia przeciwpożarowe (art. 82 KW)",
+  "d": "ppoz",
+  "def": "Kodeks wykroczeń karze m.in. niedozwolone używanie ognia i palenie, prace pożarowo niebezpieczne bez zabezpieczenia, używanie niesprawnych lub niekontrolowanych urządzeń, jeśli może to spowodować pożar albo utrudnić akcję lub ewakuację.",
+  "zr": {
+   "dok": "DU_1971_114",
+   "j": "a82",
+   "u": "art. 82 § 1 KW"
+  },
+  "dowod": "wykonywaniu prac niebezpiecznych pod względem pożarowym bez ich wymaganego zabezpieczenia",
+  "przyklad": "Spawanie przy materiałach palnych bez zabezpieczenia, palenie papierosów w magazynie z rozpuszczalnikami.",
+  "blad": "Przekonanie, że za zastawione drzwi ewakuacyjne „nic nie grozi”, dopóki nie ma pożaru.",
+  "klient": "Za lekceważenie przepisów ppoż można dostać mandat albo sprawę w sądzie - jeszcze zanim cokolwiek się zapali.",
+  "powiazane": [
+   "prace-pozarowe",
+   "wlasciciel"
+  ],
+  "dopytania": [
+   {
+    "q": "Jaka kara grozi za takie wykroczenie?",
+    "a": "Areszt, ograniczenie wolności albo grzywna.",
+    "zr": {
+     "dok": "DU_1971_114",
+     "j": "a82",
+     "u": "art. 82 § 1 KW"
+    },
+    "dowod": "podlega karze aresztu, ograniczenia wolności albo grzywny"
+   }
+  ]
+ },
+ {
   "id": "ryzyko-zawodowe",
   "nazwa": "Ryzyko zawodowe",
   "d": "bhp",

@@ -416,3 +416,14 @@ a.btn { text-decoration: none; }
 .punkt-wybor input { width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0; accent-color: var(--accent); }
 .punkt-wybor.on { border-color: var(--amber); background: var(--amber-bg); }
 .punkt-sek { display: block; font-size: 12px; color: var(--text-muted); font-weight: 600; margin-bottom: 2px; }
+
+/* Kurs na stronie głównej */
+.card.kurs { margin-top: 14px; }
+.kurs-etap { display: grid; grid-template-columns: 74px 1fr auto; gap: 8px; align-items: baseline; padding: 8px 0; border-top: 1px solid var(--border); font-size: 14px; line-height: 1.35; }
+.kurs-etap:first-of-type { border-top: none; }
+.kurs-kiedy { font-weight: 800; color: var(--text-2); }
+.kurs-co { color: var(--text-2); }
+.kurs-status { font-size: 12px; font-weight: 700; color: var(--text-muted); white-space: nowrap; }
+.kurs-etap.teraz .kurs-kiedy, .kurs-etap.teraz .kurs-status { color: var(--accent); }
+.kurs-etap.teraz .kurs-co { font-weight: 700; color: var(--text); }
+.kurs-etap.minal { opacity: .5; }

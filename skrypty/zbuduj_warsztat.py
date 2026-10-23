@@ -5,7 +5,7 @@
 import json
 import sys
 
-from zbuduj_przypadki import KP, OGOLNE, WYP, R, U, tekst_jednostki
+from zbuduj_przypadki import KP, OGOLNE, WYP, R, U, W, tekst_jednostki
 
 
 def k(id, co, zal, zr, dowod):
@@ -257,7 +257,98 @@ ORZ = {
     "zr": {"dok": KP, "j": "a226", "u": "art. 226 pkt 1"}, "dowod": "ocenia i dokumentuje ryzyko zawodowe",
 }
 
-WZORY = [IBP, WYPADEK, ORZ]
+
+# ── Praca projektowa na kurs inspektora ppoż (wytyczne CS PSP Częstochowa, 2026) ──
+# Każdy punkt: co wpisać, przykład i podstawa prawna w pełnym brzmieniu (do tabeli w pracy).
+# zr = jednostka do sprawdzenia cytatu (None = dane z dokumentacji budowlanej, bez paragrafu).
+WT = "DU_2002_690"
+ATEX = "DU_2010_931"
+UZG = "DU_2023_1563"
+WT_PELNA = "rozporządzenie Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (Dz.U. z 2022 r. poz. 1225)"
+R_PELNA = "rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 7 czerwca 2010 r. w sprawie ochrony przeciwpożarowej budynków, innych obiektów budowlanych i terenów (Dz.U. z 2023 r. poz. 822 ze zm.)"
+W_PELNA = "rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 24 lipca 2009 r. w sprawie przeciwpożarowego zaopatrzenia w wodę oraz dróg pożarowych (Dz.U. Nr 124, poz. 1030)"
+U_PELNA = "ustawa z dnia 24 sierpnia 1991 r. o ochronie przeciwpożarowej (Dz.U. z 2025 r. poz. 188 ze zm.)"
+ATEX_PELNA = "rozporządzenie Ministra Gospodarki z dnia 8 lipca 2010 r. w sprawie minimalnych wymagań, dotyczących bezpieczeństwa i higieny pracy, związanych z możliwością wystąpienia w miejscu pracy atmosfery wybuchowej (Dz.U. Nr 138, poz. 931)"
+UZG_PELNA = "rozporządzenie Ministra Spraw Wewnętrznych i Administracji z dnia 5 sierpnia 2023 r. w sprawie uzgadniania projektu zagospodarowania działki lub terenu, projektu architektoniczno-budowlanego, projektu technicznego oraz projektu urządzenia przeciwpożarowego pod względem zgodności z wymaganiami ochrony przeciwpożarowej (Dz.U. z 2023 r. poz. 1563)"
+DOK_BUD = "dokumentacja budowlana obiektu"
+
+
+def pp(nr, tytul, pomoc, podstawa, zr=None, dowod="", przyklad=""):
+    return {"id": f"p{nr}", "nr": nr, "tytul": tytul, "pomoc": pomoc, "przyklad": przyklad, "podstawa": podstawa, "zr": zr, "dowod": dowod}
+
+
+def wt(j, u):
+    return {"dok": WT, "j": j, "u": f"{u} WT"}
+
+
+def w(j, u):
+    return {"a": W, "j": j, "u": u}
+
+
+PRACA = {
+    "id": "praca", "tytul": "Praca projektowa - analiza bezpieczeństwa pożarowego", "ikona": "🎓", "kolor": "#5e35b1", "word": True,
+    "opis": "Kreator pracy zaliczeniowej na kurs inspektora ppoż (CS PSP): 34 punkty z wytycznych, przy każdym podpowiedź i podstawa prawna. Na końcu gotowy dokument do pobrania jako plik Word.",
+    "glowa": ["Imię i nazwisko (jak na stronie tytułowej)", "Rodzaj budynku (do tytułu, np. szkoły podstawowej)", "Nazwa i adres obiektu", "Termin szkolenia"],
+    "uwagi": [
+        {"t": "Budynek musi spełniać kryteria opracowania instrukcji bezpieczeństwa pożarowego - IBP nie jest wymagana m.in. dla budynku do 1000 m³ bez strefy zagrożenia wybuchem. Wybierz większy obiekt.", "zr": r("p6", "ust. 8"), "dowod": "nie przekracza 1000 m3"},
+        {"t": "Termin: praca do 9.11.2026 na wlodarczyka@cspsp.pl. Plik: nazwisko_imię_data rozpoczęcia (np. musialik_tomasz_26.10.26), Times New Roman 10 pkt, interlinia 1,0, .doc/.docx/.pdf. Obowiązkowe 3 załączniki graficzne (bez nich praca nie jest oceniana) - spakuj wszystko w jeden .zip.", "zr": r("p6", "ust. 1 pkt 8"), "dowod": "plany obiektów, obejmujące także ich usytuowanie"},
+        {"t": "Uwaga: wytyczne wymieniają rozporządzenie o uzgadnianiu projektów z 2021 r. (Dz.U. 2021 poz. 1722) - zostało zastąpione rozporządzeniem z 5.08.2023 (Dz.U. 2023 poz. 1563). W pracy podaj aktualne. WT 2002 są od 20.09.2026 uznane za uchylone i stosowane w okresie przejściowym - wytyczne każą się na nie powoływać.", "zr": {"dok": UZG, "j": "para_1", "u": "§ 1"}, "dowod": "rodzaje obiektów budowlanych istotnych"},
+    ],
+    "kroki": [
+        pp(1, "Ogólna charakterystyka budynku", "Przeznaczenie i krótki opis prowadzonej działalności: co to za obiekt, kto go używa, w jakich godzinach, ile osób.", "-", przyklad="Szkoła podstawowa, 3 kondygnacje nadziemne, ok. 420 uczniów i 45 pracowników, zajęcia 7:30-16:00."),
+        pp(2, "Kwalifikacja budynku ze względu na sposób użytkowania (ZL, PM, IN)", "Wpisz, czy budynek (lub jego strefy) to ZL, PM czy IN.", f"§ 209 ust. 1 {WT_PELNA}", wt("para_209", "§ 209 ust. 1"), "produkcyjne i magazynowe, określane dalej jako PM"),
+        pp(3, "Kategoria zagrożenia ludzi i dane stref", "Dla każdej strefy: kategoria ZL (I-V) lub PM/IN. Do tego: powierzchnia zabudowy, powierzchnia użytkowa, wysokość, kubatura, liczba kondygnacji, grupa wysokości (N do 12 m, SW 12-25 m, W 25-55 m, WW ponad 55 m).", f"§ 209 ust. 2 i § 8 {WT_PELNA} + dane z dokumentacji budowlanej", wt("para_8", "§ 8"), "niskie (N) - do 12 m włącznie", "Strefa 1: ZL II (przedszkole), pow. zabudowy 640 m², użytkowa 1150 m², wys. 8,4 m, kubatura 5200 m³, 2 kondygnacje, budynek niski (N)."),
+        pp(4, "Gęstość obciążenia ogniowego (tylko PM)", "Jeśli są strefy PM - podaj obliczenia gęstości obciążenia ogniowego (MJ/m²) według Polskiej Normy. Dla budynku tylko ZL wpisz „nie dotyczy”.", "PN-B-02852:2001 (zasady ustalania - § 208 WT)", wt("para_208", "§ 208"), "gęstości obciążenia ogniowego pomieszczeń i stref pożarowych"),
+        pp(5, "Materiały niebezpieczne pożarowo", "Czy występują? Jakie i gdzie (np. butle gazowe, farby, rozpuszczalniki, paliwo)?", f"§ 2 ust. 1 pkt 1 {R_PELNA}", r("p2", "ust. 1 pkt 1"), "materiałach niebezpiecznych pożarowo"),
+        pp(6, "Strefy zagrożenia wybuchem", "TAK/NIE. Jeśli tak - gdzie i jakie strefy (0, 1, 2 dla gazów i par, 20, 21, 22 dla pyłów).", f"§ 5 {ATEX_PELNA} + dokumentacja techniczna", {"dok": ATEX, "j": "p5", "u": "§ 5"}, "Pracodawca dzieli przestrzenie zagrożone wybuchem na strefy"),
+        pp(7, "Pomieszczenia zagrożone wybuchem", "TAK/NIE. Jeśli tak - gdzie, jakie strefy i na jakiej podstawie to ustalono (ocena zagrożenia wybuchem).", f"§ 37 {R_PELNA}", r("p37", "ust. 1-2"), "dokonuje się oceny zagrożenia wybuchem"),
+        pp(8, "Wymagana klasa odporności pożarowej", "Podaj klasę (A-E) dla tego obiektu lub stref. Nie kopiuj tabeli z rozporządzenia.", f"§ 212 {WT_PELNA}", wt("para_212", "§ 212"), "pięć klas odporności pożarowej"),
+        pp(9, "Z jakich materiałów są elementy budynku", "Opisz: a) główna konstrukcja nośna, b) konstrukcja dachu, c) strop, d) ściana zewnętrzna, e) ściana wewnętrzna, f) przekrycie dachu.", DOK_BUD, przyklad="a) żelbet monolityczny, b) drewniana więźba, c) strop Teriva, d) ceramika + styropian, e) cegła pełna, f) blachodachówka."),
+        pp(10, "Odporność ogniowa elementów - istniejąca i wymagana", "Dla elementów a-f z pkt 9: klasa istniejąca (z dokumentacji) i wymagana (z tabeli dla Twojej klasy odporności pożarowej), np. R 60, REI 60, E 30.", f"§ 216 ust. 1 {WT_PELNA}", wt("para_216", "§ 216 ust. 1"), "nośność ogniowa"),
+        pp(11, "Liczba stref pożarowych i sposób ich wydzielenia", "Na ile stref podzielono budynek i czym (ściany, stropy oddzielenia przeciwpożarowego).", f"§ 226 {WT_PELNA}", wt("para_226", "§ 226 ust. 1"), "Strefę pożarową stanowi budynek albo jego część"),
+        pp(12, "Klasa odporności ogniowej elementów oddzielenia stref", "Tylko gdy jest więcej niż jedna strefa: wymagana klasa ścian i stropów oddzielenia oraz drzwi w nich.", f"§ 232 {WT_PELNA}", wt("para_232", "§ 232"), "Ściany i stropy stanowiące elementy oddzielenia przeciwpożarowego"),
+        pp(13, "Powierzchnia stref - istniejąca i dopuszczalna", "Powierzchnia każdej strefy (wewnętrzna, z antresolami) i dopuszczalna wg tabeli (ZL - § 227, PM - § 228, IN - § 231), z ewentualnym powiększeniem za tryskacze i oddymianie.", f"§ 227 / § 228 / § 231 {WT_PELNA}", wt("para_227", "§ 227"), "Dopuszczalne powierzchnie stref pożarowych ZL"),
+        pp(14, "Przestrzenie wydzielone pożarowo", "Czy są np. kotłownia, pompownia, serwerownia, magazyn? Jeśli tak - jakie.", "przepisy szczegółowe WT dla danego pomieszczenia (np. kotłownie) + dokumentacja budowlana"),
+        pp(15, "Klasa odporności ogniowej elementów wydzielenia", "Dla pomieszczeń z pkt 14 - wymagana klasa ścian, stropów i drzwi wydzielających.", "przepisy szczegółowe WT dla danego pomieszczenia"),
+        pp(16, "Liczba osób - w budynku i na kondygnacjach", "a) ile osób może przebywać w budynku, b) ile na każdej kondygnacji. Gdy nie wynika to z przeznaczenia - przyjmij wg powierzchni (§ 236 ust. 6).", f"§ 236 ust. 6 {WT_PELNA}", wt("para_236", "§ 236 ust. 6"), "liczbę tę należy przyjmować w odniesieniu do powierzchni"),
+        pp(17, "Wyjścia, klatki schodowe, obudowa i oddymianie", "a) liczba wyjść z obiektu, b) liczba klatek schodowych, c) czy klatki są obudowane i oddymiane.", f"{DOK_BUD} + § 245 {WT_PELNA}", wt("para_245", "§ 245"), "obudowane i zamykane drzwiami dymoszczelnymi"),
+        pp(18, "Długość przejść ewakuacyjnych", "Rzeczywista (zmierz na planie od najdalszego miejsca do wyjścia z pomieszczenia) i dopuszczalna (ZL - 40 m, PM - 75/100 m, z możliwym powiększeniem).", f"§ 237 ust. 1 {WT_PELNA}", wt("para_237", "§ 237 ust. 1"), "przejściem ewakuacyjnym"),
+        pp(19, "Długość dojść ewakuacyjnych", "Rzeczywista (od wyjścia z pomieszczenia do wyjścia na zewnątrz lub do innej strefy, wzdłuż osi drogi) i dopuszczalna.", f"§ 256 {WT_PELNA}", wt("para_256", "§ 256"), "dojściem ewakuacyjnym"),
+        pp(20, "Parametry klatki schodowej", "Rzeczywiste i wymagane: a) szerokość biegu, b) szerokość spocznika, c) wysokość stopnia, d) szerokość stopnia (z warunku 2h + s).", f"§ 68 {WT_PELNA}", wt("para_68", "§ 68"), "Graniczne wymiary schodów stałych"),
+        pp(21, "Szerokości przejść i dojść ewakuacyjnych", "Rzeczywiste i wymagane. Drogi poziome: min. 0,6 m na 100 osób, nie mniej niż 1,4 m (do 20 osób - 1,2 m).", f"§ 242 {WT_PELNA}", wt("para_242", "§ 242 ust. 1"), "nie mniej niż 1,4 m"),
+        pp(22, "Szerokości drzwi ewakuacyjnych", "a) drzwi z pomieszczeń, b) na drogach ewakuacyjnych, c) wyjściowe z budynku - rzeczywiste i wymagane (min. 0,6 m na 100 osób, najmniej 0,9 m, do 3 osób 0,8 m).", f"§ 239 {WT_PELNA}", wt("para_239", "§ 239 ust. 1"), "najmniejsza szerokość drzwi w świetle ościeżnicy powinna wynosić 0,9 m"),
+        pp(23, "Stan sprawności osób w obiekcie", "TAK/NIE - czy uwzględniono osoby z ograniczoną sprawnością (dzieci, chorzy, niepełnosprawni). Jeśli tak - jakie rozwiązania (np. pochylnie, strefy oczekiwania, ewakuacja pozioma).", "-"),
+        pp("24a", "Urządzenia ppoż: system sygnalizacji pożarowej", "Wymagany? TAK + krótki opis (np. firma, zasięg, rodzaj czujek, ROP) albo NIE.", f"§ 28 {R_PELNA}", r("p28", "ust. 1"), "Stosowanie systemu sygnalizacji pożarowej"),
+        pp("24b", "Urządzenia ppoż: dźwiękowy system ostrzegawczy", "Wymagany? TAK/NIE + opis.", f"§ 29 {R_PELNA}", r("p29", "ust. 1"), "dźwiękowego systemu ostrzegawczego"),
+        pp("24c", "Urządzenia ppoż: oddymianie, kurtyny dymowe", "Wymagane? TAK/NIE + opis (np. klapy dymowe w klatkach).", f"§ 245 i § 270 {WT_PELNA}", wt("para_270", "§ 270"), "Instalacja wentylacji oddymiającej powinna"),
+        pp("24d", "Urządzenia ppoż: przeciwpożarowe klapy odcinające", "Wymagane? Przy przejściu przewodów wentylacyjnych przez oddzielenia przeciwpożarowe.", f"§ 268 ust. 4 {WT_PELNA}", wt("para_268", "§ 268 ust. 4"), "przeciwpożarowe klapy odcinające"),
+        pp("24e", "Urządzenia ppoż: stałe urządzenia gaśnicze", "Wymagane? (tryskacze, gazowe itp.) TAK/NIE + opis.", f"§ 27 {R_PELNA}", r("p27", "ust. 1"), "stałych urządzeń gaśniczych"),
+        pp("24f", "Urządzenia ppoż: hydranty wewnętrzne i zawory", "Wymagane? Jakie (25, 33, 52) i gdzie.", f"§ 19 {R_PELNA}", r("p19", "ust. 1"), "Hydranty 25 muszą być stosowane"),
+        pp("24g", "Urządzenia ppoż: hydranty zewnętrzne (woda do gaszenia)", "Wymagane? TAK/NIE.", f"§ 3 {W_PELNA}", w("p3", "§ 3"), "zewnętrznego gaszenia pożaru jest wymagane"),
+        pp("24h", "Urządzenia ppoż: oświetlenie ewakuacyjne", "Wymagane? TAK/NIE + opis.", f"§ 181 {WT_PELNA}", wt("para_181", "§ 181"), "samoczynnie załączające się oświetlenie awaryjne"),
+        pp("24i", "Urządzenia ppoż: przeciwpożarowy wyłącznik prądu", "Wymagany? Gdzie jest i co wyłącza.", f"§ 4 ust. 2 pkt 2 {R_PELNA} (wymóg wg przepisów techniczno-budowlanych)", r("p4", "ust. 2 pkt 2"), "przeciwpożarowe wyłączniki prądu"),
+        pp("24j", "Urządzenia ppoż: drzwi i bramy przeciwpożarowe", "Wymagane? Gdzie, jaka klasa (np. EI 30).", f"§ 232 ust. 1 {WT_PELNA}", wt("para_232", "§ 232 ust. 1"), "drzwi przeciwpożarowych"),
+        pp("24k", "Urządzenia ppoż: dźwigi dla ekip ratowniczych", "Wymagane? (budynki ZL z kondygnacją powyżej 25 m).", f"§ 253 {WT_PELNA}", wt("para_253", "§ 253 ust. 1"), "przystosowany do potrzeb ekip ratowniczych"),
+        pp(25, "Ilość środka gaśniczego w gaśnicach", "Rzeczywista i wymagana: 2 kg (3 dm³) środka na każde 100 m² (ZL I, II, III, V; PM ponad 500 MJ/m²) albo 300 m² (pozostałe).", f"§ 32 ust. 3 {R_PELNA}", r("p32", "ust. 3"), "na każde 100 m2"),
+        pp(26, "Typy, rodzaje i liczba gaśnic, inny sprzęt", "Np. 8 × GP-6x ABC, 2 × GS-5x (CO₂) przy rozdzielni, koc gaśniczy w kuchni. Dobór do grup pożarów A, B, C, D, F.", f"§ 32 ust. 2 {R_PELNA}", r("p32", "ust. 2"), "Rodzaj gaśnic powinien być dostosowany"),
+        pp(27, "Odległości od budynków sąsiednich (i lasu)", "Rzeczywiste odległości i minimalne wg przepisów.", f"§ 271 {WT_PELNA}", wt("para_271", "§ 271 ust. 1"), "Odległość między zewnętrznymi ścianami budynków"),
+        pp(28, "Czy budynek wymaga drogi pożarowej", "TAK/NIE + uzasadnienie (który punkt § 12 ust. 1) i parametry, jeśli jest.", f"§ 12 {W_PELNA}", w("p12", "§ 12 ust. 1"), "Drogę pożarową o utwardzonej nawierzchni"),
+        pp(29, "Woda do zewnętrznego gaszenia - czy wymagana i ile", "TAK/NIE; jeśli tak - ilość w dm³/s z tabel w załączniku (wg kubatury, strefy, kategorii).", f"§ 3-6 {W_PELNA}", w("p3", "§ 3"), "zewnętrznego gaszenia pożaru jest wymagane dla"),
+        pp(30, "Źródła wody, hydranty zewnętrzne, stanowiska czerpania", "Opisz, gdzie są hydranty (DN 80/100), zbiorniki i dojazdy dla wozów.", f"§ 10 {W_PELNA}", w("p10", "§ 10"), "hydranty zewnętrzne nadziemne o średnicy nominalnej DN 80"),
+        pp(31, "Odległości źródeł wody", "Rzeczywiste i minimalne: najbliższy hydrant od obiektu do 75 m, kolejne do 150 m, od ściany co najmniej 5 m, od krawędzi jezdni do 15 m.", f"§ 10 ust. 6 {W_PELNA}", w("p10", "§ 10 ust. 6"), "najbliższego hydrantu od chronionego obiektu budowlanego"),
+        pp(32, "Zabezpieczenie instalacji użytkowych", "Wentylacyjna, grzewcza, gazowa, elektryczna, teletechniczna, odgromowa - jak zabezpieczone i czy spełniają przepisy (przeglądy, pomiary).", f"§ 4 ust. 1 pkt 2 {R_PELNA} + przepisy techniczno-budowlane i normy", r("p4", "ust. 1 pkt 2"), "niepoddawanych okresowym kontrolom"),
+        pp(33, "Informacja o warunkach i strategii ewakuacji", "Czy w budynku są procedury ewakuacji, instrukcja postępowania na wypadek pożaru, plany ewakuacji, wyznaczone osoby.", f"§ 6 ust. 1 pkt 5 {R_PELNA}", r("p6", "ust. 1 pkt 5"), "warunki i organizację ewakuacji ludzi"),
+        pp(34, "Czy projekt wymaga uzgodnienia z rzeczoznawcą ds. zabezpieczeń ppoż", "TAK/NIE + uzasadnienie: sprawdź, czy obiekt jest na liście obiektów istotnych w § 3 rozporządzenia z 2023 r. (np. wg kategorii ZL, kubatury, wysokości).", f"art. 6b {U_PELNA}; {UZG_PELNA}", {"a": U, "j": "a6b", "u": "art. 6b"}, "wymagają uzgodnienia z rzeczoznawcą"),
+    ],
+    "zalaczniki": [
+        "Załącznik 1 - karta charakterystyki substancji niebezpiecznej występującej w zakładzie w największej ilości (tylko budynki PM).",
+        "Załącznik 2 - plan usytuowania budynku: wymiary, odległości od sąsiednich obiektów, strefy pożarowe, ściany oddzielenia, hydranty zewnętrzne (lub inne źródła wody), miejsce zbiórki, drogi dojazdowe i pożarowe, przeciwpożarowy wyłącznik prądu.",
+        "Załącznik 3 - plan ewakuacji z budynku i każdej kondygnacji: kierunki ewakuacji, znaki ewakuacyjne, gaśnice, urządzenia ppoż, przeciwpożarowy wyłącznik prądu, ściany oddzielenia, przestrzenie wydzielone.",
+    ],
+    "podstawy": [WT_PELNA, UZG_PELNA, R_PELNA, W_PELNA],
+}
+
+WZORY = [PRACA, IBP, WYPADEK, ORZ]
 
 
 def sprawdz(opis, zr, dowod):
@@ -277,7 +368,8 @@ def main():
             bledy += not sprawdz(p["co"], p["zr"], p["dowod"])
     for w in WZORY:
         for x in w["kroki"] if "kroki" in w else []:
-            bledy += not sprawdz(x["tytul"], x["zr"], x["dowod"])
+            if x["zr"]:
+                bledy += not sprawdz(x["tytul"], x["zr"], x["dowod"])
         for x in w["uwagi"]:
             bledy += not sprawdz(x["t"], x["zr"], x["dowod"])
         if "zr" in w:

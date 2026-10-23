@@ -167,31 +167,73 @@ function trasa() {
 
 // ── Start ──
 
+// Kurs inspektora ppoż Tomka (CS PSP Częstochowa, hybrydowo) - etapy na górze strony głównej.
+const KURS = [
+  { od: "2026-10-26", do: "2026-10-30", co: "Zajęcia online (Clickmeeting), 8:00-15:00" },
+  { od: "2026-10-31", do: "2026-11-09", co: "Praca projektowa - wysłać do 9.11 na wlodarczyka@cspsp.pl" },
+  { od: "2026-11-16", do: "2026-11-18", co: "Zajęcia w CS PSP Częstochowa, 8:00-16:00" },
+  { od: "2026-11-18", do: "2026-11-18", co: "Egzamin: 60 pytań, 75 minut, zalicza 42 poprawne" },
+];
+
+function kartaKursu() {
+  const dzis = dzisIso();
+  if (dzis > KURS[KURS.length - 1].do) {
+    return "";
+  }
+  const nastepny = KURS.find((k) => k.do >= dzis);
+  const wiersz = (k) => {
+    const dni = dniDo(k.od);
+    const kiedy = k.od === k.do ? data(k.od).slice(0, 5) : `${data(k.od).slice(0, 5)}-${data(k.do).slice(0, 5)}`;
+    const status = k.do < dzis ? "✓" : dzis >= k.od ? "trwa" : `za ${dni} ${dni === 1 ? "dzień" : "dni"}`;
+    return `<div class="kurs-etap${k === nastepny ? " teraz" : ""}${k.do < dzis ? " minal" : ""}"><span class="kurs-kiedy">${kiedy}</span><span class="kurs-co">${tekst(k.co)}</span><span class="kurs-status">${status}</span></div>`;
+  };
+  return `<div class="card kurs"><div class="fun-label">🎓 Kurs inspektora ochrony ppoż · CS PSP Częstochowa</div>${KURS.map(wiersz).join("")}</div>`;
+}
+
+// Praca projektowa: postęp z zapisanego dokumentu (punkty z wpisaną treścią / wszystkie punkty).
+function postepPracy() {
+  const praca = (stan.warsztat ? stan.warsztat.wzory : []).find((x) => x.id === "praca");
+  const doc = czytaj("bhp-dokumenty", []).find((d) => d.wzor === "praca");
+  const wypelnione = doc ? Object.values(doc.pola).filter((v) => v.trim()).length : 0;
+  return { doc, wypelnione, wszystkie: praca ? praca.kroki.length : 0 };
+}
+
+function otworzPrace() {
+  const { doc } = postepPracy();
+  location.hash = doc ? `#/wzor/praca/${doc.id}` : "#/wzor/praca/nowy";
+}
+
 function widokStart() {
   ustawNaglowek("PPOŻ BHP");
   ustawZakladke("start");
   const n = statystykiNauki();
   const nowe = noweZmiany();
   const jednostek = stan.akty.reduce((s, a) => s + a.jednostki.length, 0);
+  const praca = postepPracy();
+  const wiersz = (href, ikona, kolor, tytul, opis, klik) => `<a class="row" href="${href}"${klik ? ` onclick="${klik};return false"` : ""}>${kafel(ikona, kolor)}<span class="row-main"><span class="row-title">${tytul}</span><span class="row-sub">${tekst(opis)}</span></span><span class="row-chev">›</span></a>`;
   widok.innerHTML = `
     <div class="section-header">
       <div class="section-title">PPOŻ BHP</div>
-      <div class="section-sub">${tekst("Przepisy, ściągi i nauka do egzaminu inspektora ochrony przeciwpożarowej. Każdy przepis z linkiem do oryginału.")}</div>
+      <div class="section-sub">${tekst("Nauka do egzaminu inspektora ochrony przeciwpożarowej i kompendium BHP. Każdy przepis z linkiem do oryginału.")}</div>
     </div>
+    ${kartaKursu()}
     ${poleSzukania("")}
-    <div class="list-group"><a class="row" href="#/asystent">${kafel("🎙", "#5e35b1")}<span class="row-main"><span class="row-title">Asystent - zapytaj lub przepytaj mnie</span><span class="row-sub">${tekst("Objaśnienia z paragrafów, lektor i mikrofon")}</span></span><span class="row-chev">›</span></a></div>
-    ${kartaAktualnosci()}
-    ${nowe.length ? `<div class="section-label">Uwaga</div><a class="card alert" style="display:block" href="#/nowosci"><h3>${nowe.length} ${nowe.length === 1 ? "nowa zmiana" : "nowe zmiany"} w prawie</h3><p>${tekst("Sejm opublikował zmianę w akcie, który obserwujesz. Dotknij, żeby zobaczyć.")}</p></a>` : ""}
-    <div class="section-label">Nauka</div>
-    <div class="tiles">
-      <a class="tile" href="#/nauka"><div class="tile-num">${n.doPowtorki}</div><div class="tile-label">do powtórki dziś</div></a>
-      <a class="tile" href="#/nauka"><div class="tile-num">${n.opanowane}/${stan.pytania.length}</div><div class="tile-label">pytań opanowanych</div></a>
+    ${nowe.length ? `<a class="card alert" style="display:block" href="#/nowosci"><h3>${nowe.length} ${nowe.length === 1 ? "nowa zmiana" : "nowe zmiany"} w prawie</h3><p>${tekst("Sejm opublikował zmianę w akcie, który obserwujesz. Dotknij, żeby zobaczyć.")}</p></a>` : ""}
+    <div class="section-label">Najważniejsze teraz</div>
+    <div class="list-group">
+      ${wiersz("#/wzor/praca/nowy", "🎓", "#5e35b1", "Praca projektowa", praca.wypelnione ? `Wypełniono ${praca.wypelnione}/${praca.wszystkie} punktów · termin 9.11` : "Kreator 34 punktów z podstawą prawną · termin 9.11", "otworzPrace()")}
+      ${wiersz("#/pojecia", "📖", "#2f5d8a", "Karty pojęć", `${stan.pojecia.length} pojęć z programu kursu: definicja, przykład, błąd, dopytania`)}
+      ${wiersz("#/mapa", "📏", "#248a3d", "Mapa liczb", "Odległości i terminy na rysunku · tryb „Sprawdź się”")}
+      ${wiersz("#/nauka", "✎", "#c0392b", "Pytania z powtórkami", `${n.doPowtorki} do powtórki dziś · ${n.opanowane}/${stan.pytania.length} opanowanych`)}
+      ${wiersz("#/asystent", "🎙", "#5e35b1", "Asystent", "Zapytaj o przepis albo daj się przepytać")}
+      ${wiersz("#/przepisy", "§", "#3a3a3c", "Przepisy", "Pełne teksty: ustawa, rozporządzenia, WT, uzgadnianie, ATEX, BHP")}
     </div>
-    <div class="btn-row"><button class="btn" onclick="startLekcji()">Lekcja - ${PYTAN_W_LEKCJI} pytań</button></div>
+    ${kartaAktualnosci()}
     <div class="section-label">Warsztat</div>
     <div class="list-group">
-      <a class="row" href="#/obchod/nowy">${kafel("🔍", "#c0392b")}<span class="row-main"><span class="row-title">Obchód obiektu</span><span class="row-sub">${tekst("Lista kontrolna ppoż i BHP → zalecenia z paragrafami")}</span></span><span class="row-chev">›</span></a>
-      <a class="row" href="#/warsztat">${kafel("📄", "#2f5d8a")}<span class="row-main"><span class="row-title">Wzory dokumentów i zapisane obchody</span><span class="row-sub">${tekst("IBP, wypadek przy pracy, ocena ryzyka")}</span></span><span class="row-chev">›</span></a>
+      ${wiersz("#/obchod/nowy", "🔍", "#c0392b", "Obchód obiektu", "Lista kontrolna ppoż i BHP → zalecenia z paragrafami")}
+      ${wiersz("#/bledy", "📷", "#b25000", "Znajdź błąd", "Twoje zdjęcia z terenu jako zadania")}
+      ${wiersz("#/warsztat", "📄", "#2f5d8a", "Wzory dokumentów", "IBP, wypadek przy pracy, ocena ryzyka, zapisane obchody")}
     </div>
     <div class="section-label">Czy wiesz, że… · dziś</div>
     ${kartaCiekawostki(ciekawostkaDnia())}
@@ -205,7 +247,7 @@ function widokStart() {
       ${stan.sciagi.slice(0, 4).map((s) => wierszSciagi(s)).join("")}
       <a class="row" href="#/sciagi">${kafel("WSZ", "#3a3a3c")}<span class="row-main"><span class="row-title">Wszystkie ściągi</span></span><span class="row-chev">›</span></a>
     </div>
-    <div class="foot">${tekst(`W aplikacji: ${stan.akty.length} akty ppoż (${jednostek} artykułów i paragrafów). Stan prawny na ${data(stan.stanNa)}. Teksty z oficjalnej bazy Sejmu (ISAP). Aplikacja nie zastępuje oryginału - w razie wątpliwości otwórz link do ISAP.`)}</div>`;
+    <div class="foot">${tekst(`W aplikacji: ${stan.akty.length} akty ppoż (${jednostek} artykułów i paragrafów) i ${stan.spis.length} aktów w czytniku. Stan prawny na ${data(stan.stanNa)}. Teksty z oficjalnej bazy Sejmu (ISAP). Aplikacja nie zastępuje oryginału - w razie wątpliwości otwórz link do ISAP.`)}</div>`;
   podepnijSzukanie();
 }
 
@@ -535,6 +577,8 @@ function widokPrzepisy() {
   ustawZakladke("przepisy");
   const bhp = stan.obserwowane ? stan.obserwowane.akty.filter((o) => o.dziedzina === "bhp") : [];
   const wt = stan.obserwowane && stan.obserwowane.akty.find((o) => o.eli === "DU/2002/690");
+  // Pozostałe akty ppoż czytane w czytniku (uzgadnianie projektów, szkolenia inspektorów, Kodeks wykroczeń).
+  const ppozInne = stan.obserwowane ? stan.obserwowane.akty.filter((o) => o.dziedzina === "ppoz" && !o.akt && o.eli !== "DU/2002/690") : [];
   widok.innerHTML = `
     <div class="section-header"><div class="section-title">Przepisy</div>
     <div class="section-sub">${tekst("Pełny tekst aktów z naniesionymi zmianami. Zmienione fragmenty mają żółty pasek.")}</div></div>
@@ -545,6 +589,8 @@ function widokPrzepisy() {
       <span class="row-title">${esc(a.skrot)}</span><span class="row-sub">${tekst(a.nazwa)}</span></span><span class="row-chev">›</span></a>`).join("")}
       ${wt ? `<a class="row" href="${adresDokumentu(wt.isap) || wt.isap}">${kafel("WT", "#b25000")}<span class="row-main">
       <span class="row-title">Warunki techniczne (WT 2002)</span><span class="row-sub">${tekst("Uchylone od 20.09.2026, nowych nie ogłoszono. Okres przejściowy - zobacz zakładkę Nowości.")}</span></span><span class="row-chev">›</span></a>` : ""}
+      ${ppozInne.map((o) => `<a class="row" href="${adresDokumentu(o.isap) || o.isap}">${kafel("§", "#c0392b")}<span class="row-main">
+      <span class="row-title">${esc(o.nazwa)}</span><span class="row-sub">${tekst(o.tytul)}</span></span><span class="row-chev">›</span></a>`).join("")}
     </div>
     <div class="section-label">Bezpieczeństwo i higiena pracy</div>
     <div class="list-group">${bhp.map((o) => `
@@ -1312,11 +1358,12 @@ async function init() {
 async function wczytajDane(swieze) {
   const dopisek = swieze ? `?t=${Date.now()}` : "";
   const opcje = swieze ? { cache: "no-store" } : {};
-  const [akty, sciagi, pytania, obserwowane, nowosci, aktualnosci, ciekawostki, spis, pojecia] = await Promise.all(
-    ["akty", "sciagi", "pytania", "obserwowane", "nowosci", "aktualnosci", "ciekawostki", "dok/spis", "pojecia"].map((n) => fetch(`data/${n}.json${dopisek}`, opcje).then((r) => r.json()))
+  const [akty, sciagi, pytania, obserwowane, nowosci, aktualnosci, ciekawostki, spis, pojecia, warsztat] = await Promise.all(
+    ["akty", "sciagi", "pytania", "obserwowane", "nowosci", "aktualnosci", "ciekawostki", "dok/spis", "pojecia", "warsztat"].map((n) => fetch(`data/${n}.json${dopisek}`, opcje).then((r) => r.json()))
   );
   stan.nowosci = nowosci;
   stan.pojecia = pojecia;
+  stan.warsztat = warsztat;
   stan.spis = spis;
   stan.aktualnosci = aktualnosci;
   stan.ciekawostki = ciekawostki;
@@ -1347,7 +1394,6 @@ async function odswiezWszystko() {
     stan.indeks = null;
     stan.dokZaladowane = null;
     stan.wszystkieDok = null;
-    stan.warsztat = null;
     const wynik = await sprawdzZmiany(true);
     const godz = new Date(wynik.kiedy).toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" });
     let komunikat = `✓ Przepisy aktualne. Sprawdzono ${godz}, wiadomości z ${stan.aktualnosci.pobrano.slice(11)}.`;

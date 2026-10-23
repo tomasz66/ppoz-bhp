@@ -14,6 +14,10 @@ OBSERWOWANE = [
     ("ppoz", "DU/2010/719", "Rozporządzenie o ochronie przeciwpożarowej budynków, innych obiektów budowlanych i terenów", "rozp-ochrona-budynkow"),
     ("ppoz", "DU/2009/1030", "Rozporządzenie o przeciwpożarowym zaopatrzeniu w wodę oraz drogach pożarowych", "rozp-woda-drogi"),
     ("ppoz", "DU/2002/690", "Warunki techniczne, jakim powinny odpowiadać budynki (WT 2002)", None),
+    ("ppoz", "DU/2023/1563", "Uzgadnianie projektów z rzeczoznawcą ds. zabezpieczeń ppoż (2023)", None),
+    ("ppoz", "DU/2015/1964", "Szkolenia inspektorów ochrony przeciwpożarowej", None),
+    ("ppoz", "DU/1971/114", "Kodeks wykroczeń (m.in. art. 82 - wykroczenia przeciwpożarowe)", None),
+    ("bhp", "DU/2010/931", "Atmosfera wybuchowa w miejscu pracy (ATEX)", None),
     ("bhp", "DU/1974/141", "Kodeks pracy", None),
     ("bhp", "DU/1997/844", "Ogólne przepisy bezpieczeństwa i higieny pracy", None),
     ("bhp", "DU/1997/704", "Służba bezpieczeństwa i higieny pracy", None),
@@ -57,7 +61,7 @@ def main():
             "ostatnie": ostatnie,
         })
         print(eli, d.get("status"), len(zmieniajace), "zmian,", len(ostatnie), "od", OD_DATY)
-    json.dump({"pobrano": "2026-10-22", "akty": wynik}, open("app/data/obserwowane.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump({"pobrano": "2026-10-23", "akty": wynik}, open("app/data/obserwowane.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
 
 if __name__ == "__main__":
