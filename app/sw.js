@@ -1,5 +1,5 @@
 // Działanie offline: najpierw sieć (świeże dane), a bez internetu - kopia z pamięci telefonu.
-const CACHE = "ppoz-bhp-v10";
+const CACHE = "ppoz-bhp-v11";
 const PLIKI = ["./", "index.html", "style.css", "app.js", "warsztat.js", "asystent.js", "manifest.json",
   "data/akty.json", "data/sciagi.json", "data/pytania.json", "data/obserwowane.json", "data/nowosci.json", "data/aktualnosci.json", "data/ciekawostki.json", "data/warsztat.json", "icons/icon-180.png"];
 
@@ -18,8 +18,11 @@ self.addEventListener("fetch", (e) => {
   if (url.origin !== location.origin) {
     return;
   }
+  // "no-cache": zawsze pytamy serwer, czy plik się zmienił (serwer pozwala trzymać kopię 10 minut,
+  // przez co nowa wersja aplikacji pojawiała się z opóźnieniem).
+  const swiezy = e.request.method === "GET" ? new Request(e.request.url, { cache: "no-cache" }) : e.request;
   e.respondWith(
-    fetch(e.request)
+    fetch(swiezy)
       .then((r) => {
         const kopia = r.clone();
         caches.open(CACHE).then((c) => c.put(e.request, kopia));

@@ -1277,6 +1277,11 @@ async function init() {
 
   window.addEventListener("hashchange", trasa);
   trasa();
+  const poOdswiezeniu = sessionStorage.getItem(KOMUNIKAT_PO_ODSWIEZENIU);
+  if (poOdswiezeniu) {
+    sessionStorage.removeItem(KOMUNIKAT_PO_ODSWIEZENIU);
+    pokazKomunikat(poOdswiezeniu);
+  }
   odswiezZnaczek();
   sprawdzZmiany(false).then(() => {
     if ((location.hash || "#/start") === "#/start") {
@@ -1309,7 +1314,10 @@ async function wczytajDane(swieze) {
   stan.akty.forEach((a) => (stan.aktyMapa[a.id] = a));
 }
 
-// Przycisk ↻: sprawdza bazę Sejmu (nowe przepisy), pobiera najnowsze dane i wiadomości, odświeża ekran.
+const KOMUNIKAT_PO_ODSWIEZENIU = "bhp-komunikat";
+
+// Przycisk ↻: sprawdza bazę Sejmu (nowe przepisy), pobiera najnowsze dane i wiadomości, a na końcu
+// przeładowuje aplikację, żeby wczytać też nową wersję jej kodu (nowe funkcje), nie tylko dane.
 async function odswiezWszystko() {
   const b = document.getElementById("btn-refresh");
   if (b.classList.contains("spin")) {
@@ -1326,18 +1334,19 @@ async function odswiezWszystko() {
     stan.wszystkieDok = null;
     stan.warsztat = null;
     const wynik = await sprawdzZmiany(true);
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.getRegistration().then((r) => r && r.update()).catch(() => {});
-    }
-    trasa();
     const godz = new Date(wynik.kiedy).toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" });
+    let komunikat = `✓ Przepisy aktualne. Sprawdzono ${godz}, wiadomości z ${stan.aktualnosci.pobrano.slice(11)}.`;
     if (wynik.bledy >= stan.obserwowane.akty.length) {
-      pokazKomunikat("Brak połączenia z bazą Sejmu. Spróbuj za chwilę.");
+      komunikat = "Brak połączenia z bazą Sejmu. Spróbuj za chwilę.";
     } else if (wynik.nowe.length) {
-      pokazKomunikat(`Uwaga: ${wynik.nowe.length} ${wynik.nowe.length === 1 ? "nowa zmiana" : "nowe zmiany"} w przepisach - zobacz Nowości.`);
-    } else {
-      pokazKomunikat(`✓ Przepisy aktualne. Sprawdzono ${godz}, wiadomości z ${stan.aktualnosci.pobrano.slice(11)}.`);
+      komunikat = `Uwaga: ${wynik.nowe.length} ${wynik.nowe.length === 1 ? "nowa zmiana" : "nowe zmiany"} w przepisach - zobacz Nowości.`;
     }
+    if ("serviceWorker" in navigator) {
+      await navigator.serviceWorker.getRegistration().then((r) => r && r.update()).catch(() => {});
+    }
+    sessionStorage.setItem(KOMUNIKAT_PO_ODSWIEZENIU, komunikat);
+    location.reload();
+    return;
   } catch (e) {
     pokazKomunikat("Nie udało się odświeżyć - sprawdź internet.");
   } finally {
