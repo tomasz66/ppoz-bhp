@@ -1,4 +1,4 @@
-# PPOŻ BHP - stan projektu (22.10.2026)
+# PPOŻ BHP - stan projektu (23.10.2026)
 
 **NA ŻYWO: https://tomasz66.github.io/ppoz-bhp/** - repo `tomasz66/ppoz-bhp` (publiczne, GitHub Pages przez Actions). Wiadomości odświeżają się same codziennie o 6:00 (cron w `.github/workflows/pages.yml`) i przy każdym wysłaniu zmian. Push tylko na prośbę Tomka.
 
@@ -30,6 +30,7 @@ Zasada nadrzędna: **każdy przepis, ściąga i pytanie ma klikalne źródło** 
 - **Mapa liczb** (23.10, `#/mapa`): rysunek SVG działki/budynku/drogi pożarowej z 13 odległościami + terminy ppoż i BHP; tryb „Sprawdź się” chowa liczby. Dane `skrypty/zbuduj_liczby.py` -> `data/liczby.json` (30 liczb, sprawdzane), kod `app/mapa.js` (pozycje w `MIEJSCA`).
 - **Znajdź błąd** (23.10, `#/bledy`): zdjęcia z telefonu (IndexedDB `ppoz-bhp`/`zdjecia`, zmniejszane do 1280 px), do zdjęcia zaznacza się punkty obchodu (zalecenie + paragraf), 🤖 podpowiedź AI ze zdjęcia, tryb ćwiczeń z losowym zdjęciem. Kod `app/bledy.js`.
 - **Pod kurs inspektora (23.10):** Start zaczyna się kartą kursu (`KURS` w app.js: online 26-30.10, praca do 9.11, stacjonarnie 16-18.11, egzamin 18.11) i sekcją „Najważniejsze teraz”. **Kreator pracy projektowej** = wzór `praca` w `zbuduj_warsztat.py` (44 pozycje z wytycznych CS PSP, pełne brzmienie podstaw prawnych, eksport .doc w Times New Roman 10 pkt - `pobierzWord()` w warsztat.js; nazwa pliku nazwisko_imię_dd.mm.rr). Nowe akty w czytniku: rozp. o uzgadnianiu projektów 2023/1563 (zastąpiło 2021/1722 z wytycznych!), szkolenia inspektorów 2015/1964, Kodeks wykroczeń, ATEX 2010/931. Karty pojęć: 38 (+15 pod bloki 1, 4, 6, 8 programu). Teoria spalania/wybuchów i poważnych awarii - czeka na materiały z platformy kursu.
+- **Spalanie, pożary i wybuchy** (23.10, `#/spalanie`): 9 kart z polem `sekcja: "spalanie"` (ATEX, rozp. 2010, WT) - filtr „Spalanie” w kartach pojęć. Fazy pożaru, rozgorzenie, BLEVE - dopisać z materiałów kursu (nie ma ich w przepisach).
 - **Wyszukiwarka "wszystko naraz"** na Start (`#/szukaj`): przypadki, ściągi, przepisy ppoż, akty BHP (doczytywane w tle), nowości, akty zmieniające, pytania, wiadomości. Bez polskich znaków i odmiany (rdzeń = słowo minus 3 litery, min. 4) + mapa synonimów `SYNONIMY` w app.js (płot→granica działki, czad→tlenek węgla...). Gdy coś nie znajduje - dopisać synonim.
 - Ciekawostka/przypadek dnia na Start, w lekcji co 3. dobrą odpowiedź (bez żartów). Start ma też "Najbliższe terminy" i 3 wiadomości z branży.
 - Wykrywanie nowych zmian - aplikacja sama pyta API Sejmu o 13 aktów (ppoż + BHP) i pokazuje nowe akty zmieniające (alert na Start + cyfra na zakładce). Lista bazowa z 22.10.2026. Karta o WT 2002 (uchylone, okres przejściowy art. 102a-102c Prawa budowlanego, Dz.U. 2026 poz. 1161).
