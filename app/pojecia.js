@@ -4,6 +4,10 @@
 
 TRASY.push(
   [/^#\/pojecia$/, () => widokPojec()],
+  [/^#\/spalanie$/, () => {
+    stan.filtrPojec = "spalanie";
+    widokPojec();
+  }],
   [/^#\/pojecie\/([\w-]+)$/, (m) => widokPojecia(m[1])],
 );
 
@@ -16,11 +20,13 @@ function widokPojec() {
   ustawNaglowek("Karty pojęć", "back");
   ustawZakladke("nauka");
   const f = stan.filtrPojec || "all";
-  const lista = stan.pojecia.filter((k) => f === "all" || k.d === f);
+  // "spalanie" to sekcja tematyczna (blok 3 kursu), pozostałe filtry to dziedzina.
+  const lista = stan.pojecia.filter((k) => f === "all" || (f === "spalanie" ? k.sekcja === "spalanie" : k.d === f && k.sekcja !== "spalanie"));
+  const spalanie = f === "spalanie";
   widok.innerHTML = `
-    <div class="section-header"><div class="section-title">Karty pojęć</div>
-    <div class="section-sub">${tekst("Każde pojęcie: definicja z paragrafu, przykład z życia, typowy błąd, jak to powiedzieć klientowi i pytania, o które ktoś może dopytać.")}</div></div>
-    <div class="seg">${[["all", "Wszystko"], ["ppoz", "PPOŻ"], ["bhp", "BHP"]].map(([k, n]) => `<button class="${f === k ? "on" : ""}" onclick="stan.filtrPojec='${k}';widokPojec()">${n}</button>`).join("")}</div>
+    <div class="section-header"><div class="section-title">${spalanie ? "Spalanie, pożary i wybuchy" : "Karty pojęć"}</div>
+    <div class="section-sub">${tekst(spalanie ? "Co o spalaniu, zapłonie, samozapaleniu i wybuchach mówią przepisy przeciwpożarowe i ATEX - każda karta z cytatem z przepisu. Teorię z wykładów (fazy pożaru, BLEVE) dopiszemy z materiałów kursu." : "Każde pojęcie: definicja z paragrafu, przykład z życia, typowy błąd, jak to powiedzieć klientowi i pytania, o które ktoś może dopytać.")}</div></div>
+    <div class="seg">${[["all", "Wszystko"], ["ppoz", "PPOŻ"], ["bhp", "BHP"], ["spalanie", "Spalanie"]].map(([k, n]) => `<button class="${f === k ? "on" : ""}" onclick="stan.filtrPojec='${k}';widokPojec()">${n}</button>`).join("")}</div>
     <div class="section-label">${lista.length} pojęć</div>
     <div class="list-group">${lista.map(wierszPojecia).join("")}</div>
     <div class="foot">${tekst("Pojęcia z warunków technicznych (WT 2002): akt uznany za uchylony, stosowany w okresie przejściowym - szczegóły w zakładce Nowości.")}</div>`;

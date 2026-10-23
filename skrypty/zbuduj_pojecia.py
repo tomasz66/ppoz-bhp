@@ -423,6 +423,95 @@ POJECIA = [
 ]
 
 
+def sekcja_spalanie(k):
+    k["sekcja"] = "spalanie"
+    return k
+
+
+# ── Spalanie, pożary i wybuchy - to, co mówią o nich przepisy (blok 3 programu kursu, 23.10.2026) ──
+SPALANIE = [
+    sekcja_spalanie(karta("atmosfera-wybuchowa", "Atmosfera wybuchowa", "ppoz",
+          "Mieszanina z powietrzem (w warunkach atmosferycznych) substancji palnych - gazów, par, mgieł albo pyłów - w której po zapłonie spalanie rozprzestrzenia się na całą niespaloną mieszaninę. To właśnie odróżnia wybuch od zwykłego spalania.",
+          d(ATEX, "p2", "§ 2 pkt 5 rozp. ATEX"), "spalanie rozprzestrzenia się na całą niespaloną mieszaninę",
+          "Opary benzyny w zamkniętym garażu, gaz z nieszczelnej butli w piwnicy, chmura pyłu mącznego w młynie.",
+          "Myślenie, że wybuchają tylko gazy - pył drzewny, mąka, cukier czy pył aluminium w chmurze wybuchają równie groźnie.",
+          "Wybuch to pożar, który przechodzi przez całą chmurę gazu albo pyłu w ułamku sekundy.",
+          ["granice-wybuchowosci", "atex", "strefa-wybuchu", "pyly-palne"],
+          [q("Czym jest przestrzeń zagrożona wybuchem?", "Przestrzeń, w której może wystąpić atmosfera wybuchowa w ilościach wymagających specjalnych środków bezpieczeństwa.",
+             d(ATEX, "p2", "§ 2 pkt 2 rozp. ATEX"), "przestrzenie, w których może wystąpić atmosfera wybuchowa")])),
+    sekcja_spalanie(karta("granice-wybuchowosci", "Dolna i górna granica wybuchowości (DGW, GGW)", "ppoz",
+          "Mieszanina substancji palnej z powietrzem wybucha tylko wtedy, gdy jej stężenie mieści się między dolną a górną granicą wybuchowości. Poniżej DGW jest „za uboga”, powyżej GGW - „za bogata” w paliwo.",
+          r("p2", "ust. 1 pkt 6"), "o stężeniu zawartym między dolną i górną granicą wybuchowości",
+          "Gaz ziemny wybucha mniej więcej w zakresie kilku do kilkunastu procent w powietrzu - dlatego przy wycieku nawet mała ilość gazu w zamkniętej kuchni jest groźna.",
+          "Przekonanie, że „dużo gazu” jest bardziej niebezpieczne niż „trochę” - najgroźniejsza jest mieszanina właśnie między granicami.",
+          "Wybuchowa mieszanina to ani za mało, ani za dużo paliwa w powietrzu - tylko pewien zakres pomiędzy.",
+          ["atmosfera-wybuchowa", "strefa-wybuchu", "prace-pozarowe"],
+          [q("Kiedy wolno spawać w pomieszczeniu, gdzie były palne opary?", "Gdy stężenie par lub gazów w miejscu pracy nie przekracza 10% dolnej granicy wybuchowości.",
+             r("p36", "ust. 2 pkt 2"), "nie przekracza 10% ich dolnej granicy wybuchowości")])),
+    sekcja_spalanie(karta("temperatura-zaplonu", "Temperatura zapłonu cieczy", "ppoz",
+          "Najniższa temperatura, w której nad cieczą tworzy się tyle par, że mogą się zapalić od płomienia. Przepisy uznają za materiały niebezpieczne pożarowo ciecze palne o temperaturze zapłonu poniżej 55°C (328,15 K).",
+          r("p2", "ust. 1 pkt 1 lit. b"), "ciecze palne o temperaturze zapłonu poniżej 328,15 K (55ºC)",
+          "Benzyna (zapłon dużo poniżej 0°C) jest niebezpieczna nawet zimą; olej napędowy (zapłon powyżej 55°C) - w zwykłych warunkach znacznie mniej.",
+          "Trzymanie kanistrów z benzyną „na zapas” w biurze lub mieszkaniu ponad dozwolone ilości.",
+          "Im niższa temperatura zapłonu, tym łatwiej ciecz zapali się od iskry czy zapalniczki - także w chłodny dzień.",
+          ["materialy-niebezpieczne", "atmosfera-wybuchowa", "samozapalenie"],
+          [q("Ile takich cieczy można trzymać w strefie ZL (poza handlem i mieszkaniami)?", "Do 10 dm³ cieczy o temperaturze zapłonu poniżej 21°C i do 50 dm³ cieczy o temperaturze zapłonu 21-55°C; w mieszkaniach odpowiednio do 5 i 20 dm³.",
+             r("p8", "ust. 1 pkt 1"), "do 10 dm3 cieczy o temperaturze zapłonu poniżej 294,15 K (21ºC)")])),
+    sekcja_spalanie(karta("samozapalenie", "Samozapalenie i samozapłon", "ppoz",
+          "Niektóre materiały zapalają się bez płomienia z zewnątrz: zapalają się samorzutnie na powietrzu albo mają skłonność do samozapalenia (nagrzewają się same w wyniku procesów chemicznych lub biologicznych). Przepisy zaliczają je do materiałów niebezpiecznych pożarowo.",
+          r("p2", "ust. 1 pkt 1 lit. d i g"), "materiały mające skłonności do samozapalenia",
+          "Szmaty nasączone olejem lnianym lub pokostem zwinięte w kłębek, wilgotne siano w stogu, węgiel na dużej hałdzie.",
+          "Wrzucanie zabrudzonych olejem czyściw do kartonu pod stołem warsztatowym.",
+          "Niektóre rzeczy potrafią zapalić się same - od własnego ciepła, bez zapałki.",
+          ["materialy-niebezpieczne", "temperatura-zaplonu", "pyly-palne"],
+          [q("Jak gorące mogą być powierzchnie urządzeń przy ciałach stałych łatwo zapalnych?", "Najwyżej 2/3 temperatury samozapłonu materiału (w °C) - liczy się materiał o najniższej temperaturze samozapłonu w pomieszczeniu.",
+             r("p35", "ust. 1 pkt 3"), "2/3 temperatury samozapłonu")])),
+    sekcja_spalanie(karta("grupy-pozarow", "Grupy pożarów (A, B, C, D, F)", "ppoz",
+          "Pożary dzieli się według tego, co się pali: A - ciała stałe, zwykle organiczne, tworzące żarzące się węgle; B - ciecze i topiące się ciała stałe; C - gazy; D - metale; F - tłuszcze i oleje w urządzeniach kuchennych.",
+          r("p32", "ust. 2"), "A - materiałów stałych, zwykle pochodzenia organicznego",
+          "A - drewno, papier, tekstylia; B - benzyna, farby, wosk; C - propan, metan; D - magnez, sód; F - olej we frytownicy.",
+          "Lanie wody na płonący olej (F) albo na metale (D) - kończy się wyrzutem płonącej cieczy lub wybuchem.",
+          "Litera mówi, co się pali, a od tego zależy, czym wolno gasić.",
+          ["gasnica", "materialy-niebezpieczne"],
+          [q("Co oznacza grupa F?", "Pożary tłuszczów i olejów w urządzeniach kuchennych.", r("p32", "ust. 2 pkt 5"), "F - tłuszczów i olejów w urządzeniach kuchennych")])),
+    sekcja_spalanie(karta("zrodla-zaplonu", "Źródła zapłonu i przyczyny pożarów w przepisach", "ppoz",
+          "Przepisy zakazują czynności, które mogą spowodować pożar, jego rozprzestrzenianie albo utrudnić akcję i ewakuację - m.in. otwartego ognia i palenia tam, gdzie są materiały niebezpieczne, używania niesprawnych instalacji, grzejników na palnym podłożu, wysypywania gorącego popiołu.",
+          r("p4", "ust. 1"), "mogących zainicjować zapłon",
+          "Niedopałek w koszu na śmieci, przeciążony przedłużacz, grzejnik olejowy na dywanie, popiół z pieca wysypany przy drewnianej szopie.",
+          "Traktowanie zakazów z § 4 jako „biurokracji” - to w praktyce lista najczęstszych przyczyn pożarów.",
+          "Większość pożarów zaczyna się od zwykłych rzeczy: papierosa, iskry, gorącego popiołu albo zepsutej instalacji.",
+          ["prace-pozarowe", "wykroczenie-ppoz", "elektrycznosc-statyczna"],
+          [q("Czy wolno wysypać gorący popiół na kompost?", "Nie, jeśli może zapalić materiały palne lub sąsiednie obiekty - zakaz obejmuje wysypywanie gorącego popiołu i żużla.",
+             r("p4", "ust. 1 pkt 5"), "wysypywanie gorącego popiołu i żużla"),
+           q("A grzejnik elektryczny na drewnianej podłodze?", "Zakazane, chyba że producent dopuszcza taki sposób używania.", r("p4", "ust. 1 pkt 7"), "ustawionych bezpośrednio na podłożu palnym")])),
+    sekcja_spalanie(karta("pyly-palne", "Pyły palne", "ppoz",
+          "Palne pyły zalegające warstwami mogą się tlić i zapalić, a wzniecone w chmurę - wybuchnąć. W obiektach produkcyjnych i magazynowych trzeba je regularnie sprzątać według Polskich Norm.",
+          r("p4", "ust. 6"), "pyły palne zalegające w warstwach",
+          "Stolarnia z pyłem drzewnym na belkach, piekarnia z mąką na lampach, młyn, zakład obróbki aluminium.",
+          "Zdmuchiwanie pyłu sprężonym powietrzem - wznieca chmurę, która może wybuchnąć.",
+          "Kurz z drewna czy mąki to paliwo. Leżąc - tli się, unosząc się w powietrzu - może wybuchnąć.",
+          ["atmosfera-wybuchowa", "atex", "samozapalenie"],
+          [q("Jak gorące mogą być poziome powierzchnie grzejne przy pyłach?", "Co najmniej 70°C poniżej temperatury tlenia się 5-milimetrowej warstwy pyłu.",
+             r("p35", "ust. 1 pkt 2 lit. a"), "poniżej temperatury tlenia się 5 mm warstwy pyłu")])),
+    sekcja_spalanie(karta("elektrycznosc-statyczna", "Elektryczność statyczna", "ppoz",
+          "Ładunki gromadzące się na urządzeniach i instalacjach (np. przy przelewaniu cieczy, transporcie pyłów, przewijaniu folii) mogą dać iskrę zdolną zapalić materiały palne. Takie instalacje wyposaża się w środki ochrony zgodne z Polskimi Normami (np. uziemienie).",
+          r("p35", "ust. 8"), "ładunki elektryczności statycznej",
+          "Przelewanie rozpuszczalnika z beczki do kanistra bez uziemienia, transport pneumatyczny granulatu tworzyw.",
+          "Plastikowy lejek i nieuziemiona beczka przy przelewaniu benzyny.",
+          "Iskra jak przy dotknięciu klamki po spacerze po dywanie - przy oparach benzyny wystarczy, żeby był wybuch.",
+          ["zrodla-zaplonu", "atmosfera-wybuchowa", "strefa-wybuchu"],
+          [q("Czy recyrkulacja powietrza w wentylacji jest zawsze dozwolona?", "Nie - niedopuszczalna, jeśli mogłaby zwiększyć zagrożenie wybuchem.", r("p35", "ust. 4"), "nie jest dopuszczalna recyrkulacja powietrza")])),
+    sekcja_spalanie(karta("rozprzestrzenianie", "Rozprzestrzenianie się pożaru - odległości", "ppoz",
+          "Pożar przenosi się przez promieniowanie ciepła i iskry, dlatego przepisy wymagają odległości między budynkami (zależnych od klasy odporności ogniowej ścian) oraz od materiałów palnych, np. stert i stogów.",
+          d(WT, "para_271", "§ 271 ust. 1 WT"), "Odległość między zewnętrznymi ścianami budynków",
+          "Stóg siana: 30 m od budynku palnego, 20 m od niepalnego, 100 m od lasu; gałęzie 4 m od granicy działki.",
+          "Dostawianie wiaty z materiałów palnych tuż przy ścianie magazynu.",
+          "Ogień „skacze” na sąsiedni budynek przez żar i iskry - odległość jest tańsza niż ściana ogniowa.",
+          ["oddzielenie", "strefa-pozarowa", "odpornosc-ogniowa"],
+          [q("Jak daleko stóg od lasu?", "Co najmniej 100 m od lasów i terenów zalesionych.", r("p42", "ust. 2 pkt 5"), "od lasów i terenów zalesionych - 100 m")])),
+]
+
+
 def sprawdz(opis, zr, dowod):
     try:
         jest = dowod.replace(" ", "") in tekst_jednostki(zr).replace(" ", "").replace(" ", "")
@@ -434,6 +523,7 @@ def sprawdz(opis, zr, dowod):
 
 
 def main():
+    POJECIA.extend(SPALANIE)
     ids = {k["id"] for k in POJECIA}
     bledy = 0
     for k in POJECIA:

@@ -223,6 +223,7 @@ function widokStart() {
     <div class="list-group">
       ${wiersz("#/wzor/praca/nowy", "🎓", "#5e35b1", "Praca projektowa", praca.wypelnione ? `Wypełniono ${praca.wypelnione}/${praca.wszystkie} punktów · termin 9.11` : "Kreator 34 punktów z podstawą prawną · termin 9.11", "otworzPrace()")}
       ${wiersz("#/pojecia", "📖", "#2f5d8a", "Karty pojęć", `${stan.pojecia.length} pojęć z programu kursu: definicja, przykład, błąd, dopytania`)}
+      ${wiersz("#/spalanie", "🔥", "#b25000", "Spalanie, pożary i wybuchy", `${stan.pojecia.filter((k) => k.sekcja === "spalanie").length} kart: zapłon, samozapalenie, granice wybuchowości, pyły, grupy pożarów`)}
       ${wiersz("#/mapa", "📏", "#248a3d", "Mapa liczb", "Odległości i terminy na rysunku · tryb „Sprawdź się”")}
       ${wiersz("#/nauka", "✎", "#c0392b", "Pytania z powtórkami", `${n.doPowtorki} do powtórki dziś · ${n.opanowane}/${stan.pytania.length} opanowanych`)}
       ${wiersz("#/asystent", "🎙", "#5e35b1", "Asystent", "Zapytaj o przepis albo daj się przepytać")}
@@ -740,6 +741,7 @@ function widokNauka() {
     <div class="section-label">Inne sposoby nauki</div>
     <div class="list-group">
       <a class="row" href="#/pojecia">${kafel("📖", "#2f5d8a")}<span class="row-main"><span class="row-title">Karty pojęć</span><span class="row-sub">${tekst(`${stan.pojecia.length} pojęć: definicja, przykład, błąd, jak powiedzieć klientowi, dopytania`)}</span></span><span class="row-chev">›</span></a>
+      <a class="row" href="#/spalanie">${kafel("🔥", "#b25000")}<span class="row-main"><span class="row-title">Spalanie, pożary i wybuchy</span><span class="row-sub">${tekst("Teoria spalania w przepisach - karty z cytatami")}</span></span><span class="row-chev">›</span></a>
       <a class="row" href="#/mapa">${kafel("📏", "#248a3d")}<span class="row-main"><span class="row-title">Mapa liczb</span><span class="row-sub">${tekst("Wszystkie odległości i terminy na jednym rysunku")}</span></span><span class="row-chev">›</span></a>
       <a class="row" href="#/bledy">${kafel("📷", "#b25000")}<span class="row-main"><span class="row-title">Znajdź błąd</span><span class="row-sub">${tekst("Twoje zdjęcia z terenu jako zadania")}</span></span><span class="row-chev">›</span></a>
       <a class="row" href="#/asystent">${kafel("🎙", "#5e35b1")}<span class="row-main"><span class="row-title">Asystent</span><span class="row-sub">${tekst("Zapytaj albo daj się przepytać")}</span></span><span class="row-chev">›</span></a>
