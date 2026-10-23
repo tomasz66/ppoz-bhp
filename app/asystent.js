@@ -19,6 +19,9 @@ const TUR_W_PAMIECI = 6;
 const MAX_TOKENOW = 16000;
 const FALLBACK_BETA = "server-side-fallback-2026-07-01";
 const ZDANIE_LEKTORA = 220;
+const PAUZA_PO_CANCEL_MS = 150;
+const CISZA_DYKTOWANIA_MS = 2000;
+const SPRAWDZ_LEKTORA_MS = 1500;
 
 const SYSTEM_PYTAM = `Jesteś asystentem do nauki przepisów BHP i ochrony przeciwpożarowej dla przyszłego inspektora ochrony ppoż. Odpowiadasz po polsku.
 Zasady:
@@ -277,30 +280,46 @@ function glosPolski() {
   return glosy.find((v) => /premium|enhanced|zosia|ewa/i.test(v.name)) || glosy[0] || null;
 }
 
-// iOS czyta dźwięk dopiero po dotknięciu ekranu - pusta wypowiedź przy dotknięciu "odblokowuje" lektora.
+// iOS pozwala stronie mówić dopiero po dotknięciu ekranu. Cicha, krótka wypowiedź przy dotknięciu
+// "odblokowuje" lektora, żeby mógł potem sam przeczytać odpowiedź, która przychodzi kilka sekund później.
+// (Pusta wypowiedź nie wystarcza - iOS ją pomija.)
 function odblokujLektora() {
-  if ("speechSynthesis" in window && !stan.lektorOdblokowany) {
-    speechSynthesis.speak(new SpeechSynthesisUtterance(""));
-    stan.lektorOdblokowany = true;
+  if (!("speechSynthesis" in window) || speechSynthesis.speaking) {
+    return;
   }
+  const u = new SpeechSynthesisUtterance(".");
+  u.volume = 0;
+  u.lang = "pl-PL";
+  speechSynthesis.speak(u);
 }
 
 function czytajNaGlos(t) {
   if (!("speechSynthesis" in window)) {
+    pokazKomunikat("Ten telefon nie ma lektora w przeglądarce.");
     return;
   }
-  speechSynthesis.cancel();
+  // Błąd iOS: wypowiedź dodana tuż po cancel() bywa gubiona - dlatego krótka pauza.
+  const bylo = speechSynthesis.speaking || speechSynthesis.pending;
+  if (bylo) {
+    speechSynthesis.cancel();
+  }
+  setTimeout(() => mow(t), bylo ? PAUZA_PO_CANCEL_MS : 0);
+}
+
+function mow(t) {
   const czysty = t.replace(/\[\d+\]/g, "").replace(/[*#_]/g, "");
   // Długie teksty iOS potrafi uciąć - czytamy zdanie po zdaniu.
   const zdania = czysty.match(new RegExp(`[^.!?]{1,${ZDANIE_LEKTORA}}[.!?]?`, "g")) || [czysty];
   const glos = glosPolski();
-  zdania.forEach((z) => {
+  // Trzymamy wypowiedzi w pamięci - inaczej Safari potrafi je usunąć w trakcie czytania.
+  stan.wypowiedzi = zdania.map((z) => {
     const u = new SpeechSynthesisUtterance(z.trim());
     u.lang = "pl-PL";
     if (glos) {
       u.voice = glos;
     }
     speechSynthesis.speak(u);
+    return u;
   });
   pokazPrzerwij(true);
   const sprawdz = setInterval(() => {
@@ -337,8 +356,11 @@ function sluchaj() {
   odblokujLektora();
   const pole = document.getElementById("pole-asystenta");
   if (!SR) {
+    // iPhone nie daje aplikacjom z ekranu początkowego rozpoznawania mowy - zostaje dyktowanie z klawiatury.
+    // Pytanie wysyła się samo, gdy przez 2 sekundy nic się nie zmienia.
+    stan.dyktowanie = true;
     pole.focus();
-    pokazKomunikat("Dotknij 🎤 na klawiaturze iPhone'a i mów - tekst wpisze się sam.");
+    pokazKomunikat("Dotknij 🎤 na klawiaturze i mów. Gdy skończysz, pytanie wyśle się samo.");
     return;
   }
   const r = new SR();
@@ -402,6 +424,8 @@ function kartaUstawien(otwarta) {
     <div class="btn-row" style="margin:10px 0 0"><button class="btn small" onclick="zapiszKlucz()">Zapisz klucz</button>${jest ? `<button class="btn small secondary" onclick="usunKlucz()">Usuń</button>` : ""}</div>
     <div class="pole" style="margin-top:14px"><span>Model</span><div class="seg mini">${MODELE.map((m) => `<button class="${wybranyModel().id === m.id ? "on" : ""}" onclick="zapisz(KLUCZ_A.model,'${m.id}');widokAsystenta(true)">${esc(m.nazwa)}</button>`).join("")}</div></div>
     <label class="przelacznik"><input type="checkbox" ${czytaj(KLUCZ_A.lektor, true) ? "checked" : ""} onchange="zapisz(KLUCZ_A.lektor,this.checked)"> Lektor czyta odpowiedzi automatycznie</label>
+    <div class="btn-row" style="margin:12px 0 0"><button class="btn small secondary" onclick="czytajNaGlos('Test lektora. Jeśli mnie słyszysz, czytanie odpowiedzi działa.')">🔊 Test lektora</button></div>
+    <p class="pomoc">${tekst(`Mikrofon w aplikacji: ${rozpoznawanieMowy() ? "dostępny" : "niedostępny na tym telefonie - użyj 🎤 na klawiaturze"}. Polskie głosy lektora: ${"speechSynthesis" in window ? speechSynthesis.getVoices().filter((v) => (v.lang || "").toLowerCase().startsWith("pl")).length : 0}. Jeśli nic nie słychać, sprawdź przełącznik wyciszenia i głośność.`)}</p>
   </details>`;
 }
 
@@ -464,7 +488,18 @@ function widokAsystenta(ustawieniaOtwarte) {
     ${kartaUstawien(ustawieniaOtwarte || !jestKlucz)}
     <div class="foot">${tekst("AI może się pomylić - zawsze sprawdź paragraf, na który się powołuje. Na egzamin ucz się z przepisu, nie z samego objaśnienia.")}</div>`;
   rysujRozmowe();
-  document.getElementById("pole-asystenta").addEventListener("keydown", (ev) => {
+  const pole = document.getElementById("pole-asystenta");
+  pole.addEventListener("input", () => {
+    clearTimeout(stan.ciszaDyktowania);
+    if (stan.dyktowanie && pole.value.trim()) {
+      stan.ciszaDyktowania = setTimeout(() => {
+        stan.dyktowanie = false;
+        pole.blur();
+        wyslijDoAsystenta();
+      }, CISZA_DYKTOWANIA_MS);
+    }
+  });
+  pole.addEventListener("keydown", (ev) => {
     if (ev.key === "Enter" && !ev.shiftKey) {
       ev.preventDefault();
       wyslijDoAsystenta();
@@ -498,6 +533,12 @@ async function wymiana(system, tresc, dymekJa) {
     rysujRozmowe();
     if (czytaj(KLUCZ_A.lektor, true)) {
       czytajNaGlos(w.t);
+      // Jeśli iPhone zablokował czytanie bez dotknięcia - podpowiedź, żeby dotknąć ▶.
+      setTimeout(() => {
+        if ("speechSynthesis" in window && !speechSynthesis.speaking && !speechSynthesis.pending) {
+          pokazKomunikat("Dotknij ▶ Czytaj pod odpowiedzią, żeby ją odsłuchać.");
+        }
+      }, SPRAWDZ_LEKTORA_MS);
     }
   } catch (e) {
     w.t = opisBledu(e);
